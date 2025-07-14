@@ -1,0 +1,65 @@
+{
+  "centralQuestion": "Should governments implement universal basic income?",
+  "reasons": [
+    {
+      "description": "UBI can reduce poverty by providing a stable income floor.",
+      "sources": [
+        {
+          "title": "UBI and Poverty Alleviation",
+          "link": "https://example.com/article1",
+          "imageLink": "https://example.com/image1.jpg"
+        },
+        {
+          "title": "Evidence of UBI Success",
+          "link": "https://example.com/article2",
+          "imageLink": "https://example.com/image2.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "It may encourage entrepreneurship by reducing the risk of failure.",
+      "sources": [
+        {
+          "title": "UBI and Startup Risk-Taking",
+          "link": "https://example.com/article3",
+          "imageLink": "https://example.com/image3.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "objections": [
+    {
+      "description": "UBI could disincentivize work for some recipients.",
+      "sources": [
+        {
+          "title": "UBI and Labor Supply",
+          "link": "https://example.com/article4",
+          "imageLink": "https://example.com/image4.jpg"
+        },
+        {
+          "title": "Work Incentives and Free Income",
+          "link": "https://example.com/article5",
+          "imageLink": "https://example.com/image5.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "It may be too expensive to sustain without cutting other welfare programs.",
+      "sources": [
+        {
+          "title": "Fiscal Cost of UBI",
+          "link": "https://example.com/article6",
+          "imageLink": "https://example.com/image6.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ]
+}
