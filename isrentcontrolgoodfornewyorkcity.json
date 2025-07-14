@@ -1,0 +1,93 @@
+{
+    "centralQuestion": "Is rent control good for New York City?",
+    "reasons": [
+      {
+        "description": "Provides immediate affordability and stability for existing tenants, especially low‑income, Black and Latino residents.",
+        "sources": [
+          {
+            "title": "Business Insider: \"Zohran Mamdani wants to freeze rents for New Yorkers. Here's why it's controversial.\"",
+            "link": "https://www.businessinsider.com/zohran-mamdani-wants-to-freeze-rents-heres-why-its-controversial-2025-7",
+            "imageLink": "https://logo.clearbit.com/businessinsider.com"
+          },
+          {
+            "title": "Comptroller NYC: \"Spotlight: New York City's Rental Housing Market\"",
+            "link": "https://comptroller.nyc.gov/reports/spotlight-new-york-citys-rental-housing-market/",
+            "imageLink": "https://logo.clearbit.com/nyc.gov"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Signals policymakers are addressing the cost‑of‑living crisis and renter dissatisfaction.",
+        "sources": [
+          {
+            "title": "FT: \"Make America affordable again\"",
+            "link": "https://www.ft.com/content/408ab79c-08dd-4f87-9618-211482f10b9d",
+            "imageLink": "https://logo.clearbit.com/ft.com"
+          },
+          {
+            "title": "Time: \"How Zohran Mamdani Plans to Fix New York City's Housing Crisis\"",
+            "link": "https://time.com/7299525/zohran-mamdani-new-york-city-housing-crisis-plan/",
+            "imageLink": "https://logo.clearbit.com/time.com"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "May discourage landlord investment, leading to property disrepair and fewer rental units.",
+        "sources": [
+          {
+            "title": "New York Post: \"Why Mamdani's rent freeze means disaster for NYC tenants\"",
+            "link": "https://nypost.com/2025/07/01/opinion/why-mamdanis-rent-freeze-means-disaster-for-nyc-tenants/",
+            "imageLink": "https://logo.clearbit.com/nypost.com"
+          },
+          {
+            "title": "City Journal: \"Why Are New York City’s Affordable Housing Units Falling Apart?\"",
+            "link": "https://www.city-journal.org/article/new-york-city-affordable-housing-hstpa-rent-stabilization",
+            "imageLink": "https://logo.clearbit.com/city-journal.org"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Could reduce housing supply by encouraging conversions to condos and deterring new construction.",
+        "sources": [
+          {
+            "title": "Business Insider: \"Zohran Mamdani wants to freeze rents...\"",
+            "link": "https://www.businessinsider.com/zohran-mamdani-wants-to-freeze-rents-heres-why-its-controversial-2025-7",
+            "imageLink": "https://logo.clearbit.com/businessinsider.com"
+          },
+          {
+            "title": "City Journal: \"How Rent Control Hurts Tenants in the Long Run\"",
+            "link": "https://www.city-journal.org/article/housing-affordability-new-york-city-rent-control",
+            "imageLink": "https://logo.clearbit.com/city-journal.org"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Benefits accrue unevenly—may favor wealthier long‑term tenants at expense of new, needy renters.",
+        "sources": [
+          {
+            "title": "New York Post: \"Why Mamdani's rent freeze means disaster for NYC tenants\"",
+            "link": "https://nypost.com/2025/07/01/opinion/why-mamdanis-rent-freeze-means-disaster-for-nyc-tenants/",
+            "imageLink": "https://logo.clearbit.com/nypost.com"
+          },
+          {
+            "title": "City Journal: \"How Rent Control Hurts Tenants in the Long Run\"",
+            "link": "https://www.city-journal.org/article/housing-affordability-new-york-city-rent-control",
+            "imageLink": "https://logo.clearbit.com/city-journal.org"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ]
+  }
+  

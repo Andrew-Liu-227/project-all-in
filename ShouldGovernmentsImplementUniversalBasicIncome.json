@@ -1,0 +1,97 @@
+{
+  "centralQuestion": "Should governments implement universal basic income?",
+  "reasons": [
+    {
+      "description": "Helps cushion economic disruption from AI-driven job losses.",
+      "sources": [
+        {
+          "title": "Business Insider: \"Will AI replace human jobs and make universal basic income necessary? Here's what AI leaders have said about UBI.\"",
+          "link": "https://www.businessinsider.com/universal-basic-income-ai",
+          "imageLink": "https://www.businessinsider.com/logo.png"
+        }
+      ]
+    },
+    {
+      "description": "Reduces poverty and financial stress for vulnerable populations.",
+      "sources": [
+        {
+          "title": "The Sun: \"Americans being sent 'automatic' checks up to $500 - there's no strings attached...\"",
+          "link": "https://www.the-sun.com/money/14238347/ohio-payments-universal-basic-income-franklin-county/",
+          "imageLink": "https://www.the-sun.com/favicon.ico"
+        }
+      ]
+    },
+    {
+      "description": "Could significantly reduce poverty at national level (e.g., Canada estimate).",
+      "sources": [
+        {
+          "title": "Business Insider: \"Does Canada have UBI? Everything you need to know about the country's basic income programs.\"",
+          "link": "https://www.businessinsider.com/canada-ubi",
+          "imageLink": "https://www.businessinsider.com/logo.png"
+        }
+      ]
+    },
+    {
+      "description": "Pilot programs empower recipients and encourage better decision-making.",
+      "sources": [
+        {
+          "title": "The Sun: \"Americans being sent 'automatic' checks up to $500 - there's no strings attached...\"",
+          "link": "https://www.the-sun.com/money/14238347/ohio-payments-universal-basic-income-franklin-county/",
+          "imageLink": "https://www.the-sun.com/favicon.ico"
+        }
+      ]
+    }
+  ],
+  "objections": [
+    {
+      "description": "Could discourage work and reduce labor participation.",
+      "sources": [
+        {
+          "title": "Business Insider: \"… Critics argue that UBI could discourage work and increase taxes.\"",
+          "link": "https://www.businessinsider.com/universal-basic-income-ai",
+          "imageLink": "https://www.businessinsider.com/logo.png"
+        },
+        {
+          "title": "New York Post: \"Free money, less income: study finds no‑strings cash leaves the poor worse off\"",
+          "link": "https://nypost.com/2024/07/24/opinion/no-strings-cash-leaves-the-poor-worse-off-study/",
+          "imageLink": "https://nypost.com/favicon.ico"
+        }
+      ]
+    },
+    {
+      "description": "May be unaffordable/expensive without major tax increases or cuts.",
+      "sources": [
+        {
+          "title": "Business Insider: \"… Critics argue that UBI could … increase taxes or local government budget cuts.\"",
+          "link": "https://www.businessinsider.com/universal-basic-income-ai",
+          "imageLink": "https://www.businessinsider.com/logo.png"
+        },
+        {
+          "title": "Business Insider: \"Does Canada have UBI? … Cost remains a central concern; estimated $87.6 billion annually.\"",
+          "link": "https://www.businessinsider.com/canada-ubi",
+          "imageLink": "https://www.businessinsider.com/logo.png"
+        }
+      ]
+    },
+    {
+      "description": "Could undermine targeted welfare systems and shift resources away from those who need it most.",
+      "sources": [
+        {
+          "title": "The Sun: \"… critics believe it may discourage employment.\"",
+          "link": "https://www.the-sun.com/money/14238347/ohio-payments-universal-basic-income-franklin-county/",
+          "imageLink": "https://www.the-sun.com/favicon.ico"
+        }
+      ]
+    },
+    {
+      "description": "Skepticism over long‑term effectiveness: initial benefits fade over time.",
+      "sources": [
+        {
+          "title": "Business Insider: \"… effects fade out by the second and third years of the program.\"",
+          "link": "https://www.businessinsider.com/universal-basic-income-ai",
+          "imageLink": "https://www.businessinsider.com/logo.png"
+        }
+      ]
+    }
+  ]
+}

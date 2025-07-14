@@ -1,0 +1,78 @@
+{
+    "centralQuestion": "Is it important to keep the Federal Reserve independent?",
+    "reasons": [
+      {
+        "description": "Preserving Fed independence helps anchor low inflation and market confidence.",
+        "sources": [
+          {
+            "title": "Financial Stability Requires an Independent Fed",
+            "link": "https://project-syndicate.org/commentary/federal-reserve-independence-essential-for-financial-stability-by-simon-johnson-and-erkki-liikanen-2025-05",
+            "imageLink": "https://via.placeholder.com/100?text=Project+Syndicate+Logo"
+          },
+          {
+            "title": "Why Trump’s attacks on the Fed could sabotage the US economy",
+            "link": "https://www.vox.com/economy/412270/trump-federal-reserve-powell-interest-rates-economy",
+            "imageLink": "https://via.placeholder.com/100?text=Vox+Logo"
+          }
+        ]
+      },
+      {
+        "description": "Independent central banks avoid short‑term political pressure that fuels inflation.",
+        "sources": [
+          {
+            "title": "Central bank independence needs a better defence",
+            "link": "https://www.reuters.com/markets/us/central-bank-independence-needs-better-defence-2025-07-14/",
+            "imageLink": "https://via.placeholder.com/100?text=Reuters+Logo"
+          },
+          {
+            "title": "Why Fed independence matters, according to economist Jason ...",
+            "link": "https://www.vpm.org/npr-news/npr-news/2025-04-23/why-fed-independence-matters-according-to-economist-jason-furman",
+            "imageLink": "https://via.placeholder.com/100?text=NPR+Logo"
+          }
+        ]
+      },
+      {
+        "description": "Politicizing the Fed could destabilize markets and weaken the dollar and bond markets.",
+        "sources": [
+          {
+            "title": "Letter: Push for lower rates risks higher borrowing costs",
+            "link": "https://www.ft.com/content/b2060c47-11ac-4493-8269-2a085db152b4",
+            "imageLink": "https://via.placeholder.com/100?text=FT+Logo"
+          },
+          {
+            "title": "Why Trump removing Powell is the market's most underestimated risk",
+            "link": "https://www.businessinsider.com/trump-powell-feud-market-most-overlooked-risk-dollar-bond-rates-2025-7",
+            "imageLink": "https://via.placeholder.com/100?text=Business+Insider+Logo"
+          }
+        ]
+      }
+    ],
+    "objections": [
+      {
+        "description": "Fed independence can make it unaccountable and resistant to needed reform.",
+        "sources": [
+          {
+            "title": "Fed should be independent, not untouchable",
+            "link": "https://www.reuters.com/breakingviews/fed-should-be-independent-not-untouchable-2024-05-28/",
+            "imageLink": "https://via.placeholder.com/100?text=Reuters+Logo"
+          },
+          {
+            "title": "The Problem With the Fed Isn't Independence, It's Accountability",
+            "link": "https://www.bloomberg.com/news/articles/2025-05-13/trump-is-beating-up-on-the-federal-reserve-for-the-wrong-reasons",
+            "imageLink": "https://via.placeholder.com/100?text=Bloomberg+Logo"
+          }
+        ]
+      },
+      {
+        "description": "Closer coordination with the executive could improve crisis response and policy coherence.",
+        "sources": [
+          {
+            "title": "Trump has a point - the Federal Reserve DOES need fixing: here's how",
+            "link": "https://nypost.com/2025/07/08/opinion/trump-has-a-point-the-federal-reserve-does-need-fixing/",
+            "imageLink": "https://via.placeholder.com/100?text=NY+Post+Logo"
+          }
+        ]
+      }
+    ]
+  }
+  

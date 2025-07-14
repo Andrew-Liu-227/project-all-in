@@ -1,0 +1,100 @@
+{
+    "centralQuestion": "Are Trump’s tariffs economically sound?",
+    "reasons": [
+      {
+        "description": "Tariffs generate significant revenue that could offset tax cuts or fund government programs.",
+        "sources": [
+          {
+            "title": "AP News: \"Trump's tariffs could pay for his tax cuts -- but it likely wouldn't be much of a bargain\"",
+            "link": "https://apnews.com/article/447ab174f84d67fea5023bbe02dd60e0",
+            "imageLink": "https://www.apnews.com/images/ap_logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tariffs protect domestic manufacturing and reduce trade deficits by reshoring production.",
+        "sources": [
+          {
+            "title": "Washington Post: \"Love it or hate it, you can't dismiss this Republican's defense of tariffs\"",
+            "link": "https://www.washingtonpost.com/opinions/2025/04/10/trump-tariff-support-oren-cass/",
+            "imageLink": "https://www.washingtonpost.com/wp-stat-assets/wp-logos/wp-logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Tariffs raise costs for consumers and businesses, fueling inflation and reducing real incomes.",
+        "sources": [
+          {
+            "title": "New Yorker: \"How Much More 'TACO' Madness Can the U.S. Economy Take?\"",
+            "link": "https://www.newyorker.com/news/the-financial-page/how-much-more-taco-madness-can-the-us-economy-take",
+            "imageLink": "https://www.newyorker.com/favicon.ico"
+          },
+          {
+            "title": "Tax Foundation: \"Trump Tariffs: Tracking the Economic Impact of the Trump Trade War\"",
+            "link": "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
+            "imageLink": "https://taxfoundation.org/wp-content/uploads/2020/12/cropped-TaxFoundationLogo.png"
+          },
+          {
+            "title": "Fortune: \"$100 billion mystery is unfolding on tariffs and inflation\"",
+            "link": "https://fortune.com/2025/07/13/who-pays-tariffs-inflation-trump/",
+            "imageLink": "https://content.fortune.com/wp-content/uploads/2018/07/FortuneLogo.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tariffs disrupt global supply chains, create policy uncertainty, and hurt GDP growth.",
+        "sources": [
+          {
+            "title": "Financial Times: \"A case of Schrödinger's tariffs\"",
+            "link": "https://www.ft.com/content/9c02c79d-ecd6-4d07-ae5a-b005fd5350a0",
+            "imageLink": "https://www.ft.com/__origami/service/image/v2/images/logos/ft-logo__dark.svg"
+          },
+          {
+            "title": "Brookings Institution: \"The consequences of Trump's tariff threats\"",
+            "link": "https://www.brookings.edu/articles/the-consequences-of-trumps-tariff-threats/",
+            "imageLink": "https://www.brookings.edu/wp-content/uploads/2018/03/logos_favicon.ico"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Central bankers and international institutions argue tariffs lack economic justification and threaten macro stability.",
+        "sources": [
+          {
+            "title": "Politico Pro: \"Trump's tariffs have no economic justification, says BIS\"",
+            "link": "https://subscriber.politicopro.com/article/2025/06/trumps-tariffs-have-no-economic-justification-says-bis-00432207",
+            "imageLink": "https://www.politico.com/favicon.ico"
+          },
+          {
+            "title": "The Guardian: \"Trump's tariffs have become his Vietnam - and the right is breaking ranks\"",
+            "link": "https://www.theguardian.com/commentisfree/2025/jun/05/trump-tariffs-republicans",
+            "imageLink": "https://assets.guim.co.uk/images/favicons/guardian.ico"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tariffs impose regressive taxes on households and may provoke retaliatory measures harming exporters.",
+        "sources": [
+          {
+            "title": "AP News: \"Trump's tariffs could pay for his tax cuts -- but it likely wouldn't be much of a bargain\"",
+            "link": "https://apnews.com/article/447ab174f84d67fea5023bbe02dd60e0",
+            "imageLink": "https://www.apnews.com/images/ap_logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ]
+  }
+  
