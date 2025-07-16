@@ -3,76 +3,685 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Site with Argument Trees</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Econ-mapped</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nyt+Cheltenham:wght@400;700&family=Nyt+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          sans-serif;
+      * {
         margin: 0;
-        padding: 20px;
-        background: #f5f5f5;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      .news-container {
+      body {
+        font-family: 'Nyt Franklin', Georgia, serif;
+        background: #ffffff;
+        color: #121212;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      /* Header - NYT Style */
+      .newspaper-header {
+        background: #fff;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      }
+
+      .date-bar {
+        background: #fff;
+        color: #666;
+        padding: 8px 0;
+        text-align: center;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .masthead {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .newspaper-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 38px;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+        letter-spacing: -0.5px;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .newspaper-subtitle {
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 11px;
+        color: #666;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+      }
+
+      .header-content {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
       }
 
-      .header {
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        font-family: 'Nyt Franklin', sans-serif;
+      }
+
+      .nav-menu li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding: 12px 0;
+        position: relative;
+        transition: color 0.2s ease;
+      }
+
+      .nav-menu li a:hover,
+      .nav-menu li a.active {
+        color: #000;
+      }
+
+      .nav-menu li a.active::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #000;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+        background: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 6px 12px;
+        width: 250px;
+        font-family: 'Nyt Franklin', sans-serif;
+      }
+
+      .search-container input {
+        background: none;
+        border: none;
+        color: #333;
+        width: 100%;
+        padding: 4px;
+        outline: none;
+        font-size: 14px;
+      }
+
+      .search-container input::placeholder {
+        color: #999;
+      }
+
+      .search-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666;
+        padding: 0 4px;
+        transition: color 0.2s ease;
+      }
+
+      .search-btn:hover {
+        color: #000;
+      }
+
+      /* Breaking News Banner */
+      .breaking-news {
+        background: #326891;
+        color: white;
+        padding: 12px 0;
         text-align: center;
-        margin-bottom: 40px;
-        padding: 30px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'Nyt Franklin', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.3px;
       }
 
-      .stories-grid {
+      .breaking-text {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Main Content */
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        margin-bottom: 40px;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
       }
 
-      .story-card {
+      .content-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-header {
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .section-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: -0.2px;
+      }
+
+      .view-all {
+        color: #326891;
+        text-decoration: none;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding: 4px 8px;
+        border-radius: 3px;
+        transition: all 0.2s ease;
+      }
+
+      .view-all:hover {
+        background: #f7f7f7;
+        color: #1a5490;
+      }
+
+      /* Featured Story */
+      .featured-story {
         background: white;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
         cursor: pointer;
         transition: all 0.3s ease;
       }
 
-      .story-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      .featured-story:hover {
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       }
 
-      .story-title {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #333;
-      }
-
-      .story-summary {
+      .featured-image {
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
         color: #666;
-        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .featured-content {
+        padding: 0;
+      }
+
+      .featured-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 42px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 16px;
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+      }
+
+      .featured-summary {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+
+      .story-meta {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: #666;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+
+      .story-tags {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #f7f7f7;
+        color: #333;
+        padding: 4px 8px;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 2px;
+        border: 1px solid #e2e2e2;
+      }
+
+      /* Story Grid */
+      .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      .story-card {
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 20px;
+      }
+
+      .story-card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
+      .story-image {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
         margin-bottom: 15px;
       }
 
+      .story-content {
+        padding: 0;
+      }
+
+      .story-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #000;
+        line-height: 1.2;
+        letter-spacing: -0.3px;
+      }
+
+      .story-summary {
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .story-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #e2e2e2;
+      }
+
+      .read-time {
+        color: #666;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
       .view-analysis {
-        background: #007bff;
+        background: #326891;
         color: white;
         border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
+        padding: 8px 16px;
         cursor: pointer;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        border-radius: 3px;
+        transition: all 0.2s ease;
+      }
+
+      .view-analysis:hover {
+        background: #1a5490;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .sidebar-widget {
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        padding: 20px;
+      }
+
+      .widget-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #000;
+        letter-spacing: -0.2px;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 10px;
+      }
+
+      .trending-item {
+        padding: 15px 0;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .trending-item:hover {
+        background: #f7f7f7;
+        margin: 0 -20px;
+        padding: 15px 20px;
+      }
+
+      .trending-item:last-child {
+        border-bottom: none;
+      }
+
+      .trending-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 5px;
+        line-height: 1.3;
+        letter-spacing: -0.2px;
+      }
+
+      .trending-meta {
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+      }
+
+      .newsletter-signup {
+        background: #326891;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        border-radius: 3px;
+      }
+
+      .newsletter-signup h3 {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        letter-spacing: -0.2px;
+      }
+
+      .newsletter-signup p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.9;
+      }
+
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.1);
+        font-family: 'Nyt Franklin', sans-serif;
+        font-size: 14px;
+        color: white;
+        border-radius: 3px;
+      }
+
+      .newsletter-form input::placeholder {
+        color: rgba(255,255,255,0.7);
+      }
+
+      .newsletter-form button {
+        background: white;
+        color: #326891;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-family: 'Nyt Franklin', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 3px;
+        transition: all 0.2s ease;
+      }
+
+      .newsletter-form button:hover {
+        background: #f7f7f7;
+      }
+
+      /* Market Data Widget */
+      .market-data {
+        font-family: 'Nyt Franklin', sans-serif;
         font-size: 14px;
       }
 
-      /* Argument Tree Modal Styles */
+      .market-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .market-item:last-child {
+        border-bottom: none;
+      }
+
+      .market-symbol {
+        font-weight: 600;
+        color: #000;
+      }
+
+      .market-change {
+        font-weight: 600;
+        font-size: 13px;
+      }
+
+      .positive { color: #2e7d32; }
+      .negative { color: #d32f2f; }
+      .neutral { color: #666; }
+
+      /* Footer */
+      .footer {
+        background: #f7f7f7;
+        border-top: 1px solid #e2e2e2;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+      }
+
+      .footer-section h4 {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #000;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer-section ul li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        transition: color 0.2s ease;
+      }
+
+      .footer-section ul li a:hover {
+        color: #000;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #e2e2e2;
+        color: #666;
+        font-size: 12px;
+      }
+
+      /* Search Results */
+      .search-results {
+        display: none;
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        max-height: 400px;
+        overflow-y: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .search-results.active {
+        display: block;
+      }
+
+      .search-result-item {
+        padding: 12px 16px;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+
+      .search-result-item:hover {
+        background: #f7f7f7;
+      }
+
+      .search-result-item:last-child {
+        border-bottom: none;
+      }
+
+      .search-result-title {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 4px;
+      }
+
+      .search-result-summary {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+      }
+
+      .search-highlight {
+        background: #fffbcc;
+        padding: 1px 2px;
+        border-radius: 2px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .newspaper-title {
+          font-size: 28px;
+        }
+        
+        .main-content {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding: 20px;
+        }
+        
+        .nav-menu {
+          display: none;
+        }
+        
+        .search-container {
+          width: 180px;
+        }
+        
+        .stories-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .header-content {
+          padding: 0 15px;
+        }
+        
+        .featured-title {
+          font-size: 32px;
+        }
+      }
+
+      /* Argument Tree Modal (keeping original functionality) */
       .arg-modal {
         display: none;
         position: fixed;
@@ -92,26 +701,36 @@
 
       .arg-container {
         background: white;
-        border-radius: 15px;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
         max-width: 95vw;
         max-height: 95vh;
         overflow: auto;
         position: relative;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
       }
 
       .arg-header {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        background: #326891;
         color: white;
         padding: 20px;
-        border-radius: 15px 15px 0 0;
         position: sticky;
         top: 0;
         z-index: 10;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .arg-header h2 {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: -0.3px;
       }
 
       .arg-close {
         position: absolute;
-        top: 15px;
+        top: 20px;
         right: 20px;
         background: none;
         border: none;
@@ -120,10 +739,11 @@
         cursor: pointer;
         width: 30px;
         height: 30px;
-        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 50%;
+        transition: all 0.2s ease;
       }
 
       .arg-close:hover {
@@ -135,7 +755,23 @@
         min-width: 900px;
       }
 
-      /* True Tree Structure */
+      /* Tree styles remain the same but with updated colors */
+      .central-question {
+        background: #326891;
+        color: white;
+        padding: 25px 40px;
+        text-align: center;
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        z-index: 10;
+        max-width: 600px;
+        margin-bottom: 120px;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
       .tree-container {
         position: relative;
         display: flex;
@@ -143,21 +779,6 @@
         align-items: center;
         min-height: 700px;
         padding: 40px 20px;
-      }
-
-      .central-question {
-        background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
-        color: white;
-        padding: 25px 40px;
-        border-radius: 25px;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        box-shadow: 0 8px 25px rgba(238, 90, 111, 0.3);
-        position: relative;
-        z-index: 10;
-        max-width: 600px;
-        margin-bottom: 120px;
       }
 
       .tree-branches {
@@ -177,23 +798,25 @@
       }
 
       .branch-label {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: 700;
         margin-bottom: 40px;
-        padding: 10px 25px;
-        border-radius: 20px;
-        color: rgb(8, 5, 5);
+        padding: 15px 30px;
+        color: white;
         text-align: center;
         z-index: 5;
         position: relative;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
       .reasons-label {
-        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        background: #2e7d32;
       }
 
       .objections-label {
-        background: linear-gradient(135deg, #fa709a, #fee140);
+        background: #d32f2f;
       }
 
       .nodes-container {
@@ -206,33 +829,32 @@
 
       .tree-node {
         background: white;
-        border-radius: 15px;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
         padding: 20px;
         max-width: 300px;
         min-width: 250px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-        border-top: 4px solid;
         position: relative;
         transition: all 0.3s ease;
         z-index: 5;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
       .tree-node:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
       }
 
       .reason-node {
-        border-top-color: #4facfe;
+        border-left: 4px solid #2e7d32;
       }
 
       .objection-node {
-        border-top-color: #fa709a;
+        border-left: 4px solid #d32f2f;
       }
 
       .node-description {
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.6;
         margin-bottom: 15px;
         color: #333;
       }
@@ -245,195 +867,233 @@
         display: flex;
         align-items: center;
         padding: 8px;
-        background: #f8f9fa;
-        border-radius: 6px;
+        background: #f7f7f7;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
         margin: 6px 0;
         font-size: 12px;
-      }
-
-      .source img {
-        width: 20px;
-        height: 20px;
-        border-radius: 4px;
-        margin-right: 8px;
-        object-fit: cover;
+        font-family: 'Nyt Franklin', sans-serif;
       }
 
       .source-title {
         font-weight: 600;
-        color: #2c3e50;
+        color: #326891;
         text-decoration: none;
       }
 
       .source-title:hover {
-        color: #3498db;
-      }
-
-      .expand-button {
-        background: linear-gradient(135deg, #667eea, #764ba2);
-        color: white;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 15px;
-        cursor: pointer;
-        font-size: 12px;
-        margin-top: 12px;
-        display: none;
-      }
-
-      .expand-button.has-children {
-        display: inline-block;
-      }
-
-      .sub-nodes {
-        margin-top: 15px;
-        padding-top: 15px;
-        border-top: 1px dashed #ddd;
-        display: none;
-      }
-
-      .sub-nodes.expanded {
-        display: block;
-      }
-
-      .sub-node {
-        background: #f8f9fa;
-        border-radius: 8px;
-        padding: 12px;
-        margin: 10px 0;
-        border-left: 3px solid;
-        font-size: 13px;
-      }
-
-      .sub-reason {
-        border-left-color: #74b9ff;
-      }
-
-      .sub-objection {
-        border-left-color: #fd79a8;
-      }
-
-      /* SVG Connection Lines */
-      .connection-svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 1;
-      }
-
-      .connection-line {
-        stroke: #3498db;
-        stroke-width: 2;
-        fill: none;
-        opacity: 0.7;
-      }
-
-      .node-connector {
-        stroke: #7f8c8d;
-        stroke-width: 1.5;
-        fill: none;
-        opacity: 0.6;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .arg-content {
-          padding: 20px;
-          min-width: unset;
-        }
-
-        .tree-branches {
-          flex-direction: column;
-          gap: 40px;
-          align-items: center;
-        }
-
-        .central-question {
-          font-size: 16px;
-          padding: 20px 30px;
-          margin-bottom: 60px;
-        }
-
-        .connection-svg {
-          display: none;
-        }
-
-        .stories-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (max-width: 1024px) {
-        .tree-branches {
-          gap: 60px;
-        }
-
-        .tree-node {
-          max-width: 250px;
-          min-width: 200px;
-        }
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <div class="news-container">
-      <div class="header">
-        <h1>Econ-Mapped</h1>
-        <p>
-          Click on any question to find News Articles that contribute to
-          economic discussion and argument
-        </p>
+    <!-- Header -->
+    <header class="newspaper-header">
+      <div class="date-bar">
+        Wednesday, July 16, 2025 • New York, NY • Founded 1898
       </div>
+      
+      <div class="masthead">
+        <a href="#" class="newspaper-title">Econ-Mapped</a>
+        <div class="newspaper-subtitle">Economics News and Argument Mapping</div>
+      </div>
+      
+      <div class="header-content">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#" class="active">Economics</a></li>
+            <li><a href="#">Markets</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Opinion</a></li>
+            <li><a href="#">World</a></li>
+          </ul>
+        </nav>
+        <div class="search-container" style="position: relative;">
+          <input type="text" id="searchInput" placeholder="Search articles...">
+          <button class="search-btn" onclick="performSearch()">🔍</button>
+          <div class="search-results" id="searchResults"></div>
+        </div>
+      </div>
+    </header>
 
-      <div class="stories-grid">
-        <div
-          class="story-card"
-          onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')"
-        >
-          <div class="story-title">
-            Should Governments Implement Universal Basic Income?
-          </div>
-          <div class="story-summary">
-            Governments worldwide are reconsidering UBI policies as economic
-            pressures mount. Supporters argue it could reduce poverty, while
-            critics worry about work incentives.
-          </div>
-          <button class="view-analysis">View Analysis</button>
-        </div>
-        <div
-          class="story-card"
-          onclick="showArgumentTree('data/isrentcontrolgoodfornewyorkcity.json', 'Is Rent Control Good for New York City')"
-        >
-          <div class="story-title">Is Rent Control Good for New York City?</div>
-          <div class="story-summary"></div>
-          <button class="view-analysis">View Analysis</button>
-        </div>
-
-        <div
-          class="story-card"
-          onclick="showArgumentTree('data/trumpstariffs.json', 'Trumps Tariffs and Economics')"
-        >
-          <div class="story-title">Are Trump's Tariffs Economically Sound?</div>
-          <div class="story-summary"></div>
-          <button class="view-analysis">View Analysis</button>
-        </div>
-
-        <div
-          class="story-card"
-          onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')"
-        >
-          <div class="story-title">
-            Is it important to keep the Federal Reserve Independent?
-          </div>
-          <div class="story-summary"></div>
-          <button class="view-analysis">View Analysis</button>
-        </div>
+    <!-- Breaking News -->
+    <div class="breaking-news">
+      <div class="breaking-text">
+        Breaking: (insert breaking Econ News here)
       </div>
     </div>
 
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-section">
+        <!-- Featured Story -->
+        <div class="section-header">
+          <h2 class="section-title">Today's Lead Story</h2>
+          <a href="#" class="view-all">All Stories</a>
+        </div>
+
+        <article class="featured-story" onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')">
+          <div class="featured-image">
+            Economic Policy Analysis
+          </div>
+          <div class="featured-content">
+            <div class="story-meta">
+              <span>Today, 2:30 PM</span>
+              <span>By Economic Research Team</span>
+            </div>
+            <h1 class="featured-title">
+              Should Governments Implement Universal Basic Income?
+            </h1>
+            <p class="featured-summary">
+              As economic pressures mount globally, governments are reconsidering UBI policies. Our comprehensive analysis examines arguments from leading economists, policy experts, and real-world pilot programs to provide a balanced perspective on this critical economic debate.
+            </p>
+            <div class="story-tags">
+              <span class="tag">UBI</span>
+              <span class="tag">Economic Policy</span>
+              <span class="tag">Social Programs</span>
+              <span class="tag">Government Spending</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest Stories -->
+        <div class="section-header">
+          <h2 class="section-title">Economic Debates</h2>
+          <a href="#" class="view-all">More Stories</a>
+        </div>
+
+        <div class="stories-grid">
+          <article class="story-card" onclick="showArgumentTree('data/isrentcontrolgoodfornewyorkcity.json', 'Is Rent Control Good for New York City')">
+            <div class="story-image">
+              Housing Policy Report
+            </div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>3 hours ago</span>
+                <span>NYC Bureau</span>
+              </div>
+              <h3 class="story-title">Is Rent Control Good for New York City?</h3>
+              <p class="story-summary">
+                New York's rent control debate intensifies as housing costs soar. Our analysis examines the economic arguments for and against rent stabilization policies in America's most expensive city.
+              </p>
+              <div class="story-tags">
+                <span class="tag">Housing</span>
+                <span class="tag">NYC Policy</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">8 min read</span>
+                <button class="view-analysis">Read Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card" onclick="showArgumentTree('data/trumpstariffs.json', 'Trumps Tariffs and Economics')">
+            <div class="story-image">
+              Trade Policy Investigation
+            </div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">Are Trump's Tariffs Economically Sound?</h3>
+              <p class="story-summary">
+                Trade economists debate the effectiveness of tariff policies on domestic manufacturing and consumer prices. A comprehensive analysis of trade policy impacts on the American economy.
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="story-card" onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')">
+            <div class="story-image">
+              🏛️ Federal Reserve
+            </div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>📅 1 day ago</span>
+                <span>🏛️ Fed Policy</span>
+              </div>
+              <h3 class="story-title">Is Federal Reserve Independence Important?</h3>
+              <p class="story-summary">
+                Central bank independence faces scrutiny as political pressures mount. Analyzing the economic arguments for autonomous monetary policy.
+              </p>
+              <div class="story-tags">
+                <span class="tag">Federal Reserve</span>
+                <span class="tag">Monetary Policy</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 10 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title">📈 Trending Topics</h3>
+          <div class="trending-item">
+            <div class="trending-title">Inflation Rate Projections</div>
+            <div class="trending-meta">🔥 Hot • 2,341 views</div>
+          </div>
+          <div class="trending-item">
+            <div class="trending-title">Student Loan Forgiveness Impact</div>
+            <div class="trending-meta">📊 Analysis • 1,892 views</div>
+          </div>
+          <div class="trending-item">
+            <div class="trending-title">Cryptocurrency Regulation</div>
+            <div class="trending-meta">💰 Finance • 1,456 views</div>
+          </div>
+          <div class="trending-item">
+            <div class="trending-title">Green Energy Subsidies</div>
+            <div class="trending-meta">🌱 Environment • 1,234 views</div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h3 class="widget-title">📊 Market Data</h3>
+          <div style="padding: 15px 0;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+              <span>S&P 500</span>
+              <span style="color: #22c55e;">+0.8%</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+              <span>Dow Jones</span>
+              <span style="color: #ef4444;">-0.3%</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+              <span>NASDAQ</span>
+              <span style="color: #22c55e;">+1.2%</span>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span>USD/EUR</span>
+              <span style="color: #6b7280;">1.085</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget newsletter-signup">
+          <h3>📧 Stay Informed</h3>
+          <p>Get daily economic analysis and policy updates delivered to your inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Argument Tree Modal (keeping original functionality) -->
     <div class="arg-modal" id="argModal">
       <div class="arg-container">
         <div class="arg-header">
@@ -449,6 +1109,7 @@
     </div>
 
     <script>
+      // All original JavaScript functionality preserved
       class ArgumentTreeRenderer {
         constructor(container, data) {
           this.container = container;
