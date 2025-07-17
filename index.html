@@ -17,6 +17,64 @@
     <title>Econ-mapped</title>
     <link href="https://fonts.googleapis.com/css2?family=Nyt+Cheltenham:wght@400;700&family=Nyt+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+
+@keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Popup Overlay */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    /* Popup Box */
+    #popup-box {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 90%;
+      width: 340px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transform: scale(0.95);
+      opacity: 0;
+      animation: scaleIn 0.4s ease forwards;
+    }
+
+    #popup-box h3 {
+      font-family: 'Nyt Cheltenham', Georgia, serif;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    #popup-box p {
+      font-family: 'Nyt Cheltenham', Georgia, serif;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+
+
+
+
+
+
       * {
         margin: 0;
         padding: 0;
@@ -822,12 +880,38 @@
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       }
 
+      .exploring-label {
+        font-family: 'Nyt Cheltenham', Georgia, serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        padding: 15px 30px;
+        color: black;
+        text-align: center;
+        z-index: 5;
+        position: relative;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
+      .exploring-label:hover {
+      opacity: 0.85;
+      }
+
       .reasons-label {
         background: #2e7d32;
       }
 
+      .reasons-label:hover {
+      opacity: 0.85;
+      }
+
       .objections-label {
         background: #d32f2f;
+      }
+
+      .objections-label:hover {
+      opacity: 0.85;
       }
 
       .nodes-container {
@@ -898,6 +982,47 @@
     </style>
   </head>
   <body>
+
+    <div id="popup">
+      <div id="popup-box">
+        <h3>Welcome!</h3>
+        <p>Are you...</p>
+        <button class="branch-label reasons-label" onclick="handleUserChoice('teacher')">A Teacher</button>
+        <button class="branch-label objections-label" onclick="handleUserChoice('student')">A Student</button>
+        <button class="exploring-label" onclick="handleUserChoice('fun')">Just Exploring!</button>
+      </div>
+    </div>
+  
+    <!-- JavaScript -->
+    <script>
+      window.onload = function () {
+        const visited = localStorage.getItem('visited');
+        if (!visited) {
+          setTimeout(() => {
+            document.getElementById('popup').style.display = 'flex';
+          }, 500);
+        }
+      };
+  
+      function handleUserChoice(role) {
+        localStorage.setItem('visited', 'true');
+        localStorage.setItem('userType', role);
+  
+        // Google Analytics event
+        if (typeof gtag === 'function') {
+          gtag('event', 'user_type_selected', {
+            event_category: 'User Classification',
+            event_label: role
+          });
+        }
+  
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+
+
+
+
     <!-- Header -->
     <header class="newspaper-header">
       <div class="date-bar">
