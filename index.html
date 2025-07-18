@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K1N6T05HS5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-K1N6T05HS5", { debug_mode: true });
-</script>
+    <!-- Google tag (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1N6T05HS5"></script>
+    <script>
+      // Define gtag() immediately so it's available to all your scripts
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    // Wait for DOM to load before configuring GA (your working model)
+    window.addEventListener("DOMContentLoaded", function () {
+      gtag("js", new Date());
+      gtag("config", "G-K1N6T05HS5", { debug_mode: true }); // ✅ Required for DebugView
+      });
+    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
