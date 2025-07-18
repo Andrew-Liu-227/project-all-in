@@ -999,16 +999,13 @@
     <!-- JavaScript -->
     <script>
       window.onload = function () {
-        const visited = localStorage.getItem('visited');
-        if (!visited) {
           setTimeout(() => {
             document.getElementById('popup').style.display = 'flex';
           }, 500);
-        }
       };
   
       function handleUserChoice(role) {
-        localStorage.setItem('visited', 'true');
+
         localStorage.setItem('userType', role);
   
         // Google Analytics event
