@@ -142,6 +142,178 @@
         border-bottom: 1px solid #e2e2e2;
       }
 
+      /* Themes Container Styles - Orange */
+.themes-container {
+  background: linear-gradient(135deg, #ff8c42, #ff7518);
+  border: 2px solid #e8651a;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+}
+
+.themes-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.themes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.theme-tag {
+  background: rgba(255, 255, 255, 0.9);
+  color: #e8651a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(232, 101, 26, 0.3);
+}
+
+/* Research Branch Styles - Blue */
+.research-label {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.research-node {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+  transition: all 0.3s ease;
+}
+
+.research-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.3);
+}
+
+.research-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.research-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 2px solid #4a90e2;
+}
+
+.research-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c5282;
+  flex: 1;
+}
+
+.research-node .node-description {
+  color: #2d3748;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Expert Perspectives Branch Styles - Metallic Silver */
+.expert-label {
+  background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+  color: #2d3748;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 8px rgba(168, 168, 168, 0.4);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+  border: 1px solid #999;
+}
+
+.expert-node {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border: 2px solid #c0c0c0;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 4px 12px rgba(168, 168, 168, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.expert-node::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+}
+
+.expert-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(168, 168, 168, 0.4);
+}
+
+.expert-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.expert-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c0c0c0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.expert-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d3748;
+  flex: 1;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.expert-node .node-description {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 14px;
+  font-style: italic;
+  padding-left: 8px;
+  border-left: 3px solid #c0c0c0;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 8px 12px;
+  border-radius: 0 6px 6px 0;
+}
+
       .newspaper-title {
         font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 38px;
@@ -1216,7 +1388,7 @@
             </div>
           </article>
 
-          <article class="story-card" onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')">
+          <article class="story-card" onclick="showArgumentTree('drafttemplatefordata.json', 'Federal Reserve Independence')">
             <div class="story-image">
               🏛️ Federal Reserve
             </div>
@@ -1331,239 +1503,291 @@
     </div>
 
     <script>
-      // All original JavaScript functionality preserved
-      class ArgumentTreeRenderer {
-        constructor(container, data) {
-          this.container = container;
-          this.data = data;
-          this.svgNamespace = "http://www.w3.org/2000/svg";
-        }
+      // All original JavaScript functionality preserved and expanded
+class ArgumentTreeRenderer {
+  constructor(container, data) {
+    this.container = container;
+    this.data = data;
+    this.svgNamespace = "http://www.w3.org/2000/svg";
+  }
 
-        init() {
-          this.container.innerHTML = this.render(this.data);
-          setTimeout(() => this.drawConnectionLines(), 100);
-        }
+  init() {
+    this.container.innerHTML = this.render(this.data);
+    setTimeout(() => this.drawConnectionLines(), 100);
+  }
 
-        render(data) {
-          return `
-          <div class="tree-container">
-            <div class="central-question">${data.centralQuestion}</div>
-            <div class="tree-branches">
-              ${this.renderBranch("Supporting Reasons", "reason", data.reasons)}
-              ${this.renderBranch("Objections", "objection", data.objections)}
-            </div>
-            <svg class="connection-svg" id="connectionSvg"></svg>
-          </div>
-        `;
-        }
+  render(data) {
+    return `
+      <div class="tree-container">
+        <div class="central-question">${data.centralQuestion}</div>
+        ${this.renderThemes(data.themes)}
+        <div class="tree-branches">
+          ${this.renderBranch("Supporting Reasons", "reason", data.reasons)}
+          ${this.renderBranch("Objections", "objection", data.objections)}
+          ${this.renderBranch("Research", "research", data.research)}
+          ${this.renderBranch("Expert Perspectives", "expert", data.expertPerspectives)}
+        </div>
+        <svg class="connection-svg" id="connectionSvg"></svg>
+      </div>
+    `;
+  }
 
-        renderBranch(label, type, items) {
-          if (!items?.length) return "";
-          return `
-          <div class="branch-section">
-            <div class="branch-label ${type}-label">${label}</div>
-            <div class="nodes-container">
-              ${items.map((item, i) => this.renderNode(item, type, i)).join("")}
-            </div>
-          </div>
-        `;
-        }
+  renderThemes(themes) {
+    if (!themes?.length) return "";
+    return `
+      <div class="themes-container">
+        <div class="themes-label">Key Themes</div>
+        <div class="themes-list">
+          ${themes.map(theme => `<span class="theme-tag">${theme}</span>`).join("")}
+        </div>
+      </div>
+    `;
+  }
 
-        renderNode(node, type, index) {
-          return `
-          <div class="tree-node ${type}-node" data-node-type="${type}" data-node-index="${index}">
-            <div class="node-description">${node.description}</div>
-            ${this.renderSources(node.sources)}
-            <button class="expand-button ${
-              this.hasChildren(node) ? "has-children" : ""
-            }" onclick="toggleSubNodes(this)">
-              ${this.hasChildren(node) ? "Show Details" : ""}
-            </button>
-            <div class="sub-nodes">
-              ${this.renderSubNodes(node.underlyingReasons, "reason")}
-              ${this.renderSubNodes(node.objections, "objection")}
-            </div>
-          </div>
-        `;
-        }
+  renderBranch(label, type, items) {
+    if (!items?.length) return "";
+    return `
+      <div class="branch-section">
+        <div class="branch-label ${type}-label">${label}</div>
+        <div class="nodes-container">
+          ${items.map((item, i) => this.renderNode(item, type, i)).join("")}
+        </div>
+      </div>
+    `;
+  }
 
-        renderSubNodes(nodes, type) {
-          if (!nodes?.length) return "";
-          return nodes
-            .map(
-              (node) => `
-          <div class="sub-node sub-${type}">
-            <div class="node-description">${node.description}</div>
-            ${this.renderSources(node.sources)}
+  renderNode(node, type, index) {
+    // Handle different node types
+    if (type === "research") {
+      return this.renderResearchNode(node, index);
+    } else if (type === "expert") {
+      return this.renderExpertNode(node, index);
+    } else {
+      return this.renderStandardNode(node, type, index);
+    }
+  }
+
+  renderStandardNode(node, type, index) {
+    return `
+      <div class="tree-node ${type}-node" data-node-type="${type}" data-node-index="${index}">
+        <div class="node-description">${node.description}</div>
+        ${this.renderSources(node.sources)}
+        <button class="expand-button ${
+          this.hasChildren(node) ? "has-children" : ""
+        }" onclick="toggleSubNodes(this)">
+          ${this.hasChildren(node) ? "Show Details" : ""}
+        </button>
+        <div class="sub-nodes">
+          ${this.renderSubNodes(node.underlyingReasons, "reason")}
+          ${this.renderSubNodes(node.objections, "objection")}
+        </div>
+      </div>
+    `;
+  }
+
+  renderResearchNode(node, index) {
+    return `
+      <div class="tree-node research-node" data-node-type="research" data-node-index="${index}">
+        <div class="research-header">
+          ${node.imageLink ? `<img src="${node.imageLink}" alt="research" class="research-image">` : ""}
+          <div class="research-title">${node.title}</div>
+        </div>
+        <div class="node-description">${node.description}</div>
+      </div>
+    `;
+  }
+
+  renderExpertNode(node, index) {
+    return `
+      <div class="tree-node expert-node" data-node-type="expert" data-node-index="${index}">
+        <div class="expert-header">
+          ${node.imageLink ? `<img src="${node.imageLink}" alt="${node.name}" class="expert-image">` : ""}
+          <div class="expert-name">${node.name}</div>
+        </div>
+        <div class="node-description">${node.description}</div>
+      </div>
+    `;
+  }
+
+  renderSubNodes(nodes, type) {
+    if (!nodes?.length) return "";
+    return nodes
+      .map(
+        (node) => `
+      <div class="sub-node sub-${type}">
+        <div class="node-description">${node.description}</div>
+        ${this.renderSources(node.sources)}
+      </div>
+    `
+      )
+      .join("");
+  }
+
+  renderSources(sources) {
+    if (!sources?.length) return "";
+    return `
+      <div class="sources">
+        ${sources
+          .map(
+            (source) => `
+          <div class="source">
+            <img src="${source.imageLink}" alt="source">
+            <a href="${source.link}" target="_blank" class="source-title">${source.title}</a>
           </div>
         `
-            )
-            .join("");
-        }
+          )
+          .join("")}
+      </div>
+    `;
+  }
 
-        renderSources(sources) {
-          if (!sources?.length) return "";
-          return `
-          <div class="sources">
-            ${sources
-              .map(
-                (source) => `
-              <div class="source">
-                <img src="${source.imageLink}" alt="source">
-                <a href="${source.link}" target="_blank" class="source-title">${source.title}</a>
-              </div>
-            `
-              )
-              .join("")}
-          </div>
-        `;
-        }
+  hasChildren(node) {
+    return (
+      (node.underlyingReasons?.length || 0) +
+        (node.objections?.length || 0) >
+      0
+    );
+  }
 
-        hasChildren(node) {
-          return (
-            (node.underlyingReasons?.length || 0) +
-              (node.objections?.length || 0) >
-            0
-          );
-        }
+  drawConnectionLines() {
+    const svg = document.getElementById("connectionSvg");
+    if (!svg) return;
+    svg.innerHTML = "";
 
-        drawConnectionLines() {
-          const svg = document.getElementById("connectionSvg");
-          if (!svg) return;
-          svg.innerHTML = "";
+    const container = document.querySelector(".tree-container");
+    const centralQuestion = document.querySelector(".central-question");
+    const branchSections = document.querySelectorAll(".branch-section");
 
-          const container = document.querySelector(".tree-container");
-          const centralQuestion = document.querySelector(".central-question");
-          const branchSections = document.querySelectorAll(".branch-section");
+    if (!container || !centralQuestion || branchSections.length === 0)
+      return;
 
-          if (!container || !centralQuestion || branchSections.length === 0)
-            return;
+    const containerRect = container.getBoundingClientRect();
+    const questionRect = centralQuestion.getBoundingClientRect();
 
-          const containerRect = container.getBoundingClientRect();
-          const questionRect = centralQuestion.getBoundingClientRect();
+    const questionCenterX =
+      questionRect.left + questionRect.width / 2 - containerRect.left;
+    const questionBottomY = questionRect.bottom - containerRect.top;
 
-          const questionCenterX =
-            questionRect.left + questionRect.width / 2 - containerRect.left;
-          const questionBottomY = questionRect.bottom - containerRect.top;
+    const trunkLength = 60;
+    this.createLine(
+      svg,
+      questionCenterX,
+      questionBottomY,
+      questionCenterX,
+      questionBottomY + trunkLength,
+      "connection-line"
+    );
 
-          const trunkLength = 60;
-          this.createLine(
-            svg,
-            questionCenterX,
-            questionBottomY,
-            questionCenterX,
-            questionBottomY + trunkLength,
-            "connection-line"
-          );
+    const branchY = questionBottomY + trunkLength;
+    let leftmostX = questionCenterX;
+    let rightmostX = questionCenterX;
 
-          const branchY = questionBottomY + trunkLength;
-          let leftmostX = questionCenterX;
-          let rightmostX = questionCenterX;
+    branchSections.forEach((section) => {
+      const sectionRect = section.getBoundingClientRect();
+      const sectionCenterX =
+        sectionRect.left + sectionRect.width / 2 - containerRect.left;
+      leftmostX = Math.min(leftmostX, sectionCenterX);
+      rightmostX = Math.max(rightmostX, sectionCenterX);
+    });
 
-          branchSections.forEach((section) => {
-            const sectionRect = section.getBoundingClientRect();
-            const sectionCenterX =
-              sectionRect.left + sectionRect.width / 2 - containerRect.left;
-            leftmostX = Math.min(leftmostX, sectionCenterX);
-            rightmostX = Math.max(rightmostX, sectionCenterX);
-          });
+    if (branchSections.length > 1) {
+      this.createLine(
+        svg,
+        leftmostX,
+        branchY,
+        rightmostX,
+        branchY,
+        "connection-line"
+      );
+    }
 
-          if (branchSections.length > 1) {
-            this.createLine(
-              svg,
-              leftmostX,
-              branchY,
-              rightmostX,
-              branchY,
-              "connection-line"
-            );
-          }
+    branchSections.forEach((section) => {
+      const sectionRect = section.getBoundingClientRect();
+      const sectionCenterX =
+        sectionRect.left + sectionRect.width / 2 - containerRect.left;
+      const label = section.querySelector(".branch-label");
 
-          branchSections.forEach((section) => {
-            const sectionRect = section.getBoundingClientRect();
-            const sectionCenterX =
-              sectionRect.left + sectionRect.width / 2 - containerRect.left;
-            const label = section.querySelector(".branch-label");
-
-            if (label) {
-              const labelRect = label.getBoundingClientRect();
-              const labelTopY = labelRect.top - containerRect.top;
-              this.createLine(
-                svg,
-                sectionCenterX,
-                branchY,
-                sectionCenterX,
-                labelTopY - 20,
-                "connection-line"
-              );
-            }
-
-            const nodes = section.querySelectorAll(".tree-node");
-            nodes.forEach((node) => {
-              const nodeRect = node.getBoundingClientRect();
-              const nodeCenterX =
-                nodeRect.left + nodeRect.width / 2 - containerRect.left;
-              const nodeTopY = nodeRect.top - containerRect.top;
-              this.createLine(
-                svg,
-                sectionCenterX,
-                branchY + 40,
-                nodeCenterX,
-                nodeTopY,
-                "node-connector"
-              );
-            });
-          });
-        }
-
-        createLine(svg, x1, y1, x2, y2, className) {
-          const line = document.createElementNS(this.svgNamespace, "line");
-          line.setAttribute("x1", x1);
-          line.setAttribute("y1", y1);
-          line.setAttribute("x2", x2);
-          line.setAttribute("y2", y2);
-          line.setAttribute("class", className);
-          svg.appendChild(line);
-        }
+      if (label) {
+        const labelRect = label.getBoundingClientRect();
+        const labelTopY = labelRect.top - containerRect.top;
+        this.createLine(
+          svg,
+          sectionCenterX,
+          branchY,
+          sectionCenterX,
+          labelTopY - 20,
+          "connection-line"
+        );
       }
 
-      async function showArgumentTree(jsonPath, titleText) {
-        const modal = document.getElementById("argModal");
-        const title = document.getElementById("argTitle");
-        const content = document.getElementById("argContent");
-        modal.classList.add("active");
-        content.innerHTML =
-          '<div style="text-align: center; padding: 40px; color: #666;">Loading argument analysis...</div>';
-        try {
-          const res = await fetch(jsonPath);
-          const data = await res.json();
-          title.textContent = titleText;
-          new ArgumentTreeRenderer(content, data).init();
-        } catch (e) {
-          content.innerHTML =
-            '<div style="text-align: center; padding: 40px; color: #e74c3c;">Error loading argument data</div>';
-        }
-      }
+      const nodes = section.querySelectorAll(".tree-node");
+      nodes.forEach((node) => {
+        const nodeRect = node.getBoundingClientRect();
+        const nodeCenterX =
+          nodeRect.left + nodeRect.width / 2 - containerRect.left;
+        const nodeTopY = nodeRect.top - containerRect.top;
+        this.createLine(
+          svg,
+          sectionCenterX,
+          branchY + 40,
+          nodeCenterX,
+          nodeTopY,
+          "node-connector"
+        );
+      });
+    });
+  }
 
-      function closeArgumentTree() {
+  createLine(svg, x1, y1, x2, y2, className) {
+    const line = document.createElementNS(this.svgNamespace, "line");
+    line.setAttribute("x1", x1);
+    line.setAttribute("y1", y1);
+    line.setAttribute("x2", x2);
+    line.setAttribute("y2", y2);
+    line.setAttribute("class", className);
+    svg.appendChild(line);
+  }
+}
+
+async function showArgumentTree(jsonPath, titleText) {
+  const modal = document.getElementById("argModal");
+  const title = document.getElementById("argTitle");
+  const content = document.getElementById("argContent");
+  modal.classList.add("active");
+  content.innerHTML =
+    '<div style="text-align: center; padding: 40px; color: #666;">Loading argument analysis...</div>';
+  try {
+    const res = await fetch(jsonPath);
+    const data = await res.json();
+    title.textContent = titleText;
+    new ArgumentTreeRenderer(content, data).init();
+  } catch (e) {
+    content.innerHTML =
+      '<div style="text-align: center; padding: 40px; color: #e74c3c;">Error loading argument data</div>';
+  }
+}
+
+function closeArgumentTree() {
   const modal = document.getElementById("argModal");
   modal.classList.add("closing");
   setTimeout(() => {
     modal.classList.remove("active", "closing");
   }, 400); // Match animation duration
 }
-      function toggleSubNodes(button) {
-        const subNodes = button.nextElementSibling;
-        const isExpanded = subNodes.classList.contains("expanded");
-        subNodes.classList.toggle("expanded", !isExpanded);
-        button.textContent = isExpanded ? "Show Details" : "Hide Details";
-      }
 
-      document
-        .getElementById("argModal")
-        .addEventListener("click", function (e) {
-          if (e.target === this) closeArgumentTree();
-        });
+function toggleSubNodes(button) {
+  const subNodes = button.nextElementSibling;
+  const isExpanded = subNodes.classList.contains("expanded");
+  subNodes.classList.toggle("expanded", !isExpanded);
+  button.textContent = isExpanded ? "Show Details" : "Hide Details";
+}
+
+document
+  .getElementById("argModal")
+  .addEventListener("click", function (e) {
+    if (e.target === this) closeArgumentTree();
+  });
+  
     </script>
   </body>
 </html>
