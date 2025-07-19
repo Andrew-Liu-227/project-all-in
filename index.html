@@ -33,6 +33,27 @@
       }
     }
 
+    @keyframes modalSlideIn {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
     /* Popup Overlay */
     #popup {
       display: none;
@@ -755,32 +776,48 @@
 
       /* Argument Tree Modal (keeping original functionality) */
       .arg-modal {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 1000;
-      }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
-      .arg-modal.active {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+.arg-modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.arg-modal.active .arg-container {
+  animation: modalSlideIn 0.4s ease forwards;
+}
+
+.arg-modal.closing .arg-container {
+  animation: modalSlideOut 0.4s ease forwards;
+}
+     
 
       .arg-container {
-        background: white;
-        border: 1px solid #e2e2e2;
-        border-radius: 3px;
-        max-width: 95vw;
-        max-height: 95vh;
-        overflow: auto;
-        position: relative;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-      }
+  background: white;
+  border: none; /* Remove border */
+  border-radius: 0; /* Remove border radius */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  max-width: 100vw; /* Override max-width */
+  max-height: 100vh; /* Override max-height */
+  overflow: auto;
+  position: relative;
+  box-shadow: none; /* Remove shadow for full page feel */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
 
       .arg-header {
         background: #326891;
@@ -826,6 +863,37 @@
         padding: 40px;
         min-width: 900px;
       }
+
+      .arg-footer {
+  background: #f7f7f7;
+  border-top: 1px solid #e2e2e2;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
+  font-family: 'Nyt Franklin', sans-serif;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #326891;
+}
+
+.footer-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
 
       /* Tree styles remain the same but with updated colors */
       .central-question {
@@ -898,7 +966,7 @@
       }
 
       .exploring-label:hover {
-      opacity: 1.25;
+      opacity: 0.65;
       }
 
       .reasons-label {
@@ -985,7 +1053,7 @@
     </style>
   </head>
   <body>
-
+ <!-- popup -->
     <div id="popup">
       <div id="popup-box">
         <h3>Welcome!</h3>
@@ -1229,7 +1297,7 @@
       </aside>
     </main>
 
-    <!-- Argument Tree Modal (keeping original functionality) -->
+    <!-- Argument Tree Modal (keeping original functionality) This is the design of the modal!! -->
     <div class="arg-modal" id="argModal">
       <div class="arg-container">
         <div class="arg-header">
@@ -1240,6 +1308,24 @@
           <div style="text-align: center; padding: 40px; color: #666">
             Loading argument analysis...
           </div>
+        </div>
+        <div class="arg-footer">
+            <a href="#" class="footer-link">
+              <div class="footer-icon">📊</div>
+              <span>Data</span>
+            </a>
+            <a href="#" class="footer-link">
+              <div class="footer-icon">📖</div>
+              <span>Sources</span>
+            </a>
+            <a href="#" class="footer-link">
+              <div class="footer-icon">💬</div>
+              <span>Discuss</span>
+            </a>
+            <a href="#" class="footer-link">
+              <div class="footer-icon">📤</div>
+              <span>Share</span>
+            </a>
         </div>
       </div>
     </div>
@@ -1460,9 +1546,12 @@
       }
 
       function closeArgumentTree() {
-        document.getElementById("argModal").classList.remove("active");
-      }
-
+  const modal = document.getElementById("argModal");
+  modal.classList.add("closing");
+  setTimeout(() => {
+    modal.classList.remove("active", "closing");
+  }, 400); // Match animation duration
+}
       function toggleSubNodes(button) {
         const subNodes = button.nextElementSibling;
         const isExpanded = subNodes.classList.contains("expanded");
