@@ -61,5 +61,36 @@
       "underlyingReasons": [],
       "objections": []
     }
+  ],
+  "expertPerspectives": [
+    {
+      "name": "Dr. Jane Smith",
+      "imageLink": "https://example.com/jane-smith.jpg",
+      "description": "An economist at MIT who supports UBI based on pilot studies in Finland and Kenya."
+    },
+    {
+      "name": "Prof. Alan Jones",
+      "imageLink": "https://example.com/alan-jones.jpg",
+      "description": "A public policy professor skeptical of UBI’s long-term fiscal viability."
+    }
+  ],
+  "research": [
+    {
+      "title": "UBI Pilot Programs: What We’ve Learned",
+      "description": "An in-depth analysis of several international UBI trials and their effects on labor, health, and education.",
+      "imageLink": "https://example.com/research1.jpg"
+    },
+    {
+      "title": "Funding UBI: Economic Models Compared",
+      "description": "Compares various economic models to evaluate the sustainability of different UBI proposals.",
+      "imageLink": "https://example.com/research2.jpg"
+    }
+  ],
+  "themes": [
+    "Poverty alleviation",
+    "Work incentives",
+    "Fiscal policy",
+    "Social safety nets",
+    "Economic justice"
   ]
 }
