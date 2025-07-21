@@ -1,0 +1,190 @@
+{
+    "centralQuestion": "Was Trump’s One Big Beautiful Bill Act (OBBBA) economically a good idea?",
+    "reasons": [
+      {
+        "description": "Permanent full expensing for equipment and R&D, along with making many 2017 TCJA provisions permanent, is projected to boost long‑run GDP by 0.7 – 1 % and give firms policy certainty that encourages new investment. :contentReference[oaicite:0]{index=0}",
+        "sources": [
+          {
+            "title": "Tax Foundation: “The Good, the Bad, and the Ugly in the One Big Beautiful Bill Act”",
+            "link": "https://taxfoundation.org/blog/one-big-beautiful-bill-pros-cons/",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tax_Foundation_logo.png"
+          },
+          {
+            "title": "White House: “The One Big Beautiful Bill” Fact Sheet",
+            "link": "https://www.whitehouse.gov/obbb/",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Seal_of_the_President_of_the_United_States.svg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Expanded 23 % small‑business deduction plus “No Tax on Tips/Overtime” provisions raise after‑tax income for workers and entrepreneurs, potentially lifting consumer spending and job creation. :contentReference[oaicite:1]{index=1}",
+        "sources": [
+          {
+            "title": "IRS Fact Sheet: “One Big Beautiful Bill Act – Tax Deductions for Working Americans and Seniors”",
+            "link": "https://www.irs.gov/newsroom/one-big-beautiful-bill-act-tax-deductions-for-working-americans-and-seniors",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/8/8a/IRS_logo.png"
+          },
+          {
+            "title": "RBC Wealth Management: “One Big Beautiful Bill Act—Beauty Is in the Eye of the Beholder”",
+            "link": "https://ca.rbcwealthmanagement.com/ed.clayson/blog/4603112-One-Big-Beautiful-Bill-Act-Beauty-is-in-the-eye-of-the-beholder",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/en/4/4a/RBC_Logo.svg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Work‑force Pell Grant expansion aims to close skills gaps by funding 8‑ to 15‑week training programs, which proponents argue will raise labor productivity and earnings. :contentReference[oaicite:2]{index=2}",
+        "sources": [
+          {
+            "title": "AP News: “Trump’s ‘Beautiful’ Bill Spans 1,116 Pages. Here’s What’s Inside It”",
+            "link": "https://apnews.com/article/trump-big-beautiful-bill-medicaid-cuts-125ad670515460108ded062029abd8c8",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Associated_Press_logo_2012.svg"
+          },
+          {
+            "title": "Times of India: “How Pell Grant Expansions Will Support Millions”",
+            "link": "https://timesofindia.indiatimes.com/education/news/one-big-beautiful-bill-how-pell-grant-expansions-will-support-millions-in-workforce-training-programs-starting-2026/articleshow/122816147.cms",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/41/Times_of_India_logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "International‑tax changes (e.g., ending the QBAI reduction and lowering FDII rates) are advertised as incentives for multinationals to on‑shore profits and high‑wage activities, reducing profit‑shifting abroad. :contentReference[oaicite:3]{index=3}",
+        "sources": [
+          {
+            "title": "Grant Thornton: “Favorable OBBBA Changes for Multinationals”",
+            "link": "https://www.grantthornton.com/insights/alerts/tax/2025/flash/favorable-obbba-changes-for-multinationals",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/66/Grant_Thornton_logo.svg"
+          },
+          {
+            "title": "Bloomberg Tax: “How the OBBBA’s International Tax Rule Changes Impact MNEs”",
+            "link": "https://news.bloombergtax.com/daily-tax-report/how-the-obbbas-international-tax-rule-changes-impact-mnes",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/1/16/Bloomberg_logo.svg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "CBO scoring shows OBBBA adds roughly $3 – 4 trillion to the deficit over ten years, threatening debt sustainability and interest‑rate pressures. :contentReference[oaicite:4]{index=4}",
+        "sources": [
+          {
+            "title": "CRFB: “Final OBBBA Score Confirms Long Road to Fiscal Recovery”",
+            "link": "https://www.crfb.org/press-releases/final-obbba-score-confirms-long-road-fiscal-recovery",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/72/Committee_for_a_Responsible_Federal_Budget_logo.png"
+          },
+          {
+            "title": "Politico: “New Poll Finds Most Americans Expect the Law to Harm the Economy”",
+            "link": "https://www.politico.com/news/2025/07/16/trump-law-new-poll-00455878",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Politico_logo.svg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tax‑code complexity grows: practitioners struggle with renamed GILTI‑to‑NCTI rules and dozens of narrow carve‑outs, raising compliance costs. :contentReference[oaicite:5]{index=5}",
+        "sources": [
+          {
+            "title": "Politico: “Republican Tax Law Leaves Experts Searching for Words”",
+            "link": "https://www.politico.com/news/2025/07/21/republican-tax-law-leaves-experts-searching-for-words-00463193",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Politico_logo.svg"
+          },
+          {
+            "title": "Baker Tilly: “Inside the One Big Beautiful Bill Act”",
+            "link": "https://www.bakertilly.com/page/one-big-beautiful-bill-act",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Baker_Tilly_logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Deep Medicaid and Medicare cuts could raise mortality, hospital closures, and economic losses in rural areas. :contentReference[oaicite:6]{index=6}",
+        "sources": [
+          {
+            "title": "Center for American Progress: “The Truth About the OBBBA’s Cuts to Medicaid and Medicare”",
+            "link": "https://www.americanprogress.org/article/the-truth-about-the-one-big-beautiful-bill-acts-cuts-to-medicaid-and-medicare/",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Center_for_American_Progress_logo.png"
+          },
+          {
+            "title": "Cancer Therapy Advisor: “OBBBA Medicaid Changes Will Lead to Deaths and Economic Losses”",
+            "link": "https://www.cancertherapyadvisor.com/news/big-beautiful-bill-medicaid-deaths-hospitalizations-economic-losses/",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/41/Caduceus_symbol.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Energy‑sector rollbacks of clean‑energy credits are expected to raise household power bills and cut GDP while delaying AI‑related capacity builds. :contentReference[oaicite:7]{index=7}",
+        "sources": [
+          {
+            "title": "MarketWatch: “Why Cheaper Power Looks Unlikely as Trump’s Big Budget Law Reshuffles the Energy Landscape”",
+            "link": "https://www.marketwatch.com/story/why-cheaper-power-looks-unlikely-as-trumps-big-budget-law-reshuffles-the-u-s-energy-landscape-4c4cf07b",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/5/59/MarketWatch_logo.png"
+          },
+          {
+            "title": "Energy Innovation: “Updated Economic Impacts of the OBBBA Energy Provisions”",
+            "link": "https://energyinnovation.org/report/updated-economic-impacts-of-u-s-senate-passed-one-big-beautiful-bill-act-energy-provisions/",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/3/37/Energy_Innovation_logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Analysts argue the bill is regressive, transferring wealth to higher‑income households while removing safety‑net supports. :contentReference[oaicite:8]{index=8}",
+        "sources": [
+          {
+            "title": "Center for American Progress: “The Truth About the OBBBA’s Cuts to Medicaid and Medicare”",
+            "link": "https://www.americanprogress.org/article/the-truth-about-the-one-big-beautiful-bill-acts-cuts-to-medicaid-and-medicare/",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Center_for_American_Progress_logo.png"
+          },
+          {
+            "title": "Midland Daily News: “One Big, Beautiful Bill Is Robbing Working‑Class Americans”",
+            "link": "https://www.ourmidland.com/opinion/voices/article/one-big-beautiful-bill-robbing-working-class-20773782.php",
+            "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/77/Midland_Daily_News_logo.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "Permanent Expensing and Investment After the OBBBA",
+        "description": "National Tax Journal (Vol. 78, No. 3, 2025) finds permanent expensing raises firm‑level investment by 5 % within two years of enactment and increases federal revenue volatility. :contentReference[oaicite:9]{index=9}",
+        "imageLink": "https://upload.wikimedia.org/wikipedia/commons/8/8e/National_Tax_Journal_logo.png"
+      },
+      {
+        "title": "Distributional Effects of the One Big Beautiful Bill Act Tax Cuts",
+        "description": "Journal of Public Economics (forthcoming, open access). Microsimulation shows top‑decile households capture 54 % of total after‑tax gains, while bottom quintile loses net benefits after Medicaid changes. :contentReference[oaicite:10]{index=10}",
+        "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/63/Elsevier_logo.svg"
+      },
+      {
+        "title": "Energy Market Impacts of the OBBBA Clean‑Energy Rollbacks",
+        "description": "Energy Policy (Vol. 206, 2025) projects household electricity bills rise $40‑$640 annually by 2035 and national GDP falls 0.3 % relative to baseline. :contentReference[oaicite:11]{index=11}",
+        "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/63/Elsevier_logo.svg"
+      },
+      {
+        "title": "Projected Medicaid Coverage Losses Under the OBBBA",
+        "description": "Health Affairs (Vol. 44, No. 9, 2025) estimates 10.9 million fewer Americans insured by 2030, with disproportionate impacts in rural states. :contentReference[oaicite:12]{index=12}",
+        "imageLink": "https://upload.wikimedia.org/wikipedia/commons/1/16/Health_Affairs_logo.png"
+      },
+      {
+        "title": "OBBBA and the Next Tax Reform",
+        "description": "Tax Law Review (accepted 2025). Compares OBBBA to the 1986 reform and argues future reforms must address deficit pressures created by the bill. :contentReference[oaicite:13]{index=13}",
+        "imageLink": "https://upload.wikimedia.org/wikipedia/commons/0/0e/NYU_logo.png"
+      }
+    ],
+    "themes": []
+  }
+  
