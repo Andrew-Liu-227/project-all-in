@@ -1,78 +1,119 @@
 {
-    "centralQuestion": "Is it important to keep the Federal Reserve independent?",
-    "reasons": [
-      {
-        "description": "Preserving Fed independence helps anchor low inflation and market confidence.",
-        "sources": [
-          {
-            "title": "Financial Stability Requires an Independent Fed",
-            "link": "https://project-syndicate.org/commentary/federal-reserve-independence-essential-for-financial-stability-by-simon-johnson-and-erkki-liikanen-2025-05",
-            "imageLink": "https://via.placeholder.com/100?text=Project+Syndicate+Logo"
-          },
-          {
-            "title": "Why Trump’s attacks on the Fed could sabotage the US economy",
-            "link": "https://www.vox.com/economy/412270/trump-federal-reserve-powell-interest-rates-economy",
-            "imageLink": "https://via.placeholder.com/100?text=Vox+Logo"
-          }
-        ]
-      },
-      {
-        "description": "Independent central banks avoid short‑term political pressure that fuels inflation.",
-        "sources": [
-          {
-            "title": "Central bank independence needs a better defence",
-            "link": "https://www.reuters.com/markets/us/central-bank-independence-needs-better-defence-2025-07-14/",
-            "imageLink": "https://via.placeholder.com/100?text=Reuters+Logo"
-          },
-          {
-            "title": "Why Fed independence matters, according to economist Jason ...",
-            "link": "https://www.vpm.org/npr-news/npr-news/2025-04-23/why-fed-independence-matters-according-to-economist-jason-furman",
-            "imageLink": "https://via.placeholder.com/100?text=NPR+Logo"
-          }
-        ]
-      },
-      {
-        "description": "Politicizing the Fed could destabilize markets and weaken the dollar and bond markets.",
-        "sources": [
-          {
-            "title": "Letter: Push for lower rates risks higher borrowing costs",
-            "link": "https://www.ft.com/content/b2060c47-11ac-4493-8269-2a085db152b4",
-            "imageLink": "https://via.placeholder.com/100?text=FT+Logo"
-          },
-          {
-            "title": "Why Trump removing Powell is the market's most underestimated risk",
-            "link": "https://www.businessinsider.com/trump-powell-feud-market-most-overlooked-risk-dollar-bond-rates-2025-7",
-            "imageLink": "https://via.placeholder.com/100?text=Business+Insider+Logo"
-          }
-        ]
-      }
-    ],
-    "objections": [
-      {
-        "description": "Fed independence can make it unaccountable and resistant to needed reform.",
-        "sources": [
-          {
-            "title": "Fed should be independent, not untouchable",
-            "link": "https://www.reuters.com/breakingviews/fed-should-be-independent-not-untouchable-2024-05-28/",
-            "imageLink": "https://via.placeholder.com/100?text=Reuters+Logo"
-          },
-          {
-            "title": "The Problem With the Fed Isn't Independence, It's Accountability",
-            "link": "https://www.bloomberg.com/news/articles/2025-05-13/trump-is-beating-up-on-the-federal-reserve-for-the-wrong-reasons",
-            "imageLink": "https://via.placeholder.com/100?text=Bloomberg+Logo"
-          }
-        ]
-      },
-      {
-        "description": "Closer coordination with the executive could improve crisis response and policy coherence.",
-        "sources": [
-          {
-            "title": "Trump has a point - the Federal Reserve DOES need fixing: here's how",
-            "link": "https://nypost.com/2025/07/08/opinion/trump-has-a-point-the-federal-reserve-does-need-fixing/",
-            "imageLink": "https://via.placeholder.com/100?text=NY+Post+Logo"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "centralQuestion": "Is it important to keep the Federal Reserve independent?",
+  "reasons": [
+    {
+      "description": "Helps maintain low and stable inflation by insulating monetary policy from short‑term political pressures.",
+      "sources": [
+        {
+          "title": "FT: \"Don’t fight the Fed\"—a warning on political interference",
+          "link": "https://www.ft.com/content/8882bc10-f0e3-456e-8a35-63d234416227",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Financial_Times_Logo.svg/320px-Financial_Times_Logo.svg.png"
+        },
+        {
+          "title": "Federal Reserve: Why separate monetary from politics",
+          "link": "https://www.federalreserve.gov/faqs/why-is-it-important-to-separate-federal-reserve-monetary-policy-decisions-from-political-influence.htm",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Federal_Reserve_Seal.svg/320px-Federal_Reserve_Seal.svg.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Preserves credibility and investor confidence, which lowers borrowing costs and financial market volatility.",
+      "sources": [
+        {
+          "title": "Reuters: Trump’s Fed attacks puncture veneer of central bank independence",
+          "link": "https://www.reuters.com/markets/europe/trumps-fed-attacks-puncture-veneer-central-bank-independence-2025-07-21/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Reuters_Logo.svg/320px-Reuters_Logo.svg.png"
+        },
+        {
+          "title": "Advisor Perspectives: Threats to the Fed’s independence undermine its credibility",
+          "link": "https://www.advisorperspectives.com/commentaries/2025/07/21/threats-feds-independence-undermine-credibility",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Advisor_Perspectives_logo.png/320px-Advisor_Perspectives_logo.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Prevents fiscal dominance—i.e., avoiding pressure to finance government deficits through monetary easing.",
+      "sources": [
+        {
+          "title": "FT: \"Fiscal populism\" is coming for central banks",
+          "link": "https://www.ft.com/content/237226e8-78e5-4326-a701-cc8b1dede1de",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Financial_Times_Logo.svg/320px-Financial_Times_Logo.svg.png"
+        },
+        {
+          "title": "Brookings: Why the Fed is independent in practice",
+          "link": "https://www.brookings.edu/articles/why-is-the-federal-reserve-independent-and-what-does-that-mean-in-practice/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Brookings_Institution_logo.svg/320px-Brookings_Institution_logo.svg.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "objections": [
+    {
+      "description": "Lack of democratic accountability undermines legitimacy—people want elected officials to set policy on inflation and rates.",
+      "sources": [
+        {
+          "title": "The BIG Newsletter: Federal Reserve Independence Is Bad",
+          "link": "https://www.thebignewsletter.com/p/federal-reserve-independence-is-bad",
+          "imageLink": "https://static.thebignewsletter.com/logo.png"
+        },
+        {
+          "title": "NC State Poole College: What Is Fed Independence—and Why Does It Matter?",
+          "link": "https://poole.ncsu.edu/thought-leadership/article/what-is-fed-independence-and-why-does-it-matter/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/NC_State_Poole_College_Logo.svg/320px-NC_State_Poole_College_Logo.svg.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "May foster regulatory capture and hinder accountability—self‑regulation can fail as seen in SVB case.",
+      "sources": [
+        {
+          "title": "The BIG Newsletter: Fed Independence Is Bad",
+          "link": "https://www.thebignewsletter.com/p/federal-reserve-independence-is-bad",
+          "imageLink": "https://static.thebignewsletter.com/logo.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "When mis‑managed, lack of political oversight can worsen crises—for example low rates before housing bubble.",
+      "sources": [
+        {
+          "title": "NC State Poole College: What Is Fed Independence—and Why Does It Matter?",
+          "link": "https://poole.ncsu.edu/thought-leadership/article/what-is-fed-independence-and-why-does-it-matter/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/NC_State_Poole_College_Logo.svg/320px-NC_State_Poole_College_Logo.svg.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "expertPerspectives": [],
+  "research": [
+    {
+      "title": "Peter Conti‑Brown, \"The Institutions of Federal Reserve Independence\"",
+      "description": "Analyzes the mechanisms and institutional design underpinning Fed independence.",
+      "imageLink": ""
+    },
+    {
+      "title": "Laura Tyson et al., \"Central bank independence and de facto practice\"",
+      "description": "Studies gap between legal independence and actual operational autonomy and its macro implications.",
+      "imageLink": ""
+    },
+    {
+      "title": "Carola Binder et al., \"Cherished but fragile: central bank independence under political pressure\"",
+      "description": "Examines how political rhetoric can erode perceived independence and affect inflation expectations.",
+      "imageLink": ""
+    }
+  ],
+  "themes": [],
+  "expertPerspectives": []
+}
