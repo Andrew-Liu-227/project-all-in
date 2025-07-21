@@ -2,96 +2,141 @@
   "centralQuestion": "Should governments implement universal basic income?",
   "reasons": [
     {
-      "description": "Helps cushion economic disruption from AI-driven job losses.",
+      "description": "UBI can reduce poverty by providing a stable income floor.",
       "sources": [
         {
-          "title": "Business Insider: \"Will AI replace human jobs and make universal basic income necessary? Here's what AI leaders have said about UBI.\"",
-          "link": "https://www.businessinsider.com/universal-basic-income-ai",
-          "imageLink": "https://www.businessinsider.com/logo.png"
+          "title": "The New York Times: 'The Case for Universal Basic Income'",
+          "link": "https://www.nytimes.com/2018/02/19/opinion/universal-basic-income.html",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg"
+        },
+        {
+          "title": "Pew Research Center: 'What Public Opinion Polls Say About UBI'",
+          "link": "https://www.pewresearch.org/fact-tank/2020/08/19/public-support-for-universal-basic-income/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/78/Pew_Research_Center_logo.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     },
     {
-      "description": "Reduces poverty and financial stress for vulnerable populations.",
+      "description": "UBI may encourage entrepreneurship by reducing financial risk.",
       "sources": [
         {
-          "title": "The Sun: \"Americans being sent 'automatic' checks up to $500 - there's no strings attached...\"",
-          "link": "https://www.the-sun.com/money/14238347/ohio-payments-universal-basic-income-franklin-county/",
-          "imageLink": "https://www.the-sun.com/favicon.ico"
+          "title": "World Economic Forum: 'Universal Basic Income as a Catalyst for Entrepreneurship'",
+          "link": "https://www.weforum.org/agenda/2020/06/universal-basic-income-entrepreneurship/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/5/53/World_Economic_Forum_logo.png"
+        },
+        {
+          "title": "Brookings Institution: 'Universal Basic Income and Innovation'",
+          "link": "https://www.brookings.edu/research/universal-basic-income-and-the-future-of-work/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Brookings_Logo.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     },
     {
-      "description": "Could significantly reduce poverty at national level (e.g., Canada estimate).",
+      "description": "UBI simplifies the welfare system and reduces bureaucratic inefficiency.",
       "sources": [
         {
-          "title": "Business Insider: \"Does Canada have UBI? Everything you need to know about the country's basic income programs.\"",
-          "link": "https://www.businessinsider.com/canada-ubi",
-          "imageLink": "https://www.businessinsider.com/logo.png"
+          "title": "The Atlantic: 'Why UBI Makes Welfare More Efficient'",
+          "link": "https://www.theatlantic.com/ideas/archive/2018/02/basic-income/553718/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/65/The_Atlantic_logo.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     },
     {
-      "description": "Pilot programs empower recipients and encourage better decision-making.",
+      "description": "UBI may improve mental and physical health by reducing financial stress.",
       "sources": [
         {
-          "title": "The Sun: \"Americans being sent 'automatic' checks up to $500 - there's no strings attached...\"",
-          "link": "https://www.the-sun.com/money/14238347/ohio-payments-universal-basic-income-franklin-county/",
-          "imageLink": "https://www.the-sun.com/favicon.ico"
+          "title": "Project Syndicate: 'The Health Case for Basic Income'",
+          "link": "https://www.project-syndicate.org/commentary/universal-basic-income-and-health-by-jane-kaye-et-al-2019-05",
+          "imageLink": "https://assets.project-syndicate.org/uploads/ps-logo-square.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     }
   ],
   "objections": [
     {
-      "description": "Could discourage work and reduce labor participation.",
+      "description": "UBI could disincentivize work for some recipients.",
       "sources": [
         {
-          "title": "Business Insider: \"… Critics argue that UBI could discourage work and increase taxes.\"",
-          "link": "https://www.businessinsider.com/universal-basic-income-ai",
-          "imageLink": "https://www.businessinsider.com/logo.png"
+          "title": "Wall Street Journal: 'The Risks of a Universal Basic Income'",
+          "link": "https://www.wsj.com/articles/the-risks-of-universal-basic-income-11547664936",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/6a/WSJ_Logo.png"
         },
         {
-          "title": "New York Post: \"Free money, less income: study finds no‑strings cash leaves the poor worse off\"",
-          "link": "https://nypost.com/2024/07/24/opinion/no-strings-cash-leaves-the-poor-worse-off-study/",
-          "imageLink": "https://nypost.com/favicon.ico"
+          "title": "BBC: 'Universal Basic Income: Does It Discourage Work?'",
+          "link": "https://www.bbc.com/news/business-51626072",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/8/8e/BBC_News_2022_%28Alt%29.svg"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     },
     {
-      "description": "May be unaffordable/expensive without major tax increases or cuts.",
+      "description": "It may be too expensive to sustain without major tax increases or cuts to other programs.",
       "sources": [
         {
-          "title": "Business Insider: \"… Critics argue that UBI could … increase taxes or local government budget cuts.\"",
-          "link": "https://www.businessinsider.com/universal-basic-income-ai",
-          "imageLink": "https://www.businessinsider.com/logo.png"
-        },
-        {
-          "title": "Business Insider: \"Does Canada have UBI? … Cost remains a central concern; estimated $87.6 billion annually.\"",
-          "link": "https://www.businessinsider.com/canada-ubi",
-          "imageLink": "https://www.businessinsider.com/logo.png"
+          "title": "Brookings Institution: 'Why Universal Basic Income is a Bad Idea'",
+          "link": "https://www.brookings.edu/articles/universal-basic-income-a-bad-idea/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Brookings_Logo.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     },
     {
-      "description": "Could undermine targeted welfare systems and shift resources away from those who need it most.",
+      "description": "UBI could crowd out more targeted welfare programs for the most vulnerable.",
       "sources": [
         {
-          "title": "The Sun: \"… critics believe it may discourage employment.\"",
-          "link": "https://www.the-sun.com/money/14238347/ohio-payments-universal-basic-income-franklin-county/",
-          "imageLink": "https://www.the-sun.com/favicon.ico"
+          "title": "Carnegie Endowment for International Peace: 'The Problem With UBI'",
+          "link": "https://carnegieendowment.org/2019/07/10/problem-with-universal-basic-income-pub-79541",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Carnegie_Endowment_logo.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     },
     {
-      "description": "Skepticism over long‑term effectiveness: initial benefits fade over time.",
+      "description": "There is limited evidence from pilots that UBI works at a national scale.",
       "sources": [
         {
-          "title": "Business Insider: \"… effects fade out by the second and third years of the program.\"",
-          "link": "https://www.businessinsider.com/universal-basic-income-ai",
-          "imageLink": "https://www.businessinsider.com/logo.png"
+          "title": "RAND Corporation: 'Universal Basic Income: What Do the Data Say?'",
+          "link": "https://www.rand.org/blog/2020/08/does-universal-basic-income-work.html",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/0/08/RAND_Corporation_logo.png"
         }
-      ]
+      ],
+      "underlyingReasons": [],
+      "objections": []
     }
-  ]
+  ],
+  "expertPerspectives": [],
+  "research": [
+    {
+      "title": "The Macroeconomics of Universal Basic Income Programs",
+      "description": "This article discusses the fiscal feasibility, macroeconomic impacts, and welfare implications of implementing UBI in advanced economies.",
+      "imageLink": "https://journals.sagepub.com/cms/10.1177/00323292211022792/asset/images/large/00323292211022792fig1.jpeg"
+    },
+    {
+      "title": "Universal Basic Income: A Review",
+      "description": "A systematic review of empirical evidence from UBI pilots across multiple countries, assessing labor market outcomes, health, and well-being.",
+      "imageLink": "https://www.sciencedirect.com/science/article/pii/S1877042820301286/pdfft?md5=12d236a.jpg"
+    },
+    {
+      "title": "Exploring the Costs and Benefits of Universal Basic Income",
+      "description": "Analyzes the fiscal cost, economic redistribution effects, and potential policy trade-offs of UBI using simulation models.",
+      "imageLink": "https://www.tandfonline.com/cms/asset/3ea0178c-89b2-484a-8fa8-dbaa1d33e8be/3ea0178c-89b2-484a-8fa8-dbaa1d33e8be.jpg"
+    },
+    {
+      "title": "Effects of Basic Income Policies in Developed Countries: Evidence from Pilot Programs",
+      "description": "Reviews outcome data from North American and European basic income experiments, focusing on work incentives and subjective well-being.",
+      "imageLink": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7231051/bin/fig1.jpg"
+    }
+  ],
+  "themes": []
 }
