@@ -156,7 +156,7 @@
 .themes-label {
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
+  color: black;
   margin-bottom: 12px;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -214,6 +214,103 @@
   align-items: center;
   margin-bottom: 12px;
   gap: 12px;
+}
+
+/* Source images in reasons/objections nodes */
+.source-image {
+  max-width: 100%;
+  height: auto;
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Fixed height for consistency */
+  object-fit: cover; /* Maintains aspect ratio, crops if needed */
+  border-radius: 4px;
+  flex-shrink: 0; /* Prevents image from shrinking in flex containers */
+  margin-right: 8px;
+}
+
+/* Source container styling */
+.source {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.sources {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Header images for research/expert nodes */
+.node-header-image {
+  max-width: 100%;
+  height: auto;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+/* Header container styling */
+.node-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.node-title {
+  font-weight: 600;
+  flex: 1;
+  min-width: 0; /* Allows text to wrap/truncate properly */
+}
+
+/* Specific styling for research images */
+.research-image {
+  border: 2px solid #3498db;
+}
+
+/* Specific styling for expert images */
+.expert-image {
+  border: 2px solid #9b59b6;
+  border-radius: 50%; /* Circular for person photos */
+}
+
+/* General node styling to handle wrapping */
+.tree-node {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden; /* Prevents content from breaking layout */
+}
+
+.node-description {
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .source-image {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .node-header-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .node-header {
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+  }
+  
+  .node-title {
+    margin-top: 4px;
+  }
 }
 
 .research-image {
@@ -1110,17 +1207,40 @@
       }
 
       .branch-label {
+        z-index: 3;
         font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 40px;
         padding: 15px 30px;
-        color: white;
+        color: black;
         text-align: center;
-        z-index: 5;
         position: relative;
         border-radius: 3px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        background: white;
+      }
+
+      .connection-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+         width: 100%;
+         height: 100%;
+          pointer-events: none;
+        z-index: 0;
+      }
+
+      .connection-line {
+        stroke: #667; /* or whatever color you want for the main trunk and horizontal lines */
+        stroke-width: 1px;
+        z-index: 0;
+     }
+
+    .node-connector {
+      stroke: #667; /* or whatever color you want for the lines connecting to individual nodes */
+      stroke-width: 1px;
+      z-index: 0;
       }
 
       .exploring-label {
@@ -1129,7 +1249,7 @@
         font-weight: 700;
         margin-bottom: 40px;
         padding: 15px 30px;
-        color: black;
+        color: white;
         text-align: center;
         z-index: 5;
         position: relative;
@@ -1230,9 +1350,9 @@
       <div id="popup-box">
         <h3>Welcome!</h3>
         <p>Are you...</p>
-        <button class="branch-label reasons-label" onclick="handleUserChoice('teacher')">A Teacher</button>
-        <button class="branch-label objections-label" onclick="handleUserChoice('student')">A Student</button>
-        <button class="exploring-label" onclick="handleUserChoice('fun')">Just Exploring!</button>
+        <button class="exploring-label reasons-label" onclick="handleUserChoice('teacher')">A Teacher</button>
+        <button class="exploring-label objections-label" onclick="handleUserChoice('student')">A Student</button>
+        <button class="branch-label" onclick="handleUserChoice('fun')">Just Exploring!</button>
       </div>
     </div>
   
@@ -1270,18 +1390,20 @@
       </div>
       
       <div class="masthead">
-        <a href="#" class="newspaper-title">Econ-Mapped</a>
-        <div class="newspaper-subtitle">Economics News and Argument Mapping</div>
+        <img src="images/Mapped_News_Logo-removebg-preview.png" alt="Mapped news" width="300" height="300" style="padding-top: 20px; margin: -110px 0;"> 
+        <div class="newspaper-subtitle">Understanding Issues through Argument Mapping</div>
       </div>
       
       <div class="header-content">
         <nav>
           <ul class="nav-menu">
-            <li><a href="#" class="active">Economics</a></li>
-            <li><a href="#">Markets</a></li>
-            <li><a href="#">Policy</a></li>
-            <li><a href="#">Opinion</a></li>
-            <li><a href="#">World</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Economics</a></li>
+            <li><a href="#">Social Issues</a></li>
+            <li><a href="#">Foreign Policy</a></li>
+            <li><a href="#">Themes in the News</a></li>
+            <li><a href="#">Expert Perspectives</a></li>
+            <li><a href="#">Our Methodology</a></li>
           </ul>
         </nav>
         <div class="search-container" style="position: relative;">
@@ -1504,7 +1626,7 @@
 
     <script>
       // All original JavaScript functionality preserved and expanded
-class ArgumentTreeRenderer {
+      class ArgumentTreeRenderer {
   constructor(container, data) {
     this.container = container;
     this.data = data;
@@ -1519,6 +1641,7 @@ class ArgumentTreeRenderer {
   render(data) {
     return `
       <div class="tree-container">
+        <svg class="connection-svg" id="connectionSvg"></svg>
         <div class="central-question">${data.centralQuestion}</div>
         ${this.renderThemes(data.themes)}
         <div class="tree-branches">
@@ -1527,7 +1650,7 @@ class ArgumentTreeRenderer {
           ${this.renderBranch("Research", "research", data.research)}
           ${this.renderBranch("Expert Perspectives", "expert", data.expertPerspectives)}
         </div>
-        <svg class="connection-svg" id="connectionSvg"></svg>
+      
       </div>
     `;
   }
@@ -1557,19 +1680,9 @@ class ArgumentTreeRenderer {
   }
 
   renderNode(node, type, index) {
-    // Handle different node types
-    if (type === "research") {
-      return this.renderResearchNode(node, index);
-    } else if (type === "expert") {
-      return this.renderExpertNode(node, index);
-    } else {
-      return this.renderStandardNode(node, type, index);
-    }
-  }
-
-  renderStandardNode(node, type, index) {
     return `
       <div class="tree-node ${type}-node" data-node-type="${type}" data-node-index="${index}">
+        ${this.renderNodeHeader(node, type)}
         <div class="node-description">${node.description}</div>
         ${this.renderSources(node.sources)}
         <button class="expand-button ${
@@ -1585,28 +1698,24 @@ class ArgumentTreeRenderer {
     `;
   }
 
-  renderResearchNode(node, index) {
-    return `
-      <div class="tree-node research-node" data-node-type="research" data-node-index="${index}">
-        <div class="research-header">
-          ${node.imageLink ? `<img src="${node.imageLink}" alt="research" class="research-image">` : ""}
-          <div class="research-title">${node.title}</div>
+  renderNodeHeader(node, type) {
+    if (type === "research") {
+      return `
+        <div class="node-header research-header">
+          ${node.imageLink ? `<img src="${node.imageLink}" alt="research" class="node-header-image research-image">` : ""}
+          <div class="node-title research-title">${node.title}</div>
         </div>
-        <div class="node-description">${node.description}</div>
-      </div>
-    `;
-  }
-
-  renderExpertNode(node, index) {
-    return `
-      <div class="tree-node expert-node" data-node-type="expert" data-node-index="${index}">
-        <div class="expert-header">
-          ${node.imageLink ? `<img src="${node.imageLink}" alt="${node.name}" class="expert-image">` : ""}
-          <div class="expert-name">${node.name}</div>
+      `;
+    } else if (type === "expert") {
+      return `
+        <div class="node-header expert-header">
+          ${node.imageLink ? `<img src="${node.imageLink}" alt="${node.name}" class="node-header-image expert-image">` : ""}
+          <div class="node-title expert-name">${node.name}</div>
         </div>
-        <div class="node-description">${node.description}</div>
-      </div>
-    `;
+      `;
+    }
+    // For reason and objection nodes, no special header
+    return "";
   }
 
   renderSubNodes(nodes, type) {
@@ -1631,7 +1740,7 @@ class ArgumentTreeRenderer {
           .map(
             (source) => `
           <div class="source">
-            <img src="${source.imageLink}" alt="source">
+            <img src="${source.imageLink}" alt="source" class="source-image">
             <a href="${source.link}" target="_blank" class="source-title">${source.title}</a>
           </div>
         `
@@ -1772,7 +1881,7 @@ function closeArgumentTree() {
   modal.classList.add("closing");
   setTimeout(() => {
     modal.classList.remove("active", "closing");
-  }, 400); // Match animation duration
+  }, 400);
 }
 
 function toggleSubNodes(button) {
