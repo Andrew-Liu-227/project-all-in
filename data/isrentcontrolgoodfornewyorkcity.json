@@ -1,93 +1,135 @@
 {
-    "centralQuestion": "Is rent control good for New York City?",
-    "reasons": [
-      {
-        "description": "Provides immediate affordability and stability for existing tenants, especially low‑income, Black and Latino residents.",
-        "sources": [
-          {
-            "title": "Business Insider: \"Zohran Mamdani wants to freeze rents for New Yorkers. Here's why it's controversial.\"",
-            "link": "https://www.businessinsider.com/zohran-mamdani-wants-to-freeze-rents-heres-why-its-controversial-2025-7",
-            "imageLink": "https://logo.clearbit.com/businessinsider.com"
-          },
-          {
-            "title": "Comptroller NYC: \"Spotlight: New York City's Rental Housing Market\"",
-            "link": "https://comptroller.nyc.gov/reports/spotlight-new-york-citys-rental-housing-market/",
-            "imageLink": "https://logo.clearbit.com/nyc.gov"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "Signals policymakers are addressing the cost‑of‑living crisis and renter dissatisfaction.",
-        "sources": [
-          {
-            "title": "FT: \"Make America affordable again\"",
-            "link": "https://www.ft.com/content/408ab79c-08dd-4f87-9618-211482f10b9d",
-            "imageLink": "https://logo.clearbit.com/ft.com"
-          },
-          {
-            "title": "Time: \"How Zohran Mamdani Plans to Fix New York City's Housing Crisis\"",
-            "link": "https://time.com/7299525/zohran-mamdani-new-york-city-housing-crisis-plan/",
-            "imageLink": "https://logo.clearbit.com/time.com"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      }
-    ],
-    "objections": [
-      {
-        "description": "May discourage landlord investment, leading to property disrepair and fewer rental units.",
-        "sources": [
-          {
-            "title": "New York Post: \"Why Mamdani's rent freeze means disaster for NYC tenants\"",
-            "link": "https://nypost.com/2025/07/01/opinion/why-mamdanis-rent-freeze-means-disaster-for-nyc-tenants/",
-            "imageLink": "https://logo.clearbit.com/nypost.com"
-          },
-          {
-            "title": "City Journal: \"Why Are New York City’s Affordable Housing Units Falling Apart?\"",
-            "link": "https://www.city-journal.org/article/new-york-city-affordable-housing-hstpa-rent-stabilization",
-            "imageLink": "https://logo.clearbit.com/city-journal.org"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "Could reduce housing supply by encouraging conversions to condos and deterring new construction.",
-        "sources": [
-          {
-            "title": "Business Insider: \"Zohran Mamdani wants to freeze rents...\"",
-            "link": "https://www.businessinsider.com/zohran-mamdani-wants-to-freeze-rents-heres-why-its-controversial-2025-7",
-            "imageLink": "https://logo.clearbit.com/businessinsider.com"
-          },
-          {
-            "title": "City Journal: \"How Rent Control Hurts Tenants in the Long Run\"",
-            "link": "https://www.city-journal.org/article/housing-affordability-new-york-city-rent-control",
-            "imageLink": "https://logo.clearbit.com/city-journal.org"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "Benefits accrue unevenly—may favor wealthier long‑term tenants at expense of new, needy renters.",
-        "sources": [
-          {
-            "title": "New York Post: \"Why Mamdani's rent freeze means disaster for NYC tenants\"",
-            "link": "https://nypost.com/2025/07/01/opinion/why-mamdanis-rent-freeze-means-disaster-for-nyc-tenants/",
-            "imageLink": "https://logo.clearbit.com/nypost.com"
-          },
-          {
-            "title": "City Journal: \"How Rent Control Hurts Tenants in the Long Run\"",
-            "link": "https://www.city-journal.org/article/housing-affordability-new-york-city-rent-control",
-            "imageLink": "https://logo.clearbit.com/city-journal.org"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      }
-    ]
-  }
-  
+  "centralQuestion": "Is Rent Control good for New York City?",
+  "reasons": [
+    {
+      "description": "Rent control protects vulnerable tenants from sudden rent increases and displacement.",
+      "sources": [
+        {
+          "title": "New York Times: 'Rent Control Is One Tool to Help Tenants Afford Their Homes. But It’s Not a Cure-All.'",
+          "link": "https://www.nytimes.com/2022/05/23/realestate/rent-control-nyc.html",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg"
+        },
+        {
+          "title": "Urban Institute: 'The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco'",
+          "link": "https://www.urban.org/urban-wire/rent-control-can-help-some-renters-there-are-better-ways-protect-vulnerable-tenants",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/76/Urban_Institute_logo.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Rent control helps keep neighborhoods stable and prevents community disruption.",
+      "sources": [
+        {
+          "title": "Pew Research Center: 'Rent Control: What Does the Research Say About Its Effectiveness?'",
+          "link": "https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2019/07/31/rent-control-returns-and-the-debate-is-familiar",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/2/28/Pew_Research_Center_logo.png"
+        },
+        {
+          "title": "New York Times: 'For Some, Rent Laws Provide Security'",
+          "link": "https://www.nytimes.com/2019/06/11/nyregion/rent-laws-new-york.html",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Rent control can slow gentrification and support racial and economic equity.",
+      "sources": [
+        {
+          "title": "Brookings Institution: 'What Does Economic Evidence Tell Us About the Effects of Rent Control?'",
+          "link": "https://www.brookings.edu/articles/what-does-economic-evidence-tell-us-about-the-effects-of-rent-control/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Brookings_Institute_Logo.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "objections": [
+    {
+      "description": "Rent control reduces the incentive for landlords to maintain or improve properties, leading to deteriorating housing quality.",
+      "sources": [
+        {
+          "title": "Wall Street Journal: 'The Downside of Rent Control'",
+          "link": "https://www.wsj.com/articles/the-downside-of-rent-control-11582931676",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/6a/WSJ_Logo_2019.png"
+        },
+        {
+          "title": "Manhattan Institute: 'Rent Control and Rent Stabilization as Forms of Regulatory Taking'",
+          "link": "https://manhattan-institute.org/html/rent-control-and-rent-stabilization-forms-regulatory-taking-6367.html",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Manhattan_Institute_logo.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Rent control can restrict the supply of rental housing and discourage new construction.",
+      "sources": [
+        {
+          "title": "Brookings Institution: 'What Does Economic Evidence Tell Us About the Effects of Rent Control?'",
+          "link": "https://www.brookings.edu/articles/what-does-economic-evidence-tell-us-about-the-effects-of-rent-control/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Brookings_Institute_Logo.png"
+        },
+        {
+          "title": "Washington Post: 'Rent control isn’t the answer to the affordable housing crisis'",
+          "link": "https://www.washingtonpost.com/opinions/2023/04/21/rent-control-housing-crisis-evidence/",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/0/02/Washington_Post_logo_2015.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Benefits are often captured by higher-income or longer-term tenants rather than those most in need.",
+      "sources": [
+        {
+          "title": "Project Syndicate: 'The Return of Rent Control'",
+          "link": "https://www.project-syndicate.org/commentary/rent-control-bad-housing-policy-by-christopher-r-herbert-and-alexander-casey-2019-09",
+          "imageLink": "https://assets.project-syndicate.org/ui/images/logo-ps-190x40.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "Rent control can distort the housing market, leading to shortages, misallocation, and under-the-table payments.",
+      "sources": [
+        {
+          "title": "Economist: 'The case for and against rent control'",
+          "link": "https://www.economist.com/finance-and-economics/2019/10/03/the-case-for-and-against-rent-controls",
+          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/5/5e/The_Economist_Logo.png"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "expertPerspectives": [],
+  "research": [
+    {
+      "title": "Rent Control and the Supply of Housing",
+      "description": "This article reviews the economic literature on rent control and its impact on housing supply, finding significant evidence that rent control reduces the quantity and quality of housing.",
+      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Elsevier_logo.png"
+    },
+    {
+      "title": "The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco",
+      "description": "Published in the American Economic Review, this paper analyzes a natural experiment in San Francisco and finds rent control helped tenants in the short-term but reduced rental housing supply and led to gentrification in the long run.",
+      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/9/97/AEA_logo.png"
+    },
+    {
+      "title": "Housing Market Spillovers: Evidence from the End of Rent Control in Cambridge, Massachusetts",
+      "description": "Examines the end of rent control in Cambridge and finds the policy had significant negative spillover effects on neighborhood investment and overall housing quality.",
+      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/9/97/AEA_logo.png"
+    },
+    {
+      "title": "Rent Control: Do Economists Agree?",
+      "description": "A survey of economists' views on rent control, published in Econ Journal Watch, finding overwhelming skepticism of rent control among professional economists.",
+      "imageLink": "https://econjwatch.org/images/ejw-logo.jpg"
+    }
+  ],
+  "themes": []
+}
