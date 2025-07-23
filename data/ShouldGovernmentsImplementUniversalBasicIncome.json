@@ -123,7 +123,12 @@
       "objections": []
     }
   ],
-  "expertPerspectives": [],
+  "expertPerspectives": [    {
+    "name": "Daron Acemoglu",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753293934/Daron_Acemoglu_wwuo7v.jpg",
+    "description": "MIT economist and Nobel Prize Laureate Daron Acemoglu's take on Universal Basic Income. https://washdiplomat.com/op-ed-why-universal-basic-income-is-a-bad-idea-economically-and-politically/"
+  }
+  ],
   "research": [
     {
       "title": "The Labor Market Impacts of Universal and Permanent Cash Transfers: Evidence from the Alaska Permanent Fund",
@@ -146,5 +151,10 @@
       "link": "https://www.intereconomics.eu/contents/year/2017/number/2/article/basic-income-in-the-finnish-context.html"
     }
   ],
-  "themes": []
+  "themes": [  "Poverty alleviation",
+  "Work incentives",
+  "Fiscal policy",
+  "Social safety nets",
+  "Economic justice"
+    ]
 }
