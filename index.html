@@ -1390,20 +1390,20 @@
       </div>
       
       <div class="masthead">
-        <img src="images/Mapped_News_Logo-removebg-preview.png" alt="Mapped news" width="300" height="300" style="padding-top: 20px; margin: -110px 0;"> 
+        <img src="https://res.cloudinary.com/degebwdf5/image/upload/v1753239162/Mapped_News_Logo-removebg-preview_bmizww.png" alt="Mapped news" width="300" height="300" style="padding-top: 20px; margin: -110px 0;"> 
         <div class="newspaper-subtitle">Understanding Issues through Argument Mapping</div>
       </div>
       
       <div class="header-content">
         <nav>
           <ul class="nav-menu">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Economics</a></li>
-            <li><a href="#">Social Issues</a></li>
-            <li><a href="#">Foreign Policy</a></li>
-            <li><a href="#">Themes in the News</a></li>
-            <li><a href="#">Expert Perspectives</a></li>
-            <li><a href="#">Our Methodology</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="econ.html">Economics</a></li>
+            <li><a href="social.html">Social Issues</a></li>
+            <li><a href="foreign.html">Foreign Policy</a></li>
+            <li><a href="themes.html">Themes in the News</a></li>
+            <li><a href="experts.html">Expert Perspectives</a></li>
+            <li><a href="methodology.html">Our Methodology</a></li>
           </ul>
         </nav>
         <div class="search-container" style="position: relative;">
@@ -1684,7 +1684,7 @@
       <div class="tree-node ${type}-node" data-node-type="${type}" data-node-index="${index}">
         ${this.renderNodeHeader(node, type)}
         <div class="node-description">${node.description}</div>
-        ${this.renderSources(node.sources)}
+        ${this.renderSources(node, type)}
         <button class="expand-button ${
           this.hasChildren(node) ? "has-children" : ""
         }" onclick="toggleSubNodes(this)">
@@ -1699,14 +1699,7 @@
   }
 
   renderNodeHeader(node, type) {
-    if (type === "research") {
-      return `
-        <div class="node-header research-header">
-          ${node.imageLink ? `<img src="${node.imageLink}" alt="research" class="node-header-image research-image">` : ""}
-          <div class="node-title research-title">${node.title}</div>
-        </div>
-      `;
-    } else if (type === "expert") {
+    if (type === "expert") {
       return `
         <div class="node-header expert-header">
           ${node.imageLink ? `<img src="${node.imageLink}" alt="${node.name}" class="node-header-image expert-image">` : ""}
@@ -1714,7 +1707,7 @@
         </div>
       `;
     }
-    // For reason and objection nodes, no special header
+    // For reason, objection, and research nodes, no special header
     return "";
   }
 
@@ -1725,14 +1718,27 @@
         (node) => `
       <div class="sub-node sub-${type}">
         <div class="node-description">${node.description}</div>
-        ${this.renderSources(node.sources)}
+        ${this.renderSources(node, type)}
       </div>
     `
       )
       .join("");
   }
 
-  renderSources(sources) {
+  renderSources(node, type) {
+    // For research nodes, create a source from the node's link and title
+    if (type === "research" && node.link && node.title) {
+      return `
+        <div class="sources">
+          <div class="source">
+            <a href="${node.link}" target="_blank" class="source-title">${node.title}</a>
+          </div>
+        </div>
+      `;
+    }
+    
+    // For other node types, use the existing sources array
+    const sources = node.sources;
     if (!sources?.length) return "";
     return `
       <div class="sources">
