@@ -1,25 +1,52 @@
 {
-    "centralQuestion": "Are Trump’s tariffs economically sound?",
+    "centralQuestion": "Are Trump's Tariffs Economically Beneficial?",
     "reasons": [
       {
-        "description": "Tariffs generate significant revenue that could offset tax cuts or fund government programs.",
+        "description": "Tariffs have spurred a revival in domestic steel and other manufacturing jobs by raising the cost of competing imports.",
         "sources": [
           {
-            "title": "AP News: \"Trump's tariffs could pay for his tax cuts -- but it likely wouldn't be much of a bargain\"",
-            "link": "https://apnews.com/article/447ab174f84d67fea5023bbe02dd60e0",
-            "imageLink": "https://www.apnews.com/images/ap_logo.png"
+            "title": "Reuters: Trump tariffs would lift US factory jobs, cut overall income, San Francisco Fed says",
+            "link": "https://www.reuters.com/business/trump-tariffs-would-lift-us-factory-jobs-cut-overall-income-san-francisco-fed-2025-07-14/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Politico: Why Trump’s steel tariffs are now Biden’s political headache",
+            "link": "https://www.politico.com/news/2021/09/06/steelworkers-biden-tariffs-503185",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
           }
         ],
         "underlyingReasons": [],
         "objections": []
       },
       {
-        "description": "Tariffs protect domestic manufacturing and reduce trade deficits by reshoring production.",
+        "description": "By shielding critical industries, tariffs are intended to reduce strategic supply‑chain vulnerabilities and bolster national security.",
         "sources": [
           {
-            "title": "Washington Post: \"Love it or hate it, you can't dismiss this Republican's defense of tariffs\"",
-            "link": "https://www.washingtonpost.com/opinions/2025/04/10/trump-tariff-support-oren-cass/",
-            "imageLink": "https://www.washingtonpost.com/wp-stat-assets/wp-logos/wp-logo.png"
+            "title": "Reuters: Tariffs may mean more US steel jobs. Will there be workers to fill them?",
+            "link": "https://www.reuters.com/markets/us/tariffs-may-mean-more-us-steel-jobs-will-there-be-workers-fill-them-2025-04-23/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Politico: Inside the GOP pressure campaign to flip Trump on Nippon Steel",
+            "link": "https://www.politico.com/news/2025/05/30/nippon-steel-trump-00375096",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tariff threats give the United States leverage to extract more favorable trade terms from partners reluctant to lose U.S. market access.",
+        "sources": [
+          {
+            "title": "Reuters: US Treasury’s Bessent says Trump has leverage with tariff rates",
+            "link": "https://www.reuters.com/business/us-treasurys-bessent-says-trump-has-leverage-with-tariff-rates-2025-07-23/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Reuters: Trump’s tariff deadline delay brings hope, confusion to trade partners, businesses",
+            "link": "https://www.reuters.com/world/asia-pacific/trumps-tariff-deadline-delay-brings-hope-confusion-trade-partners-businesses-2025-07-08/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
           }
         ],
         "underlyingReasons": [],
@@ -28,73 +55,92 @@
     ],
     "objections": [
       {
-        "description": "Tariffs raise costs for consumers and businesses, fueling inflation and reducing real incomes.",
+        "description": "Tariffs act as a tax on households, raising consumer prices and squeezing real incomes.",
         "sources": [
           {
-            "title": "New Yorker: \"How Much More 'TACO' Madness Can the U.S. Economy Take?\"",
-            "link": "https://www.newyorker.com/news/the-financial-page/how-much-more-taco-madness-can-the-us-economy-take",
-            "imageLink": "https://www.newyorker.com/favicon.ico"
+            "title": "Reuters: Trump tariffs pile stress on ailing world economy",
+            "link": "https://www.reuters.com/markets/trump-tariffs-pile-stress-ailing-world-economy-2025-04-02/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
           },
           {
-            "title": "Tax Foundation: \"Trump Tariffs: Tracking the Economic Impact of the Trump Trade War\"",
-            "link": "https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/",
-            "imageLink": "https://taxfoundation.org/wp-content/uploads/2020/12/cropped-TaxFoundationLogo.png"
-          },
-          {
-            "title": "Fortune: \"$100 billion mystery is unfolding on tariffs and inflation\"",
-            "link": "https://fortune.com/2025/07/13/who-pays-tariffs-inflation-trump/",
-            "imageLink": "https://content.fortune.com/wp-content/uploads/2018/07/FortuneLogo.jpg"
+            "title": "Brookings Institution: Trump’s 25% tariffs on Canada and Mexico will be a blow to all 3 economies",
+            "link": "https://www.brookings.edu/articles/trumps-25-tariffs-on-canada-and-mexico-will-be-a-blow-to-all-3-economies/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
           }
         ],
         "underlyingReasons": [],
         "objections": []
       },
       {
-        "description": "Tariffs disrupt global supply chains, create policy uncertainty, and hurt GDP growth.",
+        "description": "Retaliation abroad depresses U.S. exports and profits, costing jobs in agriculture and manufacturing.",
         "sources": [
           {
-            "title": "Financial Times: \"A case of Schrödinger's tariffs\"",
-            "link": "https://www.ft.com/content/9c02c79d-ecd6-4d07-ae5a-b005fd5350a0",
-            "imageLink": "https://www.ft.com/__origami/service/image/v2/images/logos/ft-logo__dark.svg"
+            "title": "Reuters: Companies face new reality amid Trump tariff chaos",
+            "link": "https://www.reuters.com/markets/companies-face-new-reality-trump-tariff-chaos-2025-04-02/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
           },
           {
-            "title": "Brookings Institution: \"The consequences of Trump's tariff threats\"",
+            "title": "American Enterprise Institute: The Five No‑good Arguments for Tariffs",
+            "link": "https://www.aei.org/articles/the-five-no-good-arguments-for-tariffs/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Policy uncertainty surrounding tariff hikes discourages business investment and disrupts supply‑chain planning.",
+        "sources": [
+          {
+            "title": "Reuters: Trump’s tariff blitz prompts ‘firefighting’ response from Fed researchers",
+            "link": "https://www.reuters.com/business/trumps-tariff-blitz-prompts-firefighting-response-fed-researchers-2025-05-27/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Brookings Institution: Tracking trade amid uncertain and changing tariff policies",
+            "link": "https://www.brookings.edu/articles/tracking-trade-amid-uncertain-and-changing-tariff-policies/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Several of Trump’s tariff measures violate World Trade Organization rules, undermining U.S. credibility and inviting legal challenges.",
+        "sources": [
+          {
+            "title": "Politico: WTO says Trump’s steel tariffs violated global trade rules",
+            "link": "https://www.politico.com/news/2022/12/09/wto-ruling-trump-tariffs-violate-rules-00073282",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          },
+          {
+            "title": "Brookings Institution: The consequences of Trump’s tariff threats",
             "link": "https://www.brookings.edu/articles/the-consequences-of-trumps-tariff-threats/",
-            "imageLink": "https://www.brookings.edu/wp-content/uploads/2018/03/logos_favicon.ico"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "Central bankers and international institutions argue tariffs lack economic justification and threaten macro stability.",
-        "sources": [
-          {
-            "title": "Politico Pro: \"Trump's tariffs have no economic justification, says BIS\"",
-            "link": "https://subscriber.politicopro.com/article/2025/06/trumps-tariffs-have-no-economic-justification-says-bis-00432207",
-            "imageLink": "https://www.politico.com/favicon.ico"
-          },
-          {
-            "title": "The Guardian: \"Trump's tariffs have become his Vietnam - and the right is breaking ranks\"",
-            "link": "https://www.theguardian.com/commentisfree/2025/jun/05/trump-tariffs-republicans",
-            "imageLink": "https://assets.guim.co.uk/images/favicons/guardian.ico"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "Tariffs impose regressive taxes on households and may provoke retaliatory measures harming exporters.",
-        "sources": [
-          {
-            "title": "AP News: \"Trump's tariffs could pay for his tax cuts -- but it likely wouldn't be much of a bargain\"",
-            "link": "https://apnews.com/article/447ab174f84d67fea5023bbe02dd60e0",
-            "imageLink": "https://www.apnews.com/images/ap_logo.png"
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
           }
         ],
         "underlyingReasons": [],
         "objections": []
       }
-    ]
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "The Impact of the 2018 Trade War on U.S. Prices and Welfare",
+        "description": "Amiti, Redding & Weinstein (NBER WP 25672, 2019) find near‑complete tariff pass‑through to consumer prices, reducing U.S. real income by about $1.4 billion per month by year‑end 2018.",
+        "link": "https://www.nber.org/system/files/working_papers/w25672/w25672.pdf"
+      },
+      {
+        "title": "The Return to Protectionism",
+        "description": "Fajgelbaum, Goldberg, Kennedy & Khandelwal (QJE 2020; NBER WP 25638) estimate consumer and producer losses of $51 billion—0.27 % of U.S. GDP—from 2018 import and retaliatory tariffs.",
+        "link": "https://www.nber.org/papers/w25638"
+      },
+      {
+        "title": "Rising Import Tariffs, Falling Export Growth",
+        "description": "Handley, Kamal & Monarch (AEJ: Applied Economics 2023) show that tariff increases along supply‑chain links cut U.S. export growth through higher input costs and reduced competitiveness.",
+        "link": "https://www.nber.org/system/files/working_papers/w26611/w26611.pdf"
+      }
+    ],
+    "themes": []
   }
   
