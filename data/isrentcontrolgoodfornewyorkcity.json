@@ -1,135 +1,130 @@
 {
-  "centralQuestion": "Is Rent Control good for New York City?",
-  "reasons": [
-    {
-      "description": "Rent control protects vulnerable tenants from sudden rent increases and displacement.",
-      "sources": [
-        {
-          "title": "New York Times: 'Rent Control Is One Tool to Help Tenants Afford Their Homes. But It’s Not a Cure-All.'",
-          "link": "https://www.nytimes.com/2022/05/23/realestate/rent-control-nyc.html",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg"
-        },
-        {
-          "title": "Urban Institute: 'The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco'",
-          "link": "https://www.urban.org/urban-wire/rent-control-can-help-some-renters-there-are-better-ways-protect-vulnerable-tenants",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/76/Urban_Institute_logo.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    },
-    {
-      "description": "Rent control helps keep neighborhoods stable and prevents community disruption.",
-      "sources": [
-        {
-          "title": "Pew Research Center: 'Rent Control: What Does the Research Say About Its Effectiveness?'",
-          "link": "https://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2019/07/31/rent-control-returns-and-the-debate-is-familiar",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/2/28/Pew_Research_Center_logo.png"
-        },
-        {
-          "title": "New York Times: 'For Some, Rent Laws Provide Security'",
-          "link": "https://www.nytimes.com/2019/06/11/nyregion/rent-laws-new-york.html",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    },
-    {
-      "description": "Rent control can slow gentrification and support racial and economic equity.",
-      "sources": [
-        {
-          "title": "Brookings Institution: 'What Does Economic Evidence Tell Us About the Effects of Rent Control?'",
-          "link": "https://www.brookings.edu/articles/what-does-economic-evidence-tell-us-about-the-effects-of-rent-control/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Brookings_Institute_Logo.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    }
-  ],
-  "objections": [
-    {
-      "description": "Rent control reduces the incentive for landlords to maintain or improve properties, leading to deteriorating housing quality.",
-      "sources": [
-        {
-          "title": "Wall Street Journal: 'The Downside of Rent Control'",
-          "link": "https://www.wsj.com/articles/the-downside-of-rent-control-11582931676",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/6a/WSJ_Logo_2019.png"
-        },
-        {
-          "title": "Manhattan Institute: 'Rent Control and Rent Stabilization as Forms of Regulatory Taking'",
-          "link": "https://manhattan-institute.org/html/rent-control-and-rent-stabilization-forms-regulatory-taking-6367.html",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Manhattan_Institute_logo.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    },
-    {
-      "description": "Rent control can restrict the supply of rental housing and discourage new construction.",
-      "sources": [
-        {
-          "title": "Brookings Institution: 'What Does Economic Evidence Tell Us About the Effects of Rent Control?'",
-          "link": "https://www.brookings.edu/articles/what-does-economic-evidence-tell-us-about-the-effects-of-rent-control/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Brookings_Institute_Logo.png"
-        },
-        {
-          "title": "Washington Post: 'Rent control isn’t the answer to the affordable housing crisis'",
-          "link": "https://www.washingtonpost.com/opinions/2023/04/21/rent-control-housing-crisis-evidence/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/0/02/Washington_Post_logo_2015.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    },
-    {
-      "description": "Benefits are often captured by higher-income or longer-term tenants rather than those most in need.",
-      "sources": [
-        {
-          "title": "Project Syndicate: 'The Return of Rent Control'",
-          "link": "https://www.project-syndicate.org/commentary/rent-control-bad-housing-policy-by-christopher-r-herbert-and-alexander-casey-2019-09",
-          "imageLink": "https://assets.project-syndicate.org/ui/images/logo-ps-190x40.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    },
-    {
-      "description": "Rent control can distort the housing market, leading to shortages, misallocation, and under-the-table payments.",
-      "sources": [
-        {
-          "title": "Economist: 'The case for and against rent control'",
-          "link": "https://www.economist.com/finance-and-economics/2019/10/03/the-case-for-and-against-rent-controls",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/5/5e/The_Economist_Logo.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    }
-  ],
-  "expertPerspectives": [],
-  "research": [
-    {
-      "title": "Rent Control and the Supply of Housing",
-      "description": "This article reviews the economic literature on rent control and its impact on housing supply, finding significant evidence that rent control reduces the quantity and quality of housing.",
-      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Elsevier_logo.png"
-    },
-    {
-      "title": "The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco",
-      "description": "Published in the American Economic Review, this paper analyzes a natural experiment in San Francisco and finds rent control helped tenants in the short-term but reduced rental housing supply and led to gentrification in the long run.",
-      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/9/97/AEA_logo.png"
-    },
-    {
-      "title": "Housing Market Spillovers: Evidence from the End of Rent Control in Cambridge, Massachusetts",
-      "description": "Examines the end of rent control in Cambridge and finds the policy had significant negative spillover effects on neighborhood investment and overall housing quality.",
-      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/9/97/AEA_logo.png"
-    },
-    {
-      "title": "Rent Control: Do Economists Agree?",
-      "description": "A survey of economists' views on rent control, published in Econ Journal Watch, finding overwhelming skepticism of rent control among professional economists.",
-      "imageLink": "https://econjwatch.org/images/ejw-logo.jpg"
-    }
-  ],
-  "themes": []
-}
+    "centralQuestion": "Should New York City implement rent controls?",
+    "reasons": [
+      {
+        "description": "Rent control can keep housing affordable in a city where median asking rents have repeatedly hit record highs, helping lower‑income tenants avoid displacement.",
+        "sources": [
+          {
+            "title": "The Guardian: \"I was on New York's rent board. Zohran Mamdani's ideas aren't pie in the sky\"",
+            "link": "https://www.theguardian.com/commentisfree/2025/jul/14/new-york-rent-freeze-zohran-mamdani",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          },
+          {
+            "title": "Brookings Institution: \"Ten economic facts about rental housing\"",
+            "link": "https://www.brookings.edu/articles/ten-economic-facts-about-rental-housing/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "By reducing turnover, rent stabilization helps preserve neighborhood cohesion and prevents the social costs of frequent moves.",
+        "sources": [
+          {
+            "title": "Urban Institute: \"Rent Control: Key Policy Components and Their Equity Implications\"",
+            "link": "https://www.urban.org/sites/default/files/2023-08/Rent%20Control%20Key%20Policy%20Components%20and%20Their%20Equity%20Implications.pdf",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Regulation can rebalance bargaining power between landlords and tenants, a goal tenant‑rights groups say is essential for housing equity.",
+        "sources": [
+          {
+            "title": "Economic Policy Institute: \"Scapegoating Rent Control: Masking the Causes of Homelessness\"",
+            "link": "https://www.epi.org/page/-/old/briefingpapers/1989_bp_scapegoating.pdf",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Price ceilings discourage new construction and lead owners to withdraw units, shrinking the overall rental supply.",
+        "sources": [
+          {
+            "title": "The Wall Street Journal: \"How to Kill New York's Rental Housing Market\"",
+            "link": "https://www.wsj.com/opinion/albany-democrats-good-cause-eviction-new-york-rent-control-kathy-hochul-f4d8125f",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
+          },
+          {
+            "title": "Reuters: \"Mamdani’s 'Millionaire Tax' and Other Financial Fallacies\"",
+            "link": "https://www.reuters.com/markets/us/mamdanis-millionaire-tax-other-financial-fallacies-2025-07-02/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tighter rent caps can erode landlords’ revenue, leading to deferred maintenance and lower housing quality in regulated units.",
+        "sources": [
+          {
+            "title": "Reuters: \"NYCB turnaround faces rocky road as commercial real estate exposure drags\"",
+            "link": "https://www.reuters.com/markets/us/nycb-turnaround-faces-rocky-road-commercial-real-estate-exposure-drag-2024-03-08/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "American Enterprise Institute: \"Rent control 'Shabbifying' NY's Housing As Owners Feel the Squeeze\"",
+            "link": "https://www.aei.org/op-eds/rent-control-shabbifying-nys-housing-as-owners-feel-the-squeeze/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Economists warn that limiting some rents can push prices higher in the unregulated sector, unintentionally raising average market rents.",
+        "sources": [
+          {
+            "title": "American Enterprise Institute: \"Zohran Mamdani's rent freeze will warp NYC's housing market and hurt us all\"",
+            "link": "https://www.aei.org/op-eds/zohran-mamdanis-rent-freeze-will-warp-nycs-housing-market-and-hurt-us-all/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+          },
+          {
+            "title": "Politico: \"Mamdani would freeze rents\"",
+            "link": "https://www.politico.com/live-updates/2025/06/04/1st-nyc-mayoral-primary-debate/mamdani-would-freeze-rents-00388171",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [{
+        "name": "Howard Husock",
+        "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753296196/Howard_Husock_em1jms.jpg",
+        "description": "Howard Husock is a Senior Fellow at the American Enterprise Institute. https://www.aei.org/op-eds/zohran-mamdanis-rent-freeze-will-warp-nycs-housing-market-and-hurt-us-all/"
+      }
+    
+    ],
+    "research": [
+      {
+        "title": "“The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco” – American Economic Review (2019)",
+        "description": "Shows rent control reduced displacement but cut rental supply by 15 %, highlighting supply‑side trade‑offs.",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/aer.20181289"
+      },
+      {
+        "title": "“Rent Control and Tenants’ Benefits: Stability or Affordability? Evidence from New York City” – SSRN working paper (2023)",
+        "description": "Uses NYC panel data to examine whether rent‑stabilized households gain more from stability or price discounts.",
+        "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4527329"
+      },
+      {
+        "title": "“Measuring the Value of Rent Stabilization and Understanding Its Distributional Impact across NYC” – Journal of Housing Economics (2023)",
+        "description": "Estimates an average $410 monthly discount for stabilized units but finds benefits skew toward higher‑income neighborhoods.",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0166046223000832"
+      },
+      {
+        "title": "“Rent‑control effects through the lens of empirical research” – Regional Science and Urban Economics (2024)",
+        "description": "Comprehensive literature review synthesizing empirical findings on economic and distributional impacts of rent regulation.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S1051137724000020"
+      }
+    ],
+    "themes": []
+  }
+  
