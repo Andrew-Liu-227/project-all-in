@@ -1,0 +1,175 @@
+{
+    "centralQuestion": "Will AI benefit the average skilled worker?",
+    "reasons": [
+      {
+        "description": "AI-driven tools significantly raise worker productivity, especially by automating routine tasks and acting as on‑the‑job digital assistants.",
+        "sources": [
+          {
+            "title": "Bloomberg News: \"Generative AI Boosts Worker Productivity 14% in First Real‑World Study\"",
+            "link": "https://www.bloomberg.com/news/articles/2023-04-24/generative-ai-boosts-worker-productivity-14-new-study-finds",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+          },
+          {
+            "title": "Reuters: \"Will AI be an economic blessing or curse? History offers clues\"",
+            "link": "https://www.reuters.com/technology/will-ai-be-an-economic-blessing-or-curse-history-offers-clues-2023-08-07/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Demand for AI‑literate talent is pushing wages upward and widening opportunities for workers willing to upskill.",
+        "sources": [
+          {
+            "title": "Financial Times: \"How a looming talent shortage threatens the AI boom\"",
+            "link": "https://www.ft.com/partnercontent/northern-data-group/how-a-looming-talent-shortage-threatens-the-ai-boom.html",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          },
+          {
+            "title": "Brookings Institution: \"Using AI to advance skills‑first hiring\"",
+            "link": "https://www.brookings.edu/articles/using-ai-to-advance-skills-first-hiring/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "AI lowers traditional barriers to expertise, empowering mid‑skill workers to tackle decision‑making and creative tasks once reserved for highly credentialed elites.",
+        "sources": [
+          {
+            "title": "The Washington Post: \"AI could help ending the dominance of the credentialed classes\"",
+            "link": "https://www.washingtonpost.com/opinions/2024/03/19/artificial-intelligence-workers-regulation-musk/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Washington_Post_Logo_a7x7dl.png"
+          },
+          {
+            "title": "Brookings Institution: \"Generative AI, the American worker, and the future of work\"",
+            "link": "https://www.brookings.edu/articles/generative-ai-the-american-worker-and-the-future-of-work/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Some analyses find AI adoption improves job satisfaction and even health outcomes by offloading repetitive cognitive or physical strain.",
+        "sources": [
+          {
+            "title": "Reuters: \"Will AI be an economic blessing or curse? History offers clues\"",
+            "link": "https://www.reuters.com/technology/will-ai-be-an-economic-blessing-or-curse-history-offers-clues-2023-08-07/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Generative AI threatens to automate many mid‑skill roles, leading to outright displacement rather than augmentation.",
+        "sources": [
+          {
+            "title": "Financial Times: \"Disrupted or displaced? How AI is shaking up jobs\"",
+            "link": "https://www.ft.com/content/5009fd1e-85db-433f-aa2b-55d9b88b6481",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          },
+          {
+            "title": "The Guardian: \"The AI industrial revolution puts middle‑class workers under threat\"",
+            "link": "https://www.theguardian.com/technology/2023/feb/18/the-ai-industrial-revolution-puts-middle-class-workers-under-threat-this-time",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "AI may exacerbate wage inequality by funneling gains to capital owners and top‑skill specialists while eroding bargaining power for average workers.",
+        "sources": [
+          {
+            "title": "Economic Policy Institute: \"Unbalanced labor market power is what makes technology harmful\"",
+            "link": "https://www.epi.org/publication/ai-unbalanced-labor-markets/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+          },
+          {
+            "title": "The Guardian: \"AI will affect 40% of jobs and probably worsen inequality, says IMF\"",
+            "link": "https://www.theguardian.com/technology/2024/jan/15/ai-jobs-inequality-imf-kristalina-georgieva",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "A skills‑gap risk looms: many incumbent mid‑career workers may lack the time or resources to acquire fast‑evolving AI skills.",
+        "sources": [
+          {
+            "title": "Financial Times: \"How a looming talent shortage threatens the AI boom\"",
+            "link": "https://www.ft.com/partnercontent/northern-data-group/how-a-looming-talent-shortage-threatens-the-ai-boom.html",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          },
+          {
+            "title": "Brookings Institution: \"Generative AI, the American worker, and the future of work\"",
+            "link": "https://www.brookings.edu/articles/generative-ai-the-american-worker-and-the-future-of-work/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Some economists argue that AI’s productivity gains are overstated and may mirror Solow’s paradox—benefits accrue to a few firms, not broadly to workers.",
+        "sources": [
+          {
+            "title": "Bloomberg Opinion: \"AI hype is proving to be Solow’s Paradox\"",
+            "link": "https://www.bloomberg.com/opinion/articles/2025-06-25/ai-hype-is-proving-to-be-a-solow-s-paradox",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Workplace AI can intensify surveillance, speed‑ups, and stress, undermining job quality for average skilled employees.",
+        "sources": [
+          {
+            "title": "Reuters: \"AI in the Workplace\"",
+            "link": "https://www.reuters.com/practical-law-the-journal/transactional/ai-workplace-2023-09-01/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "Generative AI at Work",
+        "description": "Brynjolfsson, Li & Raymond (2023). A real‑world field study of 5,172 customer‑support agents showing a 15% average productivity boost, with the largest gains for lower‑skill workers.",
+        "link": "https://arxiv.org/abs/2304.11771"
+      },
+      {
+        "title": "Applying AI to Rebuild Middle‑Class Jobs",
+        "description": "Autor (2024). Argues that carefully deployed AI could restore mid‑skill, middle‑income employment by complementing, not replacing, human expertise.",
+        "link": "https://www.nber.org/system/files/working_papers/w32140/w32140.pdf"
+      },
+      {
+        "title": "What Impact Has AI Had on Wage Inequality?",
+        "description": "OECD (2024). Empirical analysis finds mixed effects—AI exposure lowered wage inequality in some professions but raised it in others, especially where skills were scarce.",
+        "link": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/11/what-impact-has-ai-had-on-wage-inequality_8943dfe0/7fb21f59-en.pdf"
+      },
+      {
+        "title": "AI Adoption and Inequality",
+        "description": "International Monetary Fund Working Paper 25/068 (2025). Models suggest AI may reduce some wage gaps but substantially increase wealth inequality without policy intervention.",
+        "link": "https://www.elibrary.imf.org/view/journals/001/2025/068/article-A001-en.xml"
+      },
+      {
+        "title": "Augmenting or Automating Labor? The Effect of AI Development on Skill Demand",
+        "description": "Zhang & co‑authors (2025). Finds automation‑oriented AI mainly substitutes low‑skill labor, while augmentation‑oriented AI benefits high‑skill roles; middle‑skill effects are mixed.",
+        "link": "https://arxiv.org/pdf/2503.19159"
+      }
+    ],
+    "themes": []
+  }
+  

@@ -1,0 +1,167 @@
+{
+    "centralQuestion": "Will undocumented immigrants create a net benefit for the American economy?",
+    "reasons": [
+      {
+        "description": "Undocumented immigrants fill critical labor shortages—especially in agriculture, construction, hospitality and disaster‑recovery—preventing output losses and supporting GDP growth.",
+        "sources": [
+          {
+            "title": "Reuters: “Reversing U.S. immigration set to grab market attention”",
+            "link": "https://www.reuters.com/markets/europe/reversing-us-immigration-set-grab-market-attention-2025-07-17/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "The Guardian: “How Trump’s anti‑immigrant policies could collapse the US food industry”",
+            "link": "https://www.theguardian.com/environment/2025/jul/17/how-many-immigrants-food-industry-workers",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Undocumented workers pay billions in payroll, sales and property taxes they seldom reclaim, giving federal and state treasuries a revenue boost.",
+        "sources": [
+          {
+            "title": "The Wall Street Journal: “Many Aging Migrants Pay Taxes. They Stare Down a Retirement …”",
+            "link": "https://www.wsj.com/economy/retirement-social-security-benefits-illegal-immigrants-c5a04d74",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
+          },
+          {
+            "title": "CBO: “Effects of the Immigration Surge on the Federal Budget and the Economy”",
+            "link": "https://www.cbo.gov/publication/60569",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/congressional_budget_office_logo_rr3btg.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Economists project that legalizing or granting citizenship to undocumented immigrants would unlock higher productivity and earnings, adding trillions to GDP.",
+        "sources": [
+          {
+            "title": "The Economist: “Citizenship for America’s 11 m undocumented immigrants would boost the economy”",
+            "link": "https://www.economist.com/graphic-detail/2021/07/13/citizenship-for-americas-11m-undocumented-immigrants-would-boost-the-economy",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Because they are disproportionately young, undocumented immigrants help counteract population aging and keep labor‑force participation from falling.",
+        "sources": [
+          {
+            "title": "Financial Times: “The Midwest cities in search of new migrants”",
+            "link": "https://www.ft.com/content/bcc2c135-897a-4660-a3aa-9ef74110039d",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Undocumented immigrants often start small businesses and revitalize struggling cities, spurring local job creation.",
+        "sources": [
+          {
+            "title": "Bloomberg: “Let Immigrants Save America’s Struggling Cities”",
+            "link": "https://www.bloomberg.com/view/articles/2018-10-03/let-immigrants-save-america-s-struggling-cities",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Low‑skilled undocumented labor can depress wages or displace native workers in directly competing sectors.",
+        "sources": [
+          {
+            "title": "WSJ: “Immigrants Push Down Wages for Low‑Income Workers—But How Much?”",
+            "link": "https://blogs.wsj.com/economics/2016/02/09/immigrants-push-down-wages-for-low-income-workers-but-how-much/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Critics argue undocumented households receive more in public benefits than they pay in taxes, creating a net fiscal drain on states and localities.",
+        "sources": [
+          {
+            "title": "AEI: “Key Data on Federal Benefits Paid to Illegal Immigrant Households”",
+            "link": "https://www.aei.org/opportunity-social-mobility/key-data-on-federal-benefits-paid-to-illegal-immigrant-households/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+          },
+          {
+            "title": "Pew Research Center: “Children of unauthorized immigrants represent rising share of K‑12 students”",
+            "link": "https://www.pewresearch.org/short-reads/2016/11/17/children-of-unauthorized-immigrants-represent-rising-share-of-k-12-students/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Providing publicly funded health coverage to undocumented adults is seen as straining state budgets.",
+        "sources": [
+          {
+            "title": "Associated Press: “California is expanding health care coverage for low‑income immigrants”",
+            "link": "https://apnews.com/article/california-medicaid-expansion-undocumented-immigrants-34d8deb2186e9195b253f499e81a3d77",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Enforcement agencies cite ongoing border pressures and rule‑of‑law concerns, arguing undocumented migration raises security and policing costs.",
+        "sources": [
+          {
+            "title": "AP Fact Check: “Trump and the disputed border crisis”",
+            "link": "https://apnews.com/article/immigration-north-america-donald-trump-ap-top-news-border-security-3bf581a53684440b92121bb1b8ae43a9",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Investigations show some firms collude to suppress immigrants’ wages, lowering standards for the broader labor market.",
+        "sources": [
+          {
+            "title": "Bloomberg News: “Biggest Chicken Processors Accused of Immigrant Wage Plot”",
+            "link": "https://www.bloomberg.com/news/articles/2019-09-03/biggest-chicken-processors-accused-of-immigrant-wage-plot",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "“The Labor Market Effects of Reducing the Number of Illegal Immigrants” – Review of Economic Dynamics, 18(4), 2015",
+        "description": "Chassamboulli & Peri model labor‑market search to show that reducing unauthorized workers would shrink employment and output while raising low‑skill wages only modestly.",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S1094202515000514"
+      },
+      {
+        "title": "“Fear vs. Facts: Examining the Economic Impact of Undocumented Immigrants” – Journal of Sociology & Social Welfare, 2016",
+        "description": "Peer‑reviewed literature review concludes most empirical studies find small positive or neutral aggregate economic effects and significant regional variation.",
+        "link": "https://scholarworks.wmich.edu/cgi/viewcontent.cgi?article=3702&context=jssw"
+      },
+      {
+        "title": "“Immigration, Legal Status and Fiscal Impact” – Journal of Economic Behavior & Organization, 2024",
+        "description": "Using a microsimulation model, authors find that while legalized immigrants pay more taxes, undocumented immigrants still increase native incomes through lower consumer prices.",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S1094202524000279"
+      },
+      {
+        "title": "“Estimates Based on Demographic Modeling of the Undocumented Population” – PLOS ONE, 2018",
+        "description": "Provides updated counts of the unauthorized population, a key parameter for estimating aggregate economic impacts.",
+        "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0204199"
+      }
+    ],
+    "themes": []
+  }
+  

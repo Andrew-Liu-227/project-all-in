@@ -1,0 +1,123 @@
+{
+    "centralQuestion": "Should governments create a wealth tax?",
+    "reasons": [
+      {
+        "description": "A national wealth tax could generate significant new revenue—potentially well over $200 billion a year globally—providing funds for poverty reduction, climate action, and other public goods. :contentReference[oaicite:0]{index=0}",
+        "sources": [
+          {
+            "title": "Reuters: Comment – Taxing the super‑rich is critical for our economies, the planet and closing the wealth gap",
+            "link": "https://www.reuters.com/sustainability/society-equity/comment-taxing-super-rich-is-critical-our-economies-planet-prosperity-all-2024-07-29/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Supporters argue that a wealth tax would curb extreme wealth concentration, bolstering social cohesion and democratic stability—and even some ultra‑rich individuals say they would welcome it. :contentReference[oaicite:1]{index=1}",
+        "sources": [
+          {
+            "title": "The Guardian: Labour shouldn’t fear taxing the rich – the people I work with would welcome it",
+            "link": "https://www.theguardian.com/commentisfree/2025/jul/18/labour-wealth-tax-rachel-reeves-super-rich",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Taxing net wealth directly can close loopholes that let large unrealised capital gains escape income taxation, making the overall tax code fairer and more efficient. ",
+        "sources": [
+          {
+            "title": "Brookings Institution: Taxing the wealthy in fair and efficient ways",
+            "link": "https://www.brookings.edu/articles/taxing-the-wealthy-in-fair-and-efficient-ways/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "International evidence (e.g., Switzerland and Norway) shows that a well‑designed wealth tax is administratively feasible, raises meaningful revenue, and does not automatically trigger mass capital flight. ",
+        "sources": [
+          {
+            "title": "Financial Times: Trade and wealth tax myth‑busting",
+            "link": "https://www.ft.com/content/7ec2c02f-d304-419d-ad12-f1fcfcce86a0",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Valuing illiquid assets, policing evasion, and litigating disputes could make a wealth tax costly to administer and erode expected revenues. :contentReference[oaicite:4]{index=4}",
+        "sources": [
+          {
+            "title": "Tax Policy Center: Taxing Wealth in the United States – Issues and Challenges",
+            "link": "https://taxpolicycenter.org/sites/default/files/2025-02/Taxing-Wealth-in-the-United-States-Issues-and-Challenges.pdf",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/Tax_Policy_center_logo_elf5ab.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Higher net‑worth levies may prompt wealthy residents to relocate, reducing the domestic tax base—as early UK experience after scrapping ‘non‑dom’ perks suggests. :contentReference[oaicite:5]{index=5}",
+        "sources": [
+          {
+            "title": "Reuters: UK is now risky lab rat for rich tax‑perk reform",
+            "link": "https://www.reuters.com/breakingviews/uk-is-now-risky-lab-rat-rich-tax-perk-reform-2024-12-04/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Tech investors warn that taxing unrealised gains or large fortunes could sap liquidity needed for high‑risk innovation and slow the start‑up ecosystem. :contentReference[oaicite:6]{index=6}",
+        "sources": [
+          {
+            "title": "Financial Times: Silicon Valley’s elite rattled by prospect of tax on unrealised gains",
+            "link": "https://www.ft.com/content/a074a9c7-a4c1-4f6b-a8fc-bd81fb7ac793",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Critics contend that a federal wealth tax could be struck down as an unapportioned direct tax under the U.S. Constitution, creating significant legal risk. ",
+        "sources": [
+          {
+            "title": "Politico: Biden decides to shelve Warren’s wealth tax",
+            "link": "https://www.politico.com/news/2021/03/30/biden-elizabeth-warren-wealth-tax-478642",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "Taxing Our Wealth",
+        "description": "Scheuer & Slemrod (Journal of Economic Perspectives, 2021) review international experience and design options, finding behavioral responses depend heavily on base breadth and enforcement. ",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/jep.35.1.207"
+      },
+      {
+        "title": "Wealth Taxation: Lessons from History and Recent Developments",
+        "description": "Saez & Zucman (AEA Papers & Proceedings, 2022) distill European history to outline key enforcement features required for a successful 21st‑century wealth tax. ",
+        "link": "https://www.aeaweb.org/articles?id=10.1257/pandp.20221055"
+      },
+      {
+        "title": "Avoidance Responses to the Wealth Tax",
+        "description": "Mas‑Montserrat et al. (Journal of Public Economics, 2025) show Spain’s 2011 wealth‑tax reintroduction triggered significant avoidance that cut long‑run revenues by nearly three‑fold. :contentReference[oaicite:10]{index=10}",
+        "link": "https://ideas.repec.org/a/eee/pubeco/v246y2025ics0047272725000490.html"
+      }
+    ],
+    "themes": []
+  }
+  

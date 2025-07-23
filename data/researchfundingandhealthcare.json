@@ -1,0 +1,129 @@
+{
+    "centralQuestion": "Will cuts to research funding have an outsized impact on the health care sector?",
+    "reasons": [
+      {
+        "description": "A smaller federal research budget slows the pipeline of new drugs and therapies because NIH‑funded basic science is a precursor to most private‑sector development.",
+        "sources": [
+          {
+            "title": "Reuters: Congressional forecaster says Trump health research cuts would lead to fewer new drugs",
+            "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/congressional-forecaster-says-trump-health-research-cuts-would-lead-fewer-new-2025-07-18/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Brookings Institution: The 2026 health and health care budget",
+            "link": "https://www.brookings.edu/articles/the-2026-health-and-health-care-budget/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Cuts undermine public‑health preparedness—reducing capacity for vaccine research, surveillance, and rapid response to emerging diseases.",
+        "sources": [
+          {
+            "title": "Financial Times: Health researchers warn of setbacks as they navigate 'fog' of US funding cuts",
+            "link": "https://www.ft.com/content/5059e21e-8f7a-4e33-b0d4-e26da07cac6e",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          },
+          {
+            "title": "The Guardian: Private firms are trying to fill research gaps, but their 'puny' budgets are no match for federal funds",
+            "link": "https://www.theguardian.com/us-news/2025/may/01/private-companies-public-research-funds-cut",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Funding reductions ripple through the life‑sciences economy—triggering layoffs, shrinking biotech investment, and accelerating a brain drain of researchers overseas.",
+        "sources": [
+          {
+            "title": "The Washington Post: Biotech start‑ups struggle as Trump throttles NIH funding",
+            "link": "https://www.washingtonpost.com/business/2025/04/06/nih-funding-biotech-startups/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Washington_Post_Logo_a7x7dl.png"
+          },
+          {
+            "title": "Reuters Breakingviews: Life sciences undergo painful genetic modification",
+            "link": "https://www.reuters.com/breakingviews/life-sciences-undergo-painful-genetic-modification-2025-04-02/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Erosion of U.S. leadership in medical innovation as rival nations expand research investment, risking long‑term competitiveness and national security.",
+        "sources": [
+          {
+            "title": "Brookings Institution: The Trump administration’s NIH and FDA cuts will negatively impact patients",
+            "link": "https://www.brookings.edu/articles/the-trump-administrations-nih-and-fda-cuts-will-negatively-impact-patients/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          },
+          {
+            "title": "Financial Times: The cost of Trump's attack on American science",
+            "link": "https://www.ft.com/content/67fd40e3-104e-4599-a8b2-3f34cd75c74a",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Private and philanthropic investment can offset federal cuts; industry already funds most late‑stage R&D, so the net impact on health innovation may be limited.",
+        "sources": [
+          {
+            "title": "McKinsey Global Institute: Pulse check—key trends shaping biopharma dealmaking in 2025",
+            "link": "https://www.mckinsey.com/industries/life-sciences/our-insights/the-synthesis/pulse-check-key-trends-shaping-biopharma-dealmaking-in-2025",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/mckinsey_global_institute_logo_zdp5lr.webp"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Many cuts target administrative overhead rather than core science, potentially making research spending more efficient without sacrificing outputs.",
+        "sources": [
+          {
+            "title": "Politico: NIH slashes funding for research overhead, leaving universities scrambling",
+            "link": "https://www.politico.com/news/2025/02/08/trump-nih-university-funding-014838",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          },
+          {
+            "title": "The Wall Street Journal: The NIH's 15% Cost Cap Isn't Strict Enough",
+            "link": "https://www.wsj.com/opinion/the-nihs-15-cost-cap-isnt-strict-enough-science-indirect-overhead-rate-1dd743a6",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "Comparison of Research Spending on New Drug Approvals by the NIH and Industry, 2010‑2019",
+        "description": "JAMA Health Forum study showing 99% of FDA‑approved drugs had antecedent NIH support, quantifying $187 billion in public investment.",
+        "link": "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2804378"
+      },
+      {
+        "title": "Cutting the NIH—The $8 Trillion Health‑Care Catastrophe",
+        "description": "JAMA Network commentary estimating that lost NIH‑enabled innovations could cost the U.S. economy trillions in foregone health gains and productivity.",
+        "link": "https://jamanetwork.com/journals/jama-health-forum/fullarticle/2834949"
+      },
+      {
+        "title": "Financing Drug Development via Adaptive Platform Trials",
+        "description": "PLOS ONE article exploring alternative investment models that blend private capital with public health goals, highlighting funding‑gap challenges after federal cuts.",
+        "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0325826"
+      },
+      {
+        "title": "Four Opportunities to Revitalize the US Biomedical Research Enterprise",
+        "description": "Health Affairs paper outlining policy options—workforce support, infrastructure, and cross‑agency coordination—to counteract current funding shortfalls.",
+        "link": "https://www.healthaffairs.org/doi/10.1377/hlthaff.2024.01001"
+      }
+    ],
+    "themes": []
+  }
+  

@@ -1,0 +1,158 @@
+{
+    "centralQuestion": "Is the job market worse than it was a generation ago?",
+    "reasons": [
+      {
+        "description": "Median earnings have stagnated or fallen in real terms, eroding purchasing power for most workers.",
+        "sources": [
+          {
+            "title": "Reuters: U.S. real earnings stalled across age, income groups in past year",
+            "link": "https://www.reuters.com/business/world-at-work/us-real-earnings-stalled-across-age-income-groups-past-year-study-shows-2025-05-22/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Economic Policy Institute: Decline of labor unions weakens American democracy",
+            "link": "https://www.epi.org/blog/decline-of-labor-unions-weakens-american-democracy/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Growth of gig and contract work has increased job insecurity and reduced access to benefits.",
+        "sources": [
+          {
+            "title": "Bloomberg News: From the Great Resignation to Lying Flat, Workers Are Opting Out",
+            "link": "https://www.bloomberg.com/news/features/2021-12-07/why-people-are-quitting-jobs-and-protesting-work-life-from-the-u-s-to-china",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+          },
+          {
+            "title": "Brookings Institution: AI labor displacement and the limits of worker retraining",
+            "link": "https://www.brookings.edu/articles/ai-labor-displacement-and-the-limits-of-worker-retraining/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Automation and globalization have hollowed out many middle‑skill jobs, polarizing the labor market.",
+        "sources": [
+          {
+            "title": "McKinsey Global Institute: Jobs lost, jobs gained: What the future of work will mean for jobs, skills and wages",
+            "link": "https://www.mckinsey.com/featured-insights/future-of-work/jobs-lost-jobs-gained-what-the-future-of-work-will-mean-for-jobs-skills-and-wages",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/mckinsey_global_institute_logo_zdp5lr.webp"
+          },
+          {
+            "title": "Brookings Institution: Generative AI, the American worker, and the future of work",
+            "link": "https://www.brookings.edu/articles/generative-ai-the-american-worker-and-the-future-of-work/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Rising credential inflation means young entrants need more education to secure roles once open to high‑school graduates, fueling underemployment.",
+        "sources": [
+          {
+            "title": "Financial Times: Young Americans need to be taught skills, not handed credentials",
+            "link": "https://www.ft.com/content/e5b1cba6-e41d-11e8-8e70-5e22a430c1ad",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Unemployment remains historically low and payrolls continue to expand, indicating a robust labor market.",
+        "sources": [
+          {
+            "title": "Associated Press: Employers added a surprising 177,000 jobs as job market shows resilience",
+            "link": "https://apnews.com/article/trump-jobs-economy-tariffs-unemployment-inflation-5f06fd466b4e05da30d1d6e5ce222790",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+          },
+          {
+            "title": "The Wall Street Journal: Steady Hiring Added 147,000 Jobs to U.S. Economy in June",
+            "link": "https://www.wsj.com/economy/jobs-report-june-2025-unemployment-economy-c1f54222",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Wage growth at the bottom of the distribution has out‑paced historical norms, narrowing some pay gaps.",
+        "sources": [
+          {
+            "title": "Reuters: U.S. job gains surge past expectations, wage growth quickens",
+            "link": "https://www.reuters.com/markets/us/us-job-growth-expected-remain-moderate-pace-may-2024-06-07/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Economic Policy Institute: Strong wage growth for low-wage workers bucks the historic trend",
+            "link": "https://www.epi.org/publication/strong-wage-growth-for-low-wage-workers-bucks-the-historic-trend/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Remote and hybrid work have expanded geographic and schedule flexibility, boosting satisfaction and retention.",
+        "sources": [
+          {
+            "title": "The Guardian: 'The new normal': work from home is here to stay, US data shows",
+            "link": "https://www.theguardian.com/money/article/2024/jul/12/working-from-home-data",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          },
+          {
+            "title": "The Guardian: Hybrid working makes employees happier, healthier and more productive",
+            "link": "https://www.theguardian.com/business/article/2024/jun/16/hybrid-working-makes-employees-happier-healthier-and-more-productive-study-shows",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Persistent labor shortages and record job openings give workers greater bargaining power in many sectors.",
+        "sources": [
+          {
+            "title": "Reuters: Record-high number of U.S. small businesses can't fill job openings",
+            "link": "https://www.reuters.com/business/record-high-number-us-small-businesses-cant-fill-job-openings-nfib-2021-06-03/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "The Polarization of Job Opportunities in the U.S. Labor Market: Implications for Employment and Earnings",
+        "description": "American Economic Review P&P paper by David Autor documenting long‑run hollowing‑out of middle‑skill jobs and wage polarization.",
+        "link": "https://www.brookings.edu/wp-content/uploads/2016/06/04_jobs_autor.pdf"
+      },
+      {
+        "title": "Is the Millennial Generation Left Behind? Inter‑Cohort Labour Market Inequality 2005–2019",
+        "description": "Social Indicators Research study using Spanish administrative data to show persistent income gaps for younger cohorts.",
+        "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9216305/"
+      },
+      {
+        "title": "Generative AI at Work",
+        "description": "Quarterly Journal of Economics (2025) article showing AI tools raise productivity, with largest gains for novice workers.",
+        "link": "https://arxiv.org/pdf/2304.11771"
+      },
+      {
+        "title": "The Semi‑Proletarian Lifestyle in the Twenty‑First Century: Multiple Jobholding, Precarity, and Anti‑Work in the U.S.",
+        "description": "Dialectical Anthropology (2024) open‑access study linking rise of side‑hustles to growing employment precarity.",
+        "link": "https://link.springer.com/article/10.1007/s10624-024-09738-8"
+      }
+    ],
+    "themes": []
+  }
+  

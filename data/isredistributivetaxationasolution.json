@@ -1,0 +1,158 @@
+{
+    "centralQuestion": "Is redistributive taxation a solution to inequality?",
+    "reasons": [
+      {
+        "description": "Progressive taxes and transfers directly narrow the gap between pre‑tax and post‑tax incomes, lowering measured inequality.",
+        "sources": [
+          {
+            "title": "Brookings Institution: \"Closing the racial wealth gap requires heavy, progressive taxation of wealth\"",
+            "link": "https://www.brookings.edu/articles/closing-the-racial-wealth-gap-requires-heavy-progressive-taxation-of-wealth/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          },
+          {
+            "title": "OECD: \"Income redistribution across OECD countries\"",
+            "link": "https://www.oecd.org/en/publications/income-redistribution-across-oecd-countries_3b63e61c-en.html",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/OECD_logo_xhmdfj.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Revenue from redistributive taxes can fund social investments—such as child‑tax credits, education and health care—that reduce inequality of opportunity.",
+        "sources": [
+          {
+            "title": "Center for American Progress: \"Progressive Principles for the 2025 Tax Debate: Having No Deal Is Better Than Having a Bad Deal\"",
+            "link": "https://www.americanprogress.org/article/progressive-principles-for-the-2025-tax-debate-having-no-deal-is-better-than-having-a-bad-deal/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_american_progress_logo_nkyira.webp"
+          },
+          {
+            "title": "IMF: \"Redistribution, Inequality, and Growth\" (Staff Discussion Note SDN/14/02)",
+            "link": "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Redistributive taxation curbs extreme wealth concentration, promoting fairness and social cohesion.",
+        "sources": [
+          {
+            "title": "Financial Times: \"Meet the insurgent economists promoting a global wealth tax\"",
+            "link": "https://www.ft.com/content/859ef96a-daa8-4fcc-96ab-a3a9465a441a",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          },
+          {
+            "title": "Reuters: \"Majority of Americans favor wealth tax on very rich: Reuters/Ipsos poll\"",
+            "link": "https://www.reuters.com/article/business/majority-of-americans-favor-wealth-tax-on-very-rich-reutersipsos-poll-idUSKBN1Z9140/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Evidence from cross‑country and macro studies finds that well‑designed redistribution can be growth‑neutral or even pro‑growth, challenging the idea that equity and efficiency inevitably trade off.",
+        "sources": [
+          {
+            "title": "IMF: \"Redistribution, Inequality, and Growth\" (Staff Discussion Note SDN/14/02)",
+            "link": "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png"
+          },
+          {
+            "title": "Brookings Institution: \"A significant increase in the top income tax rate wouldn’t substantially alter income inequality\"",
+            "link": "https://www.brookings.edu/articles/would-a-significant-increase-in-the-top-income-tax-rate-substantially-alter-income-inequality/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "Higher marginal rates can reduce incentives to work, save and invest, potentially slowing economic growth.",
+        "sources": [
+          {
+            "title": "Financial Times: \"How squeezing the rich through tax may backfire\"",
+            "link": "https://www.ft.com/content/78026133-c752-4073-a136-66946f9dd8db",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          },
+          {
+            "title": "Bloomberg News: \"Income Inequality Isn't the Problem. Uneven Growth Is.\"",
+            "link": "https://www.bloomberg.com/opinion/articles/2024-09-17/income-inequality-isn-t-the-problem-uneven-growth-is",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Complex redistributive taxes invite avoidance strategies and costly litigation, undermining their effectiveness.",
+        "sources": [
+          {
+            "title": "Reuters: \"Mamdani's 'Millionaire Tax' and Other Financial Fallacies\"",
+            "link": "https://www.reuters.com/markets/us/mamdanis-millionaire-tax-other-financial-fallacies-2025-07-02/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Wealth‑tax experiments abroad show limited revenue and significant economic drag, suggesting the policy may be ineffective in practice.",
+        "sources": [
+          {
+            "title": "Hoover Institution: \"The Wealth Tax Is A Poor Idea\"",
+            "link": "https://www.hoover.org/research/wealth-tax-poor-idea",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Some analysts argue that recent declines in measured inequality stem from broader economic factors, implying redistribution is not the main lever needed.",
+        "sources": [
+          {
+            "title": "Financial Times: \"UK inequality is getting worse, right? But what if it isn't?\"",
+            "link": "https://www.ft.com/content/5ee475d8-3161-4328-ba95-74ce60c41dea",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "“Redistribution, Inequality, and Growth” – IMF Staff Discussion Note SDN/14/02",
+        "description": "Analyzes panel data from 150 countries and concludes that redistribution through taxes and transfers is generally neutral or beneficial for medium‑term growth.",
+        "link": "https://www.imf.org/external/pubs/ft/sdn/2014/sdn1402.pdf"
+      },
+      {
+        "title": "“Taxation and the Superrich” – Annual Review of Economics",
+        "description": "Surveys optimal‑tax theory and empirical evidence on taxing top earners, highlighting behavioral responses and equity‑efficiency trade‑offs.",
+        "link": "https://www.annualreviews.org/doi/10.1146/annurev-economics-081919-115106"
+      },
+      {
+        "title": "“Redistribution for Realists” – Yale Law School Public Law & Legal Theory Paper",
+        "description": "Argues that relying solely on tax‑and‑transfer systems is often politically infeasible, proposing complementary regulatory tools for redistribution.",
+        "link": "https://law.yale.edu/sites/default/files/documents/faculty/papers/liscow_-_redistribution_for_realists_2020-08-03.pdf"
+      },
+      {
+        "title": "“Constrained Income Redistribution and Inequality” – University of Chicago Law & Economics Working Paper",
+        "description": "Explores how political‑economy constraints limit redistributive taxation and may even lead to upward redistribution.",
+        "link": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=2696&context=law_and_economics"
+      },
+      {
+        "title": "“Income Redistribution across OECD Countries” – OECD Economic Policy Paper No. 23",
+        "description": "Documents a long‑run decline in the redistributive power of taxes and transfers across advanced economies and discusses policy options to reverse the trend.",
+        "link": "https://www.oecd.org/en/publications/income-redistribution-across-oecd-countries_3b63e61c-en.html"
+      }
+    ],
+    "themes": []
+  }
+  

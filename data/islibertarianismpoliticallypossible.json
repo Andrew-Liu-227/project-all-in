@@ -1,0 +1,131 @@
+{
+    "centralQuestion": "Is libertarianism politically possible?",
+    "reasons": [
+      {
+        "description": "Recent electoral breakthroughs abroad show voters will back fully libertarian platforms when economic or political discontent is high, proving the model can win power and govern.",
+        "sources": [
+          {
+            "title": "Reuters: Argentina elected radical libertarian Javier Milei as president",
+            "link": "https://www.reuters.com/world/americas/argentina-presidential-election-key-takeaways-mileis-win-2023-11-20/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          },
+          {
+            "title": "Reuters: Argentina’s ‘shock‑therapy’ libertarian economic plan",
+            "link": "https://www.reuters.com/world/americas/what-does-argentinas-shock-therapy-economic-package-involve-2023-12-13/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Growing voter dissatisfaction with the two major U.S. parties leaves political space for Libertarian candidates who now reach ballot access in 40‑plus states, giving them a feasible electoral path.",
+        "sources": [
+          {
+            "title": "POLITICO: Where third‑party candidates could spoil 2024",
+            "link": "https://www.politico.com/interactives/2024/where-are-third-party-candidates-ballots/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          },
+          {
+            "title": "Brookings Institution: What does the Libertarian Party want to be when it grows up?",
+            "link": "https://www.brookings.edu/articles/what-does-the-libertarian-party-want-to-be-when-it-grows-up/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Libertarian ideas—minimal regulation, fiscal restraint and expansive civil liberties—now influence mainstream policy debates, showing their practical adoption without requiring a full third‑party takeover.",
+        "sources": [
+          {
+            "title": "The Economist: Michael Lind’s ‘bad argument’ against anything (debate on trying libertarianism)",
+            "link": "https://www.economist.com/democracy-in-america/2013/06/06/michael-linds-bad-argument-against-anything",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "objections": [
+      {
+        "description": "U.S. ballot‑access laws and first‑past‑the‑post elections impose costly, state‑by‑state hurdles that keep Libertarians off many ballots and out of major debates.",
+        "sources": [
+          {
+            "title": "Reuters: How U.S. states make it tough for third parties in elections",
+            "link": "https://www.reuters.com/world/us/how-us-states-make-it-tough-third-parties-elections-2024-01-18/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Factional infighting—highlighted by brawls at the 2024 Libertarian National Convention—undermines party cohesion and deters donors, activists and swing voters.",
+        "sources": [
+          {
+            "title": "POLITICO: Libertarian convention devolves into fighting, obscenities on eve of Trump’s visit",
+            "link": "https://www.politico.com/news/2024/05/24/libertarian-convention-fighting-obscenities-trump-visit-00160008",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Only a small share of Americans—about 9% in Pew’s typology—hold consistently libertarian views, limiting the potential voter base for a pure libertarian platform.",
+        "sources": [
+          {
+            "title": "Pew Research Center: In Search of Ideologues in America",
+            "link": "https://www.pewresearch.org/politics/2006/04/10/in-search-of-ideologues-in-america/",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      },
+      {
+        "description": "Commentary in The Economist argues that the uncompromising ‘purity’ demanded by many libertarians prevents the pragmatic coalition‑building needed for electoral success.",
+        "sources": [
+          {
+            "title": "The Economist: The problems of purity",
+            "link": "https://www.economist.com/democracy-in-america/2012/01/06/the-problems-of-purity",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+          }
+        ],
+        "underlyingReasons": [],
+        "objections": []
+      }
+    ],
+    "expertPerspectives": [],
+    "research": [
+      {
+        "title": "Feasibility Claims in the Debate over Anarchy versus the Minimal State",
+        "description": "Libertarian Papers (2018) dissects how ‘feasibility’ arguments shape intra‑libertarian disputes between anarchists and minarchists, clarifying practical versus utopian proposals.",
+        "link": "https://libertarianpapers.org/wp-content/uploads/2018/11/post/2018/11/lp-10-2-5.pdf"
+      },
+      {
+        "title": "Explaining the Differential Success of Left‑Libertarian Parties",
+        "description": "Social Forces (2000) uses qualitative comparative analysis to identify electoral systems and opportunity structures that let libertarian‑green parties break through.",
+        "link": "https://academic.oup.com/sf/article-pdf/78/2/491/6518945/78-2-491.pdf"
+      },
+      {
+        "title": "Left‑Libertarian Parties: Explaining Innovation in Competitive Party Systems",
+        "description": "World Politics (1988) shows that new libertarian parties emerge where post‑materialist cleavages align with permissive electoral rules, offering a framework for future prospects.",
+        "link": "https://olemiss.edu/courses/pol628/kitschelt88.pdf"
+      },
+      {
+        "title": "Freedom from Libertarianism",
+        "description": "Journal of Contemporary Legal Issues (2025) traces how libertarian economic ideas reshape policy in the UK and U.S. while highlighting limits of ideological purity in practice.",
+        "link": "https://digital.sandiego.edu/cgi/viewcontent.cgi?article=1080&context=jcli"
+      },
+      {
+        "title": "How Status Preferences Undermine Libertarian Political Stability",
+        "description": "University of California dissertation (2021) argues that social‑status motivations erode support for minimal‑state arrangements, challenging long‑term political sustainability.",
+        "link": "https://escholarship.org/content/qt43g0z8gt/qt43g0z8gt.pdf"
+      }
+    ],
+    "themes": []
+  }
+  
