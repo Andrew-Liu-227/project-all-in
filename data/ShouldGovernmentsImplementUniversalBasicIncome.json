@@ -2,58 +2,68 @@
   "centralQuestion": "Should governments implement universal basic income?",
   "reasons": [
     {
-      "description": "UBI can reduce poverty by providing a stable income floor.",
+      "description": "UBI can reduce poverty and income volatility by giving households a stable floor of support.",
       "sources": [
         {
-          "title": "The New York Times: 'The Case for Universal Basic Income'",
-          "link": "https://www.nytimes.com/2018/02/19/opinion/universal-basic-income.html",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/4/40/New_York_Times_logo_variation.jpg"
+          "title": "Reuters: \"U.S. cities try new way to help the poor: give them money\"",
+          "link": "https://www.reuters.com/world/us/us-cities-try-new-way-help-poor-give-them-money-2021-12-21/",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
         },
         {
-          "title": "Pew Research Center: 'What Public Opinion Polls Say About UBI'",
-          "link": "https://www.pewresearch.org/fact-tank/2020/08/19/public-support-for-universal-basic-income/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/78/Pew_Research_Center_logo.png"
+          "title": "Associated Press: \"Tacoma experiment gives low‑income mothers $500 a month\"",
+          "link": "https://apnews.com/article/2a3027ac5e0257470f94c421679d764f",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
         }
       ],
       "underlyingReasons": [],
       "objections": []
     },
     {
-      "description": "UBI may encourage entrepreneurship by reducing financial risk.",
+      "description": "It offers security in an age of automation, supporting workers' transitions and encouraging entrepreneurship.",
       "sources": [
         {
-          "title": "World Economic Forum: 'Universal Basic Income as a Catalyst for Entrepreneurship'",
-          "link": "https://www.weforum.org/agenda/2020/06/universal-basic-income-entrepreneurship/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/5/53/World_Economic_Forum_logo.png"
+          "title": "Financial Times: \"Universal basic income is best response to automation\"",
+          "link": "https://www.ft.com/content/5f931514-e46e-11e9-b112-9624ec9edc59",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
         },
         {
-          "title": "Brookings Institution: 'Universal Basic Income and Innovation'",
-          "link": "https://www.brookings.edu/research/universal-basic-income-and-the-future-of-work/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Brookings_Logo.png"
+          "title": "Brookings Institution: \"Three reasons for universal basic income\"",
+          "link": "https://www.brookings.edu/articles/three-reasons-for-universal-basic-income/",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
         }
       ],
       "underlyingReasons": [],
       "objections": []
     },
     {
-      "description": "UBI simplifies the welfare system and reduces bureaucratic inefficiency.",
+      "description": "A single unconditional transfer can streamline fragmented welfare systems and cut administrative costs.",
       "sources": [
         {
-          "title": "The Atlantic: 'Why UBI Makes Welfare More Efficient'",
-          "link": "https://www.theatlantic.com/ideas/archive/2018/02/basic-income/553718/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/65/The_Atlantic_logo.png"
+          "title": "The Economist: \"What the spread of universal basic‑income schemes says about America’s safety net\"",
+          "link": "https://www.economist.com/united-states/2023/01/19/what-the-spread-of-universal-basic-income-schemes-says-about-americas-safety-net",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+        },
+        {
+          "title": "OECD: \"Basic income or a single tapering rule? Incentives, inclusiveness and the cost of a universal benefit\"",
+          "link": "https://www.oecd.org/els/workingpapers/Basic-Income-or-a-Single-Tapering-Rule.pdf",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
         }
       ],
       "underlyingReasons": [],
       "objections": []
     },
     {
-      "description": "UBI may improve mental and physical health by reducing financial stress.",
+      "description": "Pilot studies show unconditional cash can improve mental health and overall well‑being.",
       "sources": [
         {
-          "title": "Project Syndicate: 'The Health Case for Basic Income'",
-          "link": "https://www.project-syndicate.org/commentary/universal-basic-income-and-health-by-jane-kaye-et-al-2019-05",
-          "imageLink": "https://assets.project-syndicate.org/uploads/ps-logo-square.png"
+          "title": "PBS NewsHour: \"Employment rose among those in free‑money experiment, study shows\"",
+          "link": "https://www.pbs.org/newshour/economy/employment-rose-among-those-in-free-money-experiment-study-shows",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+        },
+        {
+          "title": "The Guardian: \"Benefit or burden? The cities trying out universal basic income\"",
+          "link": "https://www.theguardian.com/cities/2018/jun/27/benefit-or-burden-the-cities-trying-out-universal-basic-income",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
         }
       ],
       "underlyingReasons": [],
@@ -62,53 +72,51 @@
   ],
   "objections": [
     {
-      "description": "UBI could disincentivize work for some recipients.",
+      "description": "UBI would impose unsustainably high fiscal costs, requiring drastic tax increases or cuts elsewhere.",
       "sources": [
         {
-          "title": "Wall Street Journal: 'The Risks of a Universal Basic Income'",
-          "link": "https://www.wsj.com/articles/the-risks-of-universal-basic-income-11547664936",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/6/6a/WSJ_Logo.png"
+          "title": "The Wall Street Journal: \"Why a Universal Basic Income Would Be a Calamity\"",
+          "link": "https://www.wsj.com/articles/why-a-universal-basic-income-would-be-a-calamity-1502403580",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
         },
         {
-          "title": "BBC: 'Universal Basic Income: Does It Discourage Work?'",
-          "link": "https://www.bbc.com/news/business-51626072",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/8/8e/BBC_News_2022_%28Alt%29.svg"
+          "title": "American Enterprise Institute: \"UBI Needs AGI to Make Sense\"",
+          "link": "https://www.aei.org/articles/ubi-needs-agi-to-make-sense/",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
         }
       ],
       "underlyingReasons": [],
       "objections": []
     },
     {
-      "description": "It may be too expensive to sustain without major tax increases or cuts to other programs.",
+      "description": "Guaranteed income could disincentivize work, especially among young or lower‑skill workers.",
       "sources": [
         {
-          "title": "Brookings Institution: 'Why Universal Basic Income is a Bad Idea'",
-          "link": "https://www.brookings.edu/articles/universal-basic-income-a-bad-idea/",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Brookings_Logo.png"
+          "title": "Bloomberg News: \"Generation Z Should Fear a Guaranteed Income\"",
+          "link": "https://www.bloomberg.com/opinion/articles/2021-07-16/would-a-universal-basic-income-work-for-gen-z",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+        },
+        {
+          "title": "The Times: \"Universal basic income is not the answer if AI comes for your job\"",
+          "link": "https://www.thetimes.co.uk/article/universal-basic-income-is-not-the-answer-if-ai-comes-for-your-job-rdrlphvwj",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Times_Logo_ysdmzp.png"
         }
       ],
       "underlyingReasons": [],
       "objections": []
     },
     {
-      "description": "UBI could crowd out more targeted welfare programs for the most vulnerable.",
+      "description": "Analyses suggest a flat universal transfer may fail to cut poverty if it replaces targeted programs.",
       "sources": [
         {
-          "title": "Carnegie Endowment for International Peace: 'The Problem With UBI'",
-          "link": "https://carnegieendowment.org/2019/07/10/problem-with-universal-basic-income-pub-79541",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Carnegie_Endowment_logo.png"
-        }
-      ],
-      "underlyingReasons": [],
-      "objections": []
-    },
-    {
-      "description": "There is limited evidence from pilots that UBI works at a national scale.",
-      "sources": [
+          "title": "Financial Times: \"Universal basic income would fail to cut poverty, says OECD\"",
+          "link": "https://www.ft.com/content/82334db2-414d-11e7-9d56-25f963e998b2",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png"
+        },
         {
-          "title": "RAND Corporation: 'Universal Basic Income: What Do the Data Say?'",
-          "link": "https://www.rand.org/blog/2020/08/does-universal-basic-income-work.html",
-          "imageLink": "https://upload.wikimedia.org/wikipedia/commons/0/08/RAND_Corporation_logo.png"
+          "title": "IMF: \"What Is Universal Basic Income?\"",
+          "link": "https://www.imf.org/en/Publications/fandd/issues/2018/12/what-is-universal-basic-income-basics",
+          "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png"
         }
       ],
       "underlyingReasons": [],
@@ -118,24 +126,24 @@
   "expertPerspectives": [],
   "research": [
     {
-      "title": "The Macroeconomics of Universal Basic Income Programs",
-      "description": "This article discusses the fiscal feasibility, macroeconomic impacts, and welfare implications of implementing UBI in advanced economies.",
-      "imageLink": "https://journals.sagepub.com/cms/10.1177/00323292211022792/asset/images/large/00323292211022792fig1.jpeg"
+      "title": "The Labor Market Impacts of Universal and Permanent Cash Transfers: Evidence from the Alaska Permanent Fund",
+      "description": "American Economic Journal: Economic Policy (2025) finds the annual dividend had no significant effect on total employment but raised part‑time work, indicating limited labor‑supply disincentives.",
+      "link": "https://www.aeaweb.org/articles?id=10.1257/pol.20190299"
     },
     {
-      "title": "Universal Basic Income: A Review",
-      "description": "A systematic review of empirical evidence from UBI pilots across multiple countries, assessing labor market outcomes, health, and well-being.",
-      "imageLink": "https://www.sciencedirect.com/science/article/pii/S1877042820301286/pdfft?md5=12d236a.jpg"
+      "title": "Short‑term impacts of Universal Basic Income on population mental health inequalities in the UK",
+      "description": "PLOS Medicine (2024) microsimulation shows UBI could narrow mental‑health gaps, especially for women, if most recipients stay in work.",
+      "link": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1004358"
     },
     {
-      "title": "Exploring the Costs and Benefits of Universal Basic Income",
-      "description": "Analyzes the fiscal cost, economic redistribution effects, and potential policy trade-offs of UBI using simulation models.",
-      "imageLink": "https://www.tandfonline.com/cms/asset/3ea0178c-89b2-484a-8fa8-dbaa1d33e8be/3ea0178c-89b2-484a-8fa8-dbaa1d33e8be.jpg"
+      "title": "Effects of guaranteed basic income interventions on poverty‑related outcomes in high‑income countries: A systematic review",
+      "description": "Campbell Systematic Reviews (2023) synthesizes 27 studies and concludes unconditional transfers generally reduce poverty depth and income volatility.",
+      "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11180702/"
     },
     {
-      "title": "Effects of Basic Income Policies in Developed Countries: Evidence from Pilot Programs",
-      "description": "Reviews outcome data from North American and European basic income experiments, focusing on work incentives and subjective well-being.",
-      "imageLink": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7231051/bin/fig1.jpg"
+      "title": "Basic Income in the Finnish Context",
+      "description": "Intereconomics (2017) microsimulation finds a revenue‑neutral UBI simplifies benefits but needs higher taxation to achieve meaningful redistribution.",
+      "link": "https://www.intereconomics.eu/contents/year/2017/number/2/article/basic-income-in-the-finnish-context.html"
     }
   ],
   "themes": []
