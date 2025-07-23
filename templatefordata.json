@@ -78,12 +78,12 @@
     {
       "title": "UBI Pilot Programs: What We’ve Learned",
       "description": "An in-depth analysis of several international UBI trials and their effects on labor, health, and education.",
-      "imageLink": "https://example.com/research1.jpg"
+      "link": "https://example.com/researcharticle1"
     },
     {
       "title": "Funding UBI: Economic Models Compared",
       "description": "Compares various economic models to evaluate the sustainability of different UBI proposals.",
-      "imageLink": "https://example.com/research2.jpg"
+      "link": "https://example.com/researcharticle2"
     }
   ],
   "themes": [
