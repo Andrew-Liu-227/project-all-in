@@ -1,0 +1,8 @@
+Use o3 to get proper links when using scraping prompt
+
+All expert perspectives data inputted manually
+- get pictures for experts on Cloudify
+-get expert perspectives from Op-eds / project syndicate for now
+- Will add interviews for perspectives in the future
+
+
