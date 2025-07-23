@@ -1,75 +1,265 @@
 Question: 
 
-What are the main reasons economic news articles have used to support this assertion?
+What are the main reasons news articles and policy briefs / policy papers have used to support this assertion?
 
-What are the main reasons economic news articles have used to object to this assertion?
+What are the main reasons news articles and policy briefs / policy papers have used to object to this assertion?
 
-Find 0-6 main reasons, 0-6 main objections, depending on what a realistic economic professor would select. Then for each reason/objection, find online news articles that employ that reason or objection. 
+What is a list of peer reviewed research journal articles whose public abstract discuss this issue?
+
+
+Find 0-6 main reasons and 0-6 main objections, depending on what a realistic professor would select. Then for each reason/objection, find online sources that employ that reason or objection. 
+
+As for sourcing, for the news and public policy articles use this specific list of sources I give here: "Reuters - Global news agency known for factual, unbiased reporting
+Associated Press (AP) - Cooperative news agency with strict accuracy standards
+Bloomberg News - Financial and business news with strong analytical focus
+Agence France-Presse (AFP) - French international news agency
+BBC News - British public broadcaster with global reach
+NPR (National Public Radio) - American public radio with rigorous journalism standards
+PBS NewsHour - American public television news program
+Politico - Political journalism with insider analysis
+The Financial Times - British business and financial newspaper
+The Wall Street Journal - American business-focused daily newspaper
+The New York Times - American newspaper with comprehensive coverage
+The Washington Post - American daily newspaper
+The Guardian - British daily newspaper
+The Times (London) - British daily newspaper
+Le Monde - French daily newspaper
+The Economist - British weekly magazine focused on international affairs
+Brookings Institution - American research organization
+Center for Strategic and International Studies (CSIS) - Bipartisan policy institute
+Carnegie Endowment for International Peace - International affairs think tank
+Council on Foreign Relations (CFR) - American foreign policy think tank
+RAND Corporation - American nonprofit global policy think tank
+Urban Institute - American think tank focused on economic and social policy
+Pew Research Center - American fact tank focusing on social issues
+American Enterprise Institute (AEI) - Conservative-leaning public policy institute
+Center for American Progress (CAP) - Progressive public policy research institute
+New America - Think tank focused on technology and policy
+Chatham House (Royal Institute of International Affairs) - British think tank
+International Institute for Strategic Studies (IISS) - British think tank
+Stockholm International Peace Research Institute (SIPRI) - Swedish institute
+German Marshall Fund - American public policy organization
+European Council on Foreign Relations - Pan-European think tank
+Transparency International - Anti-corruption organization
+International Crisis Group - Conflict prevention organization
+Atlantic Council - American think tank promoting international cooperation
+Fraser Institute - Canadian public policy think tank
+Australia Institute - Australian progressive think tank
+Peterson Institute for International Economics - American think tank
+Economic Policy Institute - American think tank
+Congressional Budget Office (CBO) - American federal agency
+International Monetary Fund (IMF) - International financial institution
+World Bank - International financial institution
+OECD (Organisation for Economic Co-operation and Development) - International organization
+Federal Reserve Banks - Regional research departments
+Bank for International Settlements - International financial institution
+McKinsey Global Institute - Business and economics research arm
+Milken Institute - Economic think tank
+
+Harvard Kennedy School Belfer Center - International security and diplomacy
+Stanford Hoover Institution - Public policy think tank
+Princeton School of Public and International Affairs - Academic research center
+Columbia University School of International and Public Affairs - Academic center
+Georgetown Public Policy Institute - Academic research center
+University of Chicago Harris School - Public policy school
+MIT Center for International Studies - Academic research center
+Johns Hopkins School of Advanced International Studies - Academic institution
+London School of Economics - Academic institution
+Migration Policy Institute - Immigration policy research
+Energy Information Administration - Energy data and analysis
+Environmental Protection Agency - Environmental policy and data
+Centers for Disease Control and Prevention - Public health research
+National Academy of Sciences - Scientific advisory body
+Government Accountability Office (GAO) - Congressional oversight agency
+Tax Policy Center - Tax policy research
+Kaiser Family Foundation - Health policy research
+Resources for the Future - Environmental and energy policy
+American Council on Science and Health - Science and health policy
+United Nations Statistics Division - International statistical office
+World Health Organization - Global health authority
+International Energy Agency - Energy policy advisor
+Food and Agriculture Organization - UN agency for food security
+UNESCO - UN educational, scientific and cultural organization
+UNICEF - UN children's agency
+World Trade Organization - International trade organization
+International Labour Organization - UN labor standards agency
+World Economic Forum - International organization for cooperation
+UNCTAD - UN trade and development conference
+Centre for European Policy Studies - European think tank
+German Institute for International and Security Affairs - German think tank
+French Institute of International Relations - French think tank
+Japan Institute of International Affairs - Japanese think tank
+Observer Research Foundation - Indian think tank
+Lowy Institute - Australian international policy think tank
+South African Institute of International Affairs - African think tank
+Fundação Getulio Vargas - Brazilian think tank
+Institute for Security Studies - African security think tank
+Gallup - Analytics and polling company
+Ipsos - Market research and polling company
+Freedom House - Democracy and human rights research
+Reporters Without Borders - Press freedom organization
+Human Rights Watch - International human rights organization
+Amnesty International - Human rights organization
+International Federation of Journalists - Global journalists' organization
+Committee to Protect Journalists - Press freedom advocacy"
+
+Only use sources from this list for the reasons/objections, and no other sources. 
+Try to Find Op-ed articles. If no op-ed articles use news articles. 
+Sometimes articles from a few weeks or months ago don't have usable links because platforms change their pages. 
+For every source you are going to add, first check if the link would work for a regular public user. If the link doesn't work or pulls up a page like page no longer exists, change the source and pick another source from the list of sources I have given. 
+
+
+
+
+
+
 Put all your findings in this type of json format, with the sources including the title of the article (format the title as news outlet: "title"), link to the article, and an image link to the logo of the news source. 
-Respond only in the Json format. Never use wikipedia in your sources. Use goodsources, no tabloids, and try to use a variety of sources.
+
+When you are finding picture links for any of these sources, you should find the name of the news source and match with the links from this list. Each link includes the name of the news source/agency that it is associated with: "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/world_bank_logo_fswjun.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/University_of_chicago_harris_school_logo_sk0vpi.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Transparency_International_Logo_ipkglf.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Washington_Post_Logo_a7x7dl.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Times_Logo_ysdmzp.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_New_York_Times_Logo_sctqoi.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/Stockholm_International_Peace_Research_Institute_Logo_x5bsdg.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/princeton_school_of_public_and_international_affairs_logo_vovcvw.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/peterson_institute_for_international_economics_logo_iofoll.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/NPR_Logo_t4i90g.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/New_America_Logo_svywdx.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/MIT_center_for_international_studies_logo_ld7dlz.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/milken_institute_logo_wugyej.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/mckinsey_global_institute_logo_zdp5lr.webp
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/london_school_of_economics_logo_em9oyp.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/Le_Monde_Logo_ieqoya.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/johns_hopkins_school_of_advanced_international_studies_logo_hksyxp.jpg
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png
+https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/International_institute_for_strategic_studies_logo_phjnvv.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/harvard_kennedy_school_belfer_center_logo_fg26og.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/international_crisis_group_logo_t5nw0e.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/German_Marshall_Fund_Logo_aohawz.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Georgetown_public_policy_institute_logo_senpeu.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Fraser_institute_logo_ytqle1.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Financial_Times_Logo_vwzjhr.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Federal_Reserve_Bank_System_logo_kyyl9y.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/european_council_on_foreign_relations_logo_o3woux.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/congressional_budget_office_logo_rr3btg.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/columbia_university_school_of_international_and_public_affairs_logo_yunyqi.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Chatham_house_logo_sky5j7.webp https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_american_progress_logo_nkyira.webp https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/carnegie_endowment_for_international_peace_logo_zvv7cx.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/BBC_News_Logo_iusjra.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/bank_for_international_settlements_logo_fzvkyp.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Australia_institute_logo_nx9hh9.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Atlantic_Council_Logo_e9uelo.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/agence_france_presse_logo_lvgein.svg https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/World_Trade_Organization_Logo_swpdvl.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/world_health_organization_logo_ilulks.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/World_Economic_Forum_Logo_exvyhf.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/united_nations_statistics_division_logo_cudpvj.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/UNICEF_logo_wktr24.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/UNCTAD_Logo_pnsyhk.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/UNESCO_logo_dcbou2.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/Tax_Policy_center_logo_elf5ab.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/South_African_Institute_of_Internation_Affairs_logo_nf6un4.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Reporters_without_Borders_logo_bfa1h1.svg https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Observer_Research_foundation_logo_wukxcs.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/national_academy_of_sciences_logo_damvwq.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/migration_policy_institute_logo_d1pzv8.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/Lowy_Institute_Logo_kul6bw.gif https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/japan_institute_of_international_affairs_logo_yn8nor.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/Ipsos_logo_yblpiz.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/international_labour_organization_logo_zibqsf.avif https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/International_federaion_of_journalists_logo_gk961g.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/government_accountability_office_logo_sbwkep.svg https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/international_energy_agency_logo_lxjejg.webp https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/institue_for_security_Studies_logo_cbkq31.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/human_rights_watch_logo_jh6zxu.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/german_institute_for_international_and_security_affairs_logo_gkuyyq.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/Gallup_logo_us6uip.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/fundac%CC%A7a%CC%83o_getulio_vargas_logo_bprtfb.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/french_institute_for_international_relations_logo_n3yl6q.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/Environmental_Protection_Agency_Logo_hh4rwk.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/Freedom_House_Logo_h0nms2.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/food_and_agriculture_organization_logo_fdcn6t.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/energy_information_administration_logo_uejqq3.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/committee_to_protect_journalists_logo_jxgwky.webp https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/centre_for_european_policy_studies_logo_c76pw0.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/centers_for_disease_control_and_prevention_logo_gwufqi.jpg https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/amnesty_international_logo_xljwwh.png https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/american_council_on_science_and_health_logo_qhdetj.jpg
+" 
+
+Each of these cloudinary links is paired with a source that I have in the list of sources for reasons/objections. For hot linking purposes, you may ONLY use these exact links. 
+
+
+
+
+For the research articles, find abtracts in peer reviewed research journals that match the topic of the question. Then, in the JSON branch for Research, add your list of 3-5 research articles whose abstracts cover the topic. First select based on author relevance and journal impact factor. Then, out of these research articles, choose ones that are open access. 
+In the research branch, give the title, description and link to the article. Like before, always check the link to the research article is working.
+
+Respond only in the Json format provided below. Everything should be given in the JSON. Leave the “themes” and “expert perspectives” branches blank, but still there. ONly respond to this prompt with the JSON
+
+
+
+
+
+Really take your time to search here using the search api. I want you to scrape the internet, looking at roughly 5 sources for every actual source you include. Take longer than average to answer this question. 
+
+Remember, answer everything in this JSON format. 
+
 
 {
-    "centralQuestion": "Should governments implement universal basic income?",
-    "reasons": [
-      {
-        "description": "UBI can reduce poverty by providing a stable income floor.",
-        "sources": [
-          {
-            "title": "UBI and Poverty Alleviation",
-            "link": "https://example.com/article1",
-            "imageLink": "https://example.com/image1.jpg"
-          },
-          {
-            "title": "Evidence of UBI Success",
-            "link": "https://example.com/article2",
-            "imageLink": "https://example.com/image2.jpg"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "It may encourage entrepreneurship by reducing the risk of failure.",
-        "sources": [
-          {
-            "title": "UBI and Startup Risk-Taking",
-            "link": "https://example.com/article3",
-            "imageLink": "https://example.com/image3.jpg"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      }
-    ],
-    "objections": [
-      {
-        "description": "UBI could disincentivize work for some recipients.",
-        "sources": [
-          {
-            "title": "UBI and Labor Supply",
-            "link": "https://example.com/article4",
-            "imageLink": "https://example.com/image4.jpg"
-          },
-          {
-            "title": "Work Incentives and Free Income",
-            "link": "https://example.com/article5",
-            "imageLink": "https://example.com/image5.jpg"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      },
-      {
-        "description": "It may be too expensive to sustain without cutting other welfare programs.",
-        "sources": [
-          {
-            "title": "Fiscal Cost of UBI",
-            "link": "https://example.com/article6",
-            "imageLink": "https://example.com/image6.jpg"
-          }
-        ],
-        "underlyingReasons": [],
-        "objections": []
-      }
-    ]
-  }
+  "centralQuestion": "Should governments implement universal basic income?",
+  "reasons": [
+    {
+      "description": "UBI can reduce poverty by providing a stable income floor.",
+      "sources": [
+        {
+          "title": "UBI and Poverty Alleviation",
+          "link": "https://example.com/article1",
+          "imageLink": "https://example.com/image1.jpg"
+        },
+        {
+          "title": "Evidence of UBI Success",
+          "link": "https://example.com/article2",
+          "imageLink": "https://example.com/image2.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "It may encourage entrepreneurship by reducing the risk of failure.",
+      "sources": [
+        {
+          "title": "UBI and Startup Risk-Taking",
+          "link": "https://example.com/article3",
+          "imageLink": "https://example.com/image3.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "objections": [
+    {
+      "description": "UBI could disincentivize work for some recipients.",
+      "sources": [
+        {
+          "title": "UBI and Labor Supply",
+          "link": "https://example.com/article4",
+          "imageLink": "https://example.com/image4.jpg"
+        },
+        {
+          "title": "Work Incentives and Free Income",
+          "link": "https://example.com/article5",
+          "imageLink": "https://example.com/image5.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    },
+    {
+      "description": "It may be too expensive to sustain without cutting other welfare programs.",
+      "sources": [
+        {
+          "title": "Fiscal Cost of UBI",
+          "link": "https://example.com/article6",
+          "imageLink": "https://example.com/image6.jpg"
+        }
+      ],
+      "underlyingReasons": [],
+      "objections": []
+    }
+  ],
+  "expertPerspectives": [
+    {
+      "name": "Dr. Jane Smith",
+      "imageLink": "https://example.com/jane-smith.jpg",
+      "description": "An economist at MIT who supports UBI based on pilot studies in Finland and Kenya."
+    },
+    {
+      "name": "Prof. Alan Jones",
+      "imageLink": "https://example.com/alan-jones.jpg",
+      "description": "A public policy professor skeptical of UBI’s long-term fiscal viability."
+    }
+  ],
+  "research": [
+    {
+      "title": "UBI Pilot Programs: What We’ve Learned",
+      "description": "An in-depth analysis of several international UBI trials and their effects on labor, health, and education.",
+      "link": "https://example.com/researcharticle1"
+    },
+    {
+      "title": "Funding UBI: Economic Models Compared",
+      "description": "Compares various economic models to evaluate the sustainability of different UBI proposals.",
+      "link": "https://example.com/researcharticle2"
+    }
+  ],
+  "themes": [
+    "Poverty alleviation",
+    "Work incentives",
+    "Fiscal policy",
+    "Social safety nets",
+    "Economic justice"
+  ]
+}
+
