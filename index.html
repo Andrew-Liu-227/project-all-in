@@ -485,6 +485,25 @@
         font-family: 'Nyt Franklin', sans-serif;
       }
 
+      .tree-branches.focus-mode .branch-section:not(.focused) {
+    transform: scale(0.85);
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.tree-branches.focus-mode .branch-section.focused {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 0 8px 30px rgba(0,123,255,0.3);
+    border: 2px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.branch-section {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
       .search-container input {
         background: none;
         border: none;
@@ -1390,20 +1409,20 @@
       </div>
       
       <div class="masthead">
-        <img src="https://res.cloudinary.com/degebwdf5/image/upload/v1753239162/Mapped_News_Logo-removebg-preview_bmizww.png" alt="Mapped news" width="300" height="300" style="padding-top: 20px; margin: -110px 0;"> 
+        <img src="images/Mapped_News_Logo-removebg-preview.png" alt="Mapped news" width="300" height="300" style="padding-top: 20px; margin: -110px 0;"> 
         <div class="newspaper-subtitle">Understanding Issues through Argument Mapping</div>
       </div>
       
       <div class="header-content">
         <nav>
           <ul class="nav-menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="econ.html">Economics</a></li>
-            <li><a href="social.html">Social Issues</a></li>
-            <li><a href="foreign.html">Foreign Policy</a></li>
-            <li><a href="themes.html">Themes in the News</a></li>
-            <li><a href="experts.html">Expert Perspectives</a></li>
-            <li><a href="methodology.html">Our Methodology</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Economics</a></li>
+            <li><a href="#">Social Issues</a></li>
+            <li><a href="#">Foreign Policy</a></li>
+            <li><a href="#">Themes in the News</a></li>
+            <li><a href="#">Expert Perspectives</a></li>
+            <li><a href="#">Our Methodology</a></li>
           </ul>
         </nav>
         <div class="search-container" style="position: relative;">
@@ -1485,7 +1504,7 @@
             </div>
           </article>
 
-          <article class="story-card" onclick="showArgumentTree('data/trumpstariffs.json', 'Trumps Tariffs and Economics')">
+          <article class="story-card" onclick="showArgumentTree('data/econOBBBA.json', 'Trumps Tariffs and Economics')">
             <div class="story-image">
               Trade Policy Investigation
             </div>
@@ -1510,7 +1529,7 @@
             </div>
           </article>
 
-          <article class="story-card" onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')">
+          <article class="story-card" onclick="showArgumentTree('drafttemplatefordata.json', 'Federal Reserve Independence')">
             <div class="story-image">
               🏛️ Federal Reserve
             </div>
@@ -1625,8 +1644,8 @@
     </div>
 
     <script>
-    
-class ArgumentTreeRenderer {
+      // All original JavaScript functionality preserved and expanded
+      class ArgumentTreeRenderer {
   constructor(container, data) {
     this.container = container;
     this.data = data;
@@ -1670,18 +1689,18 @@ class ArgumentTreeRenderer {
   renderBranch(label, type, items) {
     if (!items?.length) return "";
     return `
-      <div class="branch-section">
-        <div class="branch-label ${type}-label">${label}</div>
-        <div class="nodes-container">
-          ${items.map((item, i) => this.renderNode(item, type, i)).join("")}
-        </div>
-      </div>
-    `;
+  <div class="branch-section" onclick="toggleBranchFocus(this)">
+    <div class="branch-label ${type}-label">${label}</div>
+    <div class="nodes-container">
+      ${items.map((item, i) => this.renderNode(item, type, i)).join("")}
+    </div>
+  </div>
+`;
   }
 
   renderNode(node, type, index) {
     return `
-      <div class="tree-node ${type}-node" data-node-type="${type}" data-node-index="${index}">
+      <div class="tree-node ${type}-node" onclick="event.stopPropagation()" data-node-type="${type}" data-node-index="${index}">
         ${this.renderNodeHeader(node, type)}
         <div class="node-description">${node.description}</div>
         ${this.renderSources(node, type)}
@@ -1895,6 +1914,29 @@ function toggleSubNodes(button) {
   const isExpanded = subNodes.classList.contains("expanded");
   subNodes.classList.toggle("expanded", !isExpanded);
   button.textContent = isExpanded ? "Show Details" : "Hide Details";
+}
+
+let focusedBranch = null;
+
+function toggleBranchFocus(branchElement) {
+    const branchesContainer = document.querySelector('.tree-branches');
+    
+    if (focusedBranch === branchElement) {
+        // Remove focus mode
+        branchesContainer.classList.remove('focus-mode');
+        document.querySelectorAll('.branch-section').forEach(branch => {
+            branch.classList.remove('focused');
+        });
+        focusedBranch = null;
+    } else {
+        // Enable focus mode
+        branchesContainer.classList.add('focus-mode');
+        document.querySelectorAll('.branch-section').forEach(branch => {
+            branch.classList.remove('focused');
+        });
+        branchElement.classList.add('focused');
+        focusedBranch = branchElement;
+    }
 }
 
 document
