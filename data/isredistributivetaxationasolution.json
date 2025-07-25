@@ -153,6 +153,8 @@
         "link": "https://www.oecd.org/en/publications/income-redistribution-across-oecd-countries_3b63e61c-en.html"
       }
     ],
-    "themes": []
+    "themes": ["Taxation",
+    "Wealth",
+    "Inequality"]
   }
   
