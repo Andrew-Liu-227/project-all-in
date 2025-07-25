@@ -141,6 +141,9 @@
         "link": "https://www.nber.org/system/files/working_papers/w26611/w26611.pdf"
       }
     ],
-    "themes": []
+    "themes": ["Trade",
+    "Tariffs",
+    "Manufacturing"
+]
   }
   
