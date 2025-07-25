@@ -156,15 +156,24 @@
         border-bottom: 1px solid #e2e2e2;
       }
 
+      .themes-container-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; /* aligns it left */
+        padding-left: 0px; /* match padding of .arg-content if needed */
+      }
+
       /* Themes Container Styles - Orange */
       .themes-container {
-        background: linear-gradient(135deg, #ff8c42, #ff7518);
-        border: 2px solid #e8651a;
+        background: linear-gradient(135deg, #373f47, #3c3c3c);
+        border: 2px solid #cbcbcb;
         border-radius: 12px;
         padding: 16px;
-        margin: 20px auto;
-        max-width: 800px;
+        margin: 20px 0;
+        max-width: 500px;
         box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+        width: fit-content;
+        text-align: left;
       }
 
       .themes-label {
@@ -184,14 +193,14 @@
       }
 
       .theme-tag {
-        background: rgba(255, 255, 255, 0.9);
-        color: #e8651a;
+        background: #ffffff;
+        color: #373f47;
         padding: 6px 12px;
-        border-radius: 20px;
+        border-radius: 8px;
         font-size: 14px;
         font-weight: 500;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(232, 101, 26, 0.3);
+        border: 2px solid #cbcbcb;
       }
 
       /* Research Branch Styles - Blue */
@@ -1201,6 +1210,7 @@
       .central-question {
         background: #449dd1;
         color: white;
+        border: 2px solid rgb(0, 13, 128);
         padding: 25px 40px;
         text-align: center;
         font-size: 18px;
@@ -1738,7 +1748,7 @@
       <!-- Sidebar -->
       <aside class="sidebar">
         <div class="sidebar-widget">
-          <h3 class="widget-title">Trending Topics</h3>
+          <h3 class="widget-title">Trending Issues</h3>
 
           <article
             class="story-card"
@@ -1839,10 +1849,13 @@
 
         render(data) {
           return `
+
+      <div class="themes-container-wrapper">
+         ${this.renderThemes(data.themes)}
+      </div>    
       <div class="tree-container">
         <svg class="connection-svg" id="connectionSvg"></svg>
         <div class="central-question">${data.centralQuestion}</div>
-        ${this.renderThemes(data.themes)}
         <div class="tree-branches">
           ${this.renderBranch("Supporting Reasons", "reason", data.reasons)}
           ${this.renderBranch("Objections", "objection", data.objections)}
