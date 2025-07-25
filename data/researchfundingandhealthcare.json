@@ -101,7 +101,13 @@
         "objections": []
       }
     ],
-    "expertPerspectives": [],
+    "expertPerspectives": [
+        {
+        "name": "Dr. Steven H. Woolf",
+        "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753456463/steven-woolf-md-fairfax-va_ixfdkn.webp",
+        "description": "Steven H. Woolf's take on research funding cuts:      Physicians like me know from the data that lives will be lost as a consequence. More than 6,000 health professionals (myself included) have warned the public about their concerns in an open letter. Yet institutions of all kinds seem to be cowering to Mr. Trump, afraid of being punished or prosecuted for questioning his wishes. The administration has defied the courts and gone after law firms and universities, and is unlikely to spare medicine. Just as it has pressured the media to alter the news, the government is now challenging medical journals to alter what they publish. Times like these call on us to speak the truth. On matters of life and death, physicians like me have an added duty to warn patients and the public. People may feel that a shakeup in Washington is long overdue. But too many Americans, including our leaders, take their health for granted, assuming that the infrastructure to prevent disease and save their lives will always be there, that America will always lead the world in science and that systems to keep their children safe will always exist. None of this can be counted on, especially now.       https://www.nytimes.com/interactive/2025/06/30/opinion/hhs-cuts-harming-american-health.html       "
+      }
+    ],
     "research": [
       {
         "title": "Comparison of Research Spending on New Drug Approvals by the NIH and Industry, 2010‑2019",
@@ -124,6 +130,9 @@
         "link": "https://www.healthaffairs.org/doi/10.1377/hlthaff.2024.01001"
       }
     ],
-    "themes": []
+    "themes": ["Research Funding",
+    "Health Care",
+    "Funding Cuts"
+]
   }
   
