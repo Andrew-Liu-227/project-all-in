@@ -650,6 +650,14 @@
         font-size: 16px;
         margin-bottom: 20px;
         border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .featured-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .featured-content {
@@ -737,6 +745,13 @@
         font-size: 14px;
         margin-bottom: 20px;
         border-radius: 8px;
+        overflow: hidden;
+      }
+      .story-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .story-content {
@@ -1482,21 +1497,24 @@
           class="featured-story"
           onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')"
         >
-          <div class="featured-image">Economic Policy Analysis</div>
+          <div class="featured-image">
+            <img
+              src="https://res.cloudinary.com/degebwdf5/image/upload/v1753452354/universalbasicincomeimage_ssjggx.webp"
+              alt="Universal Basic Income"
+            />
+          </div>
           <div class="featured-content">
             <div class="story-meta">
-              <span>Today, 2:30 PM</span>
-              <span>By Economic Research Team</span>
+              <span> 7-22-2025</span>
+              <span></span>
             </div>
             <h1 class="featured-title">
               Should Governments Implement Universal Basic Income?
             </h1>
             <p class="featured-summary">
               As economic pressures mount globally, governments are
-              reconsidering UBI policies. Our comprehensive analysis examines
-              arguments from leading economists, policy experts, and real-world
-              pilot programs to provide a balanced perspective on this critical
-              economic debate.
+              reconsidering UBI policies. Is UBI the solution to the higher
+              income inequality created by AI?
             </p>
             <div class="story-tags">
               <span class="tag">UBI</span>
@@ -1505,7 +1523,7 @@
               <span class="tag">Government Spending</span>
             </div>
             <div class="story-footer">
-              <span class="read-time">8 min read</span>
+              <span class="read-time"></span>
               <button class="view-analysis">Read Analysis</button>
             </div>
           </div>
@@ -1521,27 +1539,31 @@
             class="story-card"
             onclick="showArgumentTree('data/isrentcontrolgoodfornewyorkcity.json', 'Is Rent Control Good for New York City')"
           >
-            <div class="story-image">Housing Policy Report</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454100/rent_controll_nq96ml.jpg"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>3 hours ago</span>
-                <span>NYC Bureau</span>
+                <span>7-25-2025</span>
+                <span></span>
               </div>
               <h3 class="story-title">
                 Is Rent Control Good for New York City?
               </h3>
               <p class="story-summary">
                 New York's rent control debate intensifies as housing costs
-                soar. Our analysis examines the economic arguments for and
-                against rent stabilization policies in America's most expensive
-                city.
+                soar. As the Mayoral Election approaches, is this policy choice
+                economically feasible?
               </p>
               <div class="story-tags">
                 <span class="tag">Housing</span>
                 <span class="tag">NYC Policy</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">8 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">Read Analysis</button>
               </div>
             </div>
@@ -1551,19 +1573,24 @@
             class="story-card"
             onclick="showArgumentTree('data/trumpstariffs.json', 'Trumps Tariffs and Economics')"
           >
-            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753453870/tariffeffectdrawing_het59f.jpg"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
+                <span>7-25-2025</span>
+                <span></span>
               </div>
               <h3 class="story-title">
                 Are Trump's Tariffs Economically Sound?
               </h3>
               <p class="story-summary">
                 Trade economists debate the effectiveness of tariff policies on
-                domestic manufacturing and consumer prices. A comprehensive
-                analysis of trade policy impacts on the American economy.
+                domestic manufacturing and consumer prices. Do tariffs actually
+                benefit the average American?
               </p>
               <div class="story-tags">
                 <span class="tag">Trade</span>
@@ -1571,7 +1598,7 @@
                 <span class="tag">Manufacturing</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
@@ -1581,23 +1608,31 @@
             class="story-card"
             onclick="showArgumentTree('data/isredistributivetaxationasolution.json', 'is redistributive taxation a solution to inequality??')"
           >
-            <div class="story-image">redistributive taxation</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753453752/taximage_qvv826.png"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
+                <span>7-25-2025</span>
+                <span> </span>
               </div>
               <h3 class="story-title">
                 Is redistributive taxation a solution to inequality?
               </h3>
-              <p class="story-summary"></p>
+              <p class="story-summary">
+                How much does redistributive taxation impact the increasing
+                margin between rich and poor?
+              </p>
               <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
+                <span class="tag">Taxation</span>
+                <span class="tag">Wealth</span>
+                <span class="tag">Inequality</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
@@ -1607,79 +1642,32 @@
             class="story-card"
             onclick="showArgumentTree('data/isthejobmarketworsethanitwasagenerationago.json', 'is the Job market worse than it was a generation ago?')"
           >
-            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753453477/job_market_photo_cmmthv.jpg"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
+                <span>7-23-2025</span>
+                <span></span>
               </div>
               <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
+                Is the Job Market worse than it was a generation ago?
               </h3>
               <p class="story-summary">
-                Is the job market worse than it was a generation ago?
+                How are new college grads being impacted by the changing
+                economic and technological landscape? Do the positives outweigh
+                the negatives?
               </p>
               <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
+                <span class="tag">Jobs</span>
+                <span class="tag">College</span>
+                <span class="tag">Labor Market</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="story-card"
-            onclick="showArgumentTree('data/researchfundingandhealthcare.json', 'How will Research Funding Cuts affect the health sector?')"
-          >
-            <div class="story-image">Trade Policy Investigation</div>
-            <div class="story-content">
-              <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
-              </div>
-              <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
-              </h3>
-              <p class="story-summary">
-                How will Research Funding Cuts affect the health sector?
-              </p>
-              <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="story-card"
-            onclick="showArgumentTree('data/wealthtax.json', 'Should we implement a wealth tax?')"
-          >
-            <div class="story-image">Trade Policy Investigation</div>
-            <div class="story-content">
-              <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
-              </div>
-              <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
-              </h3>
-              <p class="story-summary">Should we implement a wealth tax?</p>
-              <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
@@ -1689,26 +1677,31 @@
             class="story-card"
             onclick="showArgumentTree('data/willundocumentedimmigrantscreateanetbenefitfortheamericaneconomy.json', 'Do Undocumented Immigrants create a Net Benefit for the American Economy?')"
           >
-            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454448/U.S._Immigration_oncr9l.avif"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
+                <span>7-23-2025</span>
+                <span></span>
               </div>
               <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
-              </h3>
-              <p class="story-summary">
                 Do undocumented immigrants create a net benefit for the American
                 Economy?
+              </h3>
+              <p class="story-summary">
+                Are undocumented immigrants actually bad for the economy, or do
+                they contribute to growth?
               </p>
               <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
+                <span class="tag">Immigration</span>
+                <span class="tag">Labor Market</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
@@ -1718,10 +1711,15 @@
             class="story-card"
             onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')"
           >
-            <div class="story-image">🏛️ Federal Reserve</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454576/Federal_reserve_drawing_zrsefp.jpg"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>📅 1 day ago</span>
+                <span>7-23-2025</span>
                 <span>🏛️ Fed Policy</span>
               </div>
               <h3 class="story-title">
@@ -1729,15 +1727,15 @@
               </h3>
               <p class="story-summary">
                 Central bank independence faces scrutiny as political pressures
-                mount. Analyzing the economic arguments for autonomous monetary
-                policy.
+                mount. Why is important for a portion of Economic Policy to be
+                non political?
               </p>
               <div class="story-tags">
                 <span class="tag">Federal Reserve</span>
                 <span class="tag">Monetary Policy</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 10 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
@@ -1754,25 +1752,32 @@
             class="story-card"
             onclick="showArgumentTree('data/researchfundingandhealthcare.json', 'How will Research Funding Cuts affect the health sector?')"
           >
-            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454873/public-health-cuts-illustration-15-927x617_tyyq6c.webp"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
+                <span>7-24-2025</span>
+                <span></span>
               </div>
               <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
+                Will Research Funding Cuts have an Outsized Impact on the Health Sector?
               </h3>
               <p class="story-summary">
-                How will Research Funding Cuts affect the health sector?
+                What are the issues with cutting research funding in the health
+                sciences? Will this affect the wider healthcare sector, which
+                significantly contributes to the nation's growth?
               </p>
               <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
+                <span class="tag">Research Funding</span>
+                <span class="tag">Health Care</span>
+                <span class="tag">Funding Cuts</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
@@ -1782,23 +1787,30 @@
             class="story-card"
             onclick="showArgumentTree('data/wealthtax.json', 'Should we implement a wealth tax?')"
           >
-            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-image">
+              <img
+                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753455163/wealthtaxrichguy_anxuhf.jpg"
+                alt=""
+              />
+            </div>
             <div class="story-content">
               <div class="story-meta">
-                <span>5 hours ago</span>
-                <span>Washington Bureau</span>
+                <span>7-23-2025</span>
+                <span></span>
               </div>
-              <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
-              </h3>
-              <p class="story-summary">Should we implement a wealth tax?</p>
+              <h3 class="story-title">Should we implement a wealth tax?</h3>
+              <p class="story-summary">
+                Could wealth taxes be the way to address inequality, instead of
+                income taxation? What are the problems with implementing a
+                possible wealth tax?
+              </p>
               <div class="story-tags">
-                <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
+                <span class="tag">Taxation</span>
+                <span class="tag">Wealth</span>
+                <span class="tag">Inequality</span>
               </div>
               <div class="story-footer">
-                <span class="read-time">⏱️ 12 min read</span>
+                <span class="read-time"></span>
                 <button class="view-analysis">View Analysis</button>
               </div>
             </div>
