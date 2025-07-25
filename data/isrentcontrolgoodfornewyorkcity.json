@@ -81,11 +81,7 @@
       {
         "description": "Economists warn that limiting some rents can push prices higher in the unregulated sector, unintentionally raising average market rents.",
         "sources": [
-          {
-            "title": "American Enterprise Institute: \"Zohran Mamdani's rent freeze will warp NYC's housing market and hurt us all\"",
-            "link": "https://www.aei.org/op-eds/zohran-mamdanis-rent-freeze-will-warp-nycs-housing-market-and-hurt-us-all/",
-            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
-          },
+          
           {
             "title": "Politico: \"Mamdani would freeze rents\"",
             "link": "https://www.politico.com/live-updates/2025/06/04/1st-nyc-mayoral-primary-debate/mamdani-would-freeze-rents-00388171",
@@ -99,7 +95,7 @@
     "expertPerspectives": [{
         "name": "Howard Husock",
         "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753296196/Howard_Husock_em1jms.jpg",
-        "description": "Howard Husock is a Senior Fellow at the American Enterprise Institute. https://www.aei.org/op-eds/zohran-mamdanis-rent-freeze-will-warp-nycs-housing-market-and-hurt-us-all/"
+        "description": "Howard Husock is a Senior Fellow at the American Enterprise Institute: 'The report compared the condition of rent-stabilized units with those that are unregulated — and its results should be eye-opening for those wanting to follow in de Blasio’s footsteps. As de Blasio left office, 33% of rent-stabilized units (316,000 apartments) had rodents, twice as many as unregulated ones. Roughly twice as many regulated apartments were found to have leaks, heating breakdowns, broken plaster or peeling paint, toilet malfunctions, elevator outages and mold. As much as progressives may want to blame greedy slumlords for all these woes, the reality is that squeezing rental income — for property owners who must pay banks that certainly won’t freeze mortgage payments — means repairs and improvements are more likely to be put off.' https://www.aei.org/op-eds/zohran-mamdanis-rent-freeze-will-warp-nycs-housing-market-and-hurt-us-all/"
       }
     
     ],
@@ -125,6 +121,8 @@
         "link": "https://www.sciencedirect.com/science/article/pii/S1051137724000020"
       }
     ],
-    "themes": []
+    "themes": ["Housing",
+    "NYC Policy"
+]
   }
   
