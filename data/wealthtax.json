@@ -2,7 +2,7 @@
     "centralQuestion": "Should governments create a wealth tax?",
     "reasons": [
       {
-        "description": "A national wealth tax could generate significant new revenue—potentially well over $200 billion a year globally—providing funds for poverty reduction, climate action, and other public goods. :contentReference[oaicite:0]{index=0}",
+        "description": "A national wealth tax could generate significant new revenue—potentially well over $200 billion a year globally—providing funds for poverty reduction, climate action, and other public goods. ",
         "sources": [
           {
             "title": "Reuters: Comment – Taxing the super‑rich is critical for our economies, the planet and closing the wealth gap",
@@ -14,7 +14,7 @@
         "objections": []
       },
       {
-        "description": "Supporters argue that a wealth tax would curb extreme wealth concentration, bolstering social cohesion and democratic stability—and even some ultra‑rich individuals say they would welcome it. :contentReference[oaicite:1]{index=1}",
+        "description": "Supporters argue that a wealth tax would curb extreme wealth concentration, bolstering social cohesion and democratic stability—and even some ultra‑rich individuals say they would welcome it. ",
         "sources": [
           {
             "title": "The Guardian: Labour shouldn’t fear taxing the rich – the people I work with would welcome it",
@@ -52,7 +52,7 @@
     ],
     "objections": [
       {
-        "description": "Valuing illiquid assets, policing evasion, and litigating disputes could make a wealth tax costly to administer and erode expected revenues. :contentReference[oaicite:4]{index=4}",
+        "description": "Valuing illiquid assets, policing evasion, and litigating disputes could make a wealth tax costly to administer and erode expected revenues. ",
         "sources": [
           {
             "title": "Tax Policy Center: Taxing Wealth in the United States – Issues and Challenges",
@@ -64,7 +64,7 @@
         "objections": []
       },
       {
-        "description": "Higher net‑worth levies may prompt wealthy residents to relocate, reducing the domestic tax base—as early UK experience after scrapping ‘non‑dom’ perks suggests. :contentReference[oaicite:5]{index=5}",
+        "description": "Higher net‑worth levies may prompt wealthy residents to relocate, reducing the domestic tax base—as early UK experience after scrapping ‘non‑dom’ perks suggests.",
         "sources": [
           {
             "title": "Reuters: UK is now risky lab rat for rich tax‑perk reform",
@@ -76,7 +76,7 @@
         "objections": []
       },
       {
-        "description": "Tech investors warn that taxing unrealised gains or large fortunes could sap liquidity needed for high‑risk innovation and slow the start‑up ecosystem. :contentReference[oaicite:6]{index=6}",
+        "description": "Tech investors warn that taxing unrealised gains or large fortunes could sap liquidity needed for high‑risk innovation and slow the start‑up ecosystem. ",
         "sources": [
           {
             "title": "Financial Times: Silicon Valley’s elite rattled by prospect of tax on unrealised gains",
@@ -100,7 +100,19 @@
         "objections": []
       }
     ],
-    "expertPerspectives": [],
+    "expertPerspectives": [
+        {
+            "name": "Joseph Stiglitz",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753458624/Joseph-Stiglitz_ofcl_headshot_0_vxhvcp.jpg",
+            "description": " 'People at the top might work a little bit less if you tax them more. But on the other hand, our society gains in having a more egalitarian, cohesive society.'    https://www.theguardian.com/news/2023/jan/22/joseph-stiglitz-economist-income-tax-high-earners-70-per-cent-inequality "
+          },
+
+          {
+            "name": "Tyler Cowen",
+            "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753458645/Tyler-Cowen_x0oggb.png",
+            "description": " 'The simple fact is that large welath taxes do not mesh well with the norms and practices required by a successful and prosperous capitalist democracy. It is hard to find well-functioning societies based on anything other than strong legal, political, and institutional respect and support for their most successful citizens.' https://www.jstor.org/stable/24483415?seq=7" 
+              }
+    ],
     "research": [
       {
         "title": "Taxing Our Wealth",
@@ -114,10 +126,13 @@
       },
       {
         "title": "Avoidance Responses to the Wealth Tax",
-        "description": "Mas‑Montserrat et al. (Journal of Public Economics, 2025) show Spain’s 2011 wealth‑tax reintroduction triggered significant avoidance that cut long‑run revenues by nearly three‑fold. :contentReference[oaicite:10]{index=10}",
+        "description": "Mas‑Montserrat et al. (Journal of Public Economics, 2025) show Spain’s 2011 wealth‑tax reintroduction triggered significant avoidance that cut long‑run revenues by nearly three‑fold. ",
         "link": "https://ideas.repec.org/a/eee/pubeco/v246y2025ics0047272725000490.html"
       }
     ],
-    "themes": []
+    "themes": ["Taxation",
+    "Wealth",
+    "Inequality"
+]
   }
   
