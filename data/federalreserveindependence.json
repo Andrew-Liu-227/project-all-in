@@ -2,7 +2,7 @@
     "centralQuestion": "Is it important to keep the Federal Reserve independent?",
     "reasons": [
       {
-        "description": "Independence anchors long‑term inflation expectations and keeps prices stable, even when elected officials push for easier money. :contentReference[oaicite:0]{index=0}",
+        "description": "Independence anchors long‑term inflation expectations and keeps prices stable, even when elected officials push for easier money. ",
         "sources": [
           {
             "title": "Reuters: Trump has already crossed Fed independence Rubicon",
@@ -19,7 +19,7 @@
         "objections": []
       },
       {
-        "description": "Market credibility from an independent Fed lowers borrowing costs and stabilizes financial markets. :contentReference[oaicite:1]{index=1}",
+        "description": "Market credibility from an independent Fed lowers borrowing costs and stabilizes financial markets. ",
         "sources": [
           {
             "title": "The Economist: The insidious threats to central‑bank independence",
@@ -36,7 +36,7 @@
         "objections": []
       },
       {
-        "description": "Political meddling creates election‑driven boom‑bust cycles; independence reduces the risk of ‘fiscal dominance’ and politically motivated rate cuts. :contentReference[oaicite:2]{index=2}",
+        "description": "Political meddling creates election‑driven boom‑bust cycles; independence reduces the risk of ‘fiscal dominance’ and politically motivated rate cuts. ",
         "sources": [
           {
             "title": "Politico: Trump’s big fiscal dominance play",
@@ -48,7 +48,7 @@
         "objections": []
       },
       {
-        "description": "An independent Fed can act swiftly in crises—such as 2008—using technical expertise without waiting for partisan consensus, helping avert financial collapse. :contentReference[oaicite:3]{index=3}",
+        "description": "An independent Fed can act swiftly in crises—such as 2008—using technical expertise without waiting for partisan consensus, helping avert financial collapse. ",
         "sources": [
           {
             "title": "Associated Press: Ex‑Fed Chair Bernanke shares Nobel for bank‑failure research",
@@ -60,7 +60,7 @@
         "objections": []
       },
       {
-        "description": "Independence shields monetary policy from pressures to monetize debt, supporting long‑run fiscal sustainability and protecting savers from inflation. :contentReference[oaicite:4]{index=4}",
+        "description": "Independence shields monetary policy from pressures to monetize debt, supporting long‑run fiscal sustainability and protecting savers from inflation. ",
         "sources": [
           {
             "title": "Reuters Breakingviews: Fed should be independent, not untouchable",
@@ -74,7 +74,7 @@
     ],
     "objections": [
       {
-        "description": "Unelected central bankers wield immense power with limited democratic accountability; key economic choices should be made by elected officials. :contentReference[oaicite:5]{index=5}",
+        "description": "Unelected central bankers wield immense power with limited democratic accountability; key economic choices should be made by elected officials. ",
         "sources": [
           {
             "title": "The Guardian: Central banks were always political—so their ‘independence’ doesn’t cut it",
@@ -86,7 +86,7 @@
         "objections": []
       },
       {
-        "description": "Fed independence has enabled ‘mission creep’ and large‑scale bailouts, socializing losses for Wall Street while insulating decisions from public scrutiny. :contentReference[oaicite:6]{index=6}",
+        "description": "Fed independence has enabled ‘mission creep’ and large‑scale bailouts, socializing losses for Wall Street while insulating decisions from public scrutiny. ",
         "sources": [
           {
             "title": "The Washington Post: What is the Federal Reserve for, exactly?",
@@ -103,7 +103,7 @@
         "objections": []
       },
       {
-        "description": "Strict separation of monetary and fiscal policy can hamper coordinated responses to supply‑side shocks; elected leaders—not technocrats—should balance employment and price stability. :contentReference[oaicite:7]{index=7}",
+        "description": "Strict separation of monetary and fiscal policy can hamper coordinated responses to supply‑side shocks; elected leaders—not technocrats—should balance employment and price stability. ",
         "sources": [
           {
             "title": "Center for American Progress: Effective Inflation Control Requires Supply‑Side Policy",
@@ -115,7 +115,7 @@
         "objections": []
       },
       {
-        "description": "An independent Fed has sometimes prioritized low inflation over full employment, contributing to wage stagnation and inequality. :contentReference[oaicite:8]{index=8}",
+        "description": "An independent Fed has sometimes prioritized low inflation over full employment, contributing to wage stagnation and inequality. ",
         "sources": [
           {
             "title": "Economic Policy Institute: Monetary policy and the Federal Reserve",
@@ -131,25 +131,27 @@
     "research": [
       {
         "title": "Treasury Market Dysfunction and the Role of the Central Bank",
-        "description": "Brookings Papers on Economic Activity (Spring 2025) finds that an independent central bank is crucial for stabilizing Treasury markets during stress episodes. :contentReference[oaicite:9]{index=9}",
+        "description": "Brookings Papers on Economic Activity (Spring 2025) finds that an independent central bank is crucial for stabilizing Treasury markets during stress episodes. ",
         "link": "https://www.brookings.edu/wp-content/uploads/2025/03/4_Kashyap-et-al.pdf"
       },
       {
         "title": "A New Measure of Central Bank Independence",
-        "description": "IMF Working Paper WP/2024/35 introduces an updated de jure independence index covering 192 countries from 1970‑2023. :contentReference[oaicite:10]{index=10}",
+        "description": "IMF Working Paper WP/2024/35 introduces an updated de jure independence index covering 192 countries from 1970‑2023. ",
         "link": "https://www.imf.org/-/media/Files/Publications/WP/2024/English/wpiea2024035-print-pdf.ashx"
       },
       {
         "title": "Federal Reserve Independence and Congressional Intent",
-        "description": "NBER Working Paper 33174 argues that Congress’s original intent supports a high degree of Fed autonomy to insulate policy from electoral cycles. :contentReference[oaicite:11]{index=11}",
+        "description": "NBER Working Paper 33174 argues that Congress’s original intent supports a high degree of Fed autonomy to insulate policy from electoral cycles. ",
         "link": "https://www.nber.org/system/files/working_papers/w33174/w33174.pdf"
       },
       {
         "title": "Central Bank Independence: Myth and Misunderstanding",
-        "description": "Levy Economics Institute Working Paper 791 critiques common assumptions about Fed independence and proposes accountability reforms. :contentReference[oaicite:12]{index=12}",
+        "description": "Levy Economics Institute Working Paper 791 critiques common assumptions about Fed independence and proposes accountability reforms. ",
         "link": "https://www.levyinstitute.org/wp-content/uploads/2024/02/wp_791.pdf"
       }
     ],
-    "themes": []
+    "themes": ["Federal Reserve",
+    "Monetary Policy"
+        ]
   }
   
