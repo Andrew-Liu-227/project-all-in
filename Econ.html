@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (GA4) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K1N6T05HS5"
+    ></script>
+    <script>
+      // Define gtag() immediately so it's available to all your scripts
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      // Wait for DOM to load before configuring GA (your working model)
+      window.addEventListener("DOMContentLoaded", function () {
+        gtag("js", new Date());
+        gtag("config", "G-K1N6T05HS5", { debug_mode: true }); // ✅ Required for DebugView
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapped News</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/degebwdf5/image/upload/v1753394046/Mapped_News_Favicon_h9l2jp.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nunito", Arial, sans-serif !important;
+        font-weight: 400 !important;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes scaleIn {
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      @keyframes modalSlideIn {
+        from {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes modalSlideOut {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-100vh);
+          opacity: 0;
+        }
+      }
+      /* Popup Overlay */
+      #popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 0.4s ease forwards;
+      }
+
+      /* Popup Box */
+      #popup-box {
+        background: white;
+        padding: 25px 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 90%;
+        width: 340px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transform: scale(0.95);
+        opacity: 0;
+        animation: scaleIn 0.4s ease forwards;
+      }
+
+      #popup-box h3 {
+        font-size: 40px;
+        font-weight: 1000;
+        margin-bottom: 15px;
+      }
+
+      #popup-box p {
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #fffbed;
+        color: #121212;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      /* Header - NYT Style */
+      .newspaper-header {
+        background: #fffbed;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .date-bar {
+        background: #fffbed;
+        color: #666;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .masthead {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .themes-container-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; /* aligns it left */
+        padding-left: 0px; /* match padding of .arg-content if needed */
+      }
+
+      /* Themes Container Styles - Orange */
+      .themes-container {
+        background: linear-gradient(135deg, #373f47, #3c3c3c);
+        border: 2px solid #cbcbcb;
+        border-radius: 12px;
+        padding: 16px;
+        margin: 20px 0;
+        max-width: 500px;
+        box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+        width: fit-content;
+        text-align: left;
+      }
+
+      .themes-label {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 12px;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .themes-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .theme-tag {
+        background: #ffffff;
+        color: #373f47;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid #cbcbcb;
+      }
+
+      /* Research Branch Styles - Blue */
+      .research-label {
+        background: linear-gradient(135deg, #4a90e2, #357abd);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .research-node {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        border: 2px solid #4a90e2;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .research-node:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(74, 144, 226, 0.3);
+      }
+
+      .research-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+      }
+
+      /* Source images in reasons/objections nodes */
+      .source-image {
+        max-width: 100%;
+        height: auto;
+        width: 40px; /* Adjust size as needed */
+        height: 40px; /* Fixed height for consistency */
+        object-fit: cover; /* Maintains aspect ratio, crops if needed */
+        border-radius: 4px;
+        flex-shrink: 0; /* Prevents image from shrinking in flex containers */
+        margin-right: 8px;
+      }
+
+      /* Source container styling */
+      .source {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .sources {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      /* Header images for research/expert nodes */
+      .node-header-image {
+        max-width: 100%;
+        height: auto;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 6px;
+        flex-shrink: 0;
+        margin-right: 12px;
+      }
+
+      /* Header container styling */
+      .node-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .node-title {
+        font-weight: 600;
+        flex: 1;
+        min-width: 0; /* Allows text to wrap/truncate properly */
+      }
+
+      /* Specific styling for research images */
+      .research-image {
+        border: 2px solid #3498db;
+      }
+
+      /* Specific styling for expert images */
+      .expert-image {
+        border: 2px solid #9b59b6;
+        border-radius: 50%; /* Circular for person photos */
+      }
+
+      /* General node styling to handle wrapping */
+      .tree-node {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        overflow: hidden; /* Prevents content from breaking layout */
+      }
+
+      .node-description {
+        line-height: 1.4;
+        margin-bottom: 8px;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .source-image {
+          width: 32px;
+          height: 32px;
+        }
+
+        .node-header-image {
+          width: 40px;
+          height: 40px;
+        }
+
+        .node-header {
+          flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+
+        .node-title {
+          margin-top: 4px;
+        }
+      }
+
+      .research-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        object-fit: cover;
+        border: 2px solid #4a90e2;
+      }
+
+      .research-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #2c5282;
+        flex: 1;
+      }
+
+      .research-node .node-description {
+        color: #2d3748;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      /* Expert Perspectives Branch Styles - Metallic Silver */
+      .expert-label {
+        background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+        color: #2d3748;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(168, 168, 168, 0.4);
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+        border: 1px solid #999;
+      }
+
+      .expert-node {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border: 2px solid #c0c0c0;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 4px 12px rgba(168, 168, 168, 0.3);
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .expert-node::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+      }
+
+      .expert-node:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(168, 168, 168, 0.4);
+      }
+
+      .expert-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+      }
+
+      .expert-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #c0c0c0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .expert-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #2d3748;
+        flex: 1;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+      }
+
+      .expert-node .node-description {
+        color: #4a5568;
+        line-height: 1.6;
+        font-size: 14px;
+        font-style: italic;
+        padding-left: 8px;
+        border-left: 3px solid #c0c0c0;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 8px 12px;
+        border-radius: 0 6px 6px 0;
+      }
+
+      .newspaper-title {
+        font-size: 38px;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+        letter-spacing: -0.5px;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .newspaper-subtitle {
+        font-size: 11px;
+        color: #666;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+      }
+
+      .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+
+      .nav-menu li a {
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding: 12px 0;
+        position: relative;
+        transition: color 0.2s ease;
+      }
+
+      .nav-menu li a:hover,
+      .nav-menu li a.active {
+        color: #000;
+      }
+
+      .nav-menu li a.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #000;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+        background: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 6px 12px;
+        width: 250px;
+      }
+
+      .tree-branches.focus-mode .branch-section:not(.focused) {
+        transform: scale(0.85);
+        opacity: 0.4;
+        transition: all 0.3s ease;
+      }
+
+      .tree-branches.focus-mode .branch-section.focused {
+        transform: scale(1.05);
+        opacity: 1;
+        box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
+        border: 2px solid #007bff;
+        transition: all 0.3s ease;
+      }
+
+      .branch-section {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .search-container input {
+        background: none;
+        border: none;
+        color: #333;
+        width: 100%;
+        padding: 4px;
+        outline: none;
+        font-size: 14px;
+      }
+
+      .search-container input::placeholder {
+        color: #999;
+      }
+
+      .search-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666;
+        padding: 0 4px;
+        transition: color 0.2s ease;
+      }
+
+      .search-btn:hover {
+        color: #000;
+      }
+
+      /* Breaking News Banner */
+      .breaking-news {
+        background: #449dd1;
+        color: white;
+        padding: 12px 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+      }
+
+      .breaking-text {
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Main Content */
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 60px;
+      }
+
+      .content-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-header {
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: -0.2px;
+      }
+
+      .view-all {
+        color: #326891;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding: 4px 8px;
+        border-radius: 3px;
+        transition: all 0.2s ease;
+      }
+
+      .view-all:hover {
+        background: #f7f7f7;
+        color: #1a5490;
+      }
+
+      /* Featured Story */
+      .featured-story {
+        margin-bottom: 50px;
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .featured-story:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+
+      .featured-image {
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      .featured-content {
+        padding: 0;
+      }
+
+      .featured-title {
+        font-size: 42px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 16px;
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+      }
+
+      .featured-summary {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+
+      .story-meta {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+
+      .story-tags {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .tag {
+        background: #f7f7f7;
+        color: #333;
+        padding: 4px 8px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 2px;
+        border: 1px solid #e2e2e2;
+      }
+
+      /* Story Grid */
+      .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      .story-card {
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .story-card:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+
+      .story-image {
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      .story-content {
+        padding: 0;
+      }
+
+      .story-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #000;
+        line-height: 1.3;
+        letter-spacing: -0.3px;
+      }
+
+      .story-summary {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      .story-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid #e2e2e2;
+      }
+
+      .read-time {
+        color: #666;
+        font-size: 13px;
+        font-weight: 400;
+      }
+
+      .view-analysis {
+        background: #449dd1;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+      }
+
+      .view-analysis:hover {
+        background: #1a5490;
+        transform: translateY(-1px);
+      }
+
+      /* Sidebar */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .sidebar-widget {
+        background: #373f47;
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        padding: 25px;
+      }
+
+      .sidebar-widget > * {
+        margin: 20px;
+      }
+
+      .widget-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+        letter-spacing: -0.2px;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .trending-item {
+        padding: 15px 0;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .trending-item:hover {
+        background: #f7f7f7;
+        margin: 0 -20px;
+        padding: 15px 20px;
+      }
+
+      .trending-item:last-child {
+        border-bottom: none;
+      }
+
+      .trending-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 5px;
+        line-height: 1.3;
+        letter-spacing: -0.2px;
+      }
+
+      .trending-meta {
+        font-size: 12px;
+        color: #666;
+        font-weight: 400;
+      }
+
+      .newsletter-signup {
+        background: #449dd1;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        border-radius: 3px;
+      }
+
+      .newsletter-signup h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        letter-spacing: -0.2px;
+      }
+
+      .newsletter-signup p {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.9;
+      }
+
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 14px;
+        color: white;
+        border-radius: 3px;
+      }
+
+      .newsletter-form input::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .newsletter-form button {
+        background: white;
+        color: #326891;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 3px;
+        transition: all 0.2s ease;
+      }
+
+      .newsletter-form button:hover {
+        background: #f7f7f7;
+      }
+
+      /* Market Data Widget */
+      .market-data {
+        font-size: 14px;
+      }
+
+      .market-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .market-item:last-child {
+        border-bottom: none;
+      }
+
+      .market-symbol {
+        font-weight: 600;
+        color: #000;
+      }
+
+      .market-change {
+        font-weight: 600;
+        font-size: 13px;
+      }
+
+      .positive {
+        color: #2e7d32;
+      }
+      .negative {
+        color: #d32f2f;
+      }
+      .neutral {
+        color: #666;
+      }
+
+      /* Footer */
+      .footer {
+        background: #f7f7f7;
+        border-top: 1px solid #e2e2e2;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+      }
+
+      .footer-section h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #000;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer-section ul li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        transition: color 0.2s ease;
+      }
+
+      .footer-section ul li a:hover {
+        color: #000;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #e2e2e2;
+        color: #666;
+        font-size: 12px;
+      }
+
+      /* Search Results */
+      .search-results {
+        display: none;
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        max-height: 400px;
+        overflow-y: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-results.active {
+        display: block;
+      }
+
+      .search-result-item {
+        padding: 12px 16px;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+
+      .search-result-item:hover {
+        background: #f7f7f7;
+      }
+
+      .search-result-item:last-child {
+        border-bottom: none;
+      }
+
+      .search-result-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 4px;
+      }
+
+      .search-result-summary {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+      }
+
+      .search-highlight {
+        background: #fffbcc;
+        padding: 1px 2px;
+        border-radius: 2px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .newspaper-title {
+          font-size: 28px;
+        }
+
+        .main-content {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          padding: 20px;
+        }
+
+        .nav-menu {
+          display: none;
+        }
+
+        .search-container {
+          width: 180px;
+        }
+
+        .stories-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .header-content {
+          padding: 0 15px;
+        }
+
+        .featured-title {
+          font-size: 32px;
+        }
+      }
+
+      /* Argument Tree Modal (keeping original functionality) */
+      .arg-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .arg-modal.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+      }
+
+      .arg-modal.active .arg-container {
+        animation: modalSlideIn 0.4s ease forwards;
+      }
+
+      .arg-modal.closing .arg-container {
+        animation: modalSlideOut 0.4s ease forwards;
+      }
+
+      .arg-container {
+        background: #fffbed;
+        border: none; /* Remove border */
+        border-radius: 0; /* Remove border radius */
+        width: 100vw; /* Full width */
+        height: 100vh; /* Full height */
+        max-width: 100vw; /* Override max-width */
+        max-height: 100vh; /* Override max-height */
+        overflow: auto;
+        position: relative;
+        box-shadow: none; /* Remove shadow for full page feel */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      .arg-header {
+        background: #449dd1;
+        color: white;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #e2e2e2;
+      }
+
+      .arg-header h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: -0.3px;
+      }
+
+      .arg-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+
+      .arg-close:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .arg-content {
+        padding: 40px;
+        min-width: 900px;
+      }
+
+      .arg-footer {
+        background: #f7f7f7;
+        border-top: 1px solid #e2e2e2;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        position: sticky;
+        bottom: 0;
+      }
+
+      .footer-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #666;
+        font-size: 12px;
+        transition: color 0.2s ease;
+      }
+
+      .footer-link:hover {
+        color: #326891;
+      }
+
+      .footer-icon {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      /* Tree styles remain the same but with updated colors */
+      .central-question {
+        background: #449dd1;
+        color: white;
+        border: 2px solid rgb(0, 13, 128);
+        padding: 25px 40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        z-index: 9;
+        max-width: 600px;
+        margin-bottom: 120px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 700px;
+        padding: 40px 20px;
+      }
+
+      .tree-branches {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        min-height: 400px;
+      }
+
+      .branch-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+
+      .branch-label {
+        z-index: 3;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        padding: 15px 30px;
+        color: black;
+        text-align: center;
+        position: relative;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+
+      .connection-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .connection-line {
+        stroke: #667; /* or whatever color you want for the main trunk and horizontal lines */
+        stroke-width: 1px;
+        z-index: 0;
+      }
+
+      .node-connector {
+        stroke: #667; /* or whatever color you want for the lines connecting to individual nodes */
+        stroke-width: 1px;
+        z-index: 0;
+      }
+
+      .exploring-label {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        padding: 15px 30px;
+        color: white;
+        text-align: center;
+        z-index: 5;
+        position: relative;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .exploring-label:hover {
+        opacity: 0.65;
+      }
+
+      .reasons-label {
+        background: #2e7d32;
+      }
+
+      .reasons-label:hover {
+        opacity: 0.85;
+      }
+
+      .objections-label {
+        background: #d32f2f;
+      }
+
+      .objections-label:hover {
+        opacity: 0.85;
+      }
+
+      .nodes-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        position: relative;
+      }
+
+      .tree-node {
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        padding: 20px;
+        max-width: 300px;
+        min-width: 250px;
+        position: relative;
+        transition: all 0.3s ease;
+        z-index: 5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-node:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .reason-node {
+        border-left: 4px solid #2e7d32;
+      }
+
+      .objection-node {
+        border-left: 4px solid #d32f2f;
+      }
+
+      .node-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .sources {
+        margin-top: 12px;
+      }
+
+      .source {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        background: #f7f7f7;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        margin: 6px 0;
+        font-size: 12px;
+      }
+
+      .source-title {
+        font-weight: 600;
+        color: #326891;
+        text-decoration: none;
+      }
+
+      .source-title:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- popup -->
+    <div id="popup">
+      <div id="popup-box">
+        <h3>Welcome!</h3>
+        <p>Are you...</p>
+        <button
+          class="exploring-label reasons-label"
+          onclick="handleUserChoice('teacher')"
+        >
+          A Teacher
+        </button>
+        <button
+          class="exploring-label objections-label"
+          onclick="handleUserChoice('student')"
+        >
+          A Student
+        </button>
+        <button class="branch-label" onclick="handleUserChoice('fun')">
+          Just Exploring!
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("popup").style.display = "flex";
+        }, 500);
+      };
+
+      function handleUserChoice(role) {
+        localStorage.setItem("userType", role);
+
+        // Google Analytics event
+        if (typeof gtag === "function") {
+          gtag("event", "user_type_selected", {
+            event_category: "User Classification",
+            event_label: role,
+          });
+        }
+
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+
+    <!-- Header -->
+    <header class="newspaper-header">
+      <div class="date-bar">Powered by AI Web Scraping</div>
+
+      <div class="masthead">
+        <img
+          src="https://res.cloudinary.com/degebwdf5/image/upload/v1753239162/Mapped_News_Logo-removebg-preview_bmizww.png"
+          alt="Mapped news"
+          width="300"
+          height="300"
+          style="padding-top: 20px; margin: -110px 0"
+        />
+        <div class="newspaper-subtitle">
+          Understanding Issues through Argument Mapping
+        </div>
+      </div>
+
+      <div class="header-content">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Econ.html" class="active">Economics</a></li>
+            <li><a href="Social.html">Social Issues</a></li>
+            <li><a href="Foreign.html">Foreign Policy</a></li>
+            <li><a href="themes.html">Themes in the News</a></li>
+            <li><a href="experts.html">Expert Perspectives</a></li>
+            <li><a href="methodology.html">Our Methodology</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Breaking News -->
+
+    <div class="breaking-news">
+      <div class="breaking-text">
+        Organized by Issues, not by Individual Sources
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-section">
+        <!-- Featured Story -->
+        <div class="section-header">
+          <h2 class="section-title">Featured Issue</h2>
+        </div>
+
+        <article
+          class="featured-story"
+          onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')"
+        >
+          <div class="featured-image">Economic Policy Analysis</div>
+          <div class="featured-content">
+            <div class="story-meta">
+              <span>Today, 2:30 PM</span>
+              <span>By Economic Research Team</span>
+            </div>
+            <h1 class="featured-title">
+              Should Governments Implement Universal Basic Income?
+            </h1>
+            <p class="featured-summary">
+              As economic pressures mount globally, governments are
+              reconsidering UBI policies. Our comprehensive analysis examines
+              arguments from leading economists, policy experts, and real-world
+              pilot programs to provide a balanced perspective on this critical
+              economic debate.
+            </p>
+            <div class="story-tags">
+              <span class="tag">UBI</span>
+              <span class="tag">Economic Policy</span>
+              <span class="tag">Social Programs</span>
+              <span class="tag">Government Spending</span>
+            </div>
+            <div class="story-footer">
+              <span class="read-time">8 min read</span>
+              <button class="view-analysis">Read Analysis</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Latest Stories -->
+        <div class="section-header">
+          <h2 class="section-title">Latest Real-World Issues</h2>
+        </div>
+
+        <div class="stories-grid">
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/isrentcontrolgoodfornewyorkcity.json', 'Is Rent Control Good for New York City')"
+          >
+            <div class="story-image">Housing Policy Report</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>3 hours ago</span>
+                <span>NYC Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Is Rent Control Good for New York City?
+              </h3>
+              <p class="story-summary">
+                New York's rent control debate intensifies as housing costs
+                soar. Our analysis examines the economic arguments for and
+                against rent stabilization policies in America's most expensive
+                city.
+              </p>
+              <div class="story-tags">
+                <span class="tag">Housing</span>
+                <span class="tag">NYC Policy</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">8 min read</span>
+                <button class="view-analysis">Read Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/trumpstariffs.json', 'Trumps Tariffs and Economics')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">
+                Trade economists debate the effectiveness of tariff policies on
+                domestic manufacturing and consumer prices. A comprehensive
+                analysis of trade policy impacts on the American economy.
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/isredistributivetaxationasolution.json', 'is redistributive taxation a solution to inequality??')"
+          >
+            <div class="story-image">redistributive taxation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Is redistributive taxation a solution to inequality?
+              </h3>
+              <p class="story-summary"></p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/isthejobmarketworsethanitwasagenerationago.json', 'is the Job market worse than it was a generation ago?')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">
+                Is the job market worse than it was a generation ago?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/researchfundingandhealthcare.json', 'How will Research Funding Cuts affect the health sector?')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">
+                How will Research Funding Cuts affect the health sector?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/wealthtax.json', 'Should we implement a wealth tax?')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">Should we implement a wealth tax?</p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/willundocumentedimmigrantscreateanetbenefitfortheamericaneconomy.json', 'Do Undocumented Immigrants create a Net Benefit for the American Economy?')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">
+                Do undocumented immigrants create a net benefit for the American
+                Economy?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')"
+          >
+            <div class="story-image">🏛️ Federal Reserve</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>📅 1 day ago</span>
+                <span>🏛️ Fed Policy</span>
+              </div>
+              <h3 class="story-title">
+                Is Federal Reserve Independence Important?
+              </h3>
+              <p class="story-summary">
+                Central bank independence faces scrutiny as political pressures
+                mount. Analyzing the economic arguments for autonomous monetary
+                policy.
+              </p>
+              <div class="story-tags">
+                <span class="tag">Federal Reserve</span>
+                <span class="tag">Monetary Policy</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 10 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h3 class="widget-title">Trending Issues</h3>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/researchfundingandhealthcare.json', 'How will Research Funding Cuts affect the health sector?')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">
+                How will Research Funding Cuts affect the health sector?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/wealthtax.json', 'Should we implement a wealth tax?')"
+          >
+            <div class="story-image">Trade Policy Investigation</div>
+            <div class="story-content">
+              <div class="story-meta">
+                <span>5 hours ago</span>
+                <span>Washington Bureau</span>
+              </div>
+              <h3 class="story-title">
+                Are Trump's Tariffs Economically Sound?
+              </h3>
+              <p class="story-summary">Should we implement a wealth tax?</p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Tariffs</span>
+                <span class="tag">Manufacturing</span>
+              </div>
+              <div class="story-footer">
+                <span class="read-time">⏱️ 12 min read</span>
+                <button class="view-analysis">View Analysis</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="sidebar-widget newsletter-signup">
+          <h3>Contact Us</h3>
+          <p>
+            For any questions about Mapped News, contact us at
+            policyally@gmail.com
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Argument Tree Modal (keeping original functionality) This is the design of the modal!! -->
+    <div class="arg-modal" id="argModal">
+      <div class="arg-container">
+        <div class="arg-header">
+          <h2 id="argTitle">Argument Analysis</h2>
+          <button class="arg-close" onclick="closeArgumentTree()">×</button>
+        </div>
+        <div class="arg-content" id="argContent">
+          <div style="text-align: center; padding: 40px; color: #666">
+            Loading argument analysis...
+          </div>
+        </div>
+        <div class="arg-footer">
+          <p>@mappednews</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // All original JavaScript functionality preserved and expanded
+      class ArgumentTreeRenderer {
+        constructor(container, data) {
+          this.container = container;
+          this.data = data;
+          this.svgNamespace = "http://www.w3.org/2000/svg";
+        }
+
+        init() {
+          this.container.innerHTML = this.render(this.data);
+          setTimeout(() => this.drawConnectionLines(), 100);
+        }
+
+        render(data) {
+          return `
+
+      <div class="themes-container-wrapper">
+         ${this.renderThemes(data.themes)}
+      </div>    
+      <div class="tree-container">
+        <svg class="connection-svg" id="connectionSvg"></svg>
+        <div class="central-question">${data.centralQuestion}</div>
+        <div class="tree-branches">
+          ${this.renderBranch("Supporting Reasons", "reason", data.reasons)}
+          ${this.renderBranch("Objections", "objection", data.objections)}
+          ${this.renderBranch("Research", "research", data.research)}
+          ${this.renderBranch(
+            "Expert Perspectives",
+            "expert",
+            data.expertPerspectives
+          )}
+        </div>
+      
+      </div>
+    `;
+        }
+
+        renderThemes(themes) {
+          if (!themes?.length) return "";
+          return `
+      <div class="themes-container">
+        <div class="themes-label">Key Themes</div>
+        <div class="themes-list">
+          ${themes
+            .map((theme) => `<span class="theme-tag">${theme}</span>`)
+            .join("")}
+        </div>
+      </div>
+    `;
+        }
+
+        renderBranch(label, type, items) {
+          if (!items?.length) return "";
+          return `
+  <div class="branch-section" onclick="toggleBranchFocus(this)">
+    <div class="branch-label ${type}-label">${label}</div>
+    <div class="nodes-container">
+      ${items.map((item, i) => this.renderNode(item, type, i)).join("")}
+    </div>
+  </div>
+`;
+        }
+
+        renderNode(node, type, index) {
+          return `
+      <div class="tree-node ${type}-node" onclick="event.stopPropagation()" data-node-type="${type}" data-node-index="${index}">
+        ${this.renderNodeHeader(node, type)}
+        <div class="node-description">${node.description}</div>
+        ${this.renderSources(node, type)}
+        <button class="expand-button ${
+          this.hasChildren(node) ? "has-children" : ""
+        }" onclick="toggleSubNodes(this)">
+          ${this.hasChildren(node) ? "Show Details" : ""}
+        </button>
+        <div class="sub-nodes">
+          ${this.renderSubNodes(node.underlyingReasons, "reason")}
+          ${this.renderSubNodes(node.objections, "objection")}
+        </div>
+      </div>
+    `;
+        }
+
+        renderNodeHeader(node, type) {
+          if (type === "expert") {
+            return `
+        <div class="node-header expert-header">
+          ${
+            node.imageLink
+              ? `<img src="${node.imageLink}" alt="${node.name}" class="node-header-image expert-image">`
+              : ""
+          }
+          <div class="node-title expert-name">${node.name}</div>
+        </div>
+      `;
+          }
+          // For reason, objection, and research nodes, no special header
+          return "";
+        }
+
+        renderSubNodes(nodes, type) {
+          if (!nodes?.length) return "";
+          return nodes
+            .map(
+              (node) => `
+      <div class="sub-node sub-${type}">
+        <div class="node-description">${node.description}</div>
+        ${this.renderSources(node, type)}
+      </div>
+    `
+            )
+            .join("");
+        }
+
+        renderSources(node, type) {
+          // For research nodes, create a source from the node's link and title
+          if (type === "research" && node.link && node.title) {
+            return `
+        <div class="sources">
+          <div class="source">
+            <a href="${node.link}" target="_blank" class="source-title">${node.title}</a>
+          </div>
+        </div>
+      `;
+          }
+
+          // For other node types, use the existing sources array
+          const sources = node.sources;
+          if (!sources?.length) return "";
+          return `
+      <div class="sources">
+        ${sources
+          .map(
+            (source) => `
+          <div class="source">
+            <img src="${source.imageLink}" alt="source" class="source-image">
+            <a href="${source.link}" target="_blank" class="source-title">${source.title}</a>
+          </div>
+        `
+          )
+          .join("")}
+      </div>
+    `;
+        }
+
+        hasChildren(node) {
+          return (
+            (node.underlyingReasons?.length || 0) +
+              (node.objections?.length || 0) >
+            0
+          );
+        }
+
+        drawConnectionLines() {
+          const svg = document.getElementById("connectionSvg");
+          if (!svg) return;
+          svg.innerHTML = "";
+
+          const container = document.querySelector(".tree-container");
+          const centralQuestion = document.querySelector(".central-question");
+          const branchSections = document.querySelectorAll(".branch-section");
+
+          if (!container || !centralQuestion || branchSections.length === 0)
+            return;
+
+          const containerRect = container.getBoundingClientRect();
+          const questionRect = centralQuestion.getBoundingClientRect();
+
+          const questionCenterX =
+            questionRect.left + questionRect.width / 2 - containerRect.left;
+          const questionBottomY = questionRect.bottom - containerRect.top;
+
+          const trunkLength = 60;
+          this.createLine(
+            svg,
+            questionCenterX,
+            questionBottomY,
+            questionCenterX,
+            questionBottomY + trunkLength,
+            "connection-line"
+          );
+
+          const branchY = questionBottomY + trunkLength;
+          let leftmostX = questionCenterX;
+          let rightmostX = questionCenterX;
+
+          branchSections.forEach((section) => {
+            const sectionRect = section.getBoundingClientRect();
+            const sectionCenterX =
+              sectionRect.left + sectionRect.width / 2 - containerRect.left;
+            leftmostX = Math.min(leftmostX, sectionCenterX);
+            rightmostX = Math.max(rightmostX, sectionCenterX);
+          });
+
+          if (branchSections.length > 1) {
+            this.createLine(
+              svg,
+              leftmostX,
+              branchY,
+              rightmostX,
+              branchY,
+              "connection-line"
+            );
+          }
+
+          branchSections.forEach((section) => {
+            const sectionRect = section.getBoundingClientRect();
+            const sectionCenterX =
+              sectionRect.left + sectionRect.width / 2 - containerRect.left;
+            const label = section.querySelector(".branch-label");
+
+            if (label) {
+              const labelRect = label.getBoundingClientRect();
+              const labelTopY = labelRect.top - containerRect.top;
+              this.createLine(
+                svg,
+                sectionCenterX,
+                branchY,
+                sectionCenterX,
+                labelTopY - 20,
+                "connection-line"
+              );
+            }
+
+            const nodes = section.querySelectorAll(".tree-node");
+            nodes.forEach((node) => {
+              const nodeRect = node.getBoundingClientRect();
+              const nodeCenterX =
+                nodeRect.left + nodeRect.width / 2 - containerRect.left;
+              const nodeTopY = nodeRect.top - containerRect.top;
+              this.createLine(
+                svg,
+                sectionCenterX,
+                branchY + 40,
+                nodeCenterX,
+                nodeTopY,
+                "node-connector"
+              );
+            });
+          });
+        }
+
+        createLine(svg, x1, y1, x2, y2, className) {
+          const line = document.createElementNS(this.svgNamespace, "line");
+          line.setAttribute("x1", x1);
+          line.setAttribute("y1", y1);
+          line.setAttribute("x2", x2);
+          line.setAttribute("y2", y2);
+          line.setAttribute("class", className);
+          svg.appendChild(line);
+        }
+      }
+
+      async function showArgumentTree(jsonPath, titleText) {
+        const modal = document.getElementById("argModal");
+        const title = document.getElementById("argTitle");
+        const content = document.getElementById("argContent");
+        modal.classList.add("active");
+        content.innerHTML =
+          '<div style="text-align: center; padding: 40px; color: #666;">Loading argument analysis...</div>';
+        try {
+          const res = await fetch(jsonPath);
+          const data = await res.json();
+          title.textContent = titleText;
+          new ArgumentTreeRenderer(content, data).init();
+        } catch (e) {
+          content.innerHTML =
+            '<div style="text-align: center; padding: 40px; color: #e74c3c;">Error loading argument data</div>';
+        }
+      }
+
+      function closeArgumentTree() {
+        const modal = document.getElementById("argModal");
+        modal.classList.add("closing");
+        setTimeout(() => {
+          modal.classList.remove("active", "closing");
+        }, 400);
+      }
+
+      function toggleSubNodes(button) {
+        const subNodes = button.nextElementSibling;
+        const isExpanded = subNodes.classList.contains("expanded");
+        subNodes.classList.toggle("expanded", !isExpanded);
+        button.textContent = isExpanded ? "Show Details" : "Hide Details";
+      }
+
+      let focusedBranch = null;
+
+      function toggleBranchFocus(branchElement) {
+        const branchesContainer = document.querySelector(".tree-branches");
+
+        if (focusedBranch === branchElement) {
+          // Remove focus mode
+          branchesContainer.classList.remove("focus-mode");
+          document.querySelectorAll(".branch-section").forEach((branch) => {
+            branch.classList.remove("focused");
+          });
+          focusedBranch = null;
+        } else {
+          // Enable focus mode
+          branchesContainer.classList.add("focus-mode");
+          document.querySelectorAll(".branch-section").forEach((branch) => {
+            branch.classList.remove("focused");
+          });
+          branchElement.classList.add("focused");
+          focusedBranch = branchElement;
+        }
+      }
+
+      document
+        .getElementById("argModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeArgumentTree();
+        });
+    </script>
+  </body>
+</html>
