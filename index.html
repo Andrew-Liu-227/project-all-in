@@ -650,6 +650,14 @@
         font-size: 16px;
         margin-bottom: 20px;
         border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .featured-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .featured-content {
@@ -737,6 +745,13 @@
         font-size: 14px;
         margin-bottom: 20px;
         border-radius: 8px;
+        overflow: hidden;
+      }
+      .story-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
 
       .story-content {
@@ -1482,21 +1497,24 @@
           class="featured-story"
           onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')"
         >
-          <div class="featured-image">Economic Policy Analysis</div>
+          <div class="featured-image">
+            <img
+              src="https://res.cloudinary.com/degebwdf5/image/upload/v1753452354/universalbasicincomeimage_ssjggx.webp"
+              alt="Universal Basic Income"
+            />
+          </div>
           <div class="featured-content">
             <div class="story-meta">
-              <span>Today, 2:30 PM</span>
-              <span>By Economic Research Team</span>
+              <span> 7-22-2025</span>
+              <span></span>
             </div>
             <h1 class="featured-title">
               Should Governments Implement Universal Basic Income?
             </h1>
             <p class="featured-summary">
               As economic pressures mount globally, governments are
-              reconsidering UBI policies. Our comprehensive analysis examines
-              arguments from leading economists, policy experts, and real-world
-              pilot programs to provide a balanced perspective on this critical
-              economic debate.
+              reconsidering UBI policies. Is UBI the solution to the higher
+              income inequality created by AI?
             </p>
             <div class="story-tags">
               <span class="tag">UBI</span>
@@ -1505,7 +1523,7 @@
               <span class="tag">Government Spending</span>
             </div>
             <div class="story-footer">
-              <span class="read-time">8 min read</span>
+              <span class="read-time"></span>
               <button class="view-analysis">Read Analysis</button>
             </div>
           </div>
