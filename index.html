@@ -19,8 +19,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapped News</title>
     <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/degebwdf5/image/upload/v1753394046/Mapped_News_Favicon_h9l2jp.png">
-    <link href="https://fonts.googleapis.com/css2?family=Nyt+Cheltenham:wght@400;700&family=Nyt+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
     <style>
+
+
+* {
+  font-family: 'Nunito', Arial, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+
+
 
 @keyframes fadeIn {
       from { opacity: 0; }
@@ -83,14 +92,13 @@
     }
 
     #popup-box h3 {
-      font-family: 'Nyt Cheltenham', Georgia, serif;
-      font-size: 22px;
+      font-size: 40px;
+      font-weight: 1000;
       margin-bottom: 15px;
     }
 
     #popup-box p {
-      font-family: 'Nyt Cheltenham', Georgia, serif;
-      font-size: 16px;
+      font-size: 28px;
       margin-bottom: 25px;
     }
 
@@ -107,8 +115,7 @@
       }
 
       body {
-        font-family: 'Nyt Franklin', Georgia, serif;
-        background: #ffffff;
+        background: #fffbed;
         color: #121212;
         line-height: 1.6;
         font-size: 16px;
@@ -116,7 +123,7 @@
 
       /* Header - NYT Style */
       .newspaper-header {
-        background: #fff;
+        background: #fffbed;
         border-bottom: 1px solid #e2e2e2;
         padding: 0;
         position: sticky;
@@ -126,11 +133,10 @@
       }
 
       .date-bar {
-        background: #fff;
+        background: #fffbed;
         color: #666;
         padding: 8px 0;
         text-align: center;
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 11px;
         font-weight: 400;
         letter-spacing: 0.5px;
@@ -413,7 +419,6 @@
 }
 
       .newspaper-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 38px;
         font-weight: 700;
         color: #000;
@@ -424,7 +429,6 @@
       }
 
       .newspaper-subtitle {
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 11px;
         color: #666;
         font-weight: 400;
@@ -446,7 +450,6 @@
         display: flex;
         list-style: none;
         gap: 30px;
-        font-family: 'Nyt Franklin', sans-serif;
       }
 
       .nav-menu li a {
@@ -483,7 +486,6 @@
         border-radius: 3px;
         padding: 6px 12px;
         width: 250px;
-        font-family: 'Nyt Franklin', sans-serif;
       }
 
       .tree-branches.focus-mode .branch-section:not(.focused) {
@@ -535,17 +537,17 @@
 
       /* Breaking News Banner */
       .breaking-news {
-        background: #326891;
+        background: #00ABE7;
         color: white;
         padding: 12px 0;
         text-align: center;
-        font-family: 'Nyt Franklin', sans-serif;
         font-weight: 600;
         font-size: 14px;
         letter-spacing: 0.3px;
       }
 
       .breaking-text {
+        color: white;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
@@ -576,7 +578,6 @@
       }
 
       .section-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 20px;
         font-weight: 700;
         color: #000;
@@ -586,7 +587,6 @@
       .view-all {
         color: #326891;
         text-decoration: none;
-        font-family: 'Nyt Franklin', sans-serif;
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.2px;
@@ -619,7 +619,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 16px;
         font-weight: 500;
         color: #666;
@@ -631,7 +630,6 @@
       }
 
       .featured-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 42px;
         font-weight: 700;
         color: #000;
@@ -653,7 +651,6 @@
         gap: 15px;
         align-items: center;
         color: #666;
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 14px;
         margin-bottom: 20px;
         font-weight: 400;
@@ -670,7 +667,6 @@
         background: #f7f7f7;
         color: #333;
         padding: 4px 8px;
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 12px;
         font-weight: 500;
         text-transform: uppercase;
@@ -707,7 +703,6 @@
         align-items: center;
         justify-content: center;
         color: #666;
-        font-family: 'Nyt Franklin', sans-serif;
         font-weight: 500;
         font-size: 14px;
         margin-bottom: 15px;
@@ -718,7 +713,6 @@
       }
 
       .story-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 10px;
@@ -746,7 +740,6 @@
 
       .read-time {
         color: #666;
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 13px;
         font-weight: 400;
       }
@@ -757,7 +750,6 @@
         border: none;
         padding: 8px 16px;
         cursor: pointer;
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 13px;
         font-weight: 500;
         letter-spacing: 0.2px;
@@ -784,7 +776,6 @@
       }
 
       .widget-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 20px;
@@ -812,7 +803,6 @@
       }
 
       .trending-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 16px;
         font-weight: 700;
         color: #000;
@@ -822,7 +812,6 @@
       }
 
       .trending-meta {
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 12px;
         color: #666;
         font-weight: 400;
@@ -837,7 +826,6 @@
       }
 
       .newsletter-signup h3 {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 10px;
@@ -862,7 +850,6 @@
         padding: 12px;
         border: 1px solid rgba(255,255,255,0.3);
         background: rgba(255,255,255,0.1);
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 14px;
         color: white;
         border-radius: 3px;
@@ -878,7 +865,6 @@
         border: none;
         padding: 12px 20px;
         cursor: pointer;
-        font-family: 'Nyt Franklin', sans-serif;
         font-weight: 600;
         font-size: 14px;
         border-radius: 3px;
@@ -891,7 +877,6 @@
 
       /* Market Data Widget */
       .market-data {
-        font-family: 'Nyt Franklin', sans-serif;
         font-size: 14px;
       }
 
@@ -940,7 +925,6 @@
       }
 
       .footer-section h4 {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 16px;
         font-weight: 700;
         margin-bottom: 15px;
@@ -1011,7 +995,6 @@
       }
 
       .search-result-title {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 16px;
         font-weight: 700;
         color: #000;
@@ -1119,7 +1102,6 @@
       }
 
       .arg-header h2 {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 24px;
         font-weight: 700;
         margin: 0;
@@ -1171,7 +1153,6 @@
   text-decoration: none;
   color: #666;
   font-size: 12px;
-  font-family: 'Nyt Franklin', sans-serif;
   transition: color 0.2s ease;
 }
 
@@ -1190,7 +1171,6 @@
         color: white;
         padding: 25px 40px;
         text-align: center;
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 18px;
         font-weight: 700;
         position: relative;
@@ -1228,7 +1208,6 @@
 
       .branch-label {
         z-index: 3;
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 40px;
@@ -1264,7 +1243,6 @@
       }
 
       .exploring-label {
-        font-family: 'Nyt Cheltenham', Georgia, serif;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 40px;
@@ -1350,7 +1328,6 @@
         border-radius: 3px;
         margin: 6px 0;
         font-size: 12px;
-        font-family: 'Nyt Franklin', sans-serif;
       }
 
       .source-title {
@@ -1406,7 +1383,7 @@
     <!-- Header -->
     <header class="newspaper-header">
       <div class="date-bar">
-        Wednesday, July 16, 2025 • New York, NY • Founded 1898
+        Powered by AI Web Scraping
       </div>
       
       <div class="masthead">
@@ -1435,6 +1412,7 @@
     </header>
 
     <!-- Breaking News -->
+
     <div class="breaking-news">
       <div class="breaking-text">
         Breaking: (insert breaking Econ News here)
