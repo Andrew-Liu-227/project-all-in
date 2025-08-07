@@ -1,0 +1,23 @@
+{
+    "articles": [
+      {
+        "id": "universal-basic-income",
+        "title": "Should Governments Implement Universal Basic Income?",
+        "filename": "ShouldGovernmentsImplementUniversalBasicIncome.json",
+        "tags": ["UBI", "Economic Policy", "Social Programs", "Government Spending"],
+        "summary": "As economic pressures mount globally, governments are reconsidering UBI policies...",
+        "keywords": ["universal basic income", "UBI", "economic policy", "government", "social programs"],
+        "date": "2025-07-22"
+      },
+      {
+        "id": "rent-control",
+        "title": "Is Rent Control Good for New York City?",
+        "filename": "isrentcontrolgoodfornewyorkcity.json",
+        "tags": ["Housing", "NYC Policy"],
+        "summary": "New York's rent control debate intensifies as housing costs soar...",
+        "keywords": ["rent control", "housing", "NYC", "new york", "policy"],
+        "date": "2025-07-25"
+      }
+    
+    ]
+  }
