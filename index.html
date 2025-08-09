@@ -503,8 +503,13 @@
         border: 1px solid #ccc;
         border-radius: 20px;
         padding: 6px 12px;
-        width: 500px;
-        margin: 0 auto;
+        width: 650px;
+        margin: 95px auto;
+        transition: all 0.9s ease;
+      }
+
+      .search-container:hover {
+        transform: translateY(-2px);
       }
 
       .tree-branches.focus-mode .branch-section:not(.focused) {
@@ -533,7 +538,7 @@
         width: 100%;
         padding: 4px;
         outline: none;
-        font-size: 14px;
+        font-size: 30px;
       }
 
       .search-container input::placeholder {
@@ -1173,6 +1178,7 @@
       .arg-header {
         background: #449dd1;
         color: white;
+        margin-top: 15px;
         padding: 20px;
         position: sticky;
         top: 0;
@@ -1289,6 +1295,10 @@
         background: white;
       }
 
+      .search-container {
+        position: relative;
+      }
+
       .search-results {
         position: absolute;
         top: 100%;
@@ -1353,6 +1363,15 @@
         height: 100%;
         pointer-events: none;
         z-index: 0;
+      }
+
+      .search-title {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+        color: #333;
+        margin-bottom: 15px;
+        margin-top: 0;
       }
 
       .connection-line {
@@ -1472,6 +1491,36 @@
       .source-title:hover {
         text-decoration: underline;
       }
+
+      /* NEW: full-page map container (uses your existing arg-header/arg-content styles) */
+      #mapPage {
+        /* NEW */
+        display: none;
+      }
+      #mapBack {
+        /* NEW */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.9s ease;
+      }
+
+      #mapBack:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
     </style>
   </head>
   <body>
@@ -1497,29 +1546,6 @@
         </button>
       </div>
     </div>
-
-    <!-- JavaScript -->
-    <script>
-      window.onload = function () {
-        setTimeout(() => {
-          document.getElementById("popup").style.display = "flex";
-        }, 500);
-      };
-
-      function handleUserChoice(role) {
-        localStorage.setItem("userType", role);
-
-        // Google Analytics event
-        if (typeof gtag === "function") {
-          gtag("event", "user_type_selected", {
-            event_category: "User Classification",
-            event_label: role,
-          });
-        }
-
-        document.getElementById("popup").style.display = "none";
-      }
-    </script>
 
     <!-- Header -->
     <header class="newspaper-header">
@@ -1550,33 +1576,23 @@
       </div>
     </header>
 
-    <!-- Breaking News -->
-
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Main Content (Home) -->
+    <main class="main-content" id="homePage">
+      <!-- NEW id -->
       <div class="content-section">
+        <!-- Add this line -->
         <div class="search-container">
           <input
             type="text"
             id="searchInput"
-            placeholder="Search issues and topics..."
+            placeholder="Find sources from every angle of a topic..."
             autocomplete="off"
           />
-          <button class="search-btn" onclick="performSearch()">
-            <img
-              src="https://res.cloudinary.com/degebwdf5/image/upload/v1754754761/magnifying_glass_blpevb.png"
-              alt=""
-              width="20px"
-              height="20px"
-            />
-          </button>
+          <button class="search-btn" onclick="performSearch()">🔍</button>
           <div class="search-results" id="searchResults"></div>
         </div>
 
         <!-- Latest Stories -->
-        <div class="section-header">
-          <h2 class="section-title">Latest Real-World Issues</h2>
-        </div>
 
         <div class="stories-grid">
           <article
@@ -1638,7 +1654,20 @@
       </div>
     </main>
 
-    <!-- Argument Tree Modal (keeping original functionality) This is the design of the modal!! -->
+    <!-- NEW: Full-Page Argument View (reuses your arg-header/arg-content styles) -->
+    <section id="mapPage">
+      <div class="arg-header">
+        <h2 id="mapTitle">Argument Analysis</h2>
+        <button id="mapBack">×</button>
+      </div>
+      <div class="arg-content" id="mapContent">
+        <div style="text-align: center; padding: 40px; color: #666">
+          Loading argument analysis...
+        </div>
+      </div>
+    </section>
+
+    <!-- Argument Tree Modal (kept for now, but no longer used after changes) -->
     <div class="arg-modal" id="argModal">
       <div class="arg-container">
         <div class="arg-header">
@@ -1906,23 +1935,9 @@
         }
       }
 
-      async function showArgumentTree(jsonPath, titleText) {
-        const modal = document.getElementById("argModal");
-        const title = document.getElementById("argTitle");
-        const content = document.getElementById("argContent");
-        modal.classList.add("active");
-        content.innerHTML =
-          '<div style="text-align: center; padding: 40px; color: #666;">Loading argument analysis...</div>';
-        try {
-          const res = await fetch(jsonPath);
-          const data = await res.json();
-          title.textContent = titleText;
-          new ArgumentTreeRenderer(content, data).init();
-        } catch (e) {
-          content.innerHTML =
-            '<div style="text-align: center; padding: 40px; color: #e74c3c;">Error loading argument data</div>';
-        }
-      }
+      /* ===== ORIGINAL MODAL FLOW (kept but unused) =====
+         showArgumentTree is changed to navigate; see below.
+      */
 
       function closeArgumentTree() {
         const modal = document.getElementById("argModal");
@@ -2081,7 +2096,8 @@
           for (let i = 1; i <= str2.length; i++) {
             for (let j = 1; j <= str1.length; j++) {
               if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
-                matrix[i][j] = matrix[i - 1][j - 1];
+                matrix[i][j] =
+                  i - 1 === 0 && j - 1 === 0 ? 0 : matrix[i - 1][j - 1];
               } else {
                 matrix[i][j] = Math.min(
                   matrix[i - 1][j - 1] + 1,
@@ -2137,7 +2153,7 @@
       // Function to open search result
       function openSearchResult(filename, title) {
         const filePath = `data/${filename}`;
-        showArgumentTree(filePath, title);
+        showArgumentTree(filePath, title); // unchanged API, now navigates full-page
 
         // Hide search results and clear search input
         document.getElementById("searchResults").classList.remove("active");
@@ -2156,6 +2172,137 @@
       function performSearch() {
         const query = document.getElementById("searchInput").value;
         searchEngine.performSearch(query);
+      }
+
+      /* =========================
+         MINIMAL HASH ROUTER (NEW)
+         ========================= */
+
+      function slugFromPath(path) {
+        // NEW
+        const f = path.split("/").pop() || path;
+        return f
+          .replace(/\.[^.]+$/, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-");
+      }
+
+      function saveMapEntry(slug, jsonPath, title) {
+        // NEW
+        sessionStorage.setItem(
+          "map:" + slug,
+          JSON.stringify({ path: jsonPath, title })
+        );
+      }
+
+      function getMapEntry(slug) {
+        // NEW
+        try {
+          return JSON.parse(sessionStorage.getItem("map:" + slug) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
+      function showHome() {
+        // NEW
+        document.getElementById("homePage").style.display = "";
+        document.getElementById("mapPage").style.display = "none";
+        document.title = "Mapped News";
+        // show popup on home only
+        const popup = document.getElementById("popup");
+        if (popup) popup.style.display = "none"; // leave it hidden unless you want it again
+      }
+
+      async function renderMapPage(slug) {
+        // NEW
+        // Hide home, show map page
+        document.getElementById("homePage").style.display = "none";
+        document.getElementById("mapPage").style.display = "block";
+
+        // Ensure popup isn't in the way
+        const popup = document.getElementById("popup");
+        if (popup) popup.style.display = "none";
+
+        const entry = getMapEntry(slug);
+        const dataPath = entry.path || "data/" + slug + ".json";
+        const title = entry.title || slug.replace(/-/g, " ");
+
+        const mapTitleEl = document.getElementById("mapTitle");
+        const mapContentEl = document.getElementById("mapContent");
+        mapTitleEl.textContent = title;
+        mapContentEl.innerHTML =
+          '<div style="text-align:center;padding:40px;color:#666">Loading argument analysis...</div>';
+
+        try {
+          const res = await fetch(dataPath, { cache: "no-cache" });
+          const data = await res.json();
+          new ArgumentTreeRenderer(mapContentEl, data).init();
+          document.title = title + " – Mapped News";
+        } catch (e) {
+          mapContentEl.innerHTML =
+            '<div style="text-align:center;padding:40px;color:#e74c3c">Error loading argument data</div>';
+        }
+      }
+
+      function router() {
+        // NEW
+        const h = location.hash;
+        const m = h.match(/^#\/map\/([^\/]+)$/);
+        if (m) {
+          const slug = m[1];
+          renderMapPage(slug);
+        } else {
+          showHome();
+        }
+      }
+
+      // CHANGED: showArgumentTree now navigates to hash route instead of opening the modal
+      async function showArgumentTree(jsonPath, titleText) {
+        /* CHANGED */
+        const slug = slugFromPath(jsonPath);
+        saveMapEntry(slug, jsonPath, titleText);
+        location.hash = "/map/" + slug; // triggers router()
+        // If you wanted the old modal behavior sometimes, you could gate this behind a flag.
+      }
+
+      // Back button on full-page map
+      document.getElementById("mapBack").addEventListener("click", () => {
+        // NEW
+        history.pushState({}, "", "#/");
+        router();
+      });
+
+      // Handle back/forward and initial load
+      window.addEventListener("hashchange", router); // NEW
+      document.addEventListener("DOMContentLoaded", router); // NEW
+
+      /* ===== Popup logic (unchanged) ===== */
+      window.onload = function () {
+        setTimeout(() => {
+          // Only show popup on home route
+          if (
+            !location.hash ||
+            location.hash === "#/" ||
+            location.hash === ""
+          ) {
+            document.getElementById("popup").style.display = "flex";
+          }
+        }, 500);
+      };
+
+      function handleUserChoice(role) {
+        localStorage.setItem("userType", role);
+
+        // Google Analytics event
+        if (typeof gtag === "function") {
+          gtag("event", "user_type_selected", {
+            event_category: "User Classification",
+            event_label: role,
+          });
+        }
+
+        document.getElementById("popup").style.display = "none";
       }
     </script>
   </body>
