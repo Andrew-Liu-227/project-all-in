@@ -1,0 +1,167 @@
+{
+    "centralQuestion": "Are the arts worth receiving significant federal funding?",
+    "reasons": [
+    {
+    "description": "Public investment in the arts generates economic spillovers and supports jobs across creative sectors and local economies.",
+    "sources": [
+    {
+    "title": "OECD: 'The economic and social impact of the cultural and creative sectors'",
+    "link": "https://www.oecd.org/industry/creative/economic-and-social-impact-of-culture-and-creative-sectors.htm",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    },
+    {
+    "title": "Associated Press: 'NEA funding fight is also a fight about jobs'",
+    "link": "https://apnews.com/article/db96ad3d597e462fb6bb89df5a0e58c6",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Arts education and participation improve academic, social, and civic outcomes, providing a public-good rationale for federal support.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'New evidence of the benefits of arts education'",
+    "link": "https://www.brookings.edu/articles/new-evidence-of-the-benefits-of-arts-education/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "RAND Corporation: 'Gifts of the Muse: Reframing the Debate About the Benefits of the Arts'",
+    "link": "https://www.rand.org/pubs/monographs/MG218.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Federal grants bolster equity and access—especially for small, rural, and underserved communities—and stabilize nonprofit arts organizations.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'What is the financial risk to nonprofits of losing government grants?'",
+    "link": "https://www.urban.org/urban-wire/what-financial-risk-nonprofits-losing-government-grants",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "PBS NewsHour: 'Local arts groups face budget gaps and layoffs as NEA pulls grants'",
+    "link": "https://www.pbs.org/newshour/politics/local-arts-groups-face-budget-gaps-and-layoffs-as-nea-pulls-grants",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Cultural funding advances soft power, civic cohesion, and democratic vitality—benefits not easily provided by private markets alone.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'Hip-Hop Diplomacy'",
+    "link": "https://www.cfr.org/event/hip-hop-diplomacy",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    },
+    {
+    "title": "UNESCO: 'Culture: the missing pillar of sustainable development'",
+    "link": "https://www.unesco.org/en/culture/sustainable-development/missing-pillar",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/UNESCO_logo_dcbou2.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Government subsidies can distort markets, reduce efficiency, and encourage dependence rather than innovation in cultural organizations.",
+    "sources": [
+    {
+    "title": "Fraser Institute: 'Entertainment industries, government policies, and the subsidy system'",
+    "link": "https://www.fraserinstitute.org/studies/entertainment-industries-government-policies-and-subsidy-system",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/Fraser_institute_logo_ytqle1.jpg"
+    },
+    {
+    "title": "The Economist: 'The show must go on'",
+    "link": "https://www.economist.com/britain/2012/02/18/the-show-must-go-on",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Federal arts funding is vulnerable to politicization and censorship pressures, making support unpredictable and potentially compromising artistic independence.",
+    "sources": [
+    {
+    "title": "Reuters: 'Judge allows Trump’s executive order restricting many federal arts grants'",
+    "link": "https://www.reuters.com/world/us/judge-allows-trumps-executive-order-restricting-many-federal-arts-grants-2025-06-20/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "The Guardian: 'Arts agency terminates dozens of grants after Trump proposes eliminating NEA'",
+    "link": "https://www.theguardian.com/us-news/2025/may/04/nea-terminates-grants-trump-proposes-eliminating-agency",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Public arts subsidies can skew toward elite institutions and crowd out private giving; private patronage and platforms can fund culture without federal support.",
+    "sources": [
+    {
+    "title": "BBC News: 'Who should fund the arts?'",
+    "link": "https://wspartners.bbc.com/episode/w3ct37sw",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/BBC_News_Logo_iusjra.png"
+    },
+    {
+    "title": "The Economist: 'Patreon, Kickstarter and the new patrons of the arts'",
+    "link": "https://www.economist.com/christmas-specials/2018/12/18/patreon-kickstarter-and-the-new-patrons-of-the-arts",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Given fiscal constraints, federal arts support is a lower priority relative to other national needs, and proposed cuts are framed as budget discipline.",
+    "sources": [
+    {
+    "title": "Reuters: 'US House passes Trump cuts of $9.4 billion for foreign aid and public broadcasting'",
+    "link": "https://www.reuters.com/world/us/us-house-passes-trump-cuts-94-billion-foreign-aid-broadcasting-2025-06-12/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "NPR: 'What arts funding might look like during Trump’s second term'",
+    "link": "https://www.nprillinois.org/statehouse/2024-10-28/what-arts-funding-might-look-like-during-trumps-second-term",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/NPR_Logo_t4i90g.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "‘Neutrality, Cultural Literacy, and Arts Funding’ (Ergo, 2024)",
+    "description": "Peer-reviewed, open-access philosophical analysis arguing that diversity-based arts funding produces non-excludable public goods by fostering cultural literacy that benefits citizens broadly.",
+    "link": "https://journals.publishing.umich.edu/ergo/article/id/5192/"
+    },
+    {
+    "title": "‘The impact of out-of-school visual art activities on children’s academic attainment’ (PLOS ONE, 2024)",
+    "description": "Open-access empirical study (N=1,624) finding associations between participation in visual art activities and improved academic attainment, relevant to claims that arts engagement yields educational benefits.",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298901"
+    },
+    {
+    "title": "‘Cultural policy beyond economy: democratising access to the arts’ (International Journal of Cultural Policy, 2025)",
+    "description": "Open-access article examining how public cultural policy can expand equitable access to the arts, situating funding choices within broader participation and inclusion goals.",
+    "link": "https://www.tandfonline.com/doi/full/10.1080/10286632.2025.2456551?af=R"
+    },
+    {
+    "title": "‘The Impact of Cultural Capital on Economic Growth’ (Sustainability, 2024)",
+    "description": "Open-access paper modeling the contribution of cultural capital and public investment in cultural assets to economic growth, offering macro-level support for culture’s economic externalities.",
+    "link": "https://www.mdpi.com/2071-1050/16/5/1781"
+    }
+    ],
+    "themes": []
+    }

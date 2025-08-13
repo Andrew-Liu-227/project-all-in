@@ -1,0 +1,167 @@
+{
+    "centralQuestion": "Were the initial stimulus checks during the Covid-19 pandemic economically justified?",
+    "reasons": [
+    {
+    "description": "They helped stabilize aggregate demand and accelerate the recovery at a critical moment.",
+    "sources": [
+    {
+    "title": "Reuters: 'Fiscal stimulus, vaccinations lift U.S. economy above pre-pandemic level'",
+    "link": "https://www.reuters.com/world/us/us-economy-grows-solidly-second-quarter-labor-market-healing-2021-07-29/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "IMF: 'Fiscal Monitor, October 2020: Policies for the Recovery'",
+    "link": "https://www.imf.org/-/media/Files/Publications/fiscal-monitor/2020/October/English/text.ashx",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Direct payments reduced poverty and mitigated hardship during 2020.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'Toward Alleviating Poverty: An Evaluation of the Fight Against Poverty During the COVID-19 Pandemic'",
+    "link": "https://www.urban.org/sites/default/files/2021-06/Toward%20Alleviating%20Poverty%20During%20the%20COVID-19%20Pandemic.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "Congressional Budget Office: 'The Distribution of Household Income in 2020'",
+    "link": "https://www.cbo.gov/publication/59757",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/congressional_budget_office_logo_rr3btg.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Checks provided liquidity insurance; lower-balance households spent quickly on essentials.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Recession Remedies: Lessons learned from the U.S. economic policy response to COVID-19' (Ruffini & Wozniak chapter)",
+    "link": "https://www.brookings.edu/wp-content/uploads/2022/05/BPEA_Spring2022_Ruffini_Wozniak_chapter.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Federal Reserve Banks: 'Economic Well-Being of U.S. Households in 2020—Income'",
+    "link": "https://www.federalreserve.gov/publications/2021-economic-well-being-of-us-households-in-2020-income.htm",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Federal_Reserve_Bank_System_logo_kyyl9y.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "They were fast to deploy at scale and administratively simple compared with alternatives.",
+    "sources": [
+    {
+    "title": "Tax Policy Center: 'The IRS Delivered Economic Impact Payments In Record Time—So Why Haven't Some Needy Families Gotten Them?'",
+    "link": "https://taxpolicycenter.org/taxvox/irs-delivered-economic-impact-payments-record-time-so-why-havent-some-needy-families-gotten",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/Tax_Policy_center_logo_elf5ab.png"
+    },
+    {
+    "title": "World Bank: 'Chapter 1: The economic impacts of the COVID-19 crisis' (WDR 2022 brief)",
+    "link": "https://www.worldbank.org/en/publication/wdr2022/brief/chapter-1-introduction-the-economic-impacts-of-the-covid-19-crisis",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/world_bank_logo_fswjun.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "They contributed to overheating pressures and higher inflation.",
+    "sources": [
+    {
+    "title": "AEI: 'Sending Americans $2,000 checks could be Washington’s dumbest move yet'",
+    "link": "https://www.aei.org/politics-and-public-opinion/sending-americans-2000-checks-could-be-washingtons-dumbest-move-yet/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    },
+    {
+    "title": "Federal Reserve Banks (FRBSF): 'Why Is U.S. Inflation Higher than in Other Countries?'",
+    "link": "https://www.frbsf.org/economic-research/publications/economic-letter/2022/november/why-is-us-inflation-higher-than-in-other-countries/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Federal_Reserve_Bank_System_logo_kyyl9y.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Payments were imperfectly targeted; many recipients were not in acute need.",
+    "sources": [
+    {
+    "title": "Tax Policy Center: 'Congress Should Include More Unemployment Benefits—And Another Stimulus Payment—in New Relief'",
+    "link": "https://taxpolicycenter.org/taxvox/congress-should-include-more-unemployment-benefits-and-another-stimulus-payment-new-relief",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/Tax_Policy_center_logo_elf5ab.png"
+    },
+    {
+    "title": "OECD: 'Households’ savings grew to record levels during the pandemic'",
+    "link": "https://www.oecd.org/coronavirus/policy-responses/households-savings-grew-to-record-levels-during-the-pandemic-3a5715dd/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Administrative design led to improper payments and delays or exclusions for some eligible people.",
+    "sources": [
+    {
+    "title": "Government Accountability Office: 'Stimulus Checks: Direct Payments to Individuals During the COVID-19 Pandemic'",
+    "link": "https://www.gao.gov/products/gao-24-106510",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/government_accountability_office_logo_sbwkep.svg"
+    },
+    {
+    "title": "Tax Policy Center: 'Which DC Residents Haven’t Gotten Their Economic Impact Payments Yet?'",
+    "link": "https://taxpolicycenter.org/taxvox/which-dc-residents-havent-gotten-their-economic-impact-payments-yet",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/Tax_Policy_center_logo_elf5ab.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Checks may have had lower multipliers than alternatives like expanded unemployment insurance, especially amid lockdown constraints.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'The Fiscal Policy Response to the Pandemic' (BPEA paper)",
+    "link": "https://www.brookings.edu/wp-content/uploads/2021/03/BPEASP21_Romer_conf-draft_updated.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Congressional Budget Office: 'The Effects of Pandemic-Related Legislation on Output'",
+    "link": "https://www.cbo.gov/system/files/2020-09/56537-pandemic-legislation.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/congressional_budget_office_logo_rr3btg.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "Journal of Public Economics: 'Earnings Shocks and Stabilization During COVID-19'",
+    "description": "Analyzes administrative and survey data for 2020, showing large earnings declines for many workers and that fiscal relief— including Economic Impact Payments—partially offset income losses and stabilized household resources.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0047272722000942"
+    },
+    {
+    "title": "The BE Journal of Economic Analysis & Policy: 'The Impact of the CARES Stimulus Payments on COVID-19 Consumption'",
+    "description": "Uses high-frequency consumer data to estimate the consumption response to CARES Act payments, documenting spending effects and heterogeneity across households.",
+    "link": "https://www.degruyter.com/document/doi/10.1515/bejeap-2021-0725/html"
+    },
+    {
+    "title": "International Journal of Drug Policy: 'Economic impact payments and opioid overdose deaths'",
+    "description": "Examines population-level associations between the timing of EIPs and overdose mortality, contributing evidence on potential unintended public health effects of direct cash transfers.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9492385/"
+    },
+    {
+    "title": "Journal of Economic Perspectives: 'A Social Insurance Perspective on Pandemic Fiscal Policy'",
+    "description": "Provides a peer-reviewed synthesis of U.S. pandemic fiscal tools, discussing the role of direct payments alongside unemployment insurance and other benefits through the lens of social insurance theory.",
+    "link": "https://www.aeaweb.org/articles?id=10.1257/jep.36.2.3"
+    }
+    ],
+    "themes": []
+    }

@@ -1,0 +1,123 @@
+{
+    "centralQuestion": "Should Maine phase out lobstering quotas to avoid long term damage to the fishing industry?",
+    "reasons": [
+    {
+    "description": "Quotas concentrate access in the hands of large or foreign-controlled firms, marginalizing small-scale fishers and coastal communities.",
+    "sources": [
+    {
+    "title": "The Guardian: 'More than two fifths of English fishing quotas 'held by foreign businesses''",
+    "link": "https://www.theguardian.com/environment/2014/nov/04/english-fishing-quotas-foreign-businesses-greenpeace",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Quota systems have created incentives for discarding and misreporting, leading to waste and ecological harm.",
+    "sources": [
+    {
+    "title": "The Guardian: 'UK trawlers ignoring ban on discarding edible fish at sea'",
+    "link": "https://www.theguardian.com/environment/2019/feb/08/uk-ban-on-discarding-edible-fish-at-sea-thwarted-by-industry",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    },
+    {
+    "title": "Reuters: 'EU seals reform deal to replenish fish stocks'",
+    "link": "https://www.reuters.com/article/business/eu-seals-reform-deal-to-replenish-fish-stocks-idUSL5N0EA3TM/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Annual quota bargaining has prioritized short-term economic interests over science, risking stock health and long-term industry stability.",
+    "sources": [
+    {
+    "title": "Reuters: 'EU seals reform deal to replenish fish stocks'",
+    "link": "https://www.reuters.com/article/business/eu-seals-reform-deal-to-replenish-fish-stocks-idUSL5N0EA3TM/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Scientifically set quotas and tradable quota systems can rebuild stocks, cut waste, and improve long-term economic performance.",
+    "sources": [
+    {
+    "title": "OECD: 'Sustaining Iceland's fisheries through tradeable quotas'",
+    "link": "https://www.oecd.org/en/publications/sustaining-iceland-s-fisheries-through-tradeable-quotas_46f8d776-en.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    },
+    {
+    "title": "Resources for the Future: 'Fishing Quota Markets'",
+    "link": "https://www.rff.org/documents/1202/RFF-DP-02-20.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Following scientific advice when setting quotas has been linked with stock rebuilding and reduced discards.",
+    "sources": [
+    {
+    "title": "Reuters: 'EU seals reform deal to replenish fish stocks'",
+    "link": "https://www.reuters.com/article/business/eu-seals-reform-deal-to-replenish-fish-stocks-idUSL5N0EA3TM/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "OECD: 'OECD Review of Fisheries 2022'",
+    "link": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/12/oecd-review-of-fisheries-2022_ceec67a4/9c3ad238-en.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Regulators argue that tighter limits (e.g., increased minimum size) are needed amid declines in juvenile lobster, and loosening or removing limits would risk overfishing.",
+    "sources": [
+    {
+    "title": "Associated Press: 'Plan for stricter lobster fishing rules delayed as species shows decline in babies'",
+    "link": "https://apnews.com/article/4234b9ffb208fad81317f462e104fe6e",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    },
+    {
+    "title": "Associated Press: 'Plan for stricter lobster fishing rules scrapped amid strong opposition from lobstermen'",
+    "link": "https://apnews.com/article/lobster-fishing-oceans-seafood-021c287ef25a44af01530cee5d0170a7",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "PNAS: 'The distributional outcomes of rights-based management in fisheries'",
+    "description": "Analyzes U.S. catch share (quota) programs and finds increased vessel productivity with nuanced distributional effects, informing debates about consolidation and equity in quota systems.",
+    "link": "https://www.pnas.org/doi/10.1073/pnas.2109154119"
+    },
+    {
+    "title": "ICES Journal of Marine Science: 'Decision rules for quota setting to support spatial management in a lobster fishery'",
+    "description": "Develops and evaluates quota-setting decision rules tailored to a lobster fishery (Jasus edwardsii), highlighting spatial considerations for sustainable management.",
+    "link": "https://academic.oup.com/icesjms/article/74/2/588/2439482"
+    },
+    {
+    "title": "PNAS: 'Impact of catch shares on diversification of fishers’ income and risk'",
+    "description": "Examines how catch share (quota) programs affect income diversification and risk exposure across multiple U.S. fisheries, with implications for economic resilience.",
+    "link": "https://www.pnas.org/doi/10.1073/pnas.1702382114"
+    },
+    {
+    "title": "ICES Journal of Marine Science: 'Fleet-wide stability masks change in the Maine lobster fishery'",
+    "description": "Uses recent data to show shifting intra-fleet dynamics in Maine’s lobster fishery despite apparent aggregate stability, relevant to management choices under change.",
+    "link": "https://academic.oup.com/icesjms/article/doi/10.1093/icesjms/fsaf097/8176470"
+    }
+    ],
+    "themes": []
+    }

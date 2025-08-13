@@ -1,0 +1,147 @@
+{
+    "centralQuestion": "Should Oregon introduce a statewide sales tax in order to increase funding for state programs?",
+    "reasons": [
+    {
+    "description": "Consumption taxes are generally less harmful to economic growth than income taxes, so shifting part of the tax mix toward a broad sales tax can raise revenue with lower efficiency costs.",
+    "sources": [
+    {
+    "title": "OECD: 'Taxation and Economic Growth'",
+    "link": "https://www.oecd.org/en/publications/taxation-and-economic-growth_241216205486.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    },
+    {
+    "title": "American Enterprise Institute (AEI): 'Slow-Growth U.S. Now Ripe for a Consumption Tax'",
+    "link": "https://www.aei.org/economics/slow-growth-u-s-now-ripe-for-a-consumption-tax/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "A statewide sales tax is a proven high-yield instrument that can raise substantial revenue to fund programs when designed with a broad base.",
+    "sources": [
+    {
+    "title": "Congressional Budget Office (CBO): 'Impose a 5 Percent Value-Added Tax (VAT)'",
+    "link": "https://www.cbo.gov/budget-options/60961",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/congressional_budget_office_logo_rr3btg.png"
+    },
+    {
+    "title": "International Monetary Fund (IMF): 'The Evolution of Potential VAT Revenues and C-Efficiency in Advanced Economies'",
+    "link": "https://www.imf.org/en/Publications/WP/Issues/2017/07/11/The-Evolution-of-Potential-VAT-Revenues-and-C-Efficiency-in-Advanced-Economies-45015",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Modernizing the tax base (including services and digital goods) can improve adequacy and keep pace with the economy, making a sales tax more robust.",
+    "sources": [
+    {
+    "title": "Tax Policy Center: 'How do state and local general sales and gross receipts taxes work?'",
+    "link": "https://taxpolicycenter.org/briefing-book/how-do-state-and-local-general-sales-and-gross-receipts-taxes-work",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247768/Tax_Policy_center_logo_elf5ab.png"
+    },
+    {
+    "title": "Urban Institute: 'How Broad Are State Sales Tax Bases?'",
+    "link": "https://www.urban.org/research/publication/how-broad-are-state-sales-tax-bases",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "In practice, proposals to introduce or expand sales taxes are used to stabilize revenues and finance priorities, sometimes paired with income-tax cuts.",
+    "sources": [
+    {
+    "title": "Associated Press (AP): 'Gov. Youngkin wants to cut income taxes and raise the sales tax in proposed Virginia budget'",
+    "link": "https://apnews.com/article/de46f03a22c7937a56bc91c910e30bf3",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "General sales taxes are regressive, raising a larger share of income from low- and moderate-income households than from higher-income households.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'The Pros and Cons of a Consumption Tax'",
+    "link": "https://www.brookings.edu/articles/the-pros-and-cons-of-a-consumption-tax/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Political carve-outs and exemptions can erode the base, forcing higher rates and complicating administration.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Fantasy Tax'",
+    "link": "https://www.brookings.edu/articles/fantasy-tax/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Sales-tax revenues can be cyclical and sensitive to shifts in consumption patterns, posing fiscal stability risks.",
+    "sources": [
+    {
+    "title": "Pew Research Center: 'Tax Revenue Volatility Is Increasing in Most States'",
+    "link": "https://www.pewtrusts.org/en/research-and-analysis/articles/2024/05/07/tax-revenue-volatility-is-increasing-in-most-states",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp"
+    },
+    {
+    "title": "International Monetary Fund (IMF): 'The Evolution of Potential VAT Revenues and C-Efficiency in Advanced Economies'",
+    "link": "https://www.imf.org/en/Publications/WP/Issues/2017/07/11/The-Evolution-of-Potential-VAT-Revenues-and-C-Efficiency-in-Advanced-Economies-45015",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247774/international_monetary_fund_logo_pmpow3.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Introducing a sales tax can disadvantage border-area retailers by encouraging cross-border shopping in lower-tax jurisdictions, affecting employment and payroll near state lines.",
+    "sources": [
+    {
+    "title": "Federal Reserve Board: 'The Effect of State and Local Sales Taxes on Employment at State Borders'",
+    "link": "https://www.federalreserve.gov/econres/feds/the-effect-of-state-and-local-sales-taxes-on-employment-at-state-borders.htm",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Federal_Reserve_Bank_System_logo_kyyl9y.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "‘Salience and Taxation: Theory and Evidence’ (American Economic Review, 2009)",
+    "description": "Experimental and field evidence showing that consumers underreact to non-salient sales taxes, affecting demand and incidence; provides insights into behavioral responses to sales taxes.",
+    "link": "https://www.aeaweb.org/articles?id=10.1257/aer.99.4.1145"
+    },
+    {
+    "title": "‘Value-Added Taxation: A Tax Whose Time Has Come?’ (Journal of Economic Perspectives, 1995)",
+    "description": "Survey of VAT design, incidence, and implementation issues, discussing efficiency, distribution, and administrative considerations relevant to adopting broad-based consumption taxes.",
+    "link": "https://www.aeaweb.org/articles?id=10.1257/jep.9.1.121"
+    },
+    {
+    "title": "‘Retail Price Reactions to Changes in State and Local Sales Taxes’ (National Tax Journal, 1996)",
+    "description": "Empirical test of tax shifting showing the degree to which sales taxes are passed through to consumer prices, informing incidence and revenue expectations.",
+    "link": "https://www.journals.uchicago.edu/doi/abs/10.1086/NTJ41789195"
+    },
+    {
+    "title": "‘Local sales taxes, employment, and tax competition’ (Regional Science and Urban Economics, 2018)",
+    "description": "Border-county analysis finding that higher relative sales taxes can reduce employment and payroll near borders, with effects concentrated where cross-border commuting is large.",
+    "link": "https://ideas.repec.org/a/eee/regeco/v70y2018icp373-383.html"
+    }
+    ],
+    "themes": []
+    }

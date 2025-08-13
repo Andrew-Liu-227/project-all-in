@@ -1,0 +1,148 @@
+{
+    "centralQuestion": "Would overturning Citizens United v. Federal Election Commission (2010) improve the democratic process?",
+    "reasons": [
+    {
+    "description": "It would curb 'dark money' and improve transparency in elections by enabling stronger limits and disclosure for outside spending.",
+    "sources": [
+    {
+    "title": "The Guardian: 'Dark money: the quixotic quest to clean up US campaign financing'",
+    "link": "https://www.theguardian.com/us-news/2022/apr/06/dark-money-campaign-financing-citizens-united",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    },
+    {
+    "title": "Transparency International: 'Explainer: What is the FEC’s donor disclosure proposal and why does it matter?'",
+    "link": "https://us.transparency.org/news/explainer-fec-donor-disclosure-proposal/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Transparency_International_Logo_ipkglf.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "It would reduce the outsized influence of wealthy donors and special interests on policy, strengthening political equality and public trust.",
+    "sources": [
+    {
+    "title": "Freedom House: 'How Does U.S. Democracy Deteriorate?'",
+    "link": "https://freedomhouse.org/report/special-report/2021/how-does-us-democracy-deteriorate",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/Freedom_House_Logo_h0nms2.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Overturning would align the law with broad public opinion that wants limits on campaign spending.",
+    "sources": [
+    {
+    "title": "Pew Research Center: '7 facts about Americans’ views of money in politics'",
+    "link": "https://www.pewresearch.org/short-reads/2023/06/20/americans-views-money-in-politics/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "It would help prevent foreign-influenced or unaccountable corporate political spending by enabling stricter corporate governance and limits.",
+    "sources": [
+    {
+    "title": "Center for American Progress: 'Corporate Boards Must Be Responsible for Political Spending'",
+    "link": "https://www.americanprogress.org/article/corporate-boards-must-responsible-political-spending/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_american_progress_logo_nkyira.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "It would reverse what critics call judicial activism that undermined longstanding anti-corruption rules and legislative authority.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Citizens United vs. Federal Election Commission is an Egregious Exercise of Judicial Activism'",
+    "link": "https://www.brookings.edu/articles/citizens-united-vs-federal-election-commission-is-an-egregious-exercise-of-judicial-activism/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Political spending is protected speech; overturning would suppress First Amendment rights of associations, including corporations and unions.",
+    "sources": [
+    {
+    "title": "Stanford Hoover Institution: 'Corporations Are People, Too'",
+    "link": "https://www.hoover.org/research/corporations-are-people-too",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "The harms attributed to the ruling are overstated; the decision was not the 'disaster' critics predicted.",
+    "sources": [
+    {
+    "title": "Reuters: 'Citizens United gives freedom of speech back to the people'",
+    "link": "https://www.reuters.com/world/us/citizens-united-gives-freedom-speech-back-people-2024-01-19/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Overturning via constitutional amendment is impractical and misguided, risking broad restrictions on political speech.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'A Constitutional Amendment Overturning Citizens United—Really, How?'",
+    "link": "https://www.aei.org/articles/a-constitutional-amendment-overturning-citizens-united-really-how/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Citizens United did reshape campaign finance, but not in the way many critics envisioned; the effects are complex and not uniformly corrosive.",
+    "sources": [
+    {
+    "title": "Politico: 'Citizens United, 4 years later'",
+    "link": "https://www.politico.com/story/2014/01/citizens-united-four-years-later-102449",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'The Business of American Democracy: Citizens United, Independent Spending, and Elections' (Journal of Law and Economics, 2016)",
+    "description": "Peer-reviewed study analyzing how Citizens United affected independent expenditures and electoral outcomes, using empirical data on spending and competition; the abstract details observed changes in independent spending after the ruling.",
+    "link": "https://www.journals.uchicago.edu/doi/10.1086/687274"
+    },
+    {
+    "title": "'Corporate political spending and state tax policy: Evidence from Citizens United' (Journal of Public Economics, 2023)",
+    "description": "Peer-reviewed article examining whether corporate political spending influenced state tax policy in the post-Citizens United environment; the abstract discusses identification strategy and findings on policy responsiveness.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0047272723000415"
+    },
+    {
+    "title": "'The Impact of Citizens United on Large Corporations and Their Employees' (Political Research Quarterly, 2019)",
+    "description": "Peer-reviewed study assessing how the ruling affected political activity by large firms and potential spillovers for employees; the abstract summarizes changes in corporate political engagement following Citizens United.",
+    "link": "https://journals.sagepub.com/doi/10.1177/1065912919832372"
+    },
+    {
+    "title": "'Anti-Democratic Influence: The Effect of Citizens United on State Legislative Agendas' (Legislative Studies Quarterly, 2024)",
+    "description": "Peer-reviewed article investigating whether the ruling shifted state legislative priorities; the abstract outlines evidence that post-Citizens United agenda setting changed in ways linked to interest-group spending.",
+    "link": "https://onlinelibrary.wiley.com/doi/10.1111/lsq.12457"
+    }
+    ],
+    "themes": []
+    }
+    
+    
+    
+    

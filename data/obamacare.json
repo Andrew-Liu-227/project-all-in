@@ -1,0 +1,181 @@
+{
+    "centralQuestion": "Was Obamacare a successful policy in the terms of its goals?",
+    "reasons": [
+    {
+    "description": "The ACA substantially reduced the uninsured rate and achieved record marketplace enrollment.",
+    "sources": [
+    {
+    "title": "Reuters: 'US signs up record 21.3 million people for 2024 Obamacare plans'",
+    "link": "https://www.reuters.com/world/us/us-signs-up-record-213-million-people-2024-obamacare-plans-2024-01-24/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "Brookings Institution: 'Uninsurance rates have fallen significantly following the Affordable Care Act'",
+    "link": "https://www.brookings.edu/articles/uninsurance-rates-have-fallen-significantly-following-the-affordable-care-act/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Preexisting-condition protections and essential health benefits increased coverage security and access to preventive services.",
+    "sources": [
+    {
+    "title": "PBS NewsHour: 'What happens if the Affordable Care Act is eliminated during a pandemic?'",
+    "link": "https://www.pbs.org/newshour/health/what-happens-if-the-affordable-care-act-is-eliminated-during-a-pandemic",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    },
+    {
+    "title": "Brookings Institution: 'A Supreme Court decision to strike down the ACA would create chaos in the health care system'",
+    "link": "https://www.brookings.edu/articles/a-supreme-court-decision-to-strike-down-the-aca-would-create-chaos-in-the-health-care-system/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Medicaid expansion and income-based subsidies expanded coverage and access for low- and moderate-income adults.",
+    "sources": [
+    {
+    "title": "Kaiser Family Foundation: 'A Look at ACA Coverage through the Marketplaces and Medicaid Expansion Ahead of Potential Policy Changes'",
+    "link": "https://www.kff.org/affordable-care-act/issue-brief/a-look-at-aca-coverage-through-the-marketplaces-and-medicaid-expansion-ahead-of-potential-policy-changes/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "The ACA reduced hospitals’ uncompensated care and households’ medical debt, improving financial protection.",
+    "sources": [
+    {
+    "title": "Reuters: 'Obamacare drives decline in hospital unpaid bills: study'",
+    "link": "https://www.reuters.com/article/healthcare-unpaidbills/obamacare-drives-decline-in-hospital-unpaid-bills-study-idUSL1N1XQ1C0",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "Urban Institute: 'Medical Debt in the US by State and County'",
+    "link": "https://www.urban.org/research/publication/medical-debt-us-state-and-county",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Payment and delivery reforms (e.g., the Hospital Readmissions Reduction Program) incentivized quality improvements by lowering readmissions.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'The essential scan: Top findings in health policy research'",
+    "link": "https://www.brookings.edu/articles/the-essential-scan-top-findings-in-health-policy-research-28/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Kaiser Family Foundation: 'Aiming for Fewer Hospital U-turns: The Medicare Hospital Readmission Reduction Program'",
+    "link": "https://www.kff.org/medicare/issue-brief/aiming-for-fewer-hospital-u-turns-the-medicare-hospital-readmission-reduction-program/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Premiums rose sharply in some years and deductibles remained high for many consumers, straining affordability.",
+    "sources": [
+    {
+    "title": "Reuters: 'US ACA plans set for biggest premium jump since 2018'",
+    "link": "https://www.reuters.com/world/us/us-aca-plans-set-biggest-premium-jump-since-2018-2025-08-11/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "Politico: 'Affordable care? Not so fast'",
+    "link": "https://www.politico.com/story/2014/05/affordable-care-not-so-fast-106708",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Insurer exits and retrenchment reduced plan choice in many areas, especially early on.",
+    "sources": [
+    {
+    "title": "Reuters: 'UnitedHealth to exit most Obamacare exchanges'",
+    "link": "https://www.reuters.com/article/us-unitedhealth-results-idUSKCN0XA12P",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Narrow provider networks limited access to specialists and hospitals in marketplace plans.",
+    "sources": [
+    {
+    "title": "Kaiser Family Foundation: 'How Narrow or Broad Are ACA Marketplace Physician Networks?'",
+    "link": "https://www.kff.org/private-insurance/report/how-narrow-or-broad-are-aca-marketplace-physician-networks/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Millions received cancellation notices for noncompliant plans despite assurances, causing disruption.",
+    "sources": [
+    {
+    "title": "Reuters: 'Obama under fire as Americans lose prior health plans'",
+    "link": "https://www.reuters.com/article/world/uk/obama-under-fire-as-americans-lose-prior-health-plans-idUSBRE99S1AW/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Coverage remains incomplete in nonexpansion states, leaving a Medicaid 'coverage gap' for low-income adults.",
+    "sources": [
+    {
+    "title": "Kaiser Family Foundation: 'How Many Uninsured Are in the Coverage Gap and How Many Could Be Eligible if All States Adopted the Medicaid Expansion?'",
+    "link": "https://www.kff.org/medicaid/issue-brief/how-many-uninsured-are-in-the-coverage-gap-and-how-many-could-be-eligible-if-all-states-adopted-the-medicaid-expansion/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "JAMA: 'Changes in Self-reported Insurance Coverage, Access to Care, and Health Under the Affordable Care Act'",
+    "description": "Quasi-experimental analysis finds ACA associated with increased coverage, improved access, and some self-reported health gains among nonelderly adults.",
+    "link": "https://jamanetwork.com/journals/jama/fullarticle/2411283"
+    },
+    {
+    "title": "Annals of Internal Medicine: 'Early Coverage, Access, Utilization, and Health Effects Associated With the Affordable Care Act Medicaid Expansions'",
+    "description": "Study reports that Medicaid expansions were linked to higher insurance coverage, improved coverage quality, and increased utilization for low-income adults.",
+    "link": "https://annals.org/aim/article/2513980/early-coverage-access-utilization-health-effects-associated-affordable-care-act"
+    },
+    {
+    "title": "NEJM: 'The Affordable Care Act at 10 Years — Its Coverage and Access Provision'",
+    "description": "Review synthesizes evidence that the ACA substantially expanded coverage and improved access while noting ongoing affordability and equity challenges.",
+    "link": "https://www.nejm.org/doi/pdf/10.1056/NEJMhpr1916091"
+    },
+    {
+    "title": "JAMA Network Open: 'Association of the Patient Protection and Affordable Care Act With US Primary Care Quality and Experience'",
+    "description": "Cross-sectional study associates the ACA with more high-value preventive care, better access, and lower out-of-pocket spending.",
+    "link": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2793491"
+    },
+    {
+    "title": "Health Affairs: 'Understanding The Relationship Between Medicaid Expansion And Hospital Financial Performance'",
+    "description": "Evidence indicates ACA Medicaid expansion improved hospital finances and reduced risk of closure, especially in rural and safety-net facilities.",
+    "link": "https://www.healthaffairs.org/doi/abs/10.1377/hlthaff.2017.0976"
+    }
+    ],
+    "themes": []
+    }

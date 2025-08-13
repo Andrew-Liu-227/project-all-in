@@ -1,0 +1,132 @@
+{
+    "centralQuestion": "Should redistricting be allowed in its current form?",
+    "reasons": [
+    {
+    "description": "Analysts argue that gerrymandering’s national effects are often overstated and can cancel out across states, so sweeping overhauls of the current system are unnecessary.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'The gerrymander myth'",
+    "link": "https://www.brookings.edu/articles/the-gerrymander-myth/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Existing checks within the current framework—especially state-court oversight after 'Moore v. Harper'—already police abuses, preserving federalism while constraining extreme maps.",
+    "sources": [
+    {
+    "title": "Politico: 'Supreme Court crushes plan to scramble partisan map-making'",
+    "link": "https://www.politico.com/news/2023/06/27/supreme-court-states-elections-00103728",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Because of equal-population and other legal constraints, redistricting outcomes tend not to be radically skewed; alarmist claims about the current process are misplaced.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Redistricting Proved to Be Much Ado About Not Very Much'",
+    "link": "https://www.aei.org/op-eds/redistricting-proved-to-be-much-ado-about-not-very-much/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Mid-decade and post-2020-cycle adjustments are legally permitted in many states; the current rules intentionally leave redistricting choices to states within broad constitutional bounds.",
+    "sources": [
+    {
+    "title": "Reuters: 'How the war over US congressional redistricting could play out, state by state'",
+    "link": "https://www.reuters.com/world/us/how-war-over-us-congressional-redistricting-could-play-out-state-by-state-2025-02-05/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "The current process enables extreme partisan gerrymandering that forecloses competition and undermines fair representation.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Understanding democratic decline in the United States'",
+    "link": "https://www.brookings.edu/articles/understanding-democratic-decline-in-the-united-states/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Partisan gerrymandering under the status quo limits voting rights and can entrench a minority of voters’ preferences; reforms like independent commissions are recommended.",
+    "sources": [
+    {
+    "title": "Center for American Progress: 'How Partisan Gerrymandering Limits Voting Rights'",
+    "link": "https://www.americanprogress.org/article/partisan-gerrymandering-limits-voting-rights/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_american_progress_logo_nkyira.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Recent court decisions show that, under current rules, discriminatory maps can persist, making it harder to remedy racial vote dilution.",
+    "sources": [
+    {
+    "title": "Reuters: 'US Supreme Court backs S. Carolina Republicans in race-based voting map fight'",
+    "link": "https://www.reuters.com/world/us/us-supreme-court-backs-south-carolina-republicans-race-based-voting-map-fight-2024-05-23/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Public engagement with and confidence in the current redistricting process are weak, reflecting opacity and polarization that fuel doubts about legitimacy.",
+    "sources": [
+    {
+    "title": "Pew Research Center: 'With legislative redistricting at a crucial stage, most Americans don’t feel strongly about it'",
+    "link": "https://www.pewresearch.org/short-reads/2022/01/19/with-legislative-redistricting-at-a-crucial-stage-most-americans-dont-feel-strongly-about-it/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "Political Analysis: 'A Partisan Solution to Partisan Gerrymandering: The Define–Combine Procedure'",
+    "description": "Peer-reviewed open-access article proposing a two-stage, adversarial procedure that substantially reduces partisan bias in simulated redistricting across states.",
+    "link": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/B0792DD0A49332944F2AF5FF6828E275/S1047198723000396a.pdf/div-class-title-a-partisan-solution-to-partisan-gerrymandering-the-define-combine-procedure-div.pdf"
+    },
+    {
+    "title": "Science Advances: 'The use of differential privacy for census data and its impact on redistricting: The case of the 2020 US Census'",
+    "description": "Open-access study assessing how census privacy noise affects Voting Rights Act compliance and redistricting accuracy, with practical implications for current map-drawing.",
+    "link": "https://www.science.org/doi/10.1126/sciadv.abk3283"
+    },
+    {
+    "title": "Statistics and Public Policy: 'Quantifying Gerrymandering in North Carolina'",
+    "description": "Open-access article demonstrating ensemble-based methods to detect outlier maps by comparing enacted plans with neutral simulated plans under legal constraints.",
+    "link": "https://www.tandfonline.com/doi/full/10.1080/2330443X.2020.1796400"
+    },
+    {
+    "title": "Harvard Data Science Review: 'Recombination: A Family of Markov Chains for Redistricting'",
+    "description": "Peer-reviewed open-access methodological article introducing the ReCom Markov chain approach for sampling redistricting plans, now widely used in litigation and analysis.",
+    "link": "https://hdsr.mitpress.mit.edu/pub/1ds8ptxu"
+    },
+    {
+    "title": "Statistics and Public Policy: 'A Computational Approach to Measuring Vote Elasticity as a Validation Test for Redistricting Plans'",
+    "description": "Open-access study offering validation tools for assessing whether enacted maps translate votes to seats in a manner consistent with neutral plan ensembles.",
+    "link": "https://www.tandfonline.com/doi/pdf/10.1080/2330443X.2020.1777915"
+    }
+    ],
+    "themes": []
+    }

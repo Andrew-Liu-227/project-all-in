@@ -1,0 +1,130 @@
+{
+    "centralQuestion": "Should term limits be introduced for Senators?",
+    "reasons": [
+    {
+    "description": "Reduce incumbency entrenchment and careerism by ensuring regular turnover and a 'citizen legislature.'",
+    "sources": [
+    {
+    "title": "The Wall Street Journal: 'Make the Senate Great Again'",
+    "link": "https://www.wsj.com/opinion/make-the-senate-great-again-11599589142",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Wall_Street_Journal_Logo_kyppej.png"
+    },
+    {
+    "title": "Politico: 'How to Fix Politics: Term limits'",
+    "link": "https://www.politico.com/interactives/2019/how-to-fix-politics/term-limits/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    },
+    {
+    "title": "Brookings Institution: 'Limiting Terms of Office for Members of the U.S. Senate and U.S. House of Representatives'",
+    "link": "https://www.brookings.edu/articles/limiting-terms-of-office-for-members-of-the-u-s-senate-and-u-s-house-of-representatives/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Curb special-interest influence by reducing incentives to build long-term fundraising networks and insider ties.",
+    "sources": [
+    {
+    "title": "Politico: 'How to Fix Politics: Term limits'",
+    "link": "https://www.politico.com/interactives/2019/how-to-fix-politics/term-limits/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Reflect widespread public demand for limits on tenure in high office, signaling democratic responsiveness.",
+    "sources": [
+    {
+    "title": "Pew Research Center: 'How Americans view proposals to change the political system'",
+    "link": "https://www.pewresearch.org/politics/2023/10/31/how-americans-view-proposals-and-changes-to-the-political-system/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Pew_Research_Center_Logo_vtzr1h.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Term limits restrict voter choice by preventing constituents from reelecting preferred representatives.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Five reasons to oppose congressional term limits'",
+    "link": "https://www.brookings.edu/articles/five-reasons-to-oppose-congressional-term-limits/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Loss of experience and expertise can weaken the legislature and empower lobbyists and the executive.",
+    "sources": [
+    {
+    "title": "Stanford Hoover Institution: 'How California’s term limits failed the people'",
+    "link": "https://www.hoover.org/research/how-californias-term-limits-failed-people",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Evidence suggests term limits can reduce legislative productivity and institutional capacity.",
+    "sources": [
+    {
+    "title": "The Washington Post: 'How term limits for committee chairs make Congress less effective'",
+    "link": "https://www.washingtonpost.com/news/monkey-cage/wp/2017/01/04/how-term-limits-for-committee-chairs-make-congress-less-effective/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Washington_Post_Logo_a7x7dl.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "State-level experience shows unintended consequences like greater partisanship and reduced effectiveness.",
+    "sources": [
+    {
+    "title": "Associated Press (AP): 'Editorial Roundup: Ohio'",
+    "link": "https://apnews.com/article/2c51c07482724c4d4b8d10a5342f5d9f",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'Legislative Term Limits and Polarization' (The Journal of Politics, 2020)",
+    "description": "Analyzes U.S. state legislatures and argues that term limits increase party polarization by changing career incentives and strengthening party roles.",
+    "link": "https://www.journals.uchicago.edu/doi/abs/10.1086/706764"
+    },
+    {
+    "title": "'On the Outside Looking In: Lobbyists’ Perspectives on the Effects of State Legislative Term Limits' (State Politics & Policy Quarterly, 2001)",
+    "description": "Survey of lobbyists in term-limited states finds influence shifts away from legislatures toward governors, agencies, and interest groups under term limits.",
+    "link": "https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/on-the-outside-looking-in-lobbyists-perspectives-on-the-effects-of-state-legislative-term-limits/E2F38BFA10481E5C44B3CDF153A34B68"
+    },
+    {
+    "title": "'The Limited Impact of Term Limits: Contingent Effects on the Complexity and Breadth of Laws' (State Politics & Policy Quarterly, 2006)",
+    "description": "Studies multiple states before/after reform and finds term limits can reduce policy complexity in some legislatures, with mixed effects depending on professionalism.",
+    "link": "https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/limited-impact-of-term-limits-contingent-effects-on-the-complexity-and-breadth-of-laws/B94CC2FCCA16AF1AB8EE8E48CC45983B"
+    },
+    {
+    "title": "'Do Term Limits Restrain State Fiscal Policy? Approaches for Studying Institutional Effects' (Legislative Studies Quarterly, 2013)",
+    "description": "Assesses whether term-limited states face greater fiscal stress; outlines methods and presents evidence on budgetary consequences of term limits.",
+    "link": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/lsq.12016"
+    },
+    {
+    "title": "'The Effect of State Legislative Term Limits on Voter Turnout' (State Politics & Policy Quarterly, 2007)",
+    "description": "Examines California races and finds that, contrary to reformers’ hopes, term limits can decrease voter turnout.",
+    "link": "https://www.cambridge.org/core/journals/state-politics-and-policy-quarterly/article/effect-of-state-legislative-term-limits-on-voter-turnout/95829E4A306BE9641CF4B90CBFABE848"
+    }
+    ],
+    "themes": []
+    }

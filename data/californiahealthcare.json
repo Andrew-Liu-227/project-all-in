@@ -1,0 +1,137 @@
+{
+    "centralQuestion": "Should California adopt a single-payer health care system?",
+    "reasons": [
+    {
+    "description": "Single-payer is promoted as a path to universal coverage and stronger financial protection against medical costs.",
+    "sources": [
+    {
+    "title": "World Health Organization: 'Universal health coverage (UHC)'",
+    "link": "https://www.who.int/news-room/questions-and-answers/item/universal-health-coverage-(uhc)",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/world_health_organization_logo_ilulks.png"
+    },
+    {
+    "title": "Kaiser Family Foundation: 'Americans' Challenges with Health Care Costs'",
+    "link": "https://www.kff.org/health-costs/issue-brief/americans-challenges-with-health-care-costs/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Advocates argue that a single payer could reduce administrative overhead compared with today’s multi-payer system.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Commentary on 'Health spending under single-payer approaches''",
+    "link": "https://www.brookings.edu/articles/commentary-on-health-spending-under-single-payer-approaches/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Backers say a unified public purchaser could leverage bargaining power to lower provider payment rates and drug prices.",
+    "sources": [
+    {
+    "title": "Congressional Budget Office: 'Key Design Components and Considerations for Establishing a Single-Payer Health Care System'",
+    "link": "https://www.cbo.gov/publication/57137",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/congressional_budget_office_logo_rr3btg.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Proponents contend it would simplify access and lower out-of-pocket costs relative to current arrangements.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'From Incremental to Comprehensive Health Reform: How Various Reform Options Compare'",
+    "link": "https://www.urban.org/research/publication/incremental-comprehensive-health-reform-how-various-reform-options-compare",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Critics emphasize the high annual price tag and the need for substantial new taxes to finance a state single-payer system.",
+    "sources": [
+    {
+    "title": "Politico: 'California's single-payer bill dies'",
+    "link": "https://www.politico.com/news/2022/01/31/californias-single-payer-bill-dies-00003924",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Opponents warn a state-run plan could reduce provider payment rates and worsen workforce shortages or wait times.",
+    "sources": [
+    {
+    "title": "Associated Press (AP): 'Universal health care bill advances in California Assembly'",
+    "link": "https://apnews.com/article/business-health-california-universal-health-care-36e64b79d7b7c01e9ccee2230192e923",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Skeptics argue that legal and federal hurdles—like the need for multiple waivers and ERISA preemption—complicate or impede a state-level single-payer.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute (AEI): 'State Health Care Waivers: Background and Reform Considerations'",
+    "link": "https://www.aei.org/research-products/report/state-health-care-waivers-background-and-reform-considerations/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    },
+    {
+    "title": "RAND Corporation: 'An Assessment of the New York Health Act: A Single-Payer Option for New York State'",
+    "link": "https://www.rand.org/pubs/research_reports/RR2424.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Detractors cite California’s budget pressures and competing fiscal priorities as reasons to avoid adding a large, ongoing obligation.",
+    "sources": [
+    {
+    "title": "Reuters: 'California Governor Newsom seeks to scale back free healthcare for migrants'",
+    "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/california-governor-newsom-seeks-scale-back-free-healthcare-migrants-2025-05-14/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'Projected costs of single-payer healthcare financing in the United States: A systematic review of economic modeling studies'",
+    "description": "Synthesizes U.S. single-payer cost models; most scenarios project overall system savings under certain assumptions (e.g., administrative and price reductions).",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7699748/"
+    },
+    {
+    "title": "'Single-Payer Health Care in the United States'",
+    "description": "Peer-reviewed overview of single-payer proposals, design choices, and implications in the U.S. context, summarizing arguments and evidence.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6775911/"
+    },
+    {
+    "title": "'What Is Single Payer Health Care? A Review of Definitions'",
+    "description": "Clarifies how 'single payer' is defined across the literature, distinguishing financing and delivery models relevant to U.S. debates.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5591222/"
+    },
+    {
+    "title": "'Improving the Prognosis of Health Care in the United States'",
+    "description": "Assesses structural reforms for U.S. health care, including universal coverage models, and discusses potential health and economic impacts.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8572548/"
+    }
+    ],
+    "themes": []
+    }

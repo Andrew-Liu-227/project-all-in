@@ -1,0 +1,164 @@
+{
+    "centralQuestion": "Were Trump's initial 2018 tariffs beneficial in hindsight?",
+    "reasons": [
+    {
+    "description": "Strengthened U.S. steel and aluminum industries via Section 232 actions, with reported increases in output, investment, and capacity utilization.",
+    "sources": [
+    {
+    "title": "Economic Policy Institute: 'Aluminum tariffs have led to a strong recovery in employment, production, and investment in primary aluminum and downstream industries'",
+    "link": "https://www.epi.org/publication/aluminum-tariffs-have-led-to-a-strong-recovery-in-employment-production-and-investment-in-primary-aluminum-and-downstream-industries/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    },
+    {
+    "title": "Economic Policy Institute: 'Why Global Steel Surpluses Warrant U.S. Section 232 Import Measures'",
+    "link": "https://www.epi.org/publication/why-global-steel-surpluses-warrant-u-s-section-232-import-measures/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Created negotiating leverage that contributed to trade agreements and concessions (e.g., USMCA, elements of the China 'Phase One' deal).",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'What was Trump's trade policy legacy?'",
+    "link": "https://www.brookings.edu/articles/what-was-trumps-trade-policy-legacy/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Council on Foreign Relations: 'NAFTA and the USMCA: Weighing the Impact of North American Trade'",
+    "link": "https://www.cfr.org/backgrounder/naftas-economic-impact",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Encouraged diversification of supply chains away from China—toward allies and partners—reducing strategic dependence.",
+    "sources": [
+    {
+    "title": "Center for Strategic and International Studies: 'Diversifying Supply Chains: The Role of Development Assistance and Trade Policy'",
+    "link": "https://www.csis.org/analysis/diversifying-supply-chains-role-development-assistance-and-trade-policy",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    },
+    {
+    "title": "Reuters: 'Trump administration pushing to rip global supply chains from China: officials'",
+    "link": "https://www.reuters.com/article/business/trump-administration-pushing-to-rip-global-supply-chains-from-china-officials-idUSKBN22G0BY/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Increased tariff revenue to the U.S. Treasury.",
+    "sources": [
+    {
+    "title": "Reuters: 'Who pays Trump's tariffs, China or U.S. customers and companies?'",
+    "link": "https://www.reuters.com/article/business/who-pays-trumps-tariffs-china-or-us-customers-and-companies-idUSKCN1TK1X2/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "U.S. consumers and firms bore most of the tariff costs; prices rose for imported inputs and consumer goods.",
+    "sources": [
+    {
+    "title": "Peterson Institute for International Economics: 'Trump’s plan to expand tariffs would raise prices on essentials for U.S. households'",
+    "link": "https://www.piie.com/blogs/trade-and-investment-policy-watch/trumps-plan-expand-tariffs-would-raise-prices-essentials-us",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/peterson_institute_for_international_economics_logo_iofoll.jpg"
+    },
+    {
+    "title": "OECD: 'OECD Economic Outlook, Interim Report September 2019'",
+    "link": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/09/oecd-economic-outlook-interim-report-september-2019_92a6e60a/37e06864-en.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Retaliation from trading partners harmed U.S. farmers and exporters, prompting large federal aid payments.",
+    "sources": [
+    {
+    "title": "Associated Press: 'US farmers who sell to China feel pain of Beijing’s tariffs'",
+    "link": "https://apnews.com/general-news-united-states-government-7d2c9d14c1de465c96384dda36b61514",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    },
+    {
+    "title": "Associated Press: 'Louisiana farmers get $180M in federal aid for tariff losses'",
+    "link": "https://apnews.com/general-news-6a62871dc4de483eaa3026c713ff89fc",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Net welfare and GDP losses; trade tensions slowed global growth and investment.",
+    "sources": [
+    {
+    "title": "OECD: 'OECD Economic Outlook, Volume 2019 Issue 2 (EN)'",
+    "link": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/12/oecd-economic-outlook-volume-2019-issue-2_e1174019/9b89401b-en.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    },
+    {
+    "title": "OECD: 'OECD Economic Outlook, Volume 2025 Issue 1'",
+    "link": "https://www.oecd.org/en/publications/oecd-economic-outlook-volume-2025-issue-1_83363382-en/full-report/general-assessment-of-the-macroeconomic-situation_3e68d1e3.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "The overall U.S. trade deficit did not shrink in a sustained way; effects were mainly compositional (shifts toward Mexico/Vietnam).",
+    "sources": [
+    {
+    "title": "Reuters: 'Trump upended trade once, aims to do so again with new tariffs'",
+    "link": "https://www.reuters.com/markets/us/trump-upended-trade-once-aims-do-so-again-with-new-tariffs-2025-01-16/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Administrative uncertainty and an ad hoc tariff exclusion process increased business costs and favored some firms over others.",
+    "sources": [
+    {
+    "title": "Peterson Institute for International Economics: 'USTR’s tariff exclusion process: Five things to know'",
+    "link": "https://www.piie.com/blogs/trade-and-investment-policy-watch/ustrs-tariff-exclusion-process-five-things-know",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/peterson_institute_for_international_economics_logo_iofoll.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "Quarterly Journal of Economics: 'The Return to Protectionism'",
+    "description": "Quantifies U.S. 2018–2019 tariffs and retaliations, finding near-complete pass-through to domestic prices, sizable deadweight losses, and trade diversion with limited producer gains.",
+    "link": "https://econweb.ucsd.edu/~awright/return_to_protectionism.pdf"
+    },
+    {
+    "title": "AER: Insights: 'Tariff Pass-Through at the Border and at the Store: Evidence from US Trade Policy'",
+    "description": "Documents that 2018–2019 tariffs raised U.S. import prices at the border and retail prices in stores, implying U.S. consumers bore much of the burden.",
+    "link": "https://www.hbs.edu/faculty/Publication%20Files/CavalloGopinathNeimanTang_25b4a387-57e1-4b67-a629-228e5ff5cce7.pdf"
+    },
+    {
+    "title": "Journal of Economic Perspectives: 'The Impact of the 2018 Tariffs on Prices and Welfare'",
+    "description": "Shows importers largely paid the tariffs, with estimated welfare losses for the U.S.; synthesizes early evidence on price effects and incidence.",
+    "link": "https://www.aeaweb.org/articles?id=10.1257/jep.33.4.187"
+    }
+    ],
+    "themes": []
+    }

@@ -1,0 +1,147 @@
+{
+    "centralQuestion": "Has the CHIPS Act provided enough benefits to outweigh its costs in government funding?",
+    "reasons": [
+    {
+    "description": "Strengthens national security and supply-chain resilience by reducing exposure to foreign chokepoints and Taiwan-centric risks.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'The CHIPS Act: How U.S. Microchip Factories Could Reshape the Economy'",
+    "link": "https://www.cfr.org/in-brief/chips-act-how-us-microchip-factories-could-reshape-economy",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    },
+    {
+    "title": "Atlantic Council: 'United States–China semiconductor standoff: A supply chain under stress'",
+    "link": "https://www.atlanticcouncil.org/in-depth-research-reports/issue-brief/united-states-china-semiconductor-standoff-a-supply-chain-under-stress/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Atlantic_Council_Logo_e9uelo.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Catalyzes large-scale private investment and high-wage U.S. manufacturing jobs through grant and loan commitments that unlock multi-billion-dollar fab projects.",
+    "sources": [
+    {
+    "title": "Politico: 'Trump’s TSMC demands collide with $52B CHIPS headache'",
+    "link": "https://www.politico.com/news/2025/03/03/trump-tsmc-chips-arizona-00149164",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Rebuilds leading-edge fabrication, advanced packaging, and R&D capacity (e.g., NSTC), which supporters say is foundational for long-term innovation and competitiveness.",
+    "sources": [
+    {
+    "title": "CSIS: 'A World of CHIPS Acts'",
+    "link": "https://www.csis.org/analysis/world-chips-acts",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    },
+    {
+    "title": "Carnegie Endowment for International Peace: 'After the CHIPS Act: The Limits of Reshoring and Next Steps for U.S. Semiconductor Policy'",
+    "link": "https://carnegieendowment.org/research/2022/11/after-the-chips-act-the-limits-of-reshoring-and-next-steps-for-us-semiconductor-policy?lang=en",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/carnegie_endowment_for_international_peace_logo_zvv7cx.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Supports regional development and North American integration by anchoring supply chains and workforce pipelines around new tech hubs.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'USMCA Forward 2023: Building more integrated, resilient, and secure supply chains'",
+    "link": "https://www.brookings.edu/wp-content/uploads/2023/03/USMCA-Forward-2023.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "PBS NewsHour: 'NH plant is first to get CHIPS Act funding as debate heats up over U.S.-China ties'",
+    "link": "https://www.pbs.org/newshour/show/nh-plant-is-first-to-get-chips-act-funding-as-debate-heats-up-over-us-china-ties",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "High fiscal cost per job and questions about cost-effectiveness relative to alternatives (e.g., stockpiles or incentives for inventories).",
+    "sources": [
+    {
+    "title": "Associated Press: 'Biden’s big semiconductor law will ramp up US chip production — but at a high cost, report finds'",
+    "link": "https://apnews.com/article/6251ea5d44f00f7aca9673fd175c2684",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Implementation delays, workforce shortages, and project management problems may blunt promised benefits.",
+    "sources": [
+    {
+    "title": "The Guardian: ''They would not listen to us': inside Arizona’s troubled chip plant'",
+    "link": "https://www.theguardian.com/business/2023/aug/28/phoenix-microchip-plant-biden-union-tsmc",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Risks of global subsidy races, trade distortions, and potential conflicts with WTO disciplines.",
+    "sources": [
+    {
+    "title": "Peterson Institute for International Economics: 'Modern industrial policy and the WTO' (Working Paper 23-15)",
+    "link": "https://www.piie.com/sites/default/files/2023-12/wp23-15.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/peterson_institute_for_international_economics_logo_iofoll.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Onshoring subsidies alone may not secure supply chains without broader ecosystem and allied coordination.",
+    "sources": [
+    {
+    "title": "RAND Corporation: 'The CHIPS Act Alone Won't Secure U.S. Semiconductor Supply Chains'",
+    "link": "https://www.rand.org/pubs/commentary/2022/10/the-chips-act-alone-wont-secure-us-semiconductor-supply.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "‘The rise of techno-geopolitical uncertainty: Implications of the United States CHIPS and Science Act’",
+    "description": "Journal of International Business Studies (2023, open access). Analyzes how the CHIPS and Science Act reshapes firm strategy and global value chains by elevating techno-geopolitical risk; the abstract directly discusses CHIPS and its intended security/competitiveness benefits amid costs in uncertainty and fragmentation.",
+    "link": "https://link.springer.com/article/10.1057/s41267-023-00651-7"
+    },
+    {
+    "title": "‘Semiconductors and Modern Industrial Policy’",
+    "description": "Journal of Economic Perspectives (2024, open access). Surveys semiconductor industrial policy tools—subsidies, tax credits, and trade restrictions—assessing rationales, benefits, and potential inefficiencies; the abstract frames CHIPS-style interventions and their trade-offs.",
+    "link": "https://www.aeaweb.org/articles?id=10.1257/jep.38.3.47"
+    },
+    {
+    "title": "‘Tariffs versus Subsidies: Protection versus Industrial Policy’",
+    "description": "World Trade Review (2025, open access). Compares tariffs and subsidies as industrial policy instruments in the U.S. pivot from CHIPS-era subsidies; the abstract explicitly references CHIPS and discusses implications and costs for partners and multilateral rules.",
+    "link": "https://www.cambridge.org/core/journals/world-trade-review/article/tariffs-versus-subsidies-protection-versus-industrial-policy/296E4155E69A01A49FA959F49007FF2F"
+    },
+    {
+    "title": "‘The Demise of Globalization and Rise of Industrial Policy: Caveat Emptor’",
+    "description": "World Trade Review (2024, open access). Evaluates the resurgence of industrial policy in the U.S., including the CHIPS and Science Act, highlighting benefits sought and systemic risks/costs; the abstract discusses CHIPS within broader industrial strategy debates.",
+    "link": "https://www.cambridge.org/core/journals/world-trade-review/article/demise-of-globalization-and-rise-of-industrial-policy-caveat-emptor/EC824BEC9050139C100026BCC3639FC3"
+    },
+    {
+    "title": "‘Semiconductor supply chain resilience and disruption: Perspectives and future research directions’",
+    "description": "Journal article (Taylor & Francis, open access). Abstract addresses resilience/cost trade-offs in semiconductor supply chains and references U.S. policies shaping reshoring and capacity diversification relevant to CHIPS debates.",
+    "link": "https://www.tandfonline.com/doi/full/10.1080/13675567.2023.2292631"
+    }
+    ],
+    "themes": []
+    }

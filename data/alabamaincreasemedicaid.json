@@ -1,0 +1,184 @@
+{
+    "centralQuestion": "To better serve low-income residents, should Alabama expand its Medicaid program?",
+    "reasons": [
+    {
+    "description": "Expansion would close Alabama’s coverage gap and substantially reduce the state’s uninsured rate among low-income adults.",
+    "sources": [
+    {
+    "title": "Kaiser Family Foundation: 'Medicaid Expansion in Alabama'",
+    "link": "https://files.kff.org/attachment/fact-sheet-medicaid-expansion-alabama.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    },
+    {
+    "title": "Urban Institute: '2.3 Million People Would Gain Coverage in the Remaining States That Have Not Expanded Medicaid'",
+    "link": "https://www.urban.org/research/publication/23-million-people-would-gain-coverage-remaining-states-have-not-expanded-medicaid",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "Associated Press: 'Advocates push for Medicaid expansion in holdout Alabama'",
+    "link": "https://apnews.com/article/7405a3d8256458c9a5dade4e487d52e8",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Expansion is associated with improved health access and outcomes (e.g., more preventive care and better maternal/infant health) by reducing uninsurance.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Uninsurance rates have fallen significantly following the Affordable Care Act'",
+    "link": "https://www.brookings.edu/articles/uninsurance-rates-have-fallen-significantly-following-the-affordable-care-act/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Associated Press: 'Alabama lawmakers pass legislation that could give pregnant women more access to health care'",
+    "link": "https://apnews.com/article/medicaid-pregnancy-alabama-presumptive-eligibility-2025",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Expansion brings large federal funds (with an enhanced match) that can yield net state fiscal and economic benefits.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'Reducing Federal Support for Medicaid Expansion Would Shift Costs to States and Likely Result in Coverage Losses'",
+    "link": "https://www.urban.org/sites/default/files/2025-02/Reducing_Federal_Support_for_Medicaid_Expansion_Would_Shift_Costs_to_States_and_Likely_Result_in_Coverage_Losses.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "Kaiser Family Foundation: '5 Key Facts About Medicaid Expansion'",
+    "link": "https://www.kff.org/medicaid/issue-brief/5-key-facts-about-medicaid-expansion/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Expansion helps stabilize rural hospitals by reducing uncompensated care and improving payer mix.",
+    "sources": [
+    {
+    "title": "Kaiser Family Foundation: 'Rural hospitals face renewed financial challenges, especially in states that have not expanded Medicaid'",
+    "link": "https://www.kff.org/health-costs/issue-brief/rural-hospitals-face-renewed-financial-challenges-especially-in-states-that-have-not-expanded-medicaid/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    },
+    {
+    "title": "Reuters: 'Trump Medicaid cuts could devastate rural health services, hospitals warn'",
+    "link": "https://www.reuters.com/business/healthcare-pharmaceuticals/trump-medicaid-cuts-could-devastate-rural-health-services-hospitals-warn-2025-06-13/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Expansion reduces medical debt and financial hardship among low-income residents.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'Which County Characteristics Predict Medical Debt?'",
+    "link": "https://www.urban.org/research/publication/which-county-characteristics-predict-medical-debt",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "Kaiser Family Foundation: 'The Effects of Medicaid Expansion under the ACA: Updated Findings from a Literature Review'",
+    "link": "https://www.kff.org/affordable-care-act/report/the-effects-of-medicaid-expansion-under-the-aca-updated-findings-from-a-literature-review/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247766/kaiser_family_foundation_logo_jsoqfm.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "State fiscal exposure: future federal policy changes (e.g., lowering the 90% expansion match) could shift significant costs to states.",
+    "sources": [
+    {
+    "title": "Congressional Budget Office: 'Reduce Federal Medicaid Matching Rates'",
+    "link": "https://www.cbo.gov/budget-options/60898",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/congressional_budget_office_logo_rr3btg.png"
+    },
+    {
+    "title": "Politico: 'State budgets land in GOP crosshairs amid struggle to fund megabill'",
+    "link": "https://www.politico.com/news/2025/05/07/state-budgets-republican-megabill-00333638",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Crowd-out concerns: expansion may shift some people from private coverage into Medicaid, increasing public costs.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'A Path to Better Health Beyond Medicaid'",
+    "link": "https://www.aei.org/articles/a-path-to-better-health-beyond-medicaid/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Access constraints: low Medicaid reimbursement and provider shortages can limit access even with coverage, potentially straining care delivery.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Still No Good News for ObamaCare'",
+    "link": "https://www.aei.org/articles/still-no-good-news-for-obamacare/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    },
+    {
+    "title": "Brookings Institution: 'THE BEHAVIORAL HEALTH WORKFORCE SHORTAGE'",
+    "link": "https://www.brookings.edu/wp-content/uploads/2023/04/Glied-and-Aguilar-Workforce-Paper-1.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Work disincentive arguments: some analysts claim expansion can discourage work for a subset of able-bodied adults.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Study: Obamacare Could Cause 1 Million Low-income Americans to Move from Work to Welfare'",
+    "link": "https://www.aei.org/pethokoukis/study-obamacare-could-cause-1-million-low-income-americans-to-move-from-work-to-welfare/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'Mortality and Access to Care among Adults after State Medicaid Expansions'",
+    "description": "NEJM study linking adult Medicaid expansions to reduced all-cause mortality and improved access to care among low-income adults.",
+    "link": "https://www.nejm.org/doi/full/10.1056/NEJMsa1202099"
+    },
+    {
+    "title": "'Medicaid Expansion and Infant Mortality in the United States'",
+    "description": "AJPH analysis finding larger infant mortality declines in Medicaid expansion states, with especially large declines among Black infants.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5844390/"
+    },
+    {
+    "title": "'Medicaid Expansion and Mortality Among Persons Who Were Formerly Incarcerated'",
+    "description": "JAMA Network Open cohort study reporting reductions in mortality among formerly incarcerated individuals after Medicaid expansion.",
+    "link": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2823610"
+    },
+    {
+    "title": "'Early Medicaid Expansion and Cancer Mortality'",
+    "description": "Peer-reviewed study showing early Medicaid expansion was associated with reduced cancer mortality, particularly for aggressive cancers.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8634305/"
+    },
+    {
+    "title": "'The Effect of the Affordable Care Act Medicaid Expansions on Financial Well-Being'",
+    "description": "Peer-reviewed research documenting reductions in unpaid medical bills and debt collections following Medicaid expansion.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6208351/"
+    }
+    ],
+    "themes": []
+    }

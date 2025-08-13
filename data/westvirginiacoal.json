@@ -1,0 +1,142 @@
+{
+    "centralQuestion": "Should West Virginia diversify its economy away from coal by subsidizing green industries?",
+    "reasons": [
+    {
+    "description": "Catalyze new industry clusters and leverage large federal funding flows (e.g., IRA/IIJA) to transform coal-dependent regions.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Catalyzing a ‘just transition’ from coal to clean energy in West Virginia’s Coalfields'",
+    "link": "https://www.brookings.edu/articles/catalyzing-a-just-transition-from-coal-to-clean-energy-in-west-virginias-coalfields/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "PBS NewsHour: 'Biden makes $450M available for clean energy projects at coal mines'",
+    "link": "https://www.pbs.org/newshour/politics/biden-makes-450m-available-for-clean-energy-projects-at-coal-mines",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Reduce economic risk by diversifying away from a structurally declining coal sector.",
+    "sources": [
+    {
+    "title": "Energy Information Administration: 'West Virginia State Energy Profile'",
+    "link": "https://www.eia.gov/state/print.php?sid=WV",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/energy_information_administration_logo_uejqq3.png"
+    },
+    {
+    "title": "Reuters: 'Trump's push for a comeback in coal may turn to ashes'",
+    "link": "https://www.reuters.com/markets/commodities/trumps-push-comeback-coal-may-turn-ashes-2025-07-18/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Deliver public health, land-reuse, and community fairness benefits through 'just transition' policies that support workers and coalfield communities.",
+    "sources": [
+    {
+    "title": "Resources for the Future: 'Enabling Fairness for Energy Workers and Communities in the Energy Transition (Synthesis Report)'",
+    "link": "https://www.edf.org/sites/default/files/documents/RFF-EDF%20Fairness%20for%20Workers%20and%20Communities%20Synthesis%20Report.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Create concrete local manufacturing jobs via clean-energy projects (e.g., Weirton long-duration battery factory).",
+    "sources": [
+    {
+    "title": "The Guardian: 'A renewable energy battery plant will rise in US where a steel mill once stood'",
+    "link": "https://www.theguardian.com/us-news/2023/aug/14/weirton-west-virginia-battery-plant-steel-mill",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Subsidies constitute industrial policy that picks winners, risking waste, distortion, and larger deficits.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Industrial policy and deficits: Dark clouds for democratic capitalism'",
+    "link": "https://www.aei.org/articles/industrial-policy-and-deficits-dark-clouds-for-democratic-capitalism/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Large green projects (e.g., hydrogen hubs) face uncertainty, delays, and execution risks; promised jobs may not materialize on schedule.",
+    "sources": [
+    {
+    "title": "Reuters: 'Explainer: What are Hydrogen Hubs and why are they raising hackles?'",
+    "link": "https://www.reuters.com/business/energy/explainer-hydrogen-hubs-us-oil-refiners-what-they-are-why-they-are-raising-hackles-2023-10-13/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "State incentive packages risk cronyism and expose taxpayers if projects underperform or fail.",
+    "sources": [
+    {
+    "title": "Associated Press (AP): 'Bill signed for West Virginia renewable energy battery plant'",
+    "link": "https://apnews.com/article/5ee9f259a24b5dac21a6242e45bb0669",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Coal still underpins grid reliability and employment in key areas; rapid diversification could threaten energy security and local economies.",
+    "sources": [
+    {
+    "title": "Politico: 'Amid decline, coal seeks new champions in Washington'",
+    "link": "https://www.politico.com/news/2024/04/26/coal-fuel-future-decline-00153666",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "Energy Policy: 'Coal communities' views on local economic futures'",
+    "description": "Peer-reviewed study examining how coal-dependent communities assess their economic options amid energy transition policies, highlighting preferences, perceived risks, and support conditions for diversification; abstract publicly accessible.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0301421525002241"
+    },
+    {
+    "title": "Energy Research & Social Science: 'Adaptation, culture, and the energy transition in American coal country'",
+    "description": "Peer-reviewed analysis of socio-economic adaptation processes in U.S. coal country, discussing cultural factors and policy mechanisms that shape transitions and diversification; abstract publicly accessible.",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S2214629617303341"
+    },
+    {
+    "title": "Energy Research & Social Science: 'Advocating a just transition in Appalachia: Civil society and politics in regional energy transition'",
+    "description": "Peer-reviewed article focused on central Appalachia (including West Virginia) assessing how civil society actors and policies promote renewable industries and just transition strategies; abstract publicly accessible.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2214629621000979"
+    },
+    {
+    "title": "Structural Change and Economic Dynamics: 'Energy transitions and labor market patterns in the U.S. coal mining region'",
+    "description": "Peer-reviewed econometric study of how coal employment changes affect wages and sectoral labor outcomes across coal-producing states, informing diversification policy design; abstract publicly accessible.",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0954349X22001072"
+    },
+    {
+    "title": "Energy Research & Social Science: 'Assessing county-level vulnerability to the energy transition in the United States'",
+    "description": "Peer-reviewed work mapping economic vulnerability of U.S. counties (including Appalachian coal regions) to the energy transition, offering insights for targeted, place-based support; abstract publicly accessible.",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S2214629623001597"
+    }
+    ],
+    "themes": []
+    }

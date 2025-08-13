@@ -1,0 +1,202 @@
+{
+    "centralQuestion": "Should Arizona implement stricter water usage limits in the light of climate change and drought?",
+    "reasons": [
+    {
+    "description": "Climate change and prolonged drought have reduced Colorado River flows and depleted groundwater, so stricter limits are needed to stabilize supplies.",
+    "sources": [
+    {
+    "title": "Reuters: 'Three Western states propose more water cuts to save Colorado River'",
+    "link": "https://www.reuters.com/world/us/three-western-states-propose-more-water-cuts-save-colorado-river-2024-03-07/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "The Guardian: 'Colorado River basin has lost 10 trillion gallons of groundwater since 2000, Nasa study finds'",
+    "link": "https://www.theguardian.com/us-news/2024/oct/26/colorado-river-groundwater-loss-nasa-study",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    },
+    {
+    "title": "Council on Foreign Relations: 'How U.S. Water Infrastructure Works'",
+    "link": "https://www.cfr.org/backgrounder/how-us-water-infrastructure-works",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Maintaining and tightening Arizona’s assured 100-year water supply standards supports sustainable growth; weakening them risks larger economic disruptions later.",
+    "sources": [
+    {
+    "title": "Bloomberg News (Opinion): 'Arizona Is Smart About Water. It Should Stay That Way'",
+    "link": "https://www.bloomberg.com/opinion/articles/2024-02-12/climate-change-arizona-is-smart-about-water-it-should-stay-that-way",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+    },
+    {
+    "title": "PBS NewsHour: 'Arizona is set to lose over 20 percent of its Colorado River water allotment this year'",
+    "link": "https://www.pbs.org/video/march-13-2023-pbs-newshour-full-episode-1678680001/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    },
+    {
+    "title": "Associated Press: 'Arizona agency takes action to regulate groundwater use in rural southeast'",
+    "link": "https://apnews.com/article/11309c866b65ba4c70f05bd0b34b8176",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Stronger limits can push efficiency and reallocation away from low-value, high-water uses, improving overall conservation outcomes.",
+    "sources": [
+    {
+    "title": "Bloomberg News (Opinion): 'Farmers Can't Keep Hogging the Water in Parched Southwest'",
+    "link": "https://www.bloomberg.com/opinion/articles/2023-03-18/farmers-can-t-keep-hogging-the-water-in-parched-southwest",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+    },
+    {
+    "title": "Brookings Institution: 'How the Market Can Mitigate Water Shortages in the American West (Policy Brief)'",
+    "link": "https://www.brookings.edu/wp-content/uploads/2016/06/market_mitigate_water_shortage_in_west_policy_brief.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Resources for the Future: 'Drought Surcharges Increase Water Conservation and Revenue Resilience'",
+    "link": "https://media.rff.org/documents/wp-25-02-drought-surcharges-increase-water-conservation-and-revenue-resilience.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Stricter limits can protect vulnerable communities and ecosystems—tribal nations and rural residents face dry wells and inequitable access without stronger regulation.",
+    "sources": [
+    {
+    "title": "The Guardian: 'US supreme court rules against Navajo Nation in Colorado River water rights case'",
+    "link": "https://www.theguardian.com/us-news/2023/jun/22/navajo-nation-colorado-river-water-rights-supreme-court",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    },
+    {
+    "title": "Politico: 'Water world's quiet Trump freak-out'",
+    "link": "https://www.politico.com/news/2025/03/11/water-worlds-quiet-trump-freak-out-00223964",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    },
+    {
+    "title": "Associated Press: 'Neighbors sue Arizona city to restore water cut in drought'",
+    "link": "https://apnews.com/article/779e6c94707540632357a83c3ac0bd6a",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Stricter limits could constrain housing development and raise costs by restricting new subdivisions and delaying growth.",
+    "sources": [
+    {
+    "title": "Associated Press: 'Developers want water policy changes in response to construction limits on metro Phoenix’s fringes'",
+    "link": "https://apnews.com/article/808af91309b15bb162ae6a06e58e7d7b",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    },
+    {
+    "title": "Bloomberg News: 'The Difficult Choices Regarding Who Gets Water in Arizona'",
+    "link": "https://www.bloomberg.com/news/articles/2023-07-17/the-difficult-choices-regarding-who-gets-water-in-arizona",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+    },
+    {
+    "title": "Reuters: 'Arizona restricts Phoenix home construction amid water shortage'",
+    "link": "https://www.reuters.com/world/us/arizona-restricts-phoenix-home-construction-amid-water-shortage-2023-06-02/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Mandates are less efficient than pricing and tradable rights; market-based tools should be prioritized over stricter limits.",
+    "sources": [
+    {
+    "title": "Stanford Hoover Institution: 'The Critical Role of Markets in Climate Change Adaptation'",
+    "link": "https://www.hoover.org/sites/default/files/research/docs/18107-libecap_et_al.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+    },
+    {
+    "title": "Resources for the Future: 'Use Prices to Conserve Water when Supplies are Scarce'",
+    "link": "https://www.resources.org/common-resources/use-prices-to-conserve-water-when-supplies-are-scarce/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    },
+    {
+    "title": "Brookings Institution: 'Tradable Water Rights to Improve Water Allocation'",
+    "link": "https://www.brookings.edu/articles/tradable-water-rights-to-improve-water-allocation/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Arizona can focus on augmenting supply—such as importing water—rather than imposing stricter limits.",
+    "sources": [
+    {
+    "title": "Politico: 'Trump admin eyes Mojave Desert groundwater as potential source for arid Arizona'",
+    "link": "https://www.politico.com/news/2025/06/18/facing-colorado-river-crunch-trump-admin-eyes-socal-groundwater-00414098",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    },
+    {
+    "title": "RAND Corporation: 'Adapting to a Changing Colorado River'",
+    "link": "https://www.rand.org/content/dam/rand/pubs/research_reports/RR200/RR242/RAND_RR242.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Stricter limits can disproportionately burden agriculture and rural economies already facing cutbacks.",
+    "sources": [
+    {
+    "title": "Associated Press: 'Western states will not lose as much Colorado River water in 2024, despite long-term challenges'",
+    "link": "https://apnews.com/article/64f0ccddd6b8bf4669b79dfaded63ed5",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    },
+    {
+    "title": "Bloomberg News: 'Why Arizona Keeps Growing Alfalfa in the Desert Even As Water Concerns Grow'",
+    "link": "https://www.bloomberg.com/news/articles/2023-07-14/why-arizona-keeps-growing-alfalfa-in-the-desert-even-as-water-concerns-grow",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Bloomberg_News_Logo_xd30au.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "PNAS: 'Increased drought severity tracks warming in the United States'",
+    "description": "Analyzes observational records linking rising temperatures to more severe droughts, with implications for arid regions dependent on the Colorado River.",
+    "link": "https://www.pnas.org/doi/10.1073/pnas.1916208117"
+    },
+    {
+    "title": "Science: 'Colorado River flow dwindles as warming-driven loss of reflective snow cover intensifies'",
+    "description": "Finds Colorado River discharge declines roughly 9% per °C warming due to increased evapotranspiration from reduced snow albedo, underscoring climate-driven supply risks.",
+    "link": "https://www.science.org/doi/10.1126/science.aay9187"
+    },
+    {
+    "title": "Communications Earth & Environment: 'New water accounting reveals why the Colorado River no longer reaches the sea'",
+    "description": "Introduces an updated water accounting framework showing human withdrawals and warming-induced losses explain persistent deficit conditions in the basin.",
+    "link": "https://www.nature.com/articles/s43247-024-01291-0"
+    },
+    {
+    "title": "Communications Earth & Environment: 'Multidecadal drought impacts on the Lower Colorado River'",
+    "description": "Combines GRACE satellite data and modeling to show large total water storage declines dominated by Lower Basin losses, informing future management.",
+    "link": "https://www.nature.com/articles/s43247-025-02149-9"
+    },
+    {
+    "title": "Nature: 'Rapid groundwater decline and some cases of recovery in aquifers worldwide'",
+    "description": "Global assessment documents accelerating groundwater declines and socio-environmental risks, relevant to Arizona’s reliance on stressed aquifers.",
+    "link": "https://www.nature.com/articles/s41586-023-06879-8"
+    }
+    ],
+    "themes": []
+    }

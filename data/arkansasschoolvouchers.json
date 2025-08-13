@@ -1,0 +1,215 @@
+{
+    "centralQuestion": "Should Arkansas invest more heavily in public schools, rather than private school vouchers?",
+    "reasons": [
+    {
+    "description": "Voucher expansions redirect public funds from public schools and create fiscal externalities and budget uncertainty for districts.",
+    "sources": [
+    {
+    "title": "Economic Policy Institute: 'How vouchers harm public schools: Calculating the cost of voucher programs to public school districts'",
+    "link": "https://www.epi.org/publication/vouchers-harm-public-schools/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    },
+    {
+    "title": "Associated Press: 'Arkansas governor proposes nearly $6.5B budget, with half of spending increase going to vouchers'",
+    "link": "https://apnews.com/article/e4f067baa35fef9c3096af860f6eb97c",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Recent research on traditional vouchers shows negative or mixed effects on student achievement, suggesting caution before shifting funds away from public schools.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Research on school vouchers suggests concerns ahead for education savings accounts'",
+    "link": "https://www.brookings.edu/articles/research-on-school-vouchers-suggests-concerns-ahead-for-education-savings-accounts/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Urban Institute: 'D.C. Opportunity Scholarship Program – Long-term effects overview'",
+    "link": "https://www.urban.org/long-term-effects-private-school-choice-programs",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Voucher benefits often skew toward higher-income families and those already enrolled in private schools, raising equity concerns.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Be wary of what you read in the school voucher debate'",
+    "link": "https://www.brookings.edu/articles/be-wary-of-what-you-read-in-the-school-voucher-debate/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "Associated Press: 'Parents like private school vouchers so much that demand is exceeding budgets in some states'",
+    "link": "https://apnews.com/article/school-vouchers-scholarships-budget-cost-enrollment-20a819f087af0cb1ed5a60ec24cc8216",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Private-school voucher and ESA programs often have fewer accountability requirements than public schools, including weaker testing and reporting rules.",
+    "sources": [
+    {
+    "title": "RAND Corporation: 'The Path Toward Evaluating the Impacts of Education Savings Accounts on Academic Achievement Outcomes'",
+    "link": "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA3400/RRA3431-1/RAND_RRA3431-1.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    },
+    {
+    "title": "Economic Policy Institute: 'State and local experience proves school vouchers are a failed policy that must be opposed'",
+    "link": "https://www.epi.org/blog/state-and-local-experience-proves-school-vouchers-are-a-failed-policy-that-must-be-opposed-as-voucher-expansion-bills-gain-momentum-look-to-public-school-advocates-for-guidance/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Rural families often lack nearby private options, so vouchers provide little practical 'choice' while risking disinvestment in rural public schools.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'How the Educational Choice for Children Act would benefit the wealthy and underserve rural America'",
+    "link": "https://www.brookings.edu/articles/how-the-educational-choice-for-children-act-would-benefit-the-wealthy-and-underserve-rural-america/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "The Guardian: 'Texas may allow families to pay for private schools with public funds'",
+    "link": "https://www.theguardian.com/us-news/2025/feb/12/texas-school-vouchers",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Parental choice allows families to find the best educational fit for their children.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Does School Choice “Work”?'",
+    "link": "https://www.aei.org/op-eds/does-school-choice-work/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    },
+    {
+    "title": "Hoover Institution: '40 years after “A Nation At Risk,” how school choice policies are reshaping American education'",
+    "link": "https://www.hoover.org/research/40-years-after-nation-risk-how-school-choice-policies-are-reshaping-american-education",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Voucher participation can improve longer-term outcomes such as college enrollment and graduation in some programs.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'The Effects of the Florida Tax Credit Scholarship Program on College Enrollment and Graduation'",
+    "link": "https://www.urban.org/sites/default/files/publication/99728/the_effects_of_the_florida_tax_credit_scholarship_program_on_college_enrollment_and_graduation_2.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "The Economist: 'School-voucher schemes are spreading across America'",
+    "link": "https://www.economist.com/united-states/2023/03/30/school-voucher-schemes-are-spreading-across-america",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Vouchers can be more cost-effective than traditional public schooling on a per-pupil basis.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'What Research Tells Us About School Vouchers' (testimony)",
+    "link": "https://www.aei.org/research-products/testimony/what-research-tells-us-about-school-vouchers/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    },
+    {
+    "title": "Reuters: 'Texas governor to sign largest US school voucher law, marking conservative shift'",
+    "link": "https://www.reuters.com/business/finance/texas-governor-sign-largest-us-school-voucher-law-marking-conservative-shift-2025-05-03/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Competition from school choice can pressure public schools to improve.",
+    "sources": [
+    {
+    "title": "The Economist: 'Free to choose, and learn'",
+    "link": "https://www.economist.com/international/2007/05/03/free-to-choose-and-learn",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+    },
+    {
+    "title": "Hoover Institution: 'Expand School Choice and Provide Fiscal Relief To Districts'",
+    "link": "https://www.hoover.org/research/expand-school-choice-and-provide-fiscal-relief-districts",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Expanding eligibility beyond only low-income families is argued to be fairer and prevents middle-class exclusion from private options.",
+    "sources": [
+    {
+    "title": "Hoover Institution: 'Should the Wealthy Benefit from Private-School Choice Programs?'",
+    "link": "https://www.hoover.org/research/should-wealthy-benefit-private-school-choice-programs",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/stanford_hoover_institution_logo_qy9arn.jpg"
+    },
+    {
+    "title": "American Enterprise Institute: 'Implementing K–12 Education Savings Accounts'",
+    "link": "https://www.aei.org/research-products/report/implementing-k-12-education-savings-accounts/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'School Finance Reform and the Distribution of Student Achievement'",
+    "description": "American Economic Journal: Applied Economics (2018). Event-study evidence shows post-1990 school-finance reforms increased spending and boosted achievement in low-income districts.",
+    "link": "https://jesse-rothstein.com/wp-content/uploads/2018/04/LRS_schoolfinance_AEJApp_2018.pdf"
+    },
+    {
+    "title": "'The Effects of School Spending on Educational and Economic Outcomes: Evidence from School Finance Reforms'",
+    "description": "Quarterly Journal of Economics (2016). Linking finance-reform-induced spending increases to higher educational attainment and adult earnings; author-accepted manuscript available open access.",
+    "link": "https://gsppi.berkeley.edu/~ruckerj/QJE_resubmit_final_version.pdf"
+    },
+    {
+    "title": "'School Vouchers: A Survey of the Economics Literature'",
+    "description": "Journal of Economic Literature (2017). Comprehensive review concluding evidence is mixed overall, with some positive findings but insufficient basis for widespread adoption.",
+    "link": "https://www.aeaweb.org/articles?id=10.1257/jel.20150679"
+    },
+    {
+    "title": "'The participant effects of private school vouchers around the globe: A meta-analytic and systematic review'",
+    "description": "School Effectiveness and School Improvement (2021). Meta-analysis of RCTs finds modest average achievement effects, varying by context and subject.",
+    "link": "https://www.tandfonline.com/doi/abs/10.1080/09243453.2021.1906283"
+    },
+    {
+    "title": "'The Effects of the Louisiana Scholarship Program on Student Achievement'",
+    "description": "Educational Evaluation and Policy Analysis (2017). Lottery-based study reports negative impacts on voucher users’ math and ELA achievement in early years.",
+    "link": "https://journals.sagepub.com/doi/abs/10.3102/0162373717693108"
+    }
+    ],
+    "themes": []
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    

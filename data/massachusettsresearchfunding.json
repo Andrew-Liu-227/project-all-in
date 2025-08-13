@@ -1,0 +1,150 @@
+{
+    "centralQuestion": "Should Massachusetts increase state funding for research if federal funding gets cut?",
+    "reasons": [
+    {
+    "description": "To avert immediate harm to Massachusetts’ research labs, jobs, and ongoing projects when federal grants are frozen or cut.",
+    "sources": [
+    {
+    "title": "Reuters: 'US judge blocks slashing of universities' federal funding, bars cuts to science foundation grants for now'",
+    "link": "https://www.reuters.com/world/us/us-judge-blocks-slashing-universities-federal-funding-bars-cuts-science-foundation-grants-now-2025-06-20/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "PBS NewsHour: 'Funding freeze could set research back years, Harvard scientists say'",
+    "link": "https://www.pbs.org/newshour/science/funding-freeze-could-set-research-back-years-harvard-scientists-say",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "To sustain Massachusetts’ innovation-driven economy and competitiveness; R&D strength underpins the state’s leadership and public investment can crowd in private R&D.",
+    "sources": [
+    {
+    "title": "Milken Institute: 'Massachusetts Is Best State for Technology and Science says Milken Institute'",
+    "link": "https://milkeninstitute.org/content-hub/news-releases/massachusetts-best-state-technology-and-science-says-milken-institute",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/milken_institute_logo_wugyej.png"
+    },
+    {
+    "title": "OECD: 'Leveraging government R&D investment to boost private R&D investment in regions'",
+    "link": "https://www.oecd.org/en/publications/leveraging-government-r-d-investment-to-boost-private-r-d-investment-in-regions_b3c460e8-en.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "To retain researchers and prevent brain drain from Massachusetts institutions amid funding uncertainty.",
+    "sources": [
+    {
+    "title": "The Washington Post: 'Inside science labs trying to survive in the Trump era'",
+    "link": "https://www.washingtonpost.com/education/2025/08/11/trump-science-budget-cuts-research-labs/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/The_Washington_Post_Logo_a7x7dl.png"
+    },
+    {
+    "title": "Politico: 'Red-state universities push back against funding cuts'",
+    "link": "https://www.politico.com/news/2025/07/22/red-state-universities-funding-cuts-00170047",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Politico_Logo_aqlqhs.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "To pursue place-based, locally targeted investments that strengthen regional research clusters when national support wavers.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Biden’s big bet on place-based industrial policy'",
+    "link": "https://www.brookings.edu/articles/bidens-big-bet-on-place-based-industrial-policy/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "State budgets face hard tradeoffs; increasing research funding could divert resources from core services or affordability priorities in higher education.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'Higher education expenditures by state and local governments have grown as a share of general expenditures'",
+    "link": "https://www.urban.org/urban-wire/higher-education-expenditures-state-and-local-governments-have-grown-share-general-expenditures",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "Associated Press: 'Pennsylvania House again fails to pass state subsidies for Penn State, Pitt, Temple'",
+    "link": "https://apnews.com/article/pennsylvania-state-subsidies-universities-2024-10-02-9a1a909ad65b4c6e8b3b0c1b2f32a0b1",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "States risk inefficiently 'picking winners'; industrial-policy-style subsidies can be wasteful or distortive.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Why industrial policy fails'",
+    "link": "https://www.aei.org/economics/why-industrial-policy-fails/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    },
+    {
+    "title": "The Economist: 'Subsidies and protection will harm the world economy'",
+    "link": "https://www.economist.com/leaders/2024/11/20/subsidies-and-protection-will-harm-the-world-economy",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Economist_Logo_zybkpn.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Patchwork state funding can fragment efforts; priority should be restoring coherent federal support rather than duplicating it.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'A National Innovation Foundation: strengthening America’s innovation economy'",
+    "link": "https://www.brookings.edu/articles/a-national-innovation-foundation-strengthening-americas-innovation-economy/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "The Guardian: 'IMF warns subsidies risk “harmful competition” as governments embrace industrial policy'",
+    "link": "https://www.theguardian.com/business/2024/jun/10/imf-warns-subsidies-harmful-competition-industrial-policy",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'Public R&D Investments and Private-sector Patenting: Evidence from NIH Funding Rules'",
+    "description": "Analyzes quasi-experimental variation in NIH funding and finds that increases in public biomedical R&D spur additional private-sector patenting and estimated private value—evidence of positive spillovers.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6818650/"
+    },
+    {
+    "title": "'The ripple effects of funding on researchers and output'",
+    "description": "Shows that NIH grants generate broader 'ripple effects' through teams and trainees, increasing publications and research activity beyond the directly funded work.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9032967/"
+    },
+    {
+    "title": "'Science, interrupted: Funding delays reduce research activity in NIH labs'",
+    "description": "Examines how interruptions in NIH grant renewals lead labs to sharply reduce spending and activity, documenting short-run impacts of funding disruptions.",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280576"
+    },
+    {
+    "title": "'Comparison of Research Spending on New Drug Approvals by the US National Institutes of Health and the Pharmaceutical Industry'",
+    "description": "Documents that NIH contributed to research associated with nearly all FDA-approved drugs from 2010–2019 and quantifies public spending across basic and applied phases using open data.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10148199/"
+    },
+    {
+    "title": "'NIH funding for patents that contribute to market exclusivity of new drugs'",
+    "description": "Assesses how often NIH-funded research leads to patents conferring market exclusivity for approved drugs, informing debates about public returns and translational pathways.",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0288447"
+    }
+    ],
+    "themes": []
+    }

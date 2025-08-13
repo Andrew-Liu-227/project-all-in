@@ -1,0 +1,113 @@
+{
+    "centralQuestion": "Should Alaska subsidize its tourism industry to improve its economy?",
+    "reasons": [
+    {
+    "description": "Targeted public investment and marketing support can strengthen tourism’s contribution to jobs and regional recovery.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'How to make the most of place-based investment in America’s regional economies'",
+    "link": "https://www.brookings.edu/articles/how-to-make-the-most-of-place-based-investment-in-americas-regional-economies/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    },
+    {
+    "title": "OECD: 'Tourism Trends and Policies 2024'",
+    "link": "https://www.oecd.org/industry/tourism/tourism-trends-and-policies/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Rising demand for Alaska travel (including 'coolcations') and a pickup in leisure and hospitality present growth that public support can help capture.",
+    "sources": [
+    {
+    "title": "Reuters: 'Thinking of a 'coolcation'? Why you might want to rethink spring travel'",
+    "link": "https://www.reuters.com/world/us/thinking-coolcation-why-you-might-want-rethink-spring-travel-2024-05-10/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "Federal Reserve Banks: 'Twelfth District Beige Book: January 2025'",
+    "link": "https://www.frbsf.org/research-and-insights/publications/san-francisco-fed-twelfth-district-beige-book/2025/01/beige-book-january-2025",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Federal_Reserve_Bank_System_logo_kyyl9y.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Tourism infrastructure (like port facilities) can catalyze local spending and private investment.",
+    "sources": [
+    {
+    "title": "Reuters: 'In Alaska, new port brings hopes of tourism — and fears of pollution'",
+    "link": "https://www.reuters.com/article/us-usa-cruise-alaska-idUSKBN23K1I9",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "World Bank: 'Tourism and Competitiveness'",
+    "link": "https://www.worldbank.org/en/topic/competitiveness/brief/tourism-and-competitiveness",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/world_bank_logo_fswjun.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Overtourism strains local infrastructure and quality of life, prompting passenger caps and political pushback.",
+    "sources": [
+    {
+    "title": "Associated Press: 'A new agreement would limit cruise passengers in Alaska’s capital. A critic says it falls short'",
+    "link": "https://apnews.com/article/7f772e78adeb52dfda17db4775be14ca",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Environmental harms from cruise-intensive growth (noise, air and water impacts) raise concerns about expanding tourism with public support.",
+    "sources": [
+    {
+    "title": "The Guardian: 'Alaska limits cruise ship passengers in capital city after 1.6m visitors last year'",
+    "link": "https://www.theguardian.com/environment/article/2024/jun/15/alaska-capital-juneau-limits-cruise-ship-passengers-record-visitors",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Industry subsidies can be inefficient or simply replace private investment rather than create new activity.",
+    "sources": [
+    {
+    "title": "Urban Institute: 'Evaluating Community and Economic Development Programs'",
+    "link": "https://www.urban.org/sites/default/files/2022-05/412271-evaluating-community-and-economic-development-programs.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'Climate change, energy production, and Arctic tourism: A case study analysis of northern Alaska' (Polar Record, 2024)",
+    "description": "Peer-reviewed analysis of tourism’s potential future role in northern Alaska amid changing oil dynamics and climate triggers, discussing scenarios where investments shift toward tourism.",
+    "link": "https://www.cambridge.org/core/journals/polar-record/article/climate-change-energy-production-and-arctic-tourism-a-case-study-analysis-of-northern-alaska/93E06DBDA41EC43EAEB23FEF0C0B4E12"
+    },
+    {
+    "title": "'Small sight—Big might: Economic impact of bird tourism shows opportunities for rural communities and biodiversity conservation' (PLOS ONE, 2022)",
+    "description": "Open-access study estimating Alaska bird tourism’s spending and job impacts, highlighting opportunities for rural and Indigenous communities and conservation-aligned development.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9258859/"
+    },
+    {
+    "title": "'Sustainable Cruise Tourism: Systematic Literature Review and Future Research Areas' (Sustainability, 2023)",
+    "description": "Open-access systematic review of the cruise tourism literature, synthesizing environmental and community impacts and policy pathways relevant to cruise-dependent destinations.",
+    "link": "https://www.mdpi.com/2071-1050/15/10/8335"
+    }
+    ],
+    "themes": []
+    }

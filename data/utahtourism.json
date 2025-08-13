@@ -1,0 +1,192 @@
+{
+    "centralQuestion": "Should Utah invest more in tourism to stimulate its economy?",
+    "reasons": [
+    {
+    "description": "Tourism generates jobs, income, and tax revenues; policy analyses argue that targeted public investment in tourism infrastructure and promotion can amplify growth and competitiveness.",
+    "sources": [
+    {
+    "title": "OECD: 'Tourism Trends and Policies 2022 – Building resilience in the tourism ecosystem'",
+    "link": "https://www.oecd.org/en/publications/oecd-tourism-trends-and-policies-2022_a8dd3019-en/full-report/building-resilience-in-the-tourism-ecosystem_de7284f5.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    },
+    {
+    "title": "World Bank: 'Tourism for Development – policy insights and competitiveness'",
+    "link": "https://www.worldbank.org/en/topic/tourism/overview",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/world_bank_logo_fswjun.jpg"
+    },
+    {
+    "title": "Reuters: 'Eroding protections for public lands' (graphics explainer referencing surging recreation use)",
+    "link": "https://www.reuters.com/graphics/USA-TRUMP/PUBLIC-LANDS/zdpxkxdwnvx/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Utah’s gateway communities rely on national park visitation; state actions to keep parks open during federal shutdowns are justified by the local economic dependence on tourism spending.",
+    "sources": [
+    {
+    "title": "Associated Press: 'Utah and Arizona will pay to keep national parks open if federal government shutdown occurs'",
+    "link": "https://apnews.com/article/national-parks-shutdown-grand-canyon-26c55ff175ca703c3118206d01e856e9",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    },
+    {
+    "title": "Reuters: 'States help run U.S. National Parks in federal government shutdown'",
+    "link": "https://www.reuters.com/article/usa-congress-budget-parks/states-help-run-u-s-national-parks-in-federal-government-shutdown-idINL1N1YQ1T7",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    },
+    {
+    "title": "PBS NewsHour: 'Feds to let states pay to open national parks'",
+    "link": "https://www.pbs.org/newshour/nation/feds-to-let-states-pay-to-open-national-parks",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Investing in visitor management (e.g., reservations, shuttles, staffing and campground systems) is presented as a way to unlock more sustainable growth while improving the visitor experience.",
+    "sources": [
+    {
+    "title": "Resources for the Future: 'Understanding Campsite Reservations in National Parks'",
+    "link": "https://www.rff.org/documents/602/CampsiteReservations_Report_Final.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    },
+    {
+    "title": "OECD: 'Tourism Trends and Policies 2022 – Building resilience in the tourism ecosystem'",
+    "link": "https://www.oecd.org/en/publications/oecd-tourism-trends-and-policies-2022_a8dd3019-en/full-report/building-resilience-in-the-tourism-ecosystem_de7284f5.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Tourism functions as a service export that channels outside spending into rural towns and small businesses; policy institutions highlight its role in regional development and SME growth.",
+    "sources": [
+    {
+    "title": "World Bank: 'Tourism for Development – policy insights and competitiveness'",
+    "link": "https://www.worldbank.org/en/topic/tourism/overview",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/world_bank_logo_fswjun.jpg"
+    },
+    {
+    "title": "OECD: 'Tourism Trends and Policies 2022 – Building resilience in the tourism ecosystem'",
+    "link": "https://www.oecd.org/en/publications/oecd-tourism-trends-and-policies-2022_a8dd3019-en/full-report/building-resilience-in-the-tourism-ecosystem_de7284f5.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Overtourism strains parks and nearby towns—crowding, degraded experiences, and infrastructure and staffing shortfalls—so additional promotion without management can worsen these problems.",
+    "sources": [
+    {
+    "title": "Associated Press: 'Gates will be locked and thousands of rangers furloughed at national parks if government shuts down'",
+    "link": "https://apnews.com/article/national-park-grand-canyon-shutdown-budget-congress-55c06261c51650e34f4591626bd9f236",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    },
+    {
+    "title": "Resources for the Future: 'Environmental Implications of the Tourism Industry' (includes national park congestion, citing Zion)",
+    "link": "https://media.rff.org/archive/files/sharepoint/WorkImages/Download/RFF-DP-00-14.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    },
+    {
+    "title": "Reuters: 'Eroding protections for public lands' (graphics explainer referencing rising recreation use)",
+    "link": "https://www.reuters.com/graphics/USA-TRUMP/PUBLIC-LANDS/zdpxkxdwnvx/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Tourism dependence is shock-prone (pandemics, shutdowns), making overreliance a risky growth strategy for workers and small businesses.",
+    "sources": [
+    {
+    "title": "OECD: 'Tourism Trends and Policies 2022 – Building resilience in the tourism ecosystem'",
+    "link": "https://www.oecd.org/en/publications/oecd-tourism-trends-and-policies-2022_a8dd3019-en/full-report/building-resilience-in-the-tourism-ecosystem_de7284f5.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/OECD_logo_xhmdfj.png"
+    },
+    {
+    "title": "PBS NewsHour: 'National parks are free, but some oppose that amid the outbreak' (gateway communities affected during COVID-19)",
+    "link": "https://www.pbs.org/newshour/health/national-parks-are-free-but-some-oppose-that-amid-the-outbreak",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Short-term rentals associated with tourism can worsen housing affordability by shifting units from long-term residents to visitors.",
+    "sources": [
+    {
+    "title": "Economic Policy Institute: 'The economic costs and benefits of Airbnb: No reason for local policymakers to let Airbnb bypass tax or regulatory obligations'",
+    "link": "https://www.epi.org/research/housing-2/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    },
+    {
+    "title": "Urban Institute: 'With an abundance of short-term rentals, who wins and who loses?'",
+    "link": "https://www.urban.org/urban-wire/abundance-short-term-rentals-who-wins-and-who-loses",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247778/Urban_Institute_Logo_pysed5.jpg"
+    },
+    {
+    "title": "Associated Press: 'Maui mayor's plan to phase out vacation rentals would increase housing but shrink the economy' (tradeoffs case study)",
+    "link": "https://apnews.com/article/5dcb04b57dca44f7fde0c1b39443d6a5",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Tourism jobs are often low-wage and volatile—especially in leisure and hospitality—raising doubts about tourism-led growth as a pathway to broadly shared prosperity.",
+    "sources": [
+    {
+    "title": "Economic Policy Institute: 'Young workers hit hard by the COVID-19 economy' (leisure and hospitality suffered largest early job losses)",
+    "link": "https://www.epi.org/publication/young-workers-covid-recession/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    },
+    {
+    "title": "Economic Policy Institute: 'Hourly wages-and-benefits penalties for part-time work are large and persistent' (relevant to hospitality scheduling and job quality)",
+    "link": "https://www.epi.org/publication/part-time-pay-penalty/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/Economic_Policy_Institute_Logo_bbwipn.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "‘The effect of tourism activity on housing affordability’ (Annals of Tourism Research, 2021)",
+    "description": "Analyzes how tourism intensity, accommodation mix, and seasonality relate to housing affordability; finds tourism pressures can worsen affordability in destination municipalities.",
+    "link": "https://eprints.staffs.ac.uk/6978/1/ATR.pdf"
+    },
+    {
+    "title": "‘On the empirical relationship between tourism and economic growth’ (Tourism Management, 2020)",
+    "description": "Studies 80 countries (1995–2016) and finds a positive long-run relationship between tourism development and economic growth, with heterogeneity across contexts.",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0261517720300571"
+    },
+    {
+    "title": "‘Tourism and Economic Growth: A Meta-regression Analysis’ (Journal of Travel Research, 2020)",
+    "description": "Synthesizes evidence on the tourism-growth nexus across studies; reports that, on average, tourism is associated with economic growth while noting publication and methodological effects.",
+    "link": "https://journals.sagepub.com/doi/abs/10.1177/0047287519844833"
+    },
+    {
+    "title": "‘Tourism-Induced Resilience of Rural Destinations in Romania’ (Sustainability, 2022) [Open Access]",
+    "description": "Builds a mediation model showing how tourism can contribute to rural economic resilience depending on accessibility and structural features.",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9055216/"
+    },
+    {
+    "title": "‘Exploring the nexus between economic growth and tourism in Asia’ (Humanities & Social Sciences Communications, 2025) [Open Access]",
+    "description": "Uses IV-GMM and PMG approaches across 35 Asian economies (2004–2020), finding bidirectional linkages between tourism and growth with asymmetric dynamics.",
+    "link": "https://www.nature.com/articles/s41599-025-04733-y"
+    }
+    ],
+    "themes": []
+    }

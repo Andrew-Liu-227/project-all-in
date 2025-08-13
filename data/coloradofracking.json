@@ -1,0 +1,168 @@
+{
+    "centralQuestion": "Should Colorado ban fracking and new oil drilling in light of climate change?",
+    "reasons": [
+    {
+    "description": "Banning new drilling aligns with net-zero pathways that state there should be no new oil and gas field approvals beyond those already committed.",
+    "sources": [
+    {
+    "title": "International Energy Agency: 'Net Zero by 2050'",
+    "link": "https://www.iea.org/reports/net-zero-by-2050",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247765/international_energy_agency_logo_lxjejg.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Persistent ozone nonattainment on Colorado’s Front Range—driven in part by oil and gas emissions—poses ongoing public health risks that stricter measures (including halting new drilling) are intended to reduce.",
+    "sources": [
+    {
+    "title": "Environmental Protection Agency: 'Colorado Ozone Planning (2025 update)'",
+    "link": "https://www.epa.gov/system/files/documents/2025-02/2025.ard_.colorado-ozone-planning.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247764/Environmental_Protection_Agency_Logo_hh4rwk.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Compliance failures and secrecy around fracking chemicals in Colorado have raised health and transparency concerns, cited by advocates for halting new drilling.",
+    "sources": [
+    {
+    "title": "The Guardian: 'US oil firms pumping secret chemicals into ground and not fully reporting it'",
+    "link": "https://www.theguardian.com/us-news/2025/may/20/us-oil-firms-chemicals-colorado",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Economic transition research suggests Western Colorado communities can build resilience beyond oil and gas, supporting arguments to curb new drilling as part of a planned shift.",
+    "sources": [
+    {
+    "title": "Resources for the Future: 'Building Economic Resilience in Western Colorado’s Oil and Gas Communities'",
+    "link": "https://www.rff.org/publications/reports/building-economic-resilience-in-western-colorados-oil-and-gas-communities/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Local climate accountability litigation in Colorado underscores community claims of harm from fossil fuel use, bolstering calls to restrict or end new drilling.",
+    "sources": [
+    {
+    "title": "Reuters: 'Exxon, Suncor units lose bid to escape Boulder, Colorado’s climate case'",
+    "link": "https://www.reuters.com/legal/government/exxon-suncor-units-lose-bid-escape-boulder-colorados-climate-case-2024-06-24/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Reuters_Logo_qid2c5.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Colorado is a major oil producer; a ban risks significant impacts on jobs, state revenues, and related economic activity.",
+    "sources": [
+    {
+    "title": "Energy Information Administration: 'Colorado State Energy Profile Analysis'",
+    "link": "https://www.eia.gov/state/analysis.php?sid=CO",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247763/energy_information_administration_logo_uejqq3.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Cutting supply in one jurisdiction can shift production elsewhere; reducing demand (not domestic production) is argued as the more effective climate strategy.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'Reducing US oil demand, not production, is the way forward for the climate'",
+    "link": "https://www.brookings.edu/articles/reducing-us-oil-demand-not-production-is-the-way-forward-for-the-climate/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Bans face legal and jurisdictional hurdles in Colorado (state preemption and litigation over local authority), complicating implementation.",
+    "sources": [
+    {
+    "title": "PBS NewsHour: 'Colorado fights over who decides where to frack'",
+    "link": "https://www.pbs.org/video/colorado-fights-over-who-decides-where-to-frack-1417474314/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Analyses suggest blanket drilling bans can impose high welfare costs relative to alternative regulatory approaches.",
+    "sources": [
+    {
+    "title": "Resources for the Future: 'Understanding the Costs and Benefits of Deepwater Oil Drilling Regulation'",
+    "link": "https://www.rff.org/documents/1230/RFF-DP-10-62.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247767/Resources_for_the_future_logo_rruf5w.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Opponents argue leasing or fracking bans undermine energy security and raise prices; they advocate continued production alongside climate policy.",
+    "sources": [
+    {
+    "title": "American Enterprise Institute: 'Biden’s Incoherent Proposal to Ban Fossil Fuel Leasing on Federal Lands'",
+    "link": "https://www.aei.org/articles/bidens-incoherent-proposal-to-ban-fossil-fuel-leasing-on-federal-lands/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247769/american_enterprise_institute_logo_oum5my.avif"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Analysts note a ban on certain lands could simply shift activity to private lands, limiting climate benefits.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'FAQ: A Shale New Deal'",
+    "link": "https://www.cfr.org/blog/faq-shale-new-deal",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "‘Ideas and perspectives: is shale gas a major driver of recent increase in global atmospheric methane?’ (Biogeosciences, 2019)",
+    "description": "Argues that shale oil and gas development has likely contributed substantially to the recent rise in atmospheric methane, highlighting implications for climate policy and the role of fracking-related emissions.",
+    "link": "https://bg.copernicus.org/articles/16/3033/2019/"
+    },
+    {
+    "title": "‘Maternal residential proximity to unconventional gas development and perinatal outcomes among a diverse urban population in Texas’ (PLOS ONE, 2017)",
+    "description": "Finds suggestive associations between proximity to unconventional gas development and increased odds of preterm birth and fetal death, using a large Texas cohort.",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180966"
+    },
+    {
+    "title": "‘Publicly available data reveals association between asthma hospitalizations and unconventional natural gas development in Pennsylvania’ (PLOS ONE, 2022)",
+    "description": "Uses statewide public data to show significant positive associations between well density and asthma hospitalization rates, with stronger associations for PM2.5.",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265513"
+    },
+    {
+    "title": "‘Birth Outcomes and Maternal Residential Proximity to Natural Gas Development in Rural Colorado’ (Environmental Health Perspectives, 2014)",
+    "description": "Colorado-based retrospective cohort study reporting associations between density/proximity of natural gas wells and certain adverse birth outcomes.",
+    "link": "https://ehp.niehs.nih.gov/1306722/"
+    },
+    {
+    "title": "‘Air pollution, methane super-emitters, and oil and gas wells in the United States’ (Environmental Health, 2021)",
+    "description": "Examines air pollution and methane super-emitter patterns around oil and gas infrastructure, discussing public health implications relevant to unconventional development.",
+    "link": "https://ehjournal.biomedcentral.com/articles/10.1186/s12940-021-00727-w"
+    }
+    ],
+    "themes": []
+    }

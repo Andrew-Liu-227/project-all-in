@@ -1,0 +1,149 @@
+{
+    "centralQuestion": "Is it in the interest of the United States to interfere in the wars of other nations?",
+    "reasons": [
+    {
+    "description": "To prevent mass atrocities and protect civilians under the 'responsibility to protect' when regimes threaten or commit large-scale violence.",
+    "sources": [
+    {
+    "title": "Brookings Institution: 'It’s Time To Intervene'",
+    "link": "https://www.brookings.edu/articles/its-time-to-intervene/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Brookings_Institution_Logo_d4lrxa.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "To deter aggressors, uphold alliance commitments, and maintain U.S. credibility and leadership in the international order.",
+    "sources": [
+    {
+    "title": "Atlantic Council: 'Donald Trump’s promise of strong US leadership should begin with Ukraine'",
+    "link": "https://www.atlanticcouncil.org/blogs/ukrainealert/donald-trumps-promise-of-strong-us-leadership-should-begin-with-ukraine/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Atlantic_Council_Logo_e9uelo.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "To protect global trade routes and energy flows where disruptions threaten U.S. and allied economic security.",
+    "sources": [
+    {
+    "title": "Center for Strategic and International Studies (CSIS): 'The Global Economic Consequences of the Attacks on Red Sea Shipping Lanes'",
+    "link": "https://www.csis.org/analysis/global-economic-consequences-attacks-red-sea-shipping-lanes",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    },
+    {
+    "title": "Associated Press: 'The Strait of Hormuz is a vital route for oil. Closing it could backfire on Iran'",
+    "link": "https://apnews.com/article/15ce74cc8df0f19a6b7f6357773b07c8",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "To counter transnational terrorist threats where limited, targeted military action or support to partners can disrupt violent extremist groups.",
+    "sources": [
+    {
+    "title": "RAND Corporation: 'The Air War Against The Islamic State'",
+    "link": "https://www.rand.org/pubs/research_reports/RRA388-1.html",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Interventions risk bypassing legal and constitutional guardrails, undermining sovereignty and setting dangerous precedents.",
+    "sources": [
+    {
+    "title": "International Crisis Group: 'Bending the Guardrails: U.S. War Powers After 7 October'",
+    "link": "https://www.crisisgroup.org/united-states/006-bending-guardrails-us-war-powers-after-7-october",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247773/international_crisis_group_logo_t5nw0e.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "External interventions frequently produce unintended consequences that worsen conflict dynamics or empower harmful actors.",
+    "sources": [
+    {
+    "title": "Chatham House: 'Why peacebuilding fails and what to do about it'",
+    "link": "https://www.chathamhouse.org/sites/default/files/2025-06/2025-06-11-why-peacebuilding-fails-mansour-white_0.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/Chatham_house_logo_sky5j7.webp"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Civilian harm, escalation risks, and transparency problems can erode legitimacy and fuel backlash against U.S. interests.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'Nine Months of Coalition Air Strikes Against the Islamic State'",
+    "link": "https://www.cfr.org/blog/nine-months-coalition-air-strikes-against-islamic-state",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Interventions often have unforeseen impacts on local legitimacy and governance, complicating stabilization and prolonging violence.",
+    "sources": [
+    {
+    "title": "Stockholm International Peace Research Institute (SIPRI): 'Towards legitimate stability in CAR and the DRC'",
+    "link": "https://www.sipri.org/sites/default/files/2019-09/0919_policy_report_cardrc.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/Stockholm_International_Peace_Research_Institute_Logo_x5bsdg.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Military action can be counterproductive compared with humanitarian and diplomatic efforts, with costs outweighing likely benefits.",
+    "sources": [
+    {
+    "title": "The Guardian: 'Sudan’s forgotten war is bloody and horrifying - but US bombs aren’t the way to stop it'",
+    "link": "https://www.theguardian.com/commentisfree/2024/oct/11/sudan-war-us-conflict-civilian-military-intervention",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "'Going in When It Counts? Military Intervention and the Outcome of Civil Conflicts'",
+    "description": "Stephen E. Gent examines when external military intervention affects civil war outcomes, finding that interventions can decisively shape results under certain conditions while also risking prolonged conflict; open-access PDF available.",
+    "link": "https://academic.oup.com/isq/article-lookup/doi/10.1111/j.1468-2478.2008.00537.x"
+    },
+    {
+    "title": "'Alliances and Civil War Intervention'",
+    "description": "Jesse C. Johnson analyzes how alliance commitments influence states’ decisions to intervene in civil wars, showing that alliance structures can increase the likelihood of intervention; open-access PDF available.",
+    "link": "https://academic.oup.com/isq/article/68/4/sqae072/7730115"
+    },
+    {
+    "title": "'Train the World: The Logics of U.S. Foreign Military Training'",
+    "description": "K. J. M. Joyce explores why and how the United States uses foreign military training as a form of intervention and the strategic logics behind it; open-access article.",
+    "link": "https://academic.oup.com/isq/article/68/4/sqae070/7730257"
+    },
+    {
+    "title": "'International Military Interventions and Transnational Terrorist Backlash'",
+    "description": "James A. Piazza evaluates whether foreign military interventions generate increased transnational terrorism against interveners, finding evidence of backlash dynamics in the public abstract.",
+    "link": "https://academic.oup.com/isq/article/62/3/753/4955812"
+    },
+    {
+    "title": "'Identifying Pathways to Peace in Civil Wars'",
+    "description": "Manfred Mross studies strategies and conditions that lead to negotiated settlements and durable peace in civil wars, with implications for external involvement; abstract publicly available.",
+    "link": "https://academic.oup.com/isq/article/66/2/sqab089/6505025"
+    }
+    ],
+    "themes": []
+    }
