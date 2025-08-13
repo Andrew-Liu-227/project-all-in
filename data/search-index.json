@@ -1,23 +1,501 @@
 {
-    "articles": [
-      {
-        "id": "universal-basic-income",
-        "title": "Should Governments Implement Universal Basic Income?",
-        "filename": "ShouldGovernmentsImplementUniversalBasicIncome.json",
-        "tags": ["UBI", "Economic Policy", "Social Programs", "Government Spending"],
-        "summary": "As economic pressures mount globally, governments are reconsidering UBI policies...",
-        "keywords": ["universal basic income", "UBI", "economic policy", "government", "social programs"],
-        "date": "2025-07-22"
-      },
-      {
-        "id": "rent-control",
-        "title": "Is Rent Control Good for New York City?",
-        "filename": "isrentcontrolgoodfornewyorkcity.json",
-        "tags": ["Housing", "NYC Policy"],
-        "summary": "New York's rent control debate intensifies as housing costs soar...",
-        "keywords": ["rent control", "housing", "NYC", "new york", "policy"],
-        "date": "2025-07-25"
-      }
-    
-    ]
-  }
+  "articles": [
+    {
+      "id": "researchfundingandhealthcare",
+      "title": "Will cuts to research funding have an outsized impact on the health care sector?",
+      "filename": "researchfundingandhealthcare.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "islibertarianismpoliticallypossible",
+      "title": "Is libertarianism politically possible?",
+      "filename": "islibertarianismpoliticallypossible.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "trumpstariffs",
+      "title": "Are Trump's Tariffs Economically Beneficial?",
+      "filename": "trumpstariffs.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "federalreserveindependence",
+      "title": "Is it important to keep the Federal Reserve independent?",
+      "filename": "federalreserveindependence.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "willundocumentedimmigrantscreateanetbenefitfortheamericaneconomy",
+      "title": "Will undocumented immigrants create a net benefit for the American economy?",
+      "filename": "willundocumentedimmigrantscreateanetbenefitfortheamericaneconomy.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "conneticutredistributivetaxes",
+      "title": "Should Connecticut implement a heavier redistributive tax on its wealthiest residents to reduce instate inequality?",
+      "filename": "conneticutredistributivetaxes.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "isthejobmarketworsethanitwasagenerationago",
+      "title": "Is the job market worse than it was a generation ago?",
+      "filename": "isthejobmarketworsethanitwasagenerationago.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "wealthtax",
+      "title": "Should governments create a wealth tax?",
+      "filename": "wealthtax.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "covidstimulus",
+      "title": "Were the initial stimulus checks during the Covid-19 pandemic economically justified?",
+      "filename": "covidstimulus.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "willtheaverageworkerbenefitfromai",
+      "title": "Will AI benefit the average skilled worker?",
+      "filename": "willtheaverageworkerbenefitfromai.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "congestionpricing",
+      "title": "Should cities implement congestion pricing?",
+      "filename": "congestionpricing.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "econobbba",
+      "title": "Was Trump's OBBBA Bill Economically Justified?",
+      "filename": "econOBBBA.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "westvirginiacoal",
+      "title": "Should West Virginia diversify its economy away from coal by subsidizing green industries?",
+      "filename": "westvirginiacoal.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "isredistributivetaxationasolution",
+      "title": "Is redistributive taxation a solution to inequality?",
+      "filename": "isredistributivetaxationasolution.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "weakenrelationscanadamexico",
+      "title": "Is it in the interest of the United States to weaken relations with Canada and Mexico?",
+      "filename": "weakenrelationscanadamexico.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "eurotariffresponse",
+      "title": "Have European countries done enough to respond to American tariffs?",
+      "filename": "eurotariffresponse.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "growthofpopulism",
+      "title": "Is global populism becoming a greater issue?",
+      "filename": "growthofpopulism.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "debtceiling",
+      "title": "Should the government continue its trend of raising the debt ceiling indefinitely?",
+      "filename": "debtceiling.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "govfundingai",
+      "title": "Should the US fund the development of open source AI models?",
+      "filename": "govfundingai.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "istheundoingagoodjob",
+      "title": "Is the UN doing a good job?",
+      "filename": "istheundoingagoodjob.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "universal-basic-income",
+      "title": "Should Governments Implement Universal Basic Income?",
+      "filename": "ShouldGovernmentsImplementUniversalBasicIncome.json",
+      "tags": [
+        "UBI",
+        "Economic Policy",
+        "Social Programs",
+        "Government Spending"
+      ],
+      "summary": "As economic pressures mount globally, governments are reconsidering UBI policies...",
+      "keywords": [
+        "universal basic income",
+        "UBI",
+        "economic policy",
+        "government",
+        "social programs"
+      ],
+      "date": "2025-07-22"
+    },
+    {
+      "id": "rent-control",
+      "title": "Is Rent Control Good for New York City?",
+      "filename": "isrentcontrolgoodfornewyorkcity.json",
+      "tags": [
+        "Housing",
+        "NYC Policy"
+      ],
+      "summary": "New York's rent control debate intensifies as housing costs soar...",
+      "keywords": [
+        "rent control",
+        "housing",
+        "NYC",
+        "new york",
+        "policy"
+      ],
+      "date": "2025-07-25"
+    },
+    {
+      "id": "trump-2018-tariffs",
+      "title": "Were Trump's initial 2018 tariffs beneficial in hindsight?",
+      "filename": "2018tariffs.json",
+      "tags": [
+        "Trade",
+        "Tariffs",
+        "U.S. Economy",
+        "Manufacturing"
+      ],
+      "summary": "Evaluates Section 232 steel/aluminum tariffs, supply-chain shifts, negotiation leverage, consumer costs, and retaliation impacts.",
+      "keywords": [
+        "tariffs",
+        "trade war",
+        "Section 232",
+        "steel",
+        "aluminum",
+        "retaliation",
+        "prices"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "alabama-medicaid-expansion",
+      "title": "Should Alabama expand Medicaid to better serve low-income residents?",
+      "filename": "alabamaincreasemedicaid.json",
+      "tags": [
+        "Health Policy",
+        "Medicaid",
+        "Alabama"
+      ],
+      "summary": "Assesses coverage gap closure, fiscal effects of enhanced federal match, rural hospital stability, and crowd-out/access concerns.",
+      "keywords": [
+        "Medicaid expansion",
+        "coverage gap",
+        "rural hospitals",
+        "federal match",
+        "Alabama"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "alaska-tourism-subsidies",
+      "title": "Should Alaska subsidize its tourism industry to improve its economy?",
+      "filename": "alaskaincreasetourism.json",
+      "tags": [
+        "Tourism",
+        "Economic Development",
+        "Alaska"
+      ],
+      "summary": "Weighs place-based investment, rising demand (incl. cruise infrastructure), versus overtourism, environmental risks, and subsidy efficacy.",
+      "keywords": [
+        "tourism",
+        "cruise",
+        "infrastructure",
+        "place-based policy",
+        "Alaska economy"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "arizona-water-usage-limits",
+      "title": "Should Arizona implement stricter water usage limits in the light of climate change and drought?",
+      "filename": "arizonawaterusage.json",
+      "tags": [
+        "Water Policy",
+        "Climate",
+        "Arizona"
+      ],
+      "summary": "Considers Colorado River shortages, assured supply standards, market vs. mandates, impacts on housing and rural/tribal communities.",
+      "keywords": [
+        "Arizona water",
+        "Colorado River",
+        "groundwater",
+        "drought",
+        "assured supply",
+        "housing"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "arkansas-school-vouchers",
+      "title": "Should Arkansas invest more heavily in public schools, rather than private school vouchers?",
+      "filename": "arkansasschoolvouchers.json",
+      "tags": [
+        "Education",
+        "School Finance",
+        "Arkansas"
+      ],
+      "summary": "Analyzes voucher fiscal externalities, achievement evidence, equity/accountability tradeoffs, and claimed benefits of choice/efficiency.",
+      "keywords": [
+        "vouchers",
+        "ESA",
+        "public schools",
+        "achievement",
+        "equity",
+        "accountability",
+        "Arkansas"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "federal-arts-funding",
+      "title": "Are the arts worth receiving significant federal funding?",
+      "filename": "artsfunding.json",
+      "tags": [
+        "Arts",
+        "Federal Budget",
+        "Culture"
+      ],
+      "summary": "Examines economic/civic benefits, equity/access for nonprofits, and counterarguments about market distortion, politicization, and priorities.",
+      "keywords": [
+        "NEA",
+        "arts funding",
+        "creative economy",
+        "nonprofits",
+        "soft power"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "california-single-payer",
+      "title": "Should California adopt a single-payer health care system?",
+      "filename": "californiahealthcare.json",
+      "tags": [
+        "Health Policy",
+        "California",
+        "Single-Payer"
+      ],
+      "summary": "Considers universal coverage, admin savings, purchasing power versus tax burden, workforce access, and legal/fiscal hurdles.",
+      "keywords": [
+        "single-payer",
+        "universal coverage",
+        "health costs",
+        "ERISA waivers",
+        "California budget"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "chips-act-cost-benefit",
+      "title": "Has the CHIPS Act provided enough benefits to outweigh its costs in government funding?",
+      "filename": "CHIPSact.json",
+      "tags": [
+        "Industrial Policy",
+        "Semiconductors",
+        "National Security"
+      ],
+      "summary": "Weighs supply-chain resilience, private investment and jobs, R&D hubs, against fiscal cost/job, implementation delays, and subsidy races.",
+      "keywords": [
+        "CHIPS Act",
+        "semiconductors",
+        "onshoring",
+        "advanced packaging",
+        "industrial policy",
+        "subsidies"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "overturn-citizens-united",
+      "title": "Would overturning Citizens United v. FEC (2010) improve the democratic process?",
+      "filename": "citizensunitedoverturn.json",
+      "tags": [
+        "Campaign Finance",
+        "Democracy",
+        "Supreme Court"
+      ],
+      "summary": "Considers transparency and influence limits vs. First Amendment protections, feasibility of amendments, and mixed empirical effects.",
+      "keywords": [
+        "Citizens United",
+        "campaign finance",
+        "dark money",
+        "free speech",
+        "disclosure"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "colorado-fracking-ban",
+      "title": "Should Colorado ban fracking and new oil drilling in light of climate change?",
+      "filename": "coloradofracking.json",
+      "tags": [
+        "Energy",
+        "Climate Policy",
+        "Colorado"
+      ],
+      "summary": "Balances ozone/public health and net\u2011zero pathways against jobs/revenue, legal hurdles, leakage to other regions, and energy security claims.",
+      "keywords": [
+        "fracking",
+        "oil and gas",
+        "Colorado Front Range",
+        "ozone",
+        "drilling ban",
+        "net zero"
+      ],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "mainelobstering",
+      "title": "Should Maine phase out lobstering quotas to avoid long term damage to the fishing industry?",
+      "filename": "mainelobstering.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "interfereinwarsofothernations",
+      "title": "Is it in the interest of the United States to interfere in the wars of other nations?",
+      "filename": "interfereinwarsofothernations.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "massachusettsresearchfunding",
+      "title": "Should Massachusetts increase state funding for research if federal funding gets cut?",
+      "filename": "massachusettsresearchfunding.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "oregonsalestax",
+      "title": "Should Oregon introduce a statewide sales tax in order to increase funding for state programs?",
+      "filename": "oregonsalestax.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "obamacare",
+      "title": "Was Obamacare a successful policy in the terms of its goals?",
+      "filename": "obamacare.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "redistrictingbeallowed",
+      "title": "Should redistricting be allowed in its current form?",
+      "filename": "redistrictingbeallowed.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "utahtourism",
+      "title": "Should Utah invest more in tourism to stimulate its economy?",
+      "filename": "utahtourism.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "reduceexecutiveorderpower",
+      "title": "Should the power of the executive order be reduced?",
+      "filename": "reduceexecutiveorderpower.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    },
+    {
+      "id": "senatetermlimits",
+      "title": "Should term limits be introduced for Senators?",
+      "filename": "senatetermlimits.json",
+      "tags": [],
+      "summary": "",
+      "keywords": [],
+      "date": "2025-08-13"
+    }
+  ]
+}
