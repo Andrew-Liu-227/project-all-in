@@ -12,7 +12,6 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-
       // Wait for DOM to load before configuring GA (your working model)
       window.addEventListener("DOMContentLoaded", function () {
         gtag("js", new Date());
@@ -21,6 +20,7 @@
     </script>
 
     <meta charset="UTF-8" />
+    <!-- keep device-width meta; no weird scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapped News</title>
     <link
@@ -33,10 +33,19 @@
       rel="stylesheet"
     />
     <style>
+      /* ==========================================================
+         Base + reset
+      ========================================================== */
       * {
         font-family: "Nunito", Arial, sans-serif !important;
         font-weight: 400 !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
+
+      /* Keep your original overall sizes/ratios by default;
+         only apply responsive adjustments where necessary. */
 
       @keyframes fadeIn {
         from {
@@ -46,14 +55,12 @@
           opacity: 1;
         }
       }
-
       @keyframes scaleIn {
         to {
           transform: scale(1);
           opacity: 1;
         }
       }
-
       @keyframes modalSlideIn {
         from {
           transform: translateY(100vh);
@@ -64,7 +71,6 @@
           opacity: 1;
         }
       }
-
       @keyframes modalSlideOut {
         from {
           transform: translateY(0);
@@ -75,51 +81,6 @@
           opacity: 0;
         }
       }
-      /* Popup Overlay */
-      #popup {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 9999;
-        justify-content: center;
-        align-items: center;
-        animation: fadeIn 0.4s ease forwards;
-      }
-
-      /* Popup Box */
-      #popup-box {
-        background: white;
-        padding: 25px 20px;
-        border-radius: 10px;
-        text-align: center;
-        max-width: 90%;
-        width: 340px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        transform: scale(0.95);
-        opacity: 0;
-        animation: scaleIn 0.4s ease forwards;
-      }
-
-      #popup-box h3 {
-        font-size: 40px;
-        font-weight: 1000;
-        margin-bottom: 15px;
-      }
-
-      #popup-box p {
-        font-size: 28px;
-        margin-bottom: 25px;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
       body {
         background: #fffbed;
@@ -128,17 +89,53 @@
         font-size: 16px;
       }
 
-      /* Header - NYT Style */
-      .newspaper-header {
-        background: #fffbed;
-        border-bottom: 1px solid #e2e2e2;
-        padding: 0;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      /* ==========================================================
+         Popup
+      ========================================================== */
+      #popup {
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100dvh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 0.4s ease forwards;
+      }
+      #popup-box {
+        background: white;
+        padding: 25px 20px;
+        border-radius: 10px; /* preserve your rounding */
+        text-align: center;
+        max-width: 90%;
+        width: 340px; /* preserve your block width */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transform: scale(0.95);
+        opacity: 0;
+        animation: scaleIn 0.4s ease forwards;
+      }
+      #popup-box h3 {
+        font-size: 40px;
+        font-weight: 1000;
+        margin-bottom: 15px;
+      }
+      #popup-box p {
+        font-size: 28px;
+        margin-bottom: 25px;
       }
 
+      /* ==========================================================
+         Header
+      ========================================================== */
+      .newspaper-header {
+        background: #fffbed;
+        padding: 0;
+        width: 100vw;
+        top: 0;
+        z-index: 100;
+      }
       .date-bar {
         background: #fffbed;
         color: #666;
@@ -147,298 +144,11 @@
         font-size: 11px;
         font-weight: 400;
         letter-spacing: 0.5px;
-        border-bottom: 1px solid #e2e2e2;
       }
-
       .masthead {
         text-align: center;
         padding: 20px 0;
-        border-bottom: 1px solid #e2e2e2;
       }
-
-      .themes-container-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start; /* aligns it left */
-        padding-left: 0px; /* match padding of .arg-content if needed */
-      }
-
-      /* Themes Container Styles - Orange */
-      .themes-container {
-        background: linear-gradient(135deg, #373f47, #3c3c3c);
-        border: 2px solid #cbcbcb;
-        border-radius: 12px;
-        padding: 16px;
-        margin: 20px 0;
-        max-width: 500px;
-        box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
-        width: fit-content;
-        text-align: left;
-      }
-
-      .themes-label {
-        font-size: 18px;
-        font-weight: bold;
-        color: #ffffff;
-        margin-bottom: 12px;
-        text-align: center;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-      }
-
-      .themes-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: center;
-      }
-
-      .theme-tag {
-        background: #ffffff;
-        color: #373f47;
-        padding: 6px 12px;
-        border-radius: 8px;
-        font-size: 14px;
-        font-weight: 500;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border: 2px solid #cbcbcb;
-      }
-
-      /* Research Branch Styles - Blue */
-      .research-label {
-        background: linear-gradient(135deg, #4a90e2, #357abd);
-        color: #fff;
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-        box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      }
-
-      .research-node {
-        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-        border: 2px solid #4a90e2;
-        border-radius: 10px;
-        padding: 16px;
-        margin: 12px 0;
-        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
-        transition: all 0.3s ease;
-      }
-
-      .research-node:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(74, 144, 226, 0.3);
-      }
-
-      .research-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 12px;
-        gap: 12px;
-      }
-
-      /* Source images in reasons/objections nodes */
-      .source-image {
-        max-width: 100%;
-        height: auto;
-        width: 40px; /* Adjust size as needed */
-        height: 40px; /* Fixed height for consistency */
-        object-fit: cover; /* Maintains aspect ratio, crops if needed */
-        border-radius: 4px;
-        flex-shrink: 0; /* Prevents image from shrinking in flex containers */
-        margin-right: 8px;
-      }
-
-      /* Source container styling */
-      .source {
-        display: flex;
-        align-items: center;
-        margin-bottom: 6px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-      }
-
-      .sources {
-        margin-top: 8px;
-        margin-bottom: 8px;
-      }
-
-      /* Header images for research/expert nodes */
-      .node-header-image {
-        max-width: 100%;
-        height: auto;
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border-radius: 6px;
-        flex-shrink: 0;
-        margin-right: 12px;
-      }
-
-      /* Header container styling */
-      .node-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 8px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-      }
-
-      .node-title {
-        font-weight: 600;
-        flex: 1;
-        min-width: 0; /* Allows text to wrap/truncate properly */
-      }
-
-      /* Specific styling for research images */
-      .research-image {
-        border: 2px solid #3498db;
-      }
-
-      /* Specific styling for expert images */
-      .expert-image {
-        border: 2px solid #9b59b6;
-        border-radius: 50%; /* Circular for person photos */
-      }
-
-      /* General node styling to handle wrapping */
-      .tree-node {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        overflow: hidden; /* Prevents content from breaking layout */
-      }
-
-      .node-description {
-        line-height: 1.4;
-        margin-bottom: 8px;
-      }
-
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        .source-image {
-          width: 32px;
-          height: 32px;
-        }
-
-        .node-header-image {
-          width: 40px;
-          height: 40px;
-        }
-
-        .node-header {
-          flex-wrap: wrap; /* Allow wrapping on small screens */
-        }
-
-        .node-title {
-          margin-top: 4px;
-        }
-      }
-
-      .research-image {
-        width: 40px;
-        height: 40px;
-        border-radius: 6px;
-        object-fit: cover;
-        border: 2px solid #4a90e2;
-      }
-
-      .research-title {
-        font-size: 16px;
-        font-weight: bold;
-        color: #2c5282;
-        flex: 1;
-      }
-
-      .research-node .node-description {
-        color: #2d3748;
-        line-height: 1.6;
-        font-size: 14px;
-      }
-
-      /* Expert Perspectives Branch Styles - Metallic Silver */
-      .expert-label {
-        background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
-        color: #2d3748;
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-        box-shadow: 0 3px 8px rgba(168, 168, 168, 0.4);
-        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
-        border: 1px solid #999;
-      }
-
-      .expert-node {
-        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        border: 2px solid #c0c0c0;
-        border-radius: 10px;
-        padding: 16px;
-        margin: 12px 0;
-        box-shadow: 0 4px 12px rgba(168, 168, 168, 0.3);
-        transition: all 0.3s ease;
-        position: relative;
-      }
-
-      .expert-node::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.8),
-          transparent
-        );
-      }
-
-      .expert-node:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(168, 168, 168, 0.4);
-      }
-
-      .expert-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 12px;
-        gap: 12px;
-      }
-
-      .expert-image {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #c0c0c0;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      }
-
-      .expert-name {
-        font-size: 16px;
-        font-weight: bold;
-        color: #2d3748;
-        flex: 1;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-      }
-
-      .expert-node .node-description {
-        color: #4a5568;
-        line-height: 1.6;
-        font-size: 14px;
-        font-style: italic;
-        padding-left: 8px;
-        border-left: 3px solid #c0c0c0;
-        background: rgba(255, 255, 255, 0.5);
-        padding: 8px 12px;
-        border-radius: 0 6px 6px 0;
-      }
-
       .newspaper-title {
         font-size: 38px;
         font-weight: 700;
@@ -448,7 +158,6 @@
         display: block;
         margin-bottom: 2px;
       }
-
       .newspaper-subtitle {
         font-size: 11px;
         color: #666;
@@ -456,39 +165,54 @@
         letter-spacing: 0.3px;
         text-transform: uppercase;
       }
-
       .header-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
+        max-width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         height: 48px;
+        padding: 0 12px;
       }
 
+      /* ==========================================================
+         NAV — keep visible at small widths; horizontal scroll
+      ========================================================== */
+      nav {
+        width: 100%;
+      }
       .nav-menu {
         display: flex;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         gap: 30px;
+        overflow-x: auto; /* allow scroll on small screens */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* hide scrollbar on FF */
+        padding: 0 8px;
+        scroll-snap-type: x proximity;
       }
-
+      .nav-menu::-webkit-scrollbar {
+        display: none;
+      } /* hide on WebKit */
+      .nav-menu li {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+      }
       .nav-menu li a {
-        color: #333;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 14px;
-        letter-spacing: 0.2px;
-        padding: 12px 0;
         position: relative;
-        transition: color 0.2s ease;
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.7s ease, color 0.2s ease;
+        color: #333;
+        padding: 12px 0;
       }
-
-      .nav-menu li a:hover,
+      .nav-menu li a:hover {
+        transform: translateY(-5px); /* preserves your rise hover */
+      }
       .nav-menu li a.active {
         color: #000;
       }
-
       .nav-menu li a.active::after {
         content: "";
         position: absolute;
@@ -496,38 +220,27 @@
         left: 0;
         right: 0;
         height: 2px;
-        background: #000;
+        background: #000; /* persistent underline for active */
       }
 
+      /* ==========================================================
+         Search
+      ========================================================== */
       .search-container {
+        position: relative;
         display: flex;
         align-items: center;
         background: #f7f7f7;
         border: 1px solid #ccc;
-        border-radius: 3px;
+        border-radius: 20px; /* preserve your rounding */
         padding: 6px 12px;
-        width: 250px;
+        width: 650px; /* keep your desktop width */
+        margin: 95px auto; /* keep vertical spacing you liked */
+        transition: transform 0.2s ease;
       }
-
-      .tree-branches.focus-mode .branch-section:not(.focused) {
-        transform: scale(0.85);
-        opacity: 0.4;
-        transition: all 0.3s ease;
+      .search-container:hover {
+        transform: translateY(-2px);
       }
-
-      .tree-branches.focus-mode .branch-section.focused {
-        transform: scale(1.05);
-        opacity: 1;
-        box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
-        border: 2px solid #007bff;
-        transition: all 0.3s ease;
-      }
-
-      .branch-section {
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
       .search-container input {
         background: none;
         border: none;
@@ -535,13 +248,11 @@
         width: 100%;
         padding: 4px;
         outline: none;
-        font-size: 14px;
+        font-size: 30px; /* keep your original font sizing */
       }
-
       .search-container input::placeholder {
         color: #999;
       }
-
       .search-btn {
         background: none;
         border: none;
@@ -551,39 +262,77 @@
         padding: 0 4px;
         transition: color 0.2s ease;
       }
-
       .search-btn:hover {
         color: #000;
       }
-
-      /* Breaking News Banner */
-      .breaking-news {
-        background: #449dd1;
-        color: white;
-        padding: 12px 0;
-        text-align: center;
-        font-weight: 600;
+      .search-results {
+        display: none;
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        max-height: 400px;
+        overflow-y: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .search-results.active {
+        display: block;
+      }
+      .search-result-item {
+        padding: 12px 16px;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+      .search-result-item:hover {
+        background: #f7f7f7;
+      }
+      .search-result-item:last-child {
+        border-bottom: none;
+      }
+      .search-result-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 4px;
+      }
+      .search-result-summary {
         font-size: 14px;
-        letter-spacing: 0.3px;
+        color: #666;
+        line-height: 1.4;
+      }
+      .search-highlight {
+        background: #fffbcc;
+        padding: 1px 2px;
+        border-radius: 2px;
+      }
+      .search-result-tags {
+        margin-top: 8px;
+      }
+      .search-result-tag {
+        background: #f0f0f0;
+        color: #333;
+        padding: 2px 6px;
+        font-size: 11px;
+        margin-right: 5px;
+        border-radius: 2px;
       }
 
-      .breaking-text {
-        color: white;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      /* Main Content */
+      /* ==========================================================
+         Main Content
+      ========================================================== */
       .main-content {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 40px 20px; /* restore your original vertical rhythm */
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        align-items: center;
         gap: 60px;
       }
-
       .content-section {
         display: flex;
         flex-direction: column;
@@ -597,14 +346,12 @@
         justify-content: space-between;
         align-items: center;
       }
-
       .section-title {
         font-size: 24px;
         font-weight: 700;
         color: #000;
         letter-spacing: -0.2px;
       }
-
       .view-all {
         color: #326891;
         text-decoration: none;
@@ -615,7 +362,6 @@
         border-radius: 3px;
         transition: all 0.2s ease;
       }
-
       .view-all:hover {
         background: #f7f7f7;
         color: #1a5490;
@@ -628,19 +374,17 @@
         cursor: pointer;
         transition: all 0.3s ease;
         border: 1px solid #e2e2e2;
-        border-radius: 12px;
+        border-radius: 12px; /* keep your rounding */
         padding: 20px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
-
       .featured-story:hover {
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         transform: translateY(-2px);
       }
-
       .featured-image {
         width: 100%;
-        height: 400px;
+        height: 400px; /* restore your exact height */
         background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
         display: flex;
         align-items: center;
@@ -649,30 +393,26 @@
         font-weight: 500;
         font-size: 16px;
         margin-bottom: 20px;
-        border-radius: 8px;
+        border-radius: 8px; /* keep your rounding */
         overflow: hidden;
       }
-
       .featured-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         display: block;
       }
-
       .featured-content {
         padding: 0;
       }
-
       .featured-title {
-        font-size: 42px;
+        font-size: 42px; /* restore */
         font-weight: 700;
         color: #000;
         margin-bottom: 16px;
         line-height: 1.1;
         letter-spacing: -0.5px;
       }
-
       .featured-summary {
         font-size: 20px;
         color: #333;
@@ -690,14 +430,12 @@
         margin-bottom: 20px;
         font-weight: 400;
       }
-
       .story-tags {
         display: flex;
         gap: 8px;
         margin-bottom: 20px;
         flex-wrap: wrap;
       }
-
       .tag {
         background: #f7f7f7;
         color: #333;
@@ -718,24 +456,39 @@
         margin-bottom: 50px;
       }
 
+      .header-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
       .story-card {
         background: white;
         cursor: pointer;
         transition: all 0.3s ease;
         border: 1px solid #e2e2e2;
-        border-radius: 12px;
+        border-radius: 12px; /* keep */
         padding: 20px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
       }
-
       .story-card:hover {
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
         transform: translateY(-2px);
       }
-
+      .story-image-column {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        flex-shrink: 0;
+        gap: 8px;
+      }
       .story-image {
         width: 100%;
-        height: 200px;
+        height: 75px;
         background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
         display: flex;
         align-items: center;
@@ -743,8 +496,7 @@
         color: #666;
         font-weight: 500;
         font-size: 14px;
-        margin-bottom: 20px;
-        border-radius: 8px;
+        border-radius: 8px; /* keep */
         overflow: hidden;
       }
       .story-image img {
@@ -753,43 +505,50 @@
         object-fit: cover;
         display: block;
       }
-
+      .story-image-caption {
+        text-align: center;
+        font-size: 12px;
+        color: #3498db;
+        font-weight: 500;
+        padding: 4px 8px;
+      }
       .story-content {
         padding: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 150px;
       }
-
       .story-title {
         font-size: 20px;
         font-weight: 700;
-        margin-bottom: 16px;
+        margin-bottom: 7px;
         color: #000;
         line-height: 1.3;
         letter-spacing: -0.3px;
       }
-
       .story-summary {
         color: #555;
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         font-size: 15px;
         font-weight: 400;
+        flex-grow: 1;
       }
-
       .story-footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+        margin-top: auto;
         padding-top: 16px;
         border-top: 1px solid #e2e2e2;
       }
-
       .read-time {
         color: #666;
         font-size: 13px;
         font-weight: 400;
       }
-
       .view-analysis {
         background: #449dd1;
         color: white;
@@ -802,30 +561,26 @@
         border-radius: 6px;
         transition: all 0.2s ease;
       }
-
       .view-analysis:hover {
         background: #1a5490;
         transform: translateY(-1px);
       }
 
-      /* Sidebar */
+      /* Sidebar (kept) */
       .sidebar {
         display: flex;
         flex-direction: column;
         gap: 40px;
       }
-
       .sidebar-widget {
         background: #373f47;
         border: 1px solid #e2e2e2;
         border-radius: 8px;
         padding: 25px;
       }
-
       .sidebar-widget > * {
         margin: 20px;
       }
-
       .widget-title {
         font-size: 24px;
         font-weight: 700;
@@ -837,134 +592,6 @@
         text-align: center;
       }
 
-      .trending-item {
-        padding: 15px 0;
-        border-bottom: 1px solid #e2e2e2;
-        cursor: pointer;
-        transition: all 0.2s ease;
-      }
-
-      .trending-item:hover {
-        background: #f7f7f7;
-        margin: 0 -20px;
-        padding: 15px 20px;
-      }
-
-      .trending-item:last-child {
-        border-bottom: none;
-      }
-
-      .trending-title {
-        font-size: 16px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 5px;
-        line-height: 1.3;
-        letter-spacing: -0.2px;
-      }
-
-      .trending-meta {
-        font-size: 12px;
-        color: #666;
-        font-weight: 400;
-      }
-
-      .newsletter-signup {
-        background: #449dd1;
-        color: white;
-        padding: 30px;
-        text-align: center;
-        border-radius: 3px;
-      }
-
-      .newsletter-signup h3 {
-        font-size: 20px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        letter-spacing: -0.2px;
-      }
-
-      .newsletter-signup p {
-        margin-bottom: 20px;
-        font-size: 14px;
-        font-weight: 400;
-        opacity: 0.9;
-      }
-
-      .newsletter-form {
-        display: flex;
-        gap: 10px;
-        margin-top: 20px;
-      }
-
-      .newsletter-form input {
-        flex: 1;
-        padding: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        background: rgba(255, 255, 255, 0.1);
-        font-size: 14px;
-        color: white;
-        border-radius: 3px;
-      }
-
-      .newsletter-form input::placeholder {
-        color: rgba(255, 255, 255, 0.7);
-      }
-
-      .newsletter-form button {
-        background: white;
-        color: #326891;
-        border: none;
-        padding: 12px 20px;
-        cursor: pointer;
-        font-weight: 600;
-        font-size: 14px;
-        border-radius: 3px;
-        transition: all 0.2s ease;
-      }
-
-      .newsletter-form button:hover {
-        background: #f7f7f7;
-      }
-
-      /* Market Data Widget */
-      .market-data {
-        font-size: 14px;
-      }
-
-      .market-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
-        padding: 10px 0;
-        border-bottom: 1px solid #e2e2e2;
-      }
-
-      .market-item:last-child {
-        border-bottom: none;
-      }
-
-      .market-symbol {
-        font-weight: 600;
-        color: #000;
-      }
-
-      .market-change {
-        font-weight: 600;
-        font-size: 13px;
-      }
-
-      .positive {
-        color: #2e7d32;
-      }
-      .negative {
-        color: #d32f2f;
-      }
-      .neutral {
-        color: #666;
-      }
-
       /* Footer */
       .footer {
         background: #f7f7f7;
@@ -972,7 +599,6 @@
         padding: 40px 0;
         margin-top: 60px;
       }
-
       .footer-content {
         max-width: 1200px;
         margin: 0 auto;
@@ -981,22 +607,18 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 40px;
       }
-
       .footer-section h4 {
         font-size: 16px;
         font-weight: 700;
         margin-bottom: 15px;
         color: #000;
       }
-
       .footer-section ul {
         list-style: none;
       }
-
       .footer-section ul li {
         margin-bottom: 8px;
       }
-
       .footer-section ul li a {
         color: #666;
         text-decoration: none;
@@ -1004,11 +626,9 @@
         font-weight: 400;
         transition: color 0.2s ease;
       }
-
       .footer-section ul li a:hover {
         color: #000;
       }
-
       .footer-bottom {
         text-align: center;
         padding-top: 30px;
@@ -1017,153 +637,287 @@
         font-size: 12px;
       }
 
-      /* Search Results */
-      .search-results {
-        display: none;
-        background: white;
-        border: 1px solid #e2e2e2;
-        border-radius: 3px;
-        max-height: 400px;
-        overflow-y: auto;
+      /* ==========================================================
+         Themes / Research / Expert blocks (preserve feel)
+      ========================================================== */
+      .themes-container-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0;
+      }
+      .themes-container {
+        background: linear-gradient(135deg, #373f47, #3c3c3c);
+        border: 2px solid #cbcbcb;
+        border-radius: 12px; /* keep your rounding */
+        padding: 16px;
+        margin: 20px 0;
+        max-width: 500px;
+        box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+        width: fit-content;
+        text-align: left;
+      }
+      .themes-label {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 12px;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .themes-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+      .theme-tag {
+        background: #ffffff;
+        color: #373f47;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid #cbcbcb;
+      }
+
+      .research-label {
+        background: linear-gradient(135deg, #4a90e2, #357abd);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+      .research-node {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        border: 2px solid #4a90e2;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+        transition: all 0.3s ease;
+      }
+      .research-node:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(74, 144, 226, 0.3);
+      }
+      .research-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+      }
+
+      .source-image {
+        max-width: 100%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0;
+        margin-right: 8px;
+      }
+      .source {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .sources {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .node-header-image {
+        max-width: 100%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 6px;
+        flex-shrink: 0;
+        margin-right: 12px;
+      }
+      .node-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .node-title {
+        font-weight: 600;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .research-image {
+        border: 2px solid #3498db;
+      }
+      .expert-image {
+        border: 2px solid #9b59b6;
+        border-radius: 50%;
+      }
+      .node-description {
+        line-height: 1.4;
+        margin-bottom: 8px;
+      }
+
+      .research-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        object-fit: cover;
+        border: 2px solid #4a90e2;
+      }
+      .research-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #2c5282;
+        flex: 1;
+      }
+      .research-node .node-description {
+        color: #2d3748;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      .expert-label {
+        background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+        color: #2d3748;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(168, 168, 168, 0.4);
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+        border: 1px solid #999;
+      }
+      .expert-node {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border: 2px solid #c0c0c0;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 4px 12px rgba(168, 168, 168, 0.3);
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      .expert-node::before {
+        content: "";
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
         right: 0;
-        z-index: 1000;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
       }
-
-      .search-results.active {
-        display: block;
+      .expert-node:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(168, 168, 168, 0.4);
       }
-
-      .search-result-item {
-        padding: 12px 16px;
-        border-bottom: 1px solid #e2e2e2;
-        cursor: pointer;
-        transition: background 0.2s ease;
+      .expert-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
       }
-
-      .search-result-item:hover {
-        background: #f7f7f7;
+      .expert-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #c0c0c0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
       }
-
-      .search-result-item:last-child {
-        border-bottom: none;
-      }
-
-      .search-result-title {
+      .expert-name {
         font-size: 16px;
-        font-weight: 700;
-        color: #000;
-        margin-bottom: 4px;
+        font-weight: bold;
+        color: #2d3748;
+        flex: 1;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
       }
-
-      .search-result-summary {
+      .expert-node .node-description {
+        color: #4a5568;
+        line-height: 1.6;
         font-size: 14px;
-        color: #666;
-        line-height: 1.4;
+        font-style: italic;
+        padding-left: 8px;
+        border-left: 3px solid #c0c0c0;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 8px 12px;
+        border-radius: 0 6px 6px 0;
       }
 
-      .search-highlight {
-        background: #fffbcc;
-        padding: 1px 2px;
-        border-radius: 2px;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .newspaper-title {
-          font-size: 28px;
-        }
-
-        .main-content {
-          grid-template-columns: 1fr;
-          gap: 40px;
-          padding: 20px;
-        }
-
-        .nav-menu {
-          display: none;
-        }
-
-        .search-container {
-          width: 180px;
-        }
-
-        .stories-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .header-content {
-          padding: 0 15px;
-        }
-
-        .featured-title {
-          font-size: 32px;
-        }
-      }
-
-      /* Argument Tree Modal (keeping original functionality) */
+      /* ==========================================================
+         Argument Tree — PRESERVE original look; add responsiveness
+      ========================================================== */
       .arg-modal {
         display: none;
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        inset: 0;
         background: rgba(0, 0, 0, 0.8);
         z-index: 1000;
         opacity: 0;
         transition: opacity 0.3s ease;
       }
-
       .arg-modal.active {
         display: flex;
         align-items: center;
         justify-content: center;
         opacity: 1;
       }
-
       .arg-modal.active .arg-container {
         animation: modalSlideIn 0.4s ease forwards;
       }
-
       .arg-modal.closing .arg-container {
         animation: modalSlideOut 0.4s ease forwards;
       }
 
       .arg-container {
-        background: #fffbed;
-        border: none; /* Remove border */
-        border-radius: 0; /* Remove border radius */
-        width: 100vw; /* Full width */
-        height: 100vh; /* Full height */
-        max-width: 100vw; /* Override max-width */
-        max-height: 100vh; /* Override max-height */
+        background: #84827b86;
+        border: none;
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
         overflow: auto;
         position: relative;
-        box-shadow: none; /* Remove shadow for full page feel */
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
       }
-
       .arg-header {
         background: #449dd1;
         color: white;
+        margin-top: 15px;
         padding: 20px;
         position: sticky;
         top: 0;
         z-index: 10;
         border-bottom: 1px solid #e2e2e2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
-
       .arg-header h2 {
         font-size: 24px;
         font-weight: 700;
         margin: 0;
         letter-spacing: -0.3px;
       }
-
       .arg-close {
         position: absolute;
         top: 20px;
@@ -1181,61 +935,13 @@
         border-radius: 50%;
         transition: all 0.2s ease;
       }
-
       .arg-close:hover {
         background: rgba(255, 255, 255, 0.2);
       }
 
       .arg-content {
-        padding: 40px;
-        min-width: 900px;
-      }
-
-      .arg-footer {
-        background: #f7f7f7;
-        border-top: 1px solid #e2e2e2;
-        padding: 20px 40px;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        position: sticky;
-        bottom: 0;
-      }
-
-      .footer-link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        color: #666;
-        font-size: 12px;
-        transition: color 0.2s ease;
-      }
-
-      .footer-link:hover {
-        color: #326891;
-      }
-
-      .footer-icon {
-        font-size: 24px;
-        margin-bottom: 5px;
-      }
-
-      /* Tree styles remain the same but with updated colors */
-      .central-question {
-        background: #449dd1;
-        color: white;
-        border: 2px solid rgb(0, 13, 128);
-        padding: 25px 40px;
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
-        position: relative;
-        z-index: 9;
-        max-width: 600px;
-        margin-bottom: 120px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        /* IMPORTANT: remove previous min-width that broke phones */
+        padding: 40px; /* restore your vertical rhythm inside */
       }
 
       .tree-container {
@@ -1243,26 +949,42 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 700px;
-        padding: 40px 20px;
+        min-height: 700px; /* keep your original height feel */
+        padding: 40px 20px; /* keep vertical spacing as before */
+      }
+      .central-question {
+        background: #449dd1;
+        color: white;
+        border: 2px solid rgb(0, 13, 128);
+        padding: 25px 40px; /* keep */
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        z-index: 9;
+        max-width: 600px; /* keep */
+        margin-bottom: 120px; /* keep your spacing */
+        border-radius: 8px; /* keep rounding */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
 
       .tree-branches {
         position: relative;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-        min-height: 400px;
+        /* Use grid so we can wrap at small widths without hiding anything */
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 100px; /* keep your branch gap */
+        min-height: 400px; /* keep */
+        justify-items: center;
       }
-
       .branch-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        width: 100%;
       }
-
       .branch-label {
         z-index: 3;
         font-size: 18px;
@@ -1272,31 +994,9 @@
         color: black;
         text-align: center;
         position: relative;
-        border-radius: 3px;
+        border-radius: 3px; /* keep your rounding */
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         background: white;
-      }
-
-      .connection-svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 0;
-      }
-
-      .connection-line {
-        stroke: #667; /* or whatever color you want for the main trunk and horizontal lines */
-        stroke-width: 1px;
-        z-index: 0;
-      }
-
-      .node-connector {
-        stroke: #667; /* or whatever color you want for the lines connecting to individual nodes */
-        stroke-width: 1px;
-        z-index: 0;
       }
 
       .exploring-label {
@@ -1310,26 +1010,17 @@
         position: relative;
         border-radius: 3px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+        cursor: pointer;
       }
-
       .exploring-label:hover {
-        opacity: 0.65;
+        opacity: 0.85;
       }
-
       .reasons-label {
         background: #2e7d32;
       }
-
-      .reasons-label:hover {
-        opacity: 0.85;
-      }
-
       .objections-label {
         background: #d32f2f;
-      }
-
-      .objections-label:hover {
-        opacity: 0.85;
       }
 
       .nodes-container {
@@ -1338,33 +1029,30 @@
         gap: 30px;
         align-items: center;
         position: relative;
+        width: 100%;
       }
-
       .tree-node {
         background: white;
         border: 1px solid #e2e2e2;
-        border-radius: 3px;
+        border-radius: 3px; /* restore your original small rounding */
         padding: 20px;
-        max-width: 300px;
+        max-width: 300px; /* keep your node sizes */
         min-width: 250px;
+        width: 90%;
         position: relative;
         transition: all 0.3s ease;
         z-index: 5;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
-
       .tree-node:hover {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
       }
-
       .reason-node {
         border-left: 4px solid #2e7d32;
       }
-
       .objection-node {
         border-left: 4px solid #d32f2f;
       }
-
       .node-description {
         font-size: 14px;
         line-height: 1.6;
@@ -1372,8 +1060,30 @@
         color: #333;
       }
 
-      .sources {
-        margin-top: 12px;
+      .category-card {
+        background: linear-gradient(
+          135deg,
+          #f9fafb,
+          #eef2f7
+        ); /* soft gradient */
+        border: 2px solid #326891; /* matches your link color */
+        text-align: center;
+        padding: 30px 20px; /* more breathing room */
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .category-card:hover {
+        background: linear-gradient(135deg, #eef2f7, #e2e8f0);
+        box-shadow: 0 8px 20px rgba(50, 104, 145, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .category-card .story-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #326891;
+        letter-spacing: -0.5px;
       }
 
       .source {
@@ -1386,65 +1096,145 @@
         margin: 6px 0;
         font-size: 12px;
       }
-
       .source-title {
         font-weight: 600;
         color: #326891;
         text-decoration: none;
       }
-
       .source-title:hover {
         text-decoration: underline;
+      }
+
+      .connection-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+      /* Line aesthetics with rounded ends (adds "tips" look) */
+      .connection-line,
+      .node-connector {
+        stroke: rgb(208, 208, 208);
+        stroke-width: 1.5px;
+        stroke-linecap: round; /* rounded tips */
+        stroke-linejoin: round; /* nice joints */
+      }
+      /* Small circular tips/joints we’ll draw at key points */
+      .connector-tip {
+        fill: rgb(208, 208, 208);
+      }
+
+      /* Full-page map container */
+      #mapPage {
+        display: none;
+      }
+      #mapBack {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+      }
+      #mapBack:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* ==========================================================
+         RESPONSIVE — ONLY where needed, without changing your feel
+      ========================================================== */
+      @media (max-width: 1100px) {
+        .main-content {
+          margin-left: 6vw;
+          margin-right: 6vw;
+        }
+      }
+      @media (max-width: 1024px) {
+        .tree-branches {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 60px;
+        }
+      }
+      @media (max-width: 768px) {
+        /* keep nav visible! remove the old display:none; */
+        .header-content {
+          padding: 0 8px;
+        }
+        .search-container {
+          width: 90vw;
+          margin: 40px auto;
+        } /* fit phones but keep vertical spacing reasonable */
+        .search-container input {
+          font-size: 22px;
+        }
+        .stories-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .featured-title {
+          font-size: 32px;
+        }
+        .featured-image {
+          height: 300px;
+        }
+        .central-question {
+          margin-bottom: 80px;
+        }
+      }
+      @media (max-width: 640px) {
+        .tree-branches {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .nodes-container {
+          gap: 24px;
+        }
+        .tree-node {
+          max-width: 90vw;
+          min-width: 260px;
+        } /* keep readable nodes; allow slight flex */
+        .search-container {
+          width: 92vw;
+        }
+        .search-container input {
+          font-size: 20px;
+        }
+      }
+
+      /* ==========================================================
+         Misc retained styles (breaking banner, etc.)
+      ========================================================== */
+      .breaking-news {
+        background: #449dd1;
+        color: white;
+        padding: 12px 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+      }
+      .breaking-text {
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
       }
     </style>
   </head>
   <body>
-    <!-- popup -->
-    <div id="popup">
-      <div id="popup-box">
-        <h3>Welcome!</h3>
-        <p>Are you...</p>
-        <button
-          class="exploring-label reasons-label"
-          onclick="handleUserChoice('teacher')"
-        >
-          A Teacher
-        </button>
-        <button
-          class="exploring-label objections-label"
-          onclick="handleUserChoice('student')"
-        >
-          A Student
-        </button>
-        <button class="branch-label" onclick="handleUserChoice('fun')">
-          Just Exploring!
-        </button>
-      </div>
-    </div>
-
-    <!-- JavaScript -->
-    <script>
-      window.onload = function () {
-        setTimeout(() => {
-          document.getElementById("popup").style.display = "flex";
-        }, 500);
-      };
-
-      function handleUserChoice(role) {
-        localStorage.setItem("userType", role);
-
-        // Google Analytics event
-        if (typeof gtag === "function") {
-          gtag("event", "user_type_selected", {
-            event_category: "User Classification",
-            event_label: role,
-          });
-        }
-
-        document.getElementById("popup").style.display = "none";
-      }
-    </script>
-
     <!-- Header -->
     <header class="newspaper-header">
       <div class="date-bar">Powered by AI Web Scraping</div>
@@ -1457,9 +1247,6 @@
           height="300"
           style="padding-top: 20px; margin: -110px 0"
         />
-        <div class="newspaper-subtitle">
-          Understanding Issues through Argument Mapping
-        </div>
       </div>
 
       <div class="header-content">
@@ -1469,365 +1256,592 @@
             <li><a href="Econ.html" class="active">Economics</a></li>
             <li><a href="Social.html">Social Issues</a></li>
             <li><a href="Foreign.html">Foreign Policy</a></li>
-            <li><a href="themes.html">Themes in the News</a></li>
-            <li><a href="experts.html">Expert Perspectives</a></li>
-            <li><a href="methodology.html">Our Methodology</a></li>
+         
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Breaking News -->
-
-    <div class="breaking-news">
-      <div class="breaking-text">
-        Organized by Issues, not by Individual Sources
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Main Content (Home) -->
+    <main class="main-content" id="homePage">
       <div class="content-section">
-        <!-- Featured Story -->
-        <div class="section-header">
-          <h2 class="section-title">Featured Issue</h2>
+        <div class="header-grid">
+          <article class="story-card category-card">
+            <div class="story-content">
+              <h3 class="story-title">Browse Economics</h3>
+            </div>
+          </article>
         </div>
-
-        <article
-          class="featured-story"
-          onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')"
-        >
-          <div class="featured-image">
-            <img
-              src="https://res.cloudinary.com/degebwdf5/image/upload/v1753452354/universalbasicincomeimage_ssjggx.webp"
-              alt="Universal Basic Income"
-            />
-          </div>
-          <div class="featured-content">
-            <div class="story-meta">
-              <span> 7-22-2025</span>
-              <span></span>
-            </div>
-            <h1 class="featured-title">
-              Should Governments Implement Universal Basic Income?
-            </h1>
-            <p class="featured-summary">
-              As economic pressures mount globally, governments are
-              reconsidering UBI policies. Is UBI the solution to the higher
-              income inequality created by AI?
-            </p>
-            <div class="story-tags">
-              <span class="tag">UBI</span>
-              <span class="tag">Economic Policy</span>
-              <span class="tag">Social Programs</span>
-              <span class="tag">Government Spending</span>
-            </div>
-            <div class="story-footer">
-              <span class="read-time"></span>
-              <button class="view-analysis">Read Analysis</button>
-            </div>
-          </div>
-        </article>
 
         <!-- Latest Stories -->
-        <div class="section-header">
-          <h2 class="section-title">Latest Real-World Issues</h2>
-        </div>
-
         <div class="stories-grid">
           <article
             class="story-card"
             onclick="showArgumentTree('data/isrentcontrolgoodfornewyorkcity.json', 'Is Rent Control Good for New York City')"
           >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454100/rent_controll_nq96ml.jpg"
-                alt=""
-              />
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454100/rent_controll_nq96ml.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">explore 14 sources</div>
             </div>
             <div class="story-content">
-              <div class="story-meta">
-                <span>7-25-2025</span>
-                <span></span>
-              </div>
               <h3 class="story-title">
                 Is Rent Control Good for New York City?
               </h3>
               <p class="story-summary">
                 New York's rent control debate intensifies as housing costs
-                soar. As the Mayoral Election approaches, is this policy choice
-                economically feasible?
+                soar.
               </p>
               <div class="story-tags">
                 <span class="tag">Housing</span>
                 <span class="tag">NYC Policy</span>
               </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">Read Analysis</button>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/govfundingai.json', 'Should the Government fund open source ai research?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755092036/download_3_eeuuzm.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">explore 15 sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should the Government fund open source ai research?
+              </h3>
+              <p class="story-summary">
+                Could UBI be the solution to AI induced income inequality?
+              </p>
+              <div class="story-tags">
+                <span class="tag">AI</span>
+
+                <span class="tag">Government Spending </span>
               </div>
             </div>
           </article>
 
           <article
             class="story-card"
-            onclick="showArgumentTree('data/trumpstariffs.json', 'Trumps Tariffs and Economics')"
+            onclick="showArgumentTree('data/ShouldGovernmentsImplementUniversalBasicIncome.json', 'Universal Basic Income Debate')"
           >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753453870/tariffeffectdrawing_het59f.jpg"
-                alt=""
-              />
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1753452354/universalbasicincomeimage_ssjggx.webp"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">explore 15 sources</div>
             </div>
             <div class="story-content">
-              <div class="story-meta">
-                <span>7-25-2025</span>
-                <span></span>
-              </div>
               <h3 class="story-title">
-                Are Trump's Tariffs Economically Sound?
+                Should Governments Implement Universal Basic Income
               </h3>
               <p class="story-summary">
-                Trade economists debate the effectiveness of tariff policies on
-                domestic manufacturing and consumer prices. Do tariffs actually
-                benefit the average American?
+                Could UBI be the solution to AI induced income inequality?
+              </p>
+              <div class="story-tags">
+                <span class="tag">UBI</span>
+                <span class="tag">Economic Policy </span>
+                <span class="tag">Government Spending </span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/2018tariffs.json', 'Were Trumps initial 2018 tariffs beneficial in hindsight?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/2018-12-17_hufbauer_steel-tariffs_header-image_hvzozr.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 18 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Were Trump's initial 2018 tariffs beneficial in hindsight?
+              </h3>
+              <p class="story-summary">
+                Several years later, what were the impacts of Trump's first term
+                tariffs?
               </p>
               <div class="story-tags">
                 <span class="tag">Trade</span>
-                <span class="tag">Tariffs</span>
-                <span class="tag">Manufacturing</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
+                <span class="tag">Economic Policy </span>
               </div>
             </div>
           </article>
 
           <article
             class="story-card"
-            onclick="showArgumentTree('data/isredistributivetaxationasolution.json', 'is redistributive taxation a solution to inequality??')"
+            onclick="showArgumentTree('data/alabamaincreasemedicaid.json', 'To better serve low-income residents, should Alabama expand its Medicaid program?')"
           >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753453752/taximage_qvv826.png"
-                alt=""
-              />
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090547/Medicaid-777x437_g3aykn.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 22 Sources</div>
             </div>
             <div class="story-content">
-              <div class="story-meta">
-                <span>7-25-2025</span>
-                <span> </span>
-              </div>
               <h3 class="story-title">
-                Is redistributive taxation a solution to inequality?
+                Should Alabama expand its Medicaid program?
               </h3>
               <p class="story-summary">
-                How much does redistributive taxation impact the increasing
-                margin between rich and poor?
+                How could allocating more budget towards healthcare benefit
+                Alabama?
               </p>
               <div class="story-tags">
-                <span class="tag">Taxation</span>
-                <span class="tag">Wealth</span>
+                <span class="tag">Healthcare</span>
+                <span class="tag">Spending </span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/alaskaincreasetourism.json', 'Should Alaska subsidize its tourism industry to improve its economy?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090547/step2-150527-4M2557_rk9nmf.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 12 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Alaska subsidize its tourism industry to improve its
+                economy?
+              </h3>
+              <p class="story-summary">
+                Could tourism be the key to growth outside the continguous 48
+                states?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Tourism</span>
+                <span class="tag">Economic growth </span>
+              </div>
+            </div>
+          </article>
+
+
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/CHIPSact.json', 'Has the CHIPS Act provided enough benefits to outweigh its costs in government funding? ')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/20240803_ABD001_FH_o3ygyt.webp"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 16 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Has the CHIPS Act provided enough benefits to outweigh its costs
+                in government funding?
+              </h3>
+              <p class="story-summary">
+                Can federal programs like the CHIPS Act truly contribute to
+                growth?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Technology</span>
+                <span class="tag">Growth</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/citizensunitedoverturn.json', 'Would overturning Citizens United v. Federal Election Commission 2010 improve the democratic process?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/AP_090909027279_0-scaled_sydqqk.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 14 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Would overturning Citizens United v. Federal Election Commission
+                (2010) improve the democratic process?
+              </h3>
+              <p class="story-summary">
+                Do we need to change the way election campaigns are funded?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Democracy</span>
+                <span class="tag">Law</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/coloradofracking.json', 'Should Colorado ban fracking and new oil drilling in light of climate change?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/00colorado1-promo-superJumbo-v3_xnhzzu.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 16 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Colorado ban fracking and new oil drilling in light of
+                climate change?
+              </h3>
+              <p class="story-summary">
+                Do benefits to the environment outweight potential damage to
+                local jobs and the economy?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Environment</span>
+                <span class="tag">Fracking</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/congestionpricing.json', 'Should Cities implement congestion pricing?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090547/istockphoto-1157256464-612x612_obviob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 13 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Cities implement congestion pricing?
+              </h3>
+              <p class="story-summary">
+                Could congestion pricing help reduce in city traffic, while also
+                providing funding for public works?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Cities</span>
+                <span class="tag">Transportation</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/conneticutredistributivetaxes.json', 'Should Connecticut implement a heavier redistributive tax on its wealthiest residents to reduce instate inequality?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090547/mobile_tguepv.png"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 21 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Connecticut implement a heavier redistributive tax on its
+                wealthiest residents to reduce instate inequality?
+              </h3>
+              <p class="story-summary">
+                Could state level taxation be the solution to inequality?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Taxes</span>
                 <span class="tag">Inequality</span>
               </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
             </div>
           </article>
 
           <article
             class="story-card"
-            onclick="showArgumentTree('data/isthejobmarketworsethanitwasagenerationago.json', 'is the Job market worse than it was a generation ago?')"
+            onclick="showArgumentTree('data/covidstimulus.json', 'Were the initial stimulus checks during the Covid-19 pandemic economically justified?')"
           >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753453477/job_market_photo_cmmthv.jpg"
-                alt=""
-              />
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/GettyImages-1218264153-1_jyccmj.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 20 Sources</div>
             </div>
             <div class="story-content">
-              <div class="story-meta">
-                <span>7-23-2025</span>
-                <span></span>
-              </div>
               <h3 class="story-title">
-                Is the Job Market worse than it was a generation ago?
+                Were the initial stimulus checks during the Covid-19 pandemic
+                economically justified?
               </h3>
               <p class="story-summary">
-                How are new college grads being impacted by the changing
-                economic and technological landscape? Do the positives outweigh
-                the negatives?
+                Has inflation truly outweighed the benfits provided by stimulus?
               </p>
-              <div class="story-tags">
-                <span class="tag">Jobs</span>
-                <span class="tag">College</span>
-                <span class="tag">Labor Market</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
+              <span class="tag">Economics</span>
+              <span class="tag">Inflation</span>
             </div>
           </article>
 
           <article
             class="story-card"
-            onclick="showArgumentTree('data/willundocumentedimmigrantscreateanetbenefitfortheamericaneconomy.json', 'Do Undocumented Immigrants create a Net Benefit for the American Economy?')"
+            onclick="showArgumentTree('data/debtceiling.json', 'Should the government continue raising the debt ceiling as it has done?')"
           >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454448/U.S._Immigration_oncr9l.avif"
-                alt=""
-              />
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755092477/01032013_Debt_Ceiling_article_zyue7l.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 24 Sources</div>
             </div>
             <div class="story-content">
-              <div class="story-meta">
-                <span>7-23-2025</span>
-                <span></span>
-              </div>
               <h3 class="story-title">
-                Do undocumented immigrants create a net benefit for the American
-                Economy?
+                Should the government continue raising the debt ceiling as it
+                has done?
               </h3>
               <p class="story-summary">
-                Are undocumented immigrants actually bad for the economy, or do
-                they contribute to growth?
+                Is the impending debt crisis a mirage or a legitimate concern?
               </p>
-              <div class="story-tags">
-                <span class="tag">Immigration</span>
-                <span class="tag">Labor Market</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
+              <span class="tag">Debt</span>
+              <span class="tag">Fiscal Spending</span>
             </div>
           </article>
 
           <article
             class="story-card"
-            onclick="showArgumentTree('data/federalreserveindependence.json', 'Federal Reserve Independence')"
+            onclick="showArgumentTree('data/eurotariffresponse.json', 'Have European countries done enough to respond to American tariffs?')"
           >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454576/Federal_reserve_drawing_zrsefp.jpg"
-                alt=""
-              />
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755093086/service-pnp-ds-14500-14544r_j1xqbp.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 26 Sources</div>
             </div>
             <div class="story-content">
-              <div class="story-meta">
-                <span>7-23-2025</span>
-                <span>🏛️ Fed Policy</span>
-              </div>
               <h3 class="story-title">
-                Is Federal Reserve Independence Important?
+                Have European countries done enough to respond to American
+                tariffs?
               </h3>
               <p class="story-summary">
-                Central bank independence faces scrutiny as political pressures
-                mount. Why is important for a portion of Economic Policy to be
-                non political?
+                Do European countries need to stand their ground more?
               </p>
-              <div class="story-tags">
-                <span class="tag">Federal Reserve</span>
-                <span class="tag">Monetary Policy</span>
+              <span class="tag">Trade</span>
+              <span class="tag">Geopolitics</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/growthofpopulism.json', 'Is global populism becoming a greater issue?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090547/Populismcomic-e1573840635332_ar9ivq.png"
+                  alt=""
+                />
               </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
+              <div class="story-image-caption">Explore 22 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Is Populism becoming a larger issue around the world?
+              </h3>
+              <p class="story-summary">
+                What do populist elected leaders mean for countries?
+              </p>
+              <span class="tag">Politics</span>
+              <span class="tag">Democracy</span>
+            </div>
+          </article>
+
+     
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/massachusettsresearchfunding.json', 'Should Massachusetts increase state funding for research if federal funding gets cut?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755092036/download_3_eeuuzm.jpg"
+                  alt=""
+                />
               </div>
+              <div class="story-image-caption">Explore 18 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Massachusetts increase state funding for research if
+                federal funding gets cut?
+              </h3>
+              <p class="story-summary">
+                Can Massachusetts support one of its largest sectors on its own?
+              </p>
+              <span class="tag">Research</span>
+              <span class="tag">Economics</span>
+            </div>
+          </article>
+
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/oregonsalestax.json', 'Should Oregon introduce a statewide sales tax in order to increase funding for state programs?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/istockphoto-1217898516-612x612_hy9awz.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 16 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Oregon introduce a statewide sales tax in order to
+                increase funding for state programs?
+              </h3>
+              <p class="story-summary">
+                Could introducing sales taxes to match other states be
+                beneficial?
+              </p>
+              <span class="tag">Taxes</span>
+              <span class="tag">State Funding</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/utahtourism.json', 'Should Utah invest more in tourism to stimulate its economy?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755108747/ff3bdbc4-e944-4dae-98c4-c3aef5d1ee0djpeg_weshcy.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 25 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should Utah invest more in tourism to stimulate its economy?
+              </h3>
+              <p class="story-summary">
+                Could tourism be the key to further economic growth?
+              </p>
+              <span class="tag">Growth</span>
+              <span class="tag">Tourism</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/weakenrelationscanadamexico.json', 'Is it in the interest of the United States to weaken relations with Canada and Mexico?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755108840/61czb7kXjLL_axx4oe.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 22 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Is it in the interest of the United States to weaken relations
+                with Canada and Mexico?
+              </h3>
+              <p class="story-summary">
+                How should the US treat its closest neighbors?
+              </p>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">Trade</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/westvirginiacoal.json', 'Should West Virginia diversify its economy away from coal by subsidizing green industries?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/coal-trolley-sketch-engraving-vector-600nw-1684590874_aoasqr.webp"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 15 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Should West Virginia diversify its economy away from coal by
+                subsidizing green industries?
+              </h3>
+              <p class="story-summary">
+                Do environmental benefits offset economic incentive against
+                action?
+              </p>
+              <span class="tag">Environment</span>
+              <span class="tag">Local Economics</span>
             </div>
           </article>
         </div>
       </div>
-
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <div class="sidebar-widget">
-          <h3 class="widget-title">Trending Issues</h3>
-
-          <article
-            class="story-card"
-            onclick="showArgumentTree('data/researchfundingandhealthcare.json', 'How will Research Funding Cuts affect the health sector?')"
-          >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753454873/public-health-cuts-illustration-15-927x617_tyyq6c.webp"
-                alt=""
-              />
-            </div>
-            <div class="story-content">
-              <div class="story-meta">
-                <span>7-24-2025</span>
-                <span></span>
-              </div>
-              <h3 class="story-title">
-                Will Research Funding Cuts have an Outsized Impact on the Health Sector?
-              </h3>
-              <p class="story-summary">
-                What are the issues with cutting research funding in the health
-                sciences? Will this affect the wider healthcare sector, which
-                significantly contributes to the nation's growth?
-              </p>
-              <div class="story-tags">
-                <span class="tag">Research Funding</span>
-                <span class="tag">Health Care</span>
-                <span class="tag">Funding Cuts</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="story-card"
-            onclick="showArgumentTree('data/wealthtax.json', 'Should we implement a wealth tax?')"
-          >
-            <div class="story-image">
-              <img
-                src="https://res.cloudinary.com/degebwdf5/image/upload/v1753455163/wealthtaxrichguy_anxuhf.jpg"
-                alt=""
-              />
-            </div>
-            <div class="story-content">
-              <div class="story-meta">
-                <span>7-23-2025</span>
-                <span></span>
-              </div>
-              <h3 class="story-title">Should we implement a wealth tax?</h3>
-              <p class="story-summary">
-                Could wealth taxes be the way to address inequality, instead of
-                income taxation? What are the problems with implementing a
-                possible wealth tax?
-              </p>
-              <div class="story-tags">
-                <span class="tag">Taxation</span>
-                <span class="tag">Wealth</span>
-                <span class="tag">Inequality</span>
-              </div>
-              <div class="story-footer">
-                <span class="read-time"></span>
-                <button class="view-analysis">View Analysis</button>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="sidebar-widget newsletter-signup">
-          <h3>Contact Us</h3>
-          <p>
-            For any questions about Mapped News, contact us at
-            policyally@gmail.com
-          </p>
-        </div>
-      </aside>
     </main>
 
-    <!-- Argument Tree Modal (keeping original functionality) This is the design of the modal!! -->
+    <!-- Full-Page Argument View -->
+    <section id="mapPage">
+      <div class="arg-header">
+        <h2 id="mapTitle">Argument Analysis</h2>
+        <button id="mapBack">×</button>
+      </div>
+      <div class="arg-content" id="mapContent">
+        <div style="text-align: center; padding: 40px; color: #666">
+          Loading argument analysis...
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal kept for legacy (not used) -->
     <div class="arg-modal" id="argModal">
       <div class="arg-container">
         <div class="arg-header">
@@ -1839,109 +1853,150 @@
             Loading argument analysis...
           </div>
         </div>
-        <div class="arg-footer">
-          <p>@mappednews</p>
-        </div>
       </div>
     </div>
 
     <script>
-      // All original JavaScript functionality preserved and expanded
+      // Small, safe throttle to avoid redraw storms
+      function throttle(fn, wait = 16) {
+        let rafId = null,
+          lastArgs,
+          lastThis;
+        const runner = () => {
+          rafId = null;
+          fn.apply(lastThis, lastArgs);
+        };
+        return function (...args) {
+          lastArgs = args;
+          lastThis = this;
+          if (!rafId) rafId = requestAnimationFrame(runner);
+        };
+      }
+
       class ArgumentTreeRenderer {
         constructor(container, data) {
           this.container = container;
           this.data = data;
           this.svgNamespace = "http://www.w3.org/2000/svg";
+          this._resizeObserver = null;
+          this._mutationObserver = null;
+          this._onRedraw = throttle(this.drawConnectionLines.bind(this), 16);
         }
 
         init() {
           this.container.innerHTML = this.render(this.data);
-          setTimeout(() => this.drawConnectionLines(), 100);
+          this.svg = this.container.querySelector("#connectionSvg");
+          this.setupObservers();
+          requestAnimationFrame(() => this._onRedraw());
+          this.waitForImagesThenDraw();
         }
 
         render(data) {
-          return `
+          // Check if expertPerspectives is truly blank (null, undefined, empty array, or only empty strings/objects)
+          const hasExperts =
+            Array.isArray(data.expertPerspectives) &&
+            data.expertPerspectives.some(
+              (ep) => ep && Object.keys(ep).length > 0
+            );
 
-      <div class="themes-container-wrapper">
-         ${this.renderThemes(data.themes)}
-      </div>    
-      <div class="tree-container">
-        <svg class="connection-svg" id="connectionSvg"></svg>
-        <div class="central-question">${data.centralQuestion}</div>
-        <div class="tree-branches">
-          ${this.renderBranch("Supporting Reasons", "reason", data.reasons)}
-          ${this.renderBranch("Objections", "objection", data.objections)}
-          ${this.renderBranch("Research", "research", data.research)}
-          ${this.renderBranch(
-            "Expert Perspectives",
-            "expert",
-            data.expertPerspectives
-          )}
-        </div>
-      
-      </div>
-    `;
+          // If it's blank, add a CSS class to recentre the tree
+          if (!hasExperts) {
+            // Delay to ensure DOM is ready
+            requestAnimationFrame(() => {
+              const branches = this.container.querySelector(".tree-branches");
+              if (branches) {
+                branches.style.gridTemplateColumns =
+                  "repeat(3, minmax(0, 1fr))";
+                branches.style.justifyContent = "center";
+              }
+            });
+          }
+
+          return `
+            <div class="themes-container-wrapper">
+              ${this.renderThemes(data.themes)}
+            </div>
+            <div class="tree-container">
+              <svg class="connection-svg" id="connectionSvg" preserveAspectRatio="none"></svg>
+              <div class="central-question">${data.centralQuestion}</div>
+              <div class="tree-branches">
+                ${this.renderBranch(
+                  "Supporting Reasons",
+                  "reason",
+                  data.reasons
+                )}
+                ${this.renderBranch("Objections", "objection", data.objections)}
+                ${this.renderBranch("Research", "research", data.research)}
+                ${this.renderBranch(
+                  "Expert Perspectives",
+                  "expert",
+                  data.expertPerspectives
+                )}
+              </div>
+            </div>
+          `;
         }
 
         renderThemes(themes) {
           if (!themes?.length) return "";
           return `
-      <div class="themes-container">
-        <div class="themes-label">Key Themes</div>
-        <div class="themes-list">
-          ${themes
-            .map((theme) => `<span class="theme-tag">${theme}</span>`)
-            .join("")}
-        </div>
-      </div>
-    `;
+            <div class="themes-container">
+              <div class="themes-label">Key Themes</div>
+              <div class="themes-list">
+                ${themes
+                  .map((t) => `<span class="theme-tag">${t}</span>`)
+                  .join("")}
+              </div>
+            </div>
+          `;
         }
 
         renderBranch(label, type, items) {
           if (!items?.length) return "";
           return `
-  <div class="branch-section" onclick="toggleBranchFocus(this)">
-    <div class="branch-label ${type}-label">${label}</div>
-    <div class="nodes-container">
-      ${items.map((item, i) => this.renderNode(item, type, i)).join("")}
-    </div>
-  </div>
-`;
+            <div class="branch-section" onclick="toggleBranchFocus(this)">
+              <div class="branch-label ${type}-label">${label}</div>
+              <div class="nodes-container">
+                ${items
+                  .map((item, i) => this.renderNode(item, type, i))
+                  .join("")}
+              </div>
+            </div>
+          `;
         }
 
         renderNode(node, type, index) {
           return `
-      <div class="tree-node ${type}-node" onclick="event.stopPropagation()" data-node-type="${type}" data-node-index="${index}">
-        ${this.renderNodeHeader(node, type)}
-        <div class="node-description">${node.description}</div>
-        ${this.renderSources(node, type)}
-        <button class="expand-button ${
-          this.hasChildren(node) ? "has-children" : ""
-        }" onclick="toggleSubNodes(this)">
-          ${this.hasChildren(node) ? "Show Details" : ""}
-        </button>
-        <div class="sub-nodes">
-          ${this.renderSubNodes(node.underlyingReasons, "reason")}
-          ${this.renderSubNodes(node.objections, "objection")}
-        </div>
-      </div>
-    `;
+            <div class="tree-node ${type}-node" onclick="event.stopPropagation()" data-node-type="${type}" data-node-index="${index}">
+              ${this.renderNodeHeader(node, type)}
+              <div class="node-description">${node.description}</div>
+              ${this.renderSources(node, type)}
+              <button class="expand-button ${
+                this.hasChildren(node) ? "has-children" : ""
+              }" onclick="toggleSubNodes(this)">
+                ${this.hasChildren(node) ? "Show Details" : ""}
+              </button>
+              <div class="sub-nodes" style="display:none;">
+                ${this.renderSubNodes(node.underlyingReasons, "reason")}
+                ${this.renderSubNodes(node.objections, "objection")}
+              </div>
+            </div>
+          `;
         }
 
         renderNodeHeader(node, type) {
           if (type === "expert") {
             return `
-        <div class="node-header expert-header">
-          ${
-            node.imageLink
-              ? `<img src="${node.imageLink}" alt="${node.name}" class="node-header-image expert-image">`
-              : ""
+              <div class="node-header expert-header">
+                ${
+                  node.imageLink
+                    ? `<img src="${node.imageLink}" alt="${node.name}" class="node-header-image expert-image">`
+                    : ""
+                }
+                <div class="node-title expert-name">${node.name ?? ""}</div>
+              </div>
+            `;
           }
-          <div class="node-title expert-name">${node.name}</div>
-        </div>
-      `;
-          }
-          // For reason, objection, and research nodes, no special header
           return "";
         }
 
@@ -1949,45 +2004,48 @@
           if (!nodes?.length) return "";
           return nodes
             .map(
-              (node) => `
-      <div class="sub-node sub-${type}">
-        <div class="node-description">${node.description}</div>
-        ${this.renderSources(node, type)}
-      </div>
-    `
+              (n) => `
+            <div class="sub-node sub-${type}">
+              <div class="node-description">${n.description}</div>
+              ${this.renderSources(n, type)}
+            </div>
+          `
             )
             .join("");
         }
 
         renderSources(node, type) {
-          // For research nodes, create a source from the node's link and title
           if (type === "research" && node.link && node.title) {
             return `
-        <div class="sources">
-          <div class="source">
-            <a href="${node.link}" target="_blank" class="source-title">${node.title}</a>
-          </div>
-        </div>
-      `;
+              <div class="sources">
+                <div class="source">
+                  <a href="${node.link}" target="_blank" class="source-title">${node.title}</a>
+                </div>
+              </div>
+            `;
           }
-
-          // For other node types, use the existing sources array
           const sources = node.sources;
           if (!sources?.length) return "";
           return `
-      <div class="sources">
-        ${sources
-          .map(
-            (source) => `
-          <div class="source">
-            <img src="${source.imageLink}" alt="source" class="source-image">
-            <a href="${source.link}" target="_blank" class="source-title">${source.title}</a>
-          </div>
-        `
-          )
-          .join("")}
-      </div>
-    `;
+            <div class="sources">
+              ${sources
+                .map(
+                  (s) => `
+                <div class="source">
+                  ${
+                    s.imageLink
+                      ? `<img src="${s.imageLink}" alt="source" class="source-image">`
+                      : ""
+                  }
+                  <a href="${s.link}" target="_blank" class="source-title">${
+                    s.title
+                  }</a>
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+          `;
         }
 
         hasChildren(node) {
@@ -1998,47 +2056,79 @@
           );
         }
 
+        sizeSvgToContainer() {
+          const tree = this.container.querySelector(".tree-container");
+          if (!tree || !this.svg) return;
+          const w = Math.ceil(tree.scrollWidth);
+          const h = Math.ceil(tree.scrollHeight);
+          this.svg.setAttribute("width", w);
+          this.svg.setAttribute("height", h);
+          this.svg.style.width = w + "px";
+          this.svg.style.height = h + "px";
+        }
+
+        // helper to draw small circular tips
+        createTip(svg, cx, cy, r = 3) {
+          const circle = document.createElementNS(this.svgNamespace, "circle");
+          circle.setAttribute("cx", cx);
+          circle.setAttribute("cy", cy);
+          circle.setAttribute("r", r);
+          circle.setAttribute("class", "connector-tip");
+          svg.appendChild(circle);
+        }
+
         drawConnectionLines() {
-          const svg = document.getElementById("connectionSvg");
+          const svg = this.svg;
           if (!svg) return;
           svg.innerHTML = "";
 
-          const container = document.querySelector(".tree-container");
-          const centralQuestion = document.querySelector(".central-question");
-          const branchSections = document.querySelectorAll(".branch-section");
-
+          const container = this.container.querySelector(".tree-container");
+          const centralQuestion =
+            this.container.querySelector(".central-question");
+          const branchSections =
+            this.container.querySelectorAll(".branch-section");
           if (!container || !centralQuestion || branchSections.length === 0)
             return;
 
+          this.sizeSvgToContainer();
+
           const containerRect = container.getBoundingClientRect();
-          const questionRect = centralQuestion.getBoundingClientRect();
+          const qRect = centralQuestion.getBoundingClientRect();
 
-          const questionCenterX =
-            questionRect.left + questionRect.width / 2 - containerRect.left;
-          const questionBottomY = questionRect.bottom - containerRect.top;
+          const qCenterX =
+            qRect.left +
+            qRect.width / 2 -
+            containerRect.left +
+            container.scrollLeft;
+          const qBottomY =
+            qRect.bottom - containerRect.top + container.scrollTop;
 
-          const trunkLength = 60;
+          const trunkLength = 60; // keep original feel
+          // trunk
           this.createLine(
             svg,
-            questionCenterX,
-            questionBottomY,
-            questionCenterX,
-            questionBottomY + trunkLength,
+            qCenterX,
+            qBottomY,
+            qCenterX,
+            qBottomY + trunkLength,
             "connection-line"
           );
+          // tip at bottom of trunk
+          const branchY = qBottomY + trunkLength;
+          this.createTip(svg, qCenterX, branchY, 3);
 
-          const branchY = questionBottomY + trunkLength;
-          let leftmostX = questionCenterX;
-          let rightmostX = questionCenterX;
-
+          // compute horizontal span
+          let leftmostX = qCenterX;
+          let rightmostX = qCenterX;
           branchSections.forEach((section) => {
-            const sectionRect = section.getBoundingClientRect();
-            const sectionCenterX =
-              sectionRect.left + sectionRect.width / 2 - containerRect.left;
-            leftmostX = Math.min(leftmostX, sectionCenterX);
-            rightmostX = Math.max(rightmostX, sectionCenterX);
+            const r = section.getBoundingClientRect();
+            const cx =
+              r.left + r.width / 2 - containerRect.left + container.scrollLeft;
+            leftmostX = Math.min(leftmostX, cx);
+            rightmostX = Math.max(rightmostX, cx);
           });
 
+          // horizontal branch
           if (branchSections.length > 1) {
             this.createLine(
               svg,
@@ -2048,41 +2138,58 @@
               branchY,
               "connection-line"
             );
+            // tips at both ends
+            this.createTip(svg, leftmostX, branchY, 3);
+            this.createTip(svg, rightmostX, branchY, 3);
           }
 
-          branchSections.forEach((section) => {
-            const sectionRect = section.getBoundingClientRect();
-            const sectionCenterX =
-              sectionRect.left + sectionRect.width / 2 - containerRect.left;
-            const label = section.querySelector(".branch-label");
+          const branchDown = 40; // keep original look
 
+          branchSections.forEach((section) => {
+            const sRect = section.getBoundingClientRect();
+            const sCenterX =
+              sRect.left +
+              sRect.width / 2 -
+              containerRect.left +
+              container.scrollLeft;
+
+            const label = section.querySelector(".branch-label");
             if (label) {
-              const labelRect = label.getBoundingClientRect();
-              const labelTopY = labelRect.top - containerRect.top;
+              const lRect = label.getBoundingClientRect();
+              const lTopY = lRect.top - containerRect.top + container.scrollTop;
               this.createLine(
                 svg,
-                sectionCenterX,
+                sCenterX,
                 branchY,
-                sectionCenterX,
-                labelTopY - 20,
+                sCenterX,
+                lTopY - 20,
                 "connection-line"
               );
+              // tip where vertical meets label area
+              this.createTip(svg, sCenterX, lTopY - 20, 2.5);
             }
 
             const nodes = section.querySelectorAll(".tree-node");
             nodes.forEach((node) => {
-              const nodeRect = node.getBoundingClientRect();
-              const nodeCenterX =
-                nodeRect.left + nodeRect.width / 2 - containerRect.left;
-              const nodeTopY = nodeRect.top - containerRect.top;
+              const nRect = node.getBoundingClientRect();
+              const nCenterX =
+                nRect.left +
+                nRect.width / 2 -
+                containerRect.left +
+                container.scrollLeft;
+              const nTopY = nRect.top - containerRect.top + container.scrollTop;
+
               this.createLine(
                 svg,
-                sectionCenterX,
-                branchY + 40,
-                nodeCenterX,
-                nodeTopY,
+                sCenterX,
+                branchY + branchDown,
+                nCenterX,
+                nTopY,
                 "node-connector"
               );
+              // tips at the start (from column) and at the node top
+              this.createTip(svg, sCenterX, branchY + branchDown, 2.5);
+              this.createTip(svg, nCenterX, nTopY, 2.5);
             });
           });
         }
@@ -2096,23 +2203,51 @@
           line.setAttribute("class", className);
           svg.appendChild(line);
         }
-      }
 
-      async function showArgumentTree(jsonPath, titleText) {
-        const modal = document.getElementById("argModal");
-        const title = document.getElementById("argTitle");
-        const content = document.getElementById("argContent");
-        modal.classList.add("active");
-        content.innerHTML =
-          '<div style="text-align: center; padding: 40px; color: #666;">Loading argument analysis...</div>';
-        try {
-          const res = await fetch(jsonPath);
-          const data = await res.json();
-          title.textContent = titleText;
-          new ArgumentTreeRenderer(content, data).init();
-        } catch (e) {
-          content.innerHTML =
-            '<div style="text-align: center; padding: 40px; color: #e74c3c;">Error loading argument data</div>';
+        waitForImagesThenDraw() {
+          const imgs = this.container.querySelectorAll("img");
+          if (!imgs.length) return;
+          let pending = 0;
+          imgs.forEach((img) => {
+            if (!img.complete) {
+              pending++;
+              img.addEventListener("load", this._onRedraw, { once: true });
+              img.addEventListener("error", this._onRedraw, { once: true });
+            }
+          });
+          if (pending === 0) this._onRedraw();
+        }
+
+        setupObservers() {
+          const tree = this.container.querySelector(".tree-container");
+          if (!tree) return;
+
+          this._resizeObserver = new ResizeObserver(this._onRedraw);
+          this._resizeObserver.observe(tree);
+          tree
+            .querySelectorAll(".branch-section, .tree-node, .central-question")
+            .forEach((el) => {
+              this._resizeObserver.observe(el);
+            });
+
+          this._mutationObserver = new MutationObserver(this._onRedraw);
+          this._mutationObserver.observe(tree, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            characterData: true,
+          });
+
+          window.addEventListener("resize", this._onRedraw);
+          window.addEventListener("orientationchange", this._onRedraw);
+          document.fonts?.ready?.then(() => this._onRedraw());
+        }
+
+        destroyObservers() {
+          if (this._resizeObserver) this._resizeObserver.disconnect();
+          if (this._mutationObserver) this._mutationObserver.disconnect();
+          window.removeEventListener("resize", this._onRedraw);
+          window.removeEventListener("orientationchange", this._onRedraw);
         }
       }
 
@@ -2124,33 +2259,42 @@
         }, 400);
       }
 
+      // Toggle subnodes + redraw
       function toggleSubNodes(button) {
         const subNodes = button.nextElementSibling;
-        const isExpanded = subNodes.classList.contains("expanded");
-        subNodes.classList.toggle("expanded", !isExpanded);
-        button.textContent = isExpanded ? "Show Details" : "Hide Details";
+        const isOpen = subNodes.style.display !== "none";
+        subNodes.style.display = isOpen ? "none" : "block";
+        button.textContent = isOpen ? "Show Details" : "Hide Details";
+        if (window.__activeRenderer) {
+          requestAnimationFrame(() =>
+            window.__activeRenderer.drawConnectionLines()
+          );
+        }
       }
 
       let focusedBranch = null;
-
       function toggleBranchFocus(branchElement) {
         const branchesContainer = document.querySelector(".tree-branches");
+        if (!branchesContainer) return;
 
         if (focusedBranch === branchElement) {
-          // Remove focus mode
           branchesContainer.classList.remove("focus-mode");
-          document.querySelectorAll(".branch-section").forEach((branch) => {
-            branch.classList.remove("focused");
-          });
+          document
+            .querySelectorAll(".branch-section")
+            .forEach((b) => b.classList.remove("focused"));
           focusedBranch = null;
         } else {
-          // Enable focus mode
           branchesContainer.classList.add("focus-mode");
-          document.querySelectorAll(".branch-section").forEach((branch) => {
-            branch.classList.remove("focused");
-          });
+          document
+            .querySelectorAll(".branch-section")
+            .forEach((b) => b.classList.remove("focused"));
           branchElement.classList.add("focused");
           focusedBranch = branchElement;
+        }
+        if (window.__activeRenderer) {
+          requestAnimationFrame(() =>
+            window.__activeRenderer.drawConnectionLines()
+          );
         }
       }
 
@@ -2159,6 +2303,271 @@
         .addEventListener("click", function (e) {
           if (e.target === this) closeArgumentTree();
         });
+
+      /* ---------- Search ---------- */
+      class SearchEngine {
+        constructor() {
+          this.searchIndex = null;
+          this.loadSearchIndex();
+          this.setupEventListeners();
+        }
+        async loadSearchIndex() {
+          try {
+            const response = await fetch("data/search-index.json", {
+              cache: "no-cache",
+            });
+            this.searchIndex = await response.json();
+          } catch (error) {
+            console.error("Failed to load search index:", error);
+          }
+        }
+        setupEventListeners() {
+          const searchInput = document.getElementById("searchInput");
+          const searchResults = document.getElementById("searchResults");
+
+          let searchTimeout;
+          searchInput.addEventListener("input", (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(
+              () => this.performSearch(e.target.value),
+              300
+            );
+          });
+
+          document.addEventListener("click", (e) => {
+            if (!e.target.closest(".search-container")) {
+              searchResults.classList.remove("active");
+            }
+          });
+
+          searchInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              this.performSearch(e.target.value);
+            }
+          });
+        }
+        performSearch(query) {
+          if (!query.trim() || !this.searchIndex) {
+            this.hideResults();
+            return;
+          }
+          const results = this.searchArticles(query.trim().toLowerCase());
+          this.displayResults(results);
+        }
+        searchArticles(query) {
+          const results = this.searchIndex.articles
+            .map((article) => {
+              let score = 0;
+              if (article.title.toLowerCase().includes(query)) score += 10;
+              article.keywords.forEach((k) => {
+                if (k.toLowerCase().includes(query)) score += 5;
+              });
+              article.tags.forEach((t) => {
+                if (t.toLowerCase().includes(query)) score += 3;
+              });
+              if (article.summary.toLowerCase().includes(query)) score += 2;
+              score += this.fuzzyMatch(query, article.title.toLowerCase()) * 5;
+              return { ...article, score };
+            })
+            .filter((a) => a.score > 0)
+            .sort((a, b) => b.score - a.score)
+            .slice(0, 5);
+          return results;
+        }
+        fuzzyMatch(query, text) {
+          const distance = this.levenshteinDistance(query, text);
+          const maxLength = Math.max(query.length, text.length);
+          return Math.max(0, (maxLength - distance) / maxLength);
+        }
+        levenshteinDistance(str1, str2) {
+          const m = [];
+          for (let i = 0; i <= str2.length; i++) m[i] = [i];
+          for (let j = 0; j <= str1.length; j++) m[0][j] = j;
+          for (let i = 1; i <= str2.length; i++) {
+            for (let j = 1; j <= str1.length; j++) {
+              if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+                m[i][j] = m[i - 1][j - 1];
+              } else {
+                m[i][j] = Math.min(
+                  m[i - 1][j - 1] + 1,
+                  m[i][j - 1] + 1,
+                  m[i - 1][j] + 1
+                );
+              }
+            }
+          }
+          return m[str2.length][str1.length];
+        }
+        displayResults(results) {
+          const searchResults = document.getElementById("searchResults");
+          if (results.length === 0) {
+            searchResults.innerHTML =
+              '<div class="search-result-item">No results found</div>';
+          } else {
+            searchResults.innerHTML = results
+              .map(
+                (result) => `
+              <div class="search-result-item" onclick="openSearchResult('${
+                result.filename
+              }', '${result.title.replace(/'/g, "\\'")}')">
+                <div class="search-result-title">${result.title}</div>
+                <div class="search-result-summary">${result.summary}</div>
+                <div class="search-result-tags">
+                  ${result.tags
+                    .map(
+                      (tag) => `<span class="search-result-tag">${tag}</span>`
+                    )
+                    .join("")}
+                </div>
+              </div>
+            `
+              )
+              .join("");
+          }
+          searchResults.classList.add("active");
+        }
+        hideResults() {
+          document.getElementById("searchResults").classList.remove("active");
+        }
+      }
+
+      let searchEngine;
+      document.addEventListener("DOMContentLoaded", () => {
+        searchEngine = new SearchEngine();
+      });
+
+      function openSearchResult(filename, title) {
+        const filePath = `data/${filename}`;
+        showArgumentTree(filePath, title);
+        document.getElementById("searchResults").classList.remove("active");
+        document.getElementById("searchInput").value = "";
+        if (typeof gtag === "function") {
+          gtag("event", "search_result_click", {
+            event_category: "Search",
+            event_label: title,
+          });
+        }
+      }
+
+      function performSearch() {
+        const query = document.getElementById("searchInput").value;
+        searchEngine.performSearch(query);
+      }
+
+      /* ---------- Router ---------- */
+      function slugFromPath(path) {
+        const f = path.split("/").pop() || path;
+        return f
+          .replace(/\.[^.]+$/, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-");
+      }
+      function saveMapEntry(slug, jsonPath, title) {
+        sessionStorage.setItem(
+          "map:" + slug,
+          JSON.stringify({ path: jsonPath, title })
+        );
+      }
+      function getMapEntry(slug) {
+        try {
+          return JSON.parse(sessionStorage.getItem("map:" + slug) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
+      function showHome() {
+        document.getElementById("homePage").style.display = "";
+        document.getElementById("mapPage").style.display = "none";
+        document.title = "Mapped News";
+        const popup = document.getElementById("popup");
+        if (popup) popup.style.display = "none";
+        if (window.__activeRenderer) {
+          window.__activeRenderer.destroyObservers?.();
+          window.__activeRenderer = null;
+        }
+      }
+
+      async function renderMapPage(slug) {
+        document.getElementById("homePage").style.display = "none";
+        document.getElementById("mapPage").style.display = "block";
+
+        const popup = document.getElementById("popup");
+        if (popup) popup.style.display = "none";
+
+        const entry = getMapEntry(slug);
+        const dataPath = entry.path || "data/" + slug + ".json";
+        const title = entry.title || slug.replace(/-/g, " ");
+
+        const mapTitleEl = document.getElementById("mapTitle");
+        const mapContentEl = document.getElementById("mapContent");
+        mapTitleEl.textContent = title;
+        mapContentEl.innerHTML =
+          '<div style="text-align:center;padding:40px;color:#666">Loading argument analysis...</div>';
+
+        try {
+          const res = await fetch(dataPath, { cache: "no-cache" });
+          const data = await res.json();
+          const renderer = new ArgumentTreeRenderer(mapContentEl, data);
+          renderer.init();
+          window.__activeRenderer = renderer;
+          document.title = title + " – Mapped News";
+        } catch (e) {
+          console.error(e);
+          mapContentEl.innerHTML =
+            '<div style="text-align:center;padding:40px;color:#e74c3c">Error loading argument data</div>';
+        }
+      }
+
+      function router() {
+        const h = location.hash;
+        const m = h.match(/^#\/map\/([^\/]+)$/);
+        if (m) {
+          const slug = m[1];
+          renderMapPage(slug);
+        } else {
+          showHome();
+        }
+      }
+
+      async function showArgumentTree(jsonPath, titleText) {
+        const slug = slugFromPath(jsonPath);
+        saveMapEntry(slug, jsonPath, titleText);
+        location.hash = "/map/" + slug;
+      }
+
+      document.getElementById("mapBack").addEventListener("click", () => {
+        history.pushState({}, "", "#/");
+        router();
+      });
+
+      window.addEventListener("hashchange", router);
+      document.addEventListener("DOMContentLoaded", router);
+
+      /* Popup logic (unchanged) */
+      window.onload = function () {
+        setTimeout(() => {
+          if (
+            !location.hash ||
+            location.hash === "#/" ||
+            location.hash === ""
+          ) {
+            document.getElementById("popup").style.display = "flex";
+          }
+        }, 500);
+      };
+
+      function handleUserChoice(role) {
+        localStorage.setItem("userType", role);
+        if (typeof gtag === "function") {
+          gtag("event", "user_type_selected", {
+            event_category: "User Classification",
+            event_label: role,
+          });
+        }
+        document.getElementById("popup").style.display = "none";
+      }
     </script>
   </body>
 </html>
