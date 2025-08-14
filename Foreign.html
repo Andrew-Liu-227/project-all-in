@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (GA4) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K1N6T05HS5"
+    ></script>
+    <script>
+      // Define gtag() immediately so it's available to all your scripts
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      // Wait for DOM to load before configuring GA (your working model)
+      window.addEventListener("DOMContentLoaded", function () {
+        gtag("js", new Date());
+        gtag("config", "G-K1N6T05HS5", { debug_mode: true }); // ✅ Required for DebugView
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <!-- keep device-width meta; no weird scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapped News</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/degebwdf5/image/upload/v1753394046/Mapped_News_Favicon_h9l2jp.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ==========================================================
+         Base + reset
+      ========================================================== */
+      * {
+        font-family: "Nunito", Arial, sans-serif !important;
+        font-weight: 400 !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Keep your original overall sizes/ratios by default;
+         only apply responsive adjustments where necessary. */
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes scaleIn {
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes modalSlideIn {
+        from {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes modalSlideOut {
+        from {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        to {
+          transform: translateY(-100vh);
+          opacity: 0;
+        }
+      }
+
+      body {
+        background: #fffbed;
+        color: #121212;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+
+      /* ==========================================================
+         Popup
+      ========================================================== */
+      #popup {
+        display: none;
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100dvh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 0.4s ease forwards;
+      }
+      #popup-box {
+        background: white;
+        padding: 25px 20px;
+        border-radius: 10px; /* preserve your rounding */
+        text-align: center;
+        max-width: 90%;
+        width: 340px; /* preserve your block width */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transform: scale(0.95);
+        opacity: 0;
+        animation: scaleIn 0.4s ease forwards;
+      }
+      #popup-box h3 {
+        font-size: 40px;
+        font-weight: 1000;
+        margin-bottom: 15px;
+      }
+      #popup-box p {
+        font-size: 28px;
+        margin-bottom: 25px;
+      }
+
+      /* ==========================================================
+         Header
+      ========================================================== */
+      .newspaper-header {
+        background: #fffbed;
+        padding: 0;
+        width: 100vw;
+        top: 0;
+        z-index: 100;
+      }
+      .date-bar {
+        background: #fffbed;
+        color: #666;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+      .masthead {
+        text-align: center;
+        padding: 20px 0;
+      }
+      .newspaper-title {
+        font-size: 38px;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+        letter-spacing: -0.5px;
+        display: block;
+        margin-bottom: 2px;
+      }
+      .newspaper-subtitle {
+        font-size: 11px;
+        color: #666;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+      }
+      .header-content {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        padding: 0 12px;
+      }
+
+      /* ==========================================================
+         NAV — keep visible at small widths; horizontal scroll
+      ========================================================== */
+      nav {
+        width: 100%;
+      }
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 30px;
+        overflow-x: auto; /* allow scroll on small screens */
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* hide scrollbar on FF */
+        padding: 0 8px;
+        scroll-snap-type: x proximity;
+      }
+      .nav-menu::-webkit-scrollbar {
+        display: none;
+      } /* hide on WebKit */
+      .nav-menu li {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+      }
+      .nav-menu li a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        transition: transform 0.7s ease, color 0.2s ease;
+        color: #333;
+        padding: 12px 0;
+      }
+      .nav-menu li a:hover {
+        transform: translateY(-5px); /* preserves your rise hover */
+      }
+      .nav-menu li a.active {
+        color: #000;
+      }
+      .nav-menu li a.active::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #000; /* persistent underline for active */
+      }
+
+      /* ==========================================================
+         Search
+      ========================================================== */
+      .search-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 20px; /* preserve your rounding */
+        padding: 6px 12px;
+        width: 650px; /* keep your desktop width */
+        margin: 95px auto; /* keep vertical spacing you liked */
+        transition: transform 0.2s ease;
+      }
+      .search-container:hover {
+        transform: translateY(-2px);
+      }
+      .search-container input {
+        background: none;
+        border: none;
+        color: #333;
+        width: 100%;
+        padding: 4px;
+        outline: none;
+        font-size: 30px; /* keep your original font sizing */
+      }
+      .search-container input::placeholder {
+        color: #999;
+      }
+      .search-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #666;
+        padding: 0 4px;
+        transition: color 0.2s ease;
+      }
+      .search-btn:hover {
+        color: #000;
+      }
+      .search-results {
+        display: none;
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        max-height: 400px;
+        overflow-y: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .search-results.active {
+        display: block;
+      }
+      .search-result-item {
+        padding: 12px 16px;
+        border-bottom: 1px solid #e2e2e2;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+      .search-result-item:hover {
+        background: #f7f7f7;
+      }
+      .search-result-item:last-child {
+        border-bottom: none;
+      }
+      .search-result-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 4px;
+      }
+      .search-result-summary {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+      }
+      .search-highlight {
+        background: #fffbcc;
+        padding: 1px 2px;
+        border-radius: 2px;
+      }
+      .search-result-tags {
+        margin-top: 8px;
+      }
+      .search-result-tag {
+        background: #f0f0f0;
+        color: #333;
+        padding: 2px 6px;
+        font-size: 11px;
+        margin-right: 5px;
+        border-radius: 2px;
+      }
+
+      /* ==========================================================
+         Main Content
+      ========================================================== */
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px; /* restore your original vertical rhythm */
+        display: grid;
+        align-items: center;
+        gap: 60px;
+      }
+      .content-section {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-header {
+        border-bottom: 1px solid #e2e2e2;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: -0.2px;
+      }
+      .view-all {
+        color: #326891;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        padding: 4px 8px;
+        border-radius: 3px;
+        transition: all 0.2s ease;
+      }
+      .view-all:hover {
+        background: #f7f7f7;
+        color: #1a5490;
+      }
+
+      /* Featured Story */
+      .featured-story {
+        margin-bottom: 50px;
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px; /* keep your rounding */
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      .featured-story:hover {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+      .featured-image {
+        width: 100%;
+        height: 400px; /* restore your exact height */
+        background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 8px; /* keep your rounding */
+        overflow: hidden;
+      }
+      .featured-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .featured-content {
+        padding: 0;
+      }
+      .featured-title {
+        font-size: 42px; /* restore */
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 16px;
+        line-height: 1.1;
+        letter-spacing: -0.5px;
+      }
+      .featured-summary {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+
+      .story-meta {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+        font-weight: 400;
+      }
+      .story-tags {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .tag {
+        background: #f7f7f7;
+        color: #333;
+        padding: 4px 8px;
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 2px;
+        border: 1px solid #e2e2e2;
+      }
+
+      /* Story Grid */
+      .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      .header-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      .story-card {
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 1px solid #e2e2e2;
+        border-radius: 12px; /* keep */
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+      }
+      .story-card:hover {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+      .story-image-column {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        flex-shrink: 0;
+        gap: 8px;
+      }
+      .story-image {
+        width: 100%;
+        height: 75px;
+        background: linear-gradient(45deg, #f5f5f5 0%, #e8e8e8 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-weight: 500;
+        font-size: 14px;
+        border-radius: 8px; /* keep */
+        overflow: hidden;
+      }
+      .story-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .story-image-caption {
+        text-align: center;
+        font-size: 12px;
+        color: #3498db;
+        font-weight: 500;
+        padding: 4px 8px;
+      }
+      .story-content {
+        padding: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 150px;
+      }
+      .story-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 7px;
+        color: #000;
+        line-height: 1.3;
+        letter-spacing: -0.3px;
+      }
+      .story-summary {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 400;
+        flex-grow: 1;
+      }
+      .story-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 16px;
+        border-top: 1px solid #e2e2e2;
+      }
+      .read-time {
+        color: #666;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      .view-analysis {
+        background: #449dd1;
+        color: white;
+        border: none;
+        padding: 10px 18px;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+      }
+      .view-analysis:hover {
+        background: #1a5490;
+        transform: translateY(-1px);
+      }
+
+      /* Sidebar (kept) */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .sidebar-widget {
+        background: #373f47;
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        padding: 25px;
+      }
+      .sidebar-widget > * {
+        margin: 20px;
+      }
+      .widget-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+        letter-spacing: -0.2px;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      /* Footer */
+      .footer {
+        background: #f7f7f7;
+        border-top: 1px solid #e2e2e2;
+        padding: 40px 0;
+        margin-top: 60px;
+      }
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+      }
+      .footer-section h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #000;
+      }
+      .footer-section ul {
+        list-style: none;
+      }
+      .footer-section ul li {
+        margin-bottom: 8px;
+      }
+      .footer-section ul li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        transition: color 0.2s ease;
+      }
+      .footer-section ul li a:hover {
+        color: #000;
+      }
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #e2e2e2;
+        color: #666;
+        font-size: 12px;
+      }
+
+      /* ==========================================================
+         Themes / Research / Expert blocks (preserve feel)
+      ========================================================== */
+      .themes-container-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0;
+      }
+      .themes-container {
+        background: linear-gradient(135deg, #373f47, #3c3c3c);
+        border: 2px solid #cbcbcb;
+        border-radius: 12px; /* keep your rounding */
+        padding: 16px;
+        margin: 20px 0;
+        max-width: 500px;
+        box-shadow: 0 4px 12px rgba(255, 140, 66, 0.3);
+        width: fit-content;
+        text-align: left;
+      }
+      .themes-label {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 12px;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .themes-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+      .theme-tag {
+        background: #ffffff;
+        color: #373f47;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid #cbcbcb;
+      }
+
+      .research-label {
+        background: linear-gradient(135deg, #4a90e2, #357abd);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+      .research-node {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        border: 2px solid #4a90e2;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+        transition: all 0.3s ease;
+      }
+      .research-node:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(74, 144, 226, 0.3);
+      }
+      .research-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+      }
+
+      .source-image {
+        max-width: 100%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0;
+        margin-right: 8px;
+      }
+      .source {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .sources {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      .node-header-image {
+        max-width: 100%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 6px;
+        flex-shrink: 0;
+        margin-right: 12px;
+      }
+      .node-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .node-title {
+        font-weight: 600;
+        flex: 1;
+        min-width: 0;
+      }
+
+      .research-image {
+        border: 2px solid #3498db;
+      }
+      .expert-image {
+        border: 2px solid #9b59b6;
+        border-radius: 50%;
+      }
+      .node-description {
+        line-height: 1.4;
+        margin-bottom: 8px;
+      }
+
+      .research-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        object-fit: cover;
+        border: 2px solid #4a90e2;
+      }
+      .research-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #2c5282;
+        flex: 1;
+      }
+      .research-node .node-description {
+        color: #2d3748;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+
+      .expert-label {
+        background: linear-gradient(135deg, #c0c0c0, #a8a8a8);
+        color: #2d3748;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 8px rgba(168, 168, 168, 0.4);
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+        border: 1px solid #999;
+      }
+      .expert-node {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border: 2px solid #c0c0c0;
+        border-radius: 10px;
+        padding: 16px;
+        margin: 12px 0;
+        box-shadow: 0 4px 12px rgba(168, 168, 168, 0.3);
+        transition: all 0.3s ease;
+        position: relative;
+      }
+      .expert-node::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+      }
+      .expert-node:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(168, 168, 168, 0.4);
+      }
+      .expert-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        gap: 12px;
+      }
+      .expert-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #c0c0c0;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+      .expert-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #2d3748;
+        flex: 1;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+      }
+      .expert-node .node-description {
+        color: #4a5568;
+        line-height: 1.6;
+        font-size: 14px;
+        font-style: italic;
+        padding-left: 8px;
+        border-left: 3px solid #c0c0c0;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 8px 12px;
+        border-radius: 0 6px 6px 0;
+      }
+
+      /* ==========================================================
+         Argument Tree — PRESERVE original look; add responsiveness
+      ========================================================== */
+      .arg-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .arg-modal.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+      }
+      .arg-modal.active .arg-container {
+        animation: modalSlideIn 0.4s ease forwards;
+      }
+      .arg-modal.closing .arg-container {
+        animation: modalSlideOut 0.4s ease forwards;
+      }
+
+      .arg-container {
+        background: #84827b86;
+        border: none;
+        border-radius: 0;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
+        overflow: auto;
+        position: relative;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      }
+      .arg-header {
+        background: #449dd1;
+        color: white;
+        margin-top: 15px;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid #e2e2e2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .arg-header h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: -0.3px;
+      }
+      .arg-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+      .arg-close:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .arg-content {
+        /* IMPORTANT: remove previous min-width that broke phones */
+        padding: 40px; /* restore your vertical rhythm inside */
+      }
+
+      .tree-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 700px; /* keep your original height feel */
+        padding: 40px 20px; /* keep vertical spacing as before */
+      }
+      .central-question {
+        background: #449dd1;
+        color: white;
+        border: 2px solid rgb(0, 13, 128);
+        padding: 25px 40px; /* keep */
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        z-index: 9;
+        max-width: 600px; /* keep */
+        margin-bottom: 120px; /* keep your spacing */
+        border-radius: 8px; /* keep rounding */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-branches {
+        position: relative;
+        width: 100%;
+        /* Use grid so we can wrap at small widths without hiding anything */
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 100px; /* keep your branch gap */
+        min-height: 400px; /* keep */
+        justify-items: center;
+      }
+      .branch-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+      }
+      .branch-label {
+        z-index: 3;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        padding: 15px 30px;
+        color: black;
+        text-align: center;
+        position: relative;
+        border-radius: 3px; /* keep your rounding */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+
+      .exploring-label {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        padding: 15px 30px;
+        color: white;
+        text-align: center;
+        z-index: 5;
+        position: relative;
+        border-radius: 3px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+        cursor: pointer;
+      }
+      .exploring-label:hover {
+        opacity: 0.85;
+      }
+      .reasons-label {
+        background: #2e7d32;
+      }
+      .objections-label {
+        background: #d32f2f;
+      }
+
+      .nodes-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        position: relative;
+        width: 100%;
+      }
+      .tree-node {
+        background: white;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px; /* restore your original small rounding */
+        padding: 20px;
+        max-width: 300px; /* keep your node sizes */
+        min-width: 250px;
+        width: 90%;
+        position: relative;
+        transition: all 0.3s ease;
+        z-index: 5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      .tree-node:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      }
+      .reason-node {
+        border-left: 4px solid #2e7d32;
+      }
+      .objection-node {
+        border-left: 4px solid #d32f2f;
+      }
+      .node-description {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .category-card {
+        background: linear-gradient(
+          135deg,
+          #f9fafb,
+          #eef2f7
+        ); /* soft gradient */
+        border: 2px solid #326891; /* matches your link color */
+        text-align: center;
+        padding: 30px 20px; /* more breathing room */
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .category-card:hover {
+        background: linear-gradient(135deg, #eef2f7, #e2e8f0);
+        box-shadow: 0 8px 20px rgba(50, 104, 145, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .category-card .story-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #326891;
+        letter-spacing: -0.5px;
+      }
+
+      .source {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        background: #f7f7f7;
+        border: 1px solid #e2e2e2;
+        border-radius: 3px;
+        margin: 6px 0;
+        font-size: 12px;
+      }
+      .source-title {
+        font-weight: 600;
+        color: #326891;
+        text-decoration: none;
+      }
+      .source-title:hover {
+        text-decoration: underline;
+      }
+
+      .connection-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+      }
+      /* Line aesthetics with rounded ends (adds "tips" look) */
+      .connection-line,
+      .node-connector {
+        stroke: rgb(208, 208, 208);
+        stroke-width: 1.5px;
+        stroke-linecap: round; /* rounded tips */
+        stroke-linejoin: round; /* nice joints */
+      }
+      /* Small circular tips/joints we’ll draw at key points */
+      .connector-tip {
+        fill: rgb(208, 208, 208);
+      }
+
+      /* Full-page map container */
+      #mapPage {
+        display: none;
+      }
+      #mapBack {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+      }
+      #mapBack:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* ==========================================================
+         RESPONSIVE — ONLY where needed, without changing your feel
+      ========================================================== */
+      @media (max-width: 1100px) {
+        .main-content {
+          margin-left: 6vw;
+          margin-right: 6vw;
+        }
+      }
+      @media (max-width: 1024px) {
+        .tree-branches {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 60px;
+        }
+      }
+      @media (max-width: 768px) {
+        /* keep nav visible! remove the old display:none; */
+        .header-content {
+          padding: 0 8px;
+        }
+        .search-container {
+          width: 90vw;
+          margin: 40px auto;
+        } /* fit phones but keep vertical spacing reasonable */
+        .search-container input {
+          font-size: 22px;
+        }
+        .stories-grid {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        .featured-title {
+          font-size: 32px;
+        }
+        .featured-image {
+          height: 300px;
+        }
+        .central-question {
+          margin-bottom: 80px;
+        }
+      }
+      @media (max-width: 640px) {
+        .tree-branches {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .nodes-container {
+          gap: 24px;
+        }
+        .tree-node {
+          max-width: 90vw;
+          min-width: 260px;
+        } /* keep readable nodes; allow slight flex */
+        .search-container {
+          width: 92vw;
+        }
+        .search-container input {
+          font-size: 20px;
+        }
+      }
+
+      /* ==========================================================
+         Misc retained styles (breaking banner, etc.)
+      ========================================================== */
+      .breaking-news {
+        background: #449dd1;
+        color: white;
+        padding: 12px 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+      }
+      .breaking-text {
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="newspaper-header">
+      <div class="date-bar">Powered by AI Web Scraping</div>
+
+      <div class="masthead">
+        <img
+          src="https://res.cloudinary.com/degebwdf5/image/upload/v1753239162/Mapped_News_Logo-removebg-preview_bmizww.png"
+          alt="Mapped news"
+          width="300"
+          height="300"
+          style="padding-top: 20px; margin: -110px 0"
+        />
+      </div>
+
+      <div class="header-content">
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Econ.html">Economics</a></li>
+            <li><a href="Social.html">Social Issues</a></li>
+            <li><a href="Foreign.html" class="active">Foreign Policy</a></li>
+        
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content (Home) -->
+    <main class="main-content" id="homePage">
+      <div class="content-section">
+        <div class="header-grid">
+          <article class="story-card category-card">
+            <div class="story-content">
+              <h3 class="story-title">Browse Foreign Policy</h3>
+            </div>
+          </article>
+        </div>
+
+        <!-- Latest Stories -->
+        <div class="stories-grid">
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/2018tariffs.json', 'Were Trumps initial 2018 tariffs beneficial in hindsight?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/2018-12-17_hufbauer_steel-tariffs_header-image_hvzozr.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 18 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Were Trump's initial 2018 tariffs beneficial in hindsight?
+              </h3>
+              <p class="story-summary">
+                Several years later, what were the impacts of Trump's first term
+                tariffs?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Trade</span>
+                <span class="tag">Economic Policy </span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/CHIPSact.json', 'Has the CHIPS Act provided enough benefits to outweigh its costs in government funding? ')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/20240803_ABD001_FH_o3ygyt.webp"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 16 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Has the CHIPS Act provided enough benefits to outweigh its costs
+                in government funding?
+              </h3>
+              <p class="story-summary">
+                Can federal programs like the CHIPS Act truly contribute to
+                growth?
+              </p>
+              <div class="story-tags">
+                <span class="tag">Technology</span>
+                <span class="tag">Growth</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/eurotariffresponse.json', 'Have European countries done enough to respond to American tariffs?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755093086/service-pnp-ds-14500-14544r_j1xqbp.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 26 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Have European countries done enough to respond to American
+                tariffs?
+              </h3>
+              <p class="story-summary">
+                Do European countries need to stand their ground more?
+              </p>
+              <span class="tag">Trade</span>
+              <span class="tag">Geopolitics</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/growthofpopulism.json', 'Is global populism becoming a greater issue?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090547/Populismcomic-e1573840635332_ar9ivq.png"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 22 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Is Populism becoming a larger issue around the world?
+              </h3>
+              <p class="story-summary">
+                What do populist elected leaders mean for countries?
+              </p>
+              <span class="tag">Politics</span>
+              <span class="tag">Democracy</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/interfereinwarsofothernations.json', 'Is it in the interest of the United States to interfere in the wars of other nations?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755090546/1.2-No-Foreign-Entanglements_kbnx5c.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 15 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Is it in the interest of the United States to interfere in the
+                wars of other nations?
+              </h3>
+              <p class="story-summary">
+                When interfering, is the US a peacekeeper or is it stoking the
+                flames?
+              </p>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">War</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/istheundoingagoodjob.json', 'Is the UN doing a good job?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755093211/ga-hall-essential-un_tbptgf.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 16 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">Is the UN doing a good job?</h3>
+              <p class="story-summary">
+                Without much real power, is the UN still useful?
+              </p>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">United Nations</span>
+            </div>
+          </article>
+
+          <article
+            class="story-card"
+            onclick="showArgumentTree('data/weakenrelationscanadamexico.json', 'Is it in the interest of the United States to weaken relations with Canada and Mexico?')"
+          >
+            <div class="story-image-column">
+              <div class="story-image">
+                <img
+                  src="https://res.cloudinary.com/degebwdf5/image/upload/v1755108840/61czb7kXjLL_axx4oe.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="story-image-caption">Explore 22 Sources</div>
+            </div>
+            <div class="story-content">
+              <h3 class="story-title">
+                Is it in the interest of the United States to weaken relations
+                with Canada and Mexico?
+              </h3>
+              <p class="story-summary">
+                How should the US treat its closest neighbors?
+              </p>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">Trade</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Full-Page Argument View -->
+    <section id="mapPage">
+      <div class="arg-header">
+        <h2 id="mapTitle">Argument Analysis</h2>
+        <button id="mapBack">×</button>
+      </div>
+      <div class="arg-content" id="mapContent">
+        <div style="text-align: center; padding: 40px; color: #666">
+          Loading argument analysis...
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal kept for legacy (not used) -->
+    <div class="arg-modal" id="argModal">
+      <div class="arg-container">
+        <div class="arg-header">
+          <h2 id="argTitle">Argument Analysis</h2>
+          <button class="arg-close" onclick="closeArgumentTree()">×</button>
+        </div>
+        <div class="arg-content" id="argContent">
+          <div style="text-align: center; padding: 40px; color: #666">
+            Loading argument analysis...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Small, safe throttle to avoid redraw storms
+      function throttle(fn, wait = 16) {
+        let rafId = null,
+          lastArgs,
+          lastThis;
+        const runner = () => {
+          rafId = null;
+          fn.apply(lastThis, lastArgs);
+        };
+        return function (...args) {
+          lastArgs = args;
+          lastThis = this;
+          if (!rafId) rafId = requestAnimationFrame(runner);
+        };
+      }
+
+      class ArgumentTreeRenderer {
+        constructor(container, data) {
+          this.container = container;
+          this.data = data;
+          this.svgNamespace = "http://www.w3.org/2000/svg";
+          this._resizeObserver = null;
+          this._mutationObserver = null;
+          this._onRedraw = throttle(this.drawConnectionLines.bind(this), 16);
+        }
+
+        init() {
+          this.container.innerHTML = this.render(this.data);
+          this.svg = this.container.querySelector("#connectionSvg");
+          this.setupObservers();
+          requestAnimationFrame(() => this._onRedraw());
+          this.waitForImagesThenDraw();
+        }
+
+        render(data) {
+          // Check if expertPerspectives is truly blank (null, undefined, empty array, or only empty strings/objects)
+          const hasExperts =
+            Array.isArray(data.expertPerspectives) &&
+            data.expertPerspectives.some(
+              (ep) => ep && Object.keys(ep).length > 0
+            );
+
+          // If it's blank, add a CSS class to recentre the tree
+          if (!hasExperts) {
+            // Delay to ensure DOM is ready
+            requestAnimationFrame(() => {
+              const branches = this.container.querySelector(".tree-branches");
+              if (branches) {
+                branches.style.gridTemplateColumns =
+                  "repeat(3, minmax(0, 1fr))";
+                branches.style.justifyContent = "center";
+              }
+            });
+          }
+
+          return `
+            <div class="themes-container-wrapper">
+              ${this.renderThemes(data.themes)}
+            </div>
+            <div class="tree-container">
+              <svg class="connection-svg" id="connectionSvg" preserveAspectRatio="none"></svg>
+              <div class="central-question">${data.centralQuestion}</div>
+              <div class="tree-branches">
+                ${this.renderBranch(
+                  "Supporting Reasons",
+                  "reason",
+                  data.reasons
+                )}
+                ${this.renderBranch("Objections", "objection", data.objections)}
+                ${this.renderBranch("Research", "research", data.research)}
+                ${this.renderBranch(
+                  "Expert Perspectives",
+                  "expert",
+                  data.expertPerspectives
+                )}
+              </div>
+            </div>
+          `;
+        }
+
+        renderThemes(themes) {
+          if (!themes?.length) return "";
+          return `
+            <div class="themes-container">
+              <div class="themes-label">Key Themes</div>
+              <div class="themes-list">
+                ${themes
+                  .map((t) => `<span class="theme-tag">${t}</span>`)
+                  .join("")}
+              </div>
+            </div>
+          `;
+        }
+
+        renderBranch(label, type, items) {
+          if (!items?.length) return "";
+          return `
+            <div class="branch-section" onclick="toggleBranchFocus(this)">
+              <div class="branch-label ${type}-label">${label}</div>
+              <div class="nodes-container">
+                ${items
+                  .map((item, i) => this.renderNode(item, type, i))
+                  .join("")}
+              </div>
+            </div>
+          `;
+        }
+
+        renderNode(node, type, index) {
+          return `
+            <div class="tree-node ${type}-node" onclick="event.stopPropagation()" data-node-type="${type}" data-node-index="${index}">
+              ${this.renderNodeHeader(node, type)}
+              <div class="node-description">${node.description}</div>
+              ${this.renderSources(node, type)}
+              <button class="expand-button ${
+                this.hasChildren(node) ? "has-children" : ""
+              }" onclick="toggleSubNodes(this)">
+                ${this.hasChildren(node) ? "Show Details" : ""}
+              </button>
+              <div class="sub-nodes" style="display:none;">
+                ${this.renderSubNodes(node.underlyingReasons, "reason")}
+                ${this.renderSubNodes(node.objections, "objection")}
+              </div>
+            </div>
+          `;
+        }
+
+        renderNodeHeader(node, type) {
+          if (type === "expert") {
+            return `
+              <div class="node-header expert-header">
+                ${
+                  node.imageLink
+                    ? `<img src="${node.imageLink}" alt="${node.name}" class="node-header-image expert-image">`
+                    : ""
+                }
+                <div class="node-title expert-name">${node.name ?? ""}</div>
+              </div>
+            `;
+          }
+          return "";
+        }
+
+        renderSubNodes(nodes, type) {
+          if (!nodes?.length) return "";
+          return nodes
+            .map(
+              (n) => `
+            <div class="sub-node sub-${type}">
+              <div class="node-description">${n.description}</div>
+              ${this.renderSources(n, type)}
+            </div>
+          `
+            )
+            .join("");
+        }
+
+        renderSources(node, type) {
+          if (type === "research" && node.link && node.title) {
+            return `
+              <div class="sources">
+                <div class="source">
+                  <a href="${node.link}" target="_blank" class="source-title">${node.title}</a>
+                </div>
+              </div>
+            `;
+          }
+          const sources = node.sources;
+          if (!sources?.length) return "";
+          return `
+            <div class="sources">
+              ${sources
+                .map(
+                  (s) => `
+                <div class="source">
+                  ${
+                    s.imageLink
+                      ? `<img src="${s.imageLink}" alt="source" class="source-image">`
+                      : ""
+                  }
+                  <a href="${s.link}" target="_blank" class="source-title">${
+                    s.title
+                  }</a>
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+          `;
+        }
+
+        hasChildren(node) {
+          return (
+            (node.underlyingReasons?.length || 0) +
+              (node.objections?.length || 0) >
+            0
+          );
+        }
+
+        sizeSvgToContainer() {
+          const tree = this.container.querySelector(".tree-container");
+          if (!tree || !this.svg) return;
+          const w = Math.ceil(tree.scrollWidth);
+          const h = Math.ceil(tree.scrollHeight);
+          this.svg.setAttribute("width", w);
+          this.svg.setAttribute("height", h);
+          this.svg.style.width = w + "px";
+          this.svg.style.height = h + "px";
+        }
+
+        // helper to draw small circular tips
+        createTip(svg, cx, cy, r = 3) {
+          const circle = document.createElementNS(this.svgNamespace, "circle");
+          circle.setAttribute("cx", cx);
+          circle.setAttribute("cy", cy);
+          circle.setAttribute("r", r);
+          circle.setAttribute("class", "connector-tip");
+          svg.appendChild(circle);
+        }
+
+        drawConnectionLines() {
+          const svg = this.svg;
+          if (!svg) return;
+          svg.innerHTML = "";
+
+          const container = this.container.querySelector(".tree-container");
+          const centralQuestion =
+            this.container.querySelector(".central-question");
+          const branchSections =
+            this.container.querySelectorAll(".branch-section");
+          if (!container || !centralQuestion || branchSections.length === 0)
+            return;
+
+          this.sizeSvgToContainer();
+
+          const containerRect = container.getBoundingClientRect();
+          const qRect = centralQuestion.getBoundingClientRect();
+
+          const qCenterX =
+            qRect.left +
+            qRect.width / 2 -
+            containerRect.left +
+            container.scrollLeft;
+          const qBottomY =
+            qRect.bottom - containerRect.top + container.scrollTop;
+
+          const trunkLength = 60; // keep original feel
+          // trunk
+          this.createLine(
+            svg,
+            qCenterX,
+            qBottomY,
+            qCenterX,
+            qBottomY + trunkLength,
+            "connection-line"
+          );
+          // tip at bottom of trunk
+          const branchY = qBottomY + trunkLength;
+          this.createTip(svg, qCenterX, branchY, 3);
+
+          // compute horizontal span
+          let leftmostX = qCenterX;
+          let rightmostX = qCenterX;
+          branchSections.forEach((section) => {
+            const r = section.getBoundingClientRect();
+            const cx =
+              r.left + r.width / 2 - containerRect.left + container.scrollLeft;
+            leftmostX = Math.min(leftmostX, cx);
+            rightmostX = Math.max(rightmostX, cx);
+          });
+
+          // horizontal branch
+          if (branchSections.length > 1) {
+            this.createLine(
+              svg,
+              leftmostX,
+              branchY,
+              rightmostX,
+              branchY,
+              "connection-line"
+            );
+            // tips at both ends
+            this.createTip(svg, leftmostX, branchY, 3);
+            this.createTip(svg, rightmostX, branchY, 3);
+          }
+
+          const branchDown = 40; // keep original look
+
+          branchSections.forEach((section) => {
+            const sRect = section.getBoundingClientRect();
+            const sCenterX =
+              sRect.left +
+              sRect.width / 2 -
+              containerRect.left +
+              container.scrollLeft;
+
+            const label = section.querySelector(".branch-label");
+            if (label) {
+              const lRect = label.getBoundingClientRect();
+              const lTopY = lRect.top - containerRect.top + container.scrollTop;
+              this.createLine(
+                svg,
+                sCenterX,
+                branchY,
+                sCenterX,
+                lTopY - 20,
+                "connection-line"
+              );
+              // tip where vertical meets label area
+              this.createTip(svg, sCenterX, lTopY - 20, 2.5);
+            }
+
+            const nodes = section.querySelectorAll(".tree-node");
+            nodes.forEach((node) => {
+              const nRect = node.getBoundingClientRect();
+              const nCenterX =
+                nRect.left +
+                nRect.width / 2 -
+                containerRect.left +
+                container.scrollLeft;
+              const nTopY = nRect.top - containerRect.top + container.scrollTop;
+
+              this.createLine(
+                svg,
+                sCenterX,
+                branchY + branchDown,
+                nCenterX,
+                nTopY,
+                "node-connector"
+              );
+              // tips at the start (from column) and at the node top
+              this.createTip(svg, sCenterX, branchY + branchDown, 2.5);
+              this.createTip(svg, nCenterX, nTopY, 2.5);
+            });
+          });
+        }
+
+        createLine(svg, x1, y1, x2, y2, className) {
+          const line = document.createElementNS(this.svgNamespace, "line");
+          line.setAttribute("x1", x1);
+          line.setAttribute("y1", y1);
+          line.setAttribute("x2", x2);
+          line.setAttribute("y2", y2);
+          line.setAttribute("class", className);
+          svg.appendChild(line);
+        }
+
+        waitForImagesThenDraw() {
+          const imgs = this.container.querySelectorAll("img");
+          if (!imgs.length) return;
+          let pending = 0;
+          imgs.forEach((img) => {
+            if (!img.complete) {
+              pending++;
+              img.addEventListener("load", this._onRedraw, { once: true });
+              img.addEventListener("error", this._onRedraw, { once: true });
+            }
+          });
+          if (pending === 0) this._onRedraw();
+        }
+
+        setupObservers() {
+          const tree = this.container.querySelector(".tree-container");
+          if (!tree) return;
+
+          this._resizeObserver = new ResizeObserver(this._onRedraw);
+          this._resizeObserver.observe(tree);
+          tree
+            .querySelectorAll(".branch-section, .tree-node, .central-question")
+            .forEach((el) => {
+              this._resizeObserver.observe(el);
+            });
+
+          this._mutationObserver = new MutationObserver(this._onRedraw);
+          this._mutationObserver.observe(tree, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            characterData: true,
+          });
+
+          window.addEventListener("resize", this._onRedraw);
+          window.addEventListener("orientationchange", this._onRedraw);
+          document.fonts?.ready?.then(() => this._onRedraw());
+        }
+
+        destroyObservers() {
+          if (this._resizeObserver) this._resizeObserver.disconnect();
+          if (this._mutationObserver) this._mutationObserver.disconnect();
+          window.removeEventListener("resize", this._onRedraw);
+          window.removeEventListener("orientationchange", this._onRedraw);
+        }
+      }
+
+      function closeArgumentTree() {
+        const modal = document.getElementById("argModal");
+        modal.classList.add("closing");
+        setTimeout(() => {
+          modal.classList.remove("active", "closing");
+        }, 400);
+      }
+
+      // Toggle subnodes + redraw
+      function toggleSubNodes(button) {
+        const subNodes = button.nextElementSibling;
+        const isOpen = subNodes.style.display !== "none";
+        subNodes.style.display = isOpen ? "none" : "block";
+        button.textContent = isOpen ? "Show Details" : "Hide Details";
+        if (window.__activeRenderer) {
+          requestAnimationFrame(() =>
+            window.__activeRenderer.drawConnectionLines()
+          );
+        }
+      }
+
+      let focusedBranch = null;
+      function toggleBranchFocus(branchElement) {
+        const branchesContainer = document.querySelector(".tree-branches");
+        if (!branchesContainer) return;
+
+        if (focusedBranch === branchElement) {
+          branchesContainer.classList.remove("focus-mode");
+          document
+            .querySelectorAll(".branch-section")
+            .forEach((b) => b.classList.remove("focused"));
+          focusedBranch = null;
+        } else {
+          branchesContainer.classList.add("focus-mode");
+          document
+            .querySelectorAll(".branch-section")
+            .forEach((b) => b.classList.remove("focused"));
+          branchElement.classList.add("focused");
+          focusedBranch = branchElement;
+        }
+        if (window.__activeRenderer) {
+          requestAnimationFrame(() =>
+            window.__activeRenderer.drawConnectionLines()
+          );
+        }
+      }
+
+      document
+        .getElementById("argModal")
+        .addEventListener("click", function (e) {
+          if (e.target === this) closeArgumentTree();
+        });
+
+      /* ---------- Search ---------- */
+      class SearchEngine {
+        constructor() {
+          this.searchIndex = null;
+          this.loadSearchIndex();
+          this.setupEventListeners();
+        }
+        async loadSearchIndex() {
+          try {
+            const response = await fetch("data/search-index.json", {
+              cache: "no-cache",
+            });
+            this.searchIndex = await response.json();
+          } catch (error) {
+            console.error("Failed to load search index:", error);
+          }
+        }
+        setupEventListeners() {
+          const searchInput = document.getElementById("searchInput");
+          const searchResults = document.getElementById("searchResults");
+
+          let searchTimeout;
+          searchInput.addEventListener("input", (e) => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(
+              () => this.performSearch(e.target.value),
+              300
+            );
+          });
+
+          document.addEventListener("click", (e) => {
+            if (!e.target.closest(".search-container")) {
+              searchResults.classList.remove("active");
+            }
+          });
+
+          searchInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              this.performSearch(e.target.value);
+            }
+          });
+        }
+        performSearch(query) {
+          if (!query.trim() || !this.searchIndex) {
+            this.hideResults();
+            return;
+          }
+          const results = this.searchArticles(query.trim().toLowerCase());
+          this.displayResults(results);
+        }
+        searchArticles(query) {
+          const results = this.searchIndex.articles
+            .map((article) => {
+              let score = 0;
+              if (article.title.toLowerCase().includes(query)) score += 10;
+              article.keywords.forEach((k) => {
+                if (k.toLowerCase().includes(query)) score += 5;
+              });
+              article.tags.forEach((t) => {
+                if (t.toLowerCase().includes(query)) score += 3;
+              });
+              if (article.summary.toLowerCase().includes(query)) score += 2;
+              score += this.fuzzyMatch(query, article.title.toLowerCase()) * 5;
+              return { ...article, score };
+            })
+            .filter((a) => a.score > 0)
+            .sort((a, b) => b.score - a.score)
+            .slice(0, 5);
+          return results;
+        }
+        fuzzyMatch(query, text) {
+          const distance = this.levenshteinDistance(query, text);
+          const maxLength = Math.max(query.length, text.length);
+          return Math.max(0, (maxLength - distance) / maxLength);
+        }
+        levenshteinDistance(str1, str2) {
+          const m = [];
+          for (let i = 0; i <= str2.length; i++) m[i] = [i];
+          for (let j = 0; j <= str1.length; j++) m[0][j] = j;
+          for (let i = 1; i <= str2.length; i++) {
+            for (let j = 1; j <= str1.length; j++) {
+              if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+                m[i][j] = m[i - 1][j - 1];
+              } else {
+                m[i][j] = Math.min(
+                  m[i - 1][j - 1] + 1,
+                  m[i][j - 1] + 1,
+                  m[i - 1][j] + 1
+                );
+              }
+            }
+          }
+          return m[str2.length][str1.length];
+        }
+        displayResults(results) {
+          const searchResults = document.getElementById("searchResults");
+          if (results.length === 0) {
+            searchResults.innerHTML =
+              '<div class="search-result-item">No results found</div>';
+          } else {
+            searchResults.innerHTML = results
+              .map(
+                (result) => `
+              <div class="search-result-item" onclick="openSearchResult('${
+                result.filename
+              }', '${result.title.replace(/'/g, "\\'")}')">
+                <div class="search-result-title">${result.title}</div>
+                <div class="search-result-summary">${result.summary}</div>
+                <div class="search-result-tags">
+                  ${result.tags
+                    .map(
+                      (tag) => `<span class="search-result-tag">${tag}</span>`
+                    )
+                    .join("")}
+                </div>
+              </div>
+            `
+              )
+              .join("");
+          }
+          searchResults.classList.add("active");
+        }
+        hideResults() {
+          document.getElementById("searchResults").classList.remove("active");
+        }
+      }
+
+      let searchEngine;
+      document.addEventListener("DOMContentLoaded", () => {
+        searchEngine = new SearchEngine();
+      });
+
+      function openSearchResult(filename, title) {
+        const filePath = `data/${filename}`;
+        showArgumentTree(filePath, title);
+        document.getElementById("searchResults").classList.remove("active");
+        document.getElementById("searchInput").value = "";
+        if (typeof gtag === "function") {
+          gtag("event", "search_result_click", {
+            event_category: "Search",
+            event_label: title,
+          });
+        }
+      }
+
+      function performSearch() {
+        const query = document.getElementById("searchInput").value;
+        searchEngine.performSearch(query);
+      }
+
+      /* ---------- Router ---------- */
+      function slugFromPath(path) {
+        const f = path.split("/").pop() || path;
+        return f
+          .replace(/\.[^.]+$/, "")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-");
+      }
+      function saveMapEntry(slug, jsonPath, title) {
+        sessionStorage.setItem(
+          "map:" + slug,
+          JSON.stringify({ path: jsonPath, title })
+        );
+      }
+      function getMapEntry(slug) {
+        try {
+          return JSON.parse(sessionStorage.getItem("map:" + slug) || "{}");
+        } catch {
+          return {};
+        }
+      }
+
+      function showHome() {
+        document.getElementById("homePage").style.display = "";
+        document.getElementById("mapPage").style.display = "none";
+        document.title = "Mapped News";
+        const popup = document.getElementById("popup");
+        if (popup) popup.style.display = "none";
+        if (window.__activeRenderer) {
+          window.__activeRenderer.destroyObservers?.();
+          window.__activeRenderer = null;
+        }
+      }
+
+      async function renderMapPage(slug) {
+        document.getElementById("homePage").style.display = "none";
+        document.getElementById("mapPage").style.display = "block";
+
+        const popup = document.getElementById("popup");
+        if (popup) popup.style.display = "none";
+
+        const entry = getMapEntry(slug);
+        const dataPath = entry.path || "data/" + slug + ".json";
+        const title = entry.title || slug.replace(/-/g, " ");
+
+        const mapTitleEl = document.getElementById("mapTitle");
+        const mapContentEl = document.getElementById("mapContent");
+        mapTitleEl.textContent = title;
+        mapContentEl.innerHTML =
+          '<div style="text-align:center;padding:40px;color:#666">Loading argument analysis...</div>';
+
+        try {
+          const res = await fetch(dataPath, { cache: "no-cache" });
+          const data = await res.json();
+          const renderer = new ArgumentTreeRenderer(mapContentEl, data);
+          renderer.init();
+          window.__activeRenderer = renderer;
+          document.title = title + " – Mapped News";
+        } catch (e) {
+          console.error(e);
+          mapContentEl.innerHTML =
+            '<div style="text-align:center;padding:40px;color:#e74c3c">Error loading argument data</div>';
+        }
+      }
+
+      function router() {
+        const h = location.hash;
+        const m = h.match(/^#\/map\/([^\/]+)$/);
+        if (m) {
+          const slug = m[1];
+          renderMapPage(slug);
+        } else {
+          showHome();
+        }
+      }
+
+      async function showArgumentTree(jsonPath, titleText) {
+        const slug = slugFromPath(jsonPath);
+        saveMapEntry(slug, jsonPath, titleText);
+        location.hash = "/map/" + slug;
+      }
+
+      document.getElementById("mapBack").addEventListener("click", () => {
+        history.pushState({}, "", "#/");
+        router();
+      });
+
+      window.addEventListener("hashchange", router);
+      document.addEventListener("DOMContentLoaded", router);
+
+      /* Popup logic (unchanged) */
+      window.onload = function () {
+        setTimeout(() => {
+          if (
+            !location.hash ||
+            location.hash === "#/" ||
+            location.hash === ""
+          ) {
+            document.getElementById("popup").style.display = "flex";
+          }
+        }, 500);
+      };
+
+      function handleUserChoice(role) {
+        localStorage.setItem("userType", role);
+        if (typeof gtag === "function") {
+          gtag("event", "user_type_selected", {
+            event_category: "User Classification",
+            event_label: role,
+          });
+        }
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
