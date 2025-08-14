@@ -1714,8 +1714,8 @@
               <p class="story-summary">
                 Has inflation truly outweighed the benfits provided by stimulus?
               </p>
-              <div class="story-tags">Economics</div>
-              <div class="story-tags">Inflation</div>
+              <span class="tag">Economics</span>
+              <span class="tag">Inflation</span>
             </div>
           </article>
 
@@ -1740,8 +1740,8 @@
               <p class="story-summary">
                 Is the impending debt crisis a mirage or a legitimate concern?
               </p>
-              <div class="story-tags">Debt</div>
-              <div class="story-tags">Fiscal Spending</div>
+              <span class="tag">Debt</span>
+              <span class="tag">Fiscal Spending</span>
             </div>
           </article>
 
@@ -1766,8 +1766,8 @@
               <p class="story-summary">
                 Do European countries need to stand their ground more?
               </p>
-              <div class="story-tags">Trade</div>
-              <div class="story-tags">Geopolitics</div>
+              <span class="tag">Trade</span>
+              <span class="tag">Geopolitics</span>
             </div>
           </article>
 
@@ -1791,8 +1791,8 @@
               <p class="story-summary">
                 What do populist elected leaders mean for countries?
               </p>
-              <div class="story-tags">Politics</div>
-              <div class="story-tags">Democracy</div>
+              <span class="tag">Politics</span>
+              <span class="tag">Democracy</span>
             </div>
           </article>
 
@@ -1818,8 +1818,8 @@
                 When interfering, is the US a peacekeeper or is it stoking the
                 flames?
               </p>
-              <div class="story-tags">Geopolitics</div>
-              <div class="story-tags">War</div>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">War</span>
             </div>
           </article>
 
@@ -1841,8 +1841,8 @@
               <p class="story-summary">
                 Without much real power, is the UN still useful?
               </p>
-              <div class="story-tags">Geopolitics</div>
-              <div class="story-tags">United Nations</div>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">United Nations</span>
             </div>
           </article>
 
@@ -1868,8 +1868,8 @@
                 What is the best way to preserve the strength local fishing
                 economies?
               </p>
-              <div class="story-tags">Economics</div>
-              <div class="story-tags">Environment</div>
+              <span class="tag">Economics</span>
+              <span class="tag">Environment</span>
             </div>
           </article>
 
@@ -1894,8 +1894,8 @@
               <p class="story-summary">
                 Can Massachusetts support one of its largest sectors on its own?
               </p>
-              <div class="story-tags">Research</div>
-              <div class="story-tags">Economics</div>
+              <span class="tag">Research</span>
+              <span class="tag">Economics</span>
             </div>
           </article>
 
@@ -1920,8 +1920,8 @@
                 The effects of Obamacare have sharpened in the years following
                 its passing.
               </p>
-              <div class="story-tags">Healthcare</div>
-              <div class="story-tags">Government Spending</div>
+              <span class="tag">Healthcare</span>
+              <span class="tag">Government Spending</span>
             </div>
           </article>
 
@@ -1947,8 +1947,8 @@
                 Could introducing sales taxes to match other states be
                 beneficial?
               </p>
-              <div class="story-tags">Taxes</div>
-              <div class="story-tags">State Funding</div>
+              <span class="tag">Taxes</span>
+              <span class="tag">State Funding</span>
             </div>
           </article>
 
@@ -1973,8 +1973,8 @@
                 Is redistricting a beneficial part of the American Democratic
                 Process?
               </p>
-              <div class="story-tags">Democracy</div>
-              <div class="story-tags">Elections</div>
+              <span class="tag">Democracy</span>
+              <span class="tag">Elections</span>
             </div>
           </article>
 
@@ -1999,8 +1999,8 @@
                 Is the power of excutive order being used today as the Founding
                 Fathers intended?
               </p>
-              <div class="story-tags">Democracy</div>
-              <div class="story-tags">Separation of powers</div>
+              <span class="tag">Democracy</span>
+              <span class="tag">Separation of powers</span>
             </div>
           </article>
 
@@ -2024,8 +2024,8 @@
               <p class="story-summary">
                 Senators are only getting older and older. Is this good?
               </p>
-              <div class="story-tags">Democracy</div>
-              <div class="story-tags">Government</div>
+              <span class="tag">Democracy</span>
+              <span class="tag">Government</span>
             </div>
           </article>
 
@@ -2049,8 +2049,8 @@
               <p class="story-summary">
                 Could tourism be the key to further economic growth?
               </p>
-              <div class="story-tags">Growth</div>
-              <div class="story-tags">Tourism</div>
+              <span class="tag">Growth</span>
+              <span class="tag">Tourism</span>
             </div>
           </article>
 
@@ -2075,8 +2075,8 @@
               <p class="story-summary">
                 How should the US treat its closest neighbors?
               </p>
-              <div class="story-tags">Geopolitics</div>
-              <div class="story-tags">Trade</div>
+              <span class="tag">Geopolitics</span>
+              <span class="tag">Trade</span>
             </div>
           </article>
 
@@ -2102,8 +2102,8 @@
                 Do environmental benefits offset economic incentive against
                 action?
               </p>
-              <div class="story-tags">Environment</div>
-              <div class="story-tags">Local Economics</div>
+              <span class="tag">Environment</span>
+              <span class="tag">Local Economics</span>
             </div>
           </article>
         </div>
@@ -2174,6 +2174,26 @@
         }
 
         render(data) {
+          // Check if expertPerspectives is truly blank (null, undefined, empty array, or only empty strings/objects)
+          const hasExperts =
+            Array.isArray(data.expertPerspectives) &&
+            data.expertPerspectives.some(
+              (ep) => ep && Object.keys(ep).length > 0
+            );
+
+          // If it's blank, add a CSS class to recentre the tree
+          if (!hasExperts) {
+            // Delay to ensure DOM is ready
+            requestAnimationFrame(() => {
+              const branches = this.container.querySelector(".tree-branches");
+              if (branches) {
+                branches.style.gridTemplateColumns =
+                  "repeat(3, minmax(0, 1fr))";
+                branches.style.justifyContent = "center";
+              }
+            });
+          }
+
           return `
             <div class="themes-container-wrapper">
               ${this.renderThemes(data.themes)}
