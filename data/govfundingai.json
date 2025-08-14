@@ -1,0 +1,182 @@
+{
+    "centralQuestion": "Should the US fund the development of open source AI models?",
+    "reasons": [
+    {
+    "description": "Strengthens U.S. competitiveness and strategic autonomy (including defense use-cases) while reducing vendor lock-in.",
+    "sources": [
+    {
+    "title": "CSIS 'Defense Priorities in the Open-Source AI Debate' ",
+    "link": "https://www.csis.org/analysis/defense-priorities-open-source-ai-debate",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    },
+    {
+    "title": "Council on Foreign Relations: 'The Interconnect: What to Know About the New U.S. AI Diffusion Policy and Export Controls'",
+    "link": "https://www.cfr.org/podcasts/interconnect/what-know-about-new-us-ai-diffusion-policy-and-export-controls",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    },
+    {
+    "title": "PBS NewsHour (AP): 'White House says no need to restrict open-source AI, for now'",
+    "link": "https://www.pbs.org/newshour/nation/white-house-says-no-need-to-restrict-open-source-ai-for-now",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Expands innovation capacity by lowering costs and barriers for startups, universities, and public agencies.",
+    "sources": [
+    {
+    "title": "New America: 'Openness in Artificial Intelligence Models: A Key to Ensuring AI Serves Democratic Values and the Public Interest'",
+    "link": "https://www.newamerica.org/oti/reports/openness-in-artificial-intelligence-models/benefits-of-open-source-ai/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/New_America_Logo_svywdx.jpg"
+    },
+    {
+    "title": "CSIS: 'Defense Priorities in the Open-Source AI Debate' (on supplier diversity and avoiding lock-in)",
+    "link": "https://www.csis.org/analysis/defense-priorities-open-source-ai-debate",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    },
+    {
+    "title": "AP News: 'White House says no need to restrict 'open-source' artificial intelligence for now'",
+    "link": "https://apnews.com/article/ai-open-source-white-house-f62009172c46c5003ddd9481aa49f7c3",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Improves transparency, reproducibility, and safety research by enabling broader auditing, red-teaming, and community scrutiny.",
+    "sources": [
+    {
+    "title": "New America: 'Openness in Artificial Intelligence Models: A Key to Ensuring AI Serves Democratic Values and the Public Interest'",
+    "link": "https://www.newamerica.org/oti/reports/openness-in-artificial-intelligence-models/benefits-of-open-source-ai/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/New_America_Logo_svywdx.jpg"
+    },
+    {
+    "title": "RAND Corporation: 'Labelling initiatives, codes of conduct and other self-regulatory mechanisms for artificial intelligence applications'",
+    "link": "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA1700/RRA1773-1/RAND_RRA1773-1.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    },
+    {
+    "title": "CSIS: 'Defense Priorities in the Open-Source AI Debate' (on advantages of public inspection and red-teaming)",
+    "link": "https://www.csis.org/analysis/defense-priorities-open-source-ai-debate",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Builds public-interest infrastructure and democratic oversight over foundational technologies that shape knowledge and culture.",
+    "sources": [
+    {
+    "title": "The Guardian (Opinion): 'Large language models that power AI should be publicly owned'",
+    "link": "https://www.theguardian.com/technology/2025/may/26/large-language-models-that-power-ai-should-be-publicly-owned",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247777/The_Gaurdian_Logo_ywf77f.jpg"
+    },
+    {
+    "title": "New America: 'Openness in Artificial Intelligence Models: A Key to Ensuring AI Serves Democratic Values and the Public Interest'",
+    "link": "https://www.newamerica.org/oti/reports/openness-in-artificial-intelligence-models/benefits-of-open-source-ai/",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247775/New_America_Logo_svywdx.jpg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "objections": [
+    {
+    "description": "Open release of model weights can increase misuse risks (e.g., cyber, bio, disinformation) and diffusion to adversaries.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'The Interconnect: What to Know About the New U.S. AI Diffusion Policy and Export Controls' (notes open-weight risks)",
+    "link": "https://www.cfr.org/podcasts/interconnect/what-know-about-new-us-ai-diffusion-policy-and-export-controls",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    },
+    {
+    "title": "AP News: 'In first AI dialogue, US cites 'misuse' of AI by China, Beijing hits back'",
+    "link": "https://apnews.com/article/artificial-intelligence-china-united-states-biden-xi-geneva-506da7b5fa72d5fe1bcd54fb8ec4f898",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Hard to regulate consistently; open-source exceptions and definitional gaps can create enforcement and liability challenges.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'The Interconnect: What to Know About the New U.S. AI Diffusion Policy and Export Controls'",
+    "link": "https://www.cfr.org/podcasts/interconnect/what-know-about-new-us-ai-diffusion-policy-and-export-controls",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    },
+    {
+    "title": "PBS NewsHour (AP): 'Regulators turn to math to determine when AI is powerful enough to be dangerous'",
+    "link": "https://www.pbs.org/newshour/nation/regulators-turn-to-math-to-determine-when-ai-is-powerful-enough-to-be-dangerous",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/PBS_News_Hour_Logo_xtirzq.svg"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Net benefits are uncertain; policymakers caution against premature mandates or blanket funding without clearer risk–benefit evidence.",
+    "sources": [
+    {
+    "title": "CSIS: 'Defense Priorities in the Open-Source AI Debate' (notes inconclusive evidence and need for further assessment)",
+    "link": "https://www.csis.org/analysis/defense-priorities-open-source-ai-debate",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247771/center_for_strategic_and_international_studies_logo_vxw7bg.jpg"
+    },
+    {
+    "title": "RAND Corporation: 'Labelling initiatives, codes of conduct and other self-regulatory mechanisms for AI applications' (emphasizes structured governance tools)",
+    "link": "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA1700/RRA1773-1/RAND_RRA1773-1.pdf",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247776/Rand_Corperation_Logo_eexqiw.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    },
+    {
+    "description": "Open models may inadvertently accelerate competitors’ capabilities, complicating U.S. export-control and national-security goals.",
+    "sources": [
+    {
+    "title": "Council on Foreign Relations: 'The Interconnect: What to Know About the New U.S. AI Diffusion Policy and Export Controls'",
+    "link": "https://www.cfr.org/podcasts/interconnect/what-know-about-new-us-ai-diffusion-policy-and-export-controls",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247772/council_on_foreign_relations_logo_zntwhi.png"
+    },
+    {
+    "title": "AP News: 'What is DeepSeek, the Chinese AI company upending markets and AI competition?'",
+    "link": "https://apnews.com/article/deepseek-ai-china-f4908eaca221d601e31e7e3368778030",
+    "imageLink": "https://res.cloudinary.com/degebwdf5/image/upload/v1753247770/Associated_Press_Logo_xghpkm.png"
+    }
+    ],
+    "underlyingReasons": [],
+    "objections": []
+    }
+    ],
+    "expertPerspectives": [],
+    "research": [
+    {
+    "title": "Ethical-Lens: Curbing malicious usages of open-source text-to-image models",
+    "description": "Peer-reviewed study proposing an ethics-guided framework and mitigations aimed specifically at misuse risks of open-source generative models.",
+    "link": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00106-7"
+    },
+    {
+    "title": "On the transparency of large AI models",
+    "description": "Peer-reviewed article arguing for greater transparency across model lifecycle elements (data, code, weights) to improve accountability and reproducibility.",
+    "link": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00234-3"
+    },
+    {
+    "title": "Open data and code to advance robust machine learning research",
+    "description": "Peer-reviewed analysis advocating open data/code practices to enhance robustness, replicability, and scientific progress in ML.",
+    "link": "https://www.cell.com/patterns/fulltext/S2666-3899(24)00188-1"
+    },
+    {
+    "title": "Open-source models for development of data and metadata standards",
+    "description": "Peer-reviewed article detailing how open-source model ecosystems help standardize data/metadata practices and accelerate scientific collaboration.",
+    "link": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00015-1"
+    }
+    ],
+    "themes": []
+    }
